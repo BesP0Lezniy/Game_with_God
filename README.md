@@ -55,8 +55,7 @@ Mutation «constancy»: ↻ Σ.
 PU-1 is «homeostasis» of Cannon-Bernard.
 PS-1 is «retention» of Gross-Schwarzschild.
 
-Mutation «collapse»: 
-Σ(IS) ⇌ Σ(ES), Σ(ES) ⇌ Σ(IS).
+Mutation «collapse»: Σ(IS) ⇌ Σ(ES), Σ(ES) ⇌ Σ(IS).
 PU-2 is «interface» of Wiener-Gibson.
 PU-3 is «dispersion» of Hebb-Rashevsky.
 PU-4 is «rebirth» of Carnot-Lifshitz.
@@ -74,8 +73,8 @@ PS-3 is «propagation» of Maxwell-Kruskal.
 PS-5 is «jump» of Landau-Widom.
 PS-6 is «fixation» of Debye-Simon.
 
-Mutation «evolution".
-First type of "evolution»: Σ1 → Σ2 + α + Σ3.
+Mutation «evolution».
+First type of «evolution»: Σ1 → Σ2 + α + Σ3.
 PU-2 is «interface» of Wiener-Gibson.
 PU-3 is «dispersion» of Hebb-Rashevsky.
 PU-5 is «phase transition» of Thom-Haldane.
