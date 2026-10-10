@@ -3,13 +3,14 @@
 (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview.
 
 Euclid-Gödel Extensions
-Chapter 0. Game with God.
+Chapter 0. Theory of Contradiction.
 Basis [ 1 is (2 and 3)4, 2 is (1 and 3)5, 3 is (1 and 2)6, 4 is (5 and 6)1, 5 is (4 and 6)2, 6 is (4 and 5)3 ]. Double contradictory Borromean recursion.
 1, 2, 3 — Symbols of Borromeo.
 4, 5, 6 — Operators of Relation and Contradiction.
-Basis is a «Linguistic Vice».
 
-Chapter 1. Theory of Functional States (TFS)
+Basis is a «linguistic vice».
+
+Chapter 1. Theory of Cosmos.
 Matter (μ) is the Topology of Energy and Information.
 Energy (ε) is the Symmetry of Matter and Information.
 Information (ι) is the Asymmetry of Matter and Energy.
@@ -21,15 +22,15 @@ Dissipation (ψ) is the «force» opposing Energy (↓ ε).
 Annihilation (ξ) is the «force» opposing Information (↓ ι).
 Antigravity (υ) is the «force» opposing Matter (↓ μ).
 
-Hegel's Connection (κ) is the formation of an arbitrary pair [a ∼ b].
-First level of Hegel's connections is [a = b] or [a ≠ b].
-Second level of Hegel's connections is [a > b] for [a ≠ b].
+Ontological «connection» (κ) of Hegel-Dirac is the formation of an arbitrary pair [a ∼ b].
+First level of «connections» is [a = b] or [a ≠ b].
+Second level of «connections» is [a > b] for [a ≠ b].
 First «limit» (Ω) is [a = b].
 Second «limit» (Δ) is [a ≠ b].
 Third «limit» (Λ) is [a > b].
-Fourth «limit» is the absence (rupture) of Hegel's connection [a ∣ b].
+Fourth «limit» is the absence (rupture) of «connection» [a ∣ b].
 
-Mutation of Planck-Szilard (γ) is «change» upon reaching a First , Second or Third Limit [a ⇌ ?].
+Mutation of Planck-Szilard (γ) is «change» upon reaching a first , second or third «limit» [a ⇌ ?].
 Mutation «constancy» of Bohr-Dyson (∞) is [a ⇌ a].
 Mutation «time», or «interaction», of Minkowski-Feynman (τ) is [a ⇌ b].
 Inertia of Galileo-Mach is the «predominance» of ∞ over τ.
@@ -38,7 +39,7 @@ Reactivity of Wheeler-Sechenov is the «predominance» of τ over ∞.
 System (Σ) is [θ ≠ ξ], [ψ ≠ ζ].
 Boundary (α) is [θ = ξ], [ψ = ζ].
 Space (β) is System and Boundary (Σ, α) at [η ∼ υ].
-Information System (IS) of Shannon-Landauer is [θ>ξ] > [ψ > ζ] or [θ > ξ] > [ζ > ψ] or [ψ > ζ] > [ξ > θ].
+Information System (IS) of Shannon-Landauer is [θ > ξ] > [ψ > ζ] or [θ > ξ] > [ζ > ψ] or [ψ > ζ] > [ξ > θ].
 Energy System (ES) of Prigogine-Einstein is [ξ > θ] > [ζ > ψ] or [ζ > ψ] > [θ > ξ] or [ξ > θ] > [ψ > ζ].
 
 Mutation «escape» of Kramers-Gamow (χ) is [a ⇌ Σ, a ⇌ α].
@@ -50,7 +51,7 @@ Chapter 2. Theory of System Mutations.
 Principal Units (PU) of von Neumann-Turing is the form of IS existence during mutations.
 Principal States (PS) of Born-Pauli is the form of ES existence during mutations.
 
-Mutation «constancy»: ↻Σ.
+Mutation «constancy»: ↻ Σ.
 PU-1 is «homeostasis» of Cannon-Bernard.
 PS-1 is «retention» of Gross-Schwarzschild.
 
@@ -101,9 +102,10 @@ PS-8 is «merging» of Penrose-Hawking.
 Базис [ 1 есть (2 и 3)4, 2 есть (1 и 3)5, 3 есть (1 и 2)6, 4 есть (5 и 6)1, 5 есть (4 и 6)2, 6 есть (4 и 5)3 ]. Двойная противоречивая рекурсия Борромео.
 1, 2, 3 — Символы Борромео.
 4, 5, 6 — Операторы Реляции и Противоречия.
-Базис есть «Лингвистический Порок».
 
-Глава 1. Теория Функциональных Состояний.
+Базис есть «лингвистический порок».
+
+Глава 1. Теория Космоса.
 Материя (μ) есть Топология Энергии и Информации.
 Энергия (ε) есть Симметрия Материи и Информации.
 Информация (ι) есть Асимметрия Материи и Энергии.
@@ -115,16 +117,16 @@ PS-8 is «merging» of Penrose-Hawking.
 Аннигиляция (ξ) есть «сила» противостояния Информации (↓ ι).
 Антигравитация (υ) есть «сила» противостояния Материи (↓ μ).
 
-Связь Гегеля (κ) есть образование произвольной пары [a ~ b].
-Первый уровень связей Гегеля есть [a = b] или [a ≠ b].
-Второй уровень связей Гегеля есть [a > b] для [a ≠ b].
+Онтологическая «связь» (κ) Гегеля-Дирака есть образование произвольной пары [a ~ b].
+Первый уровень «связей» есть [a = b] или [a ≠ b].
+Второй уровень «связей» есть [a > b] для [a ≠ b].
 
-Первый «Предел» (Ω) есть [a = b].
-Второй «Предел» (Δ) есть [a ≠ b].
-Третий «Предел» (Λ) есть [a > b].
-Четвёртый «Предел» есть отсутствие (разрыв) связи Гегеля [a | b].
+Первый «предел» (Ω) есть [a = b].
+Второй «предел» (Δ) есть [a ≠ b].
+Третий «предел» (Λ) есть [a > b].
+Четвёртый «предел» есть отсутствие (разрыв) «связи» [a | b].
 
-Мутация Планка-Силарда (γ) есть «изменение» при достижении Предела [a ⇌ ?].
+Мутация Планка-Силарда (γ) есть «изменение» при достижении первого, второго или третьего «предела» [a ⇌ ?].
 Мутация «постоянство» Бора-Дайсона (∞) есть [a ⇌ a].
 Мутация «время», или «взаимодействие», Минковского-Фейнмана (τ) есть [a ⇌ b].
 
@@ -147,7 +149,7 @@ PS-8 is «merging» of Penrose-Hawking.
 Принципиальные Единицы фон-Неймана-Тьюринга (ПЕ) есть форма существования ИС при мутациях.
 Принципиальные Состояния Борна-Паули (ПС) есть форма существования ЭС при мутациях.
 
-Мутация «постоянство»: ↻Σ.
+Мутация «постоянство»: ↻ Σ.
 ПЕ-1 есть «гомеостаз» Кеннона-Бернара.
 ПС-1 есть «удержание» Гросса-Шварцшильда.
 
@@ -198,6 +200,10 @@ PS-8 is «merging» of Penrose-Hawking.
 Ткань есть метамерное пространство [ИС1 + α + ЭС + α + ИС2 → ИС3].
 /…/
 
-Глава 4. Теория Космологии.
+Глава 4. Теория Физики.
+Ххх.
+/…/
+
+Глава Х. Теория Функциональных Состояний.
 Ххх.
 /…/
