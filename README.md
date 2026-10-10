@@ -3,12 +3,10 @@
 ## (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview.
 
 ### **Euclid-Gödel Extensions.**
-#### *Chapter 0. Theory of Contradiction.*
+#### *Chapter 0. Syntax of Singularity.*
 Basis [ 1 is (2 and 3)<sup>4</sup>, 2 is (1 and 3)<sup>4</sup>, 3 is (1 and 2)<sup>6</sup>, 4 is (5 and 6)<sup>1</sup>, 5 is (4 and 6)<sup>2</sup>, 6 is (4 and 5)<sup>3</sup> ].
 
-Double contradictory Borromean recursion.
-1, 2, 3 — borromean symbols.
-4, 5, 6 — operators of relation and contradiction.
+Double contradictory borromean recursion. 1, 2, 3 — borromean symbols; 4, 5, 6 — operators of relation and contradiction.
 
 Basis is a «linguistic vice».
 
@@ -17,40 +15,42 @@ Matter (μ) is the Topology of Energy and Information.
 Energy (ε) is the Symmetry of Matter and Information.  
 Information (ι) is the Asymmetry of Matter and Energy.
 
-Entropy (ζ) is the «force» of maintaining Energy (↑ ε).
-Emergence (θ) is the «force» of maintaining Information (↑ ι).
-Gravity (η) is the «force» of maintaining Matter (↑ μ).
-Dissipation (ψ) is the «force» opposing Energy (↓ ε).
-Annihilation (ξ) is the «force» opposing Information (↓ ι).
+Entropy (ζ) is the «force» of maintaining Energy (↑ ε).  
+Emergence (θ) is the «force» of maintaining Information (↑ ι).  
+Gravity (η) is the «force» of maintaining Matter (↑ μ).  
+Dissipation (ψ) is the «force» opposing Energy (↓ ε).  
+Annihilation (ξ) is the «force» opposing Information (↓ ι).  
 Antigravity (υ) is the «force» opposing Matter (↓ μ).
 
-Ontological «connection» (κ) of Hegel-Dirac is the formation of an arbitrary pair [a ∼ b].
-First level of «connections» is [a = b] or [a ≠ b].
-Second level of «connections» is [a > b] for [a ≠ b].
-First «limit» (Ω) is [a = b].
-Second «limit» (Δ) is [a ≠ b].
-Third «limit» (Λ) is [a > b].
+Ontological «connection» (κ) of Hegel-Dirac is the formation of an arbitrary pair [a ∼ b].  
+First level of «connections» is [a = b] or [a ≠ b].  
+Second level of «connections» is [a > b] for [a ≠ b].  
+First «limit» (Ω) is [a = b].  
+Second «limit» (Δ) is [a ≠ b].  
+Third «limit» (Λ) is [a > b].  
 Fourth «limit» is the absence (rupture) of «connection» [a ∣ b].
 
-Mutation of Planck-Szilard (γ) is «change» upon reaching a first , second or third «limit» [a ⇌ ?].
-Mutation «constancy» of Bohr-Dyson (∞) is [a ⇌ a].
+Mutation of Planck-Szilard (γ) is «change» upon reaching a first , second or third «limit» [a ⇌ ?].  
+Mutation «constancy» of Bohr-Dyson (∞) is [a ⇌ a].  
 Mutation «time», or «interaction», of Minkowski-Feynman (τ) is [a ⇌ b].
-Inertia of Galileo-Mach is the «predominance» of ∞ over τ.
+
+Inertia of Galileo-Mach is the «predominance» of ∞ over τ.  
 Reactivity of Wheeler-Sechenov is the «predominance» of τ over ∞.
 
-System (Σ) is [θ ≠ ξ], [ψ ≠ ζ].
-Boundary (α) is [θ = ξ], [ψ = ζ].
+System (Σ) is [θ ≠ ξ], [ψ ≠ ζ].  
+Boundary (α) is [θ = ξ], [ψ = ζ].  
 Space (β) is System and Boundary (Σ, α) at [η ∼ υ].
-Information System (IS) of Shannon-Landauer is [θ > ξ] > [ψ > ζ] or [θ > ξ] > [ζ > ψ] or [ψ > ζ] > [ξ > θ].
+
+Information System (IS) of Shannon-Landauer is [θ > ξ] > [ψ > ζ] or [θ > ξ] > [ζ > ψ] or [ψ > ζ] > [ξ > θ].  
 Energy System (ES) of Prigogine-Einstein is [ξ > θ] > [ζ > ψ] or [ζ > ψ] > [θ > ξ] or [ξ > θ] > [ψ > ζ].
 
-Mutation «escape» of Kramers-Gamow (χ) is [a ⇌ Σ, a ⇌ α].
-Mutation «stability» of Lyapunov-Poincaré (π) is [Σ1 ⇌ Σ2, α1 ⇌ α2].
-Mutation «evolution» of Darwin-Schrödinger (ρ) is [Σ ⇌ α, α ⇌ Σ].
+Mutation «escape» of Kramers-Gamow (χ) is [a ⇌ Σ, a ⇌ α].  
+Mutation «stability» of Lyapunov-Poincaré (π) is [Σ1 ⇌ Σ2, α1 ⇌ α2].  
+Mutation «evolution» of Darwin-Schrödinger (ρ) is [Σ ⇌ α, α ⇌ Σ].  
 Mutation «collapse» of Boltzmann-Anderson (Φ) is [IS ⇌ ES, ES ⇌ IS].
 
 #### *Chapter 2. Theory of System Mutations.*
-Principal Units (PU) of von-Neumann-Turing is the form of IS existence during mutations.
+Principal Units (PU) of von-Neumann-Turing is the form of IS existence during mutations.  
 Principal States (PS) of Born-Pauli is the form of ES existence during mutations.
 
 Mutation «constancy»: ↻ Σ.
@@ -99,10 +99,10 @@ PS-8 is «merging» of Penrose-Hawking.
 
 ## (РУС) Метаязык. Неоформализм. Холистический и Системный Взгляд.
 ### **Продолжения Евклида-Гёделя.**
-#### *Глава 0. Теория Противоречия.*
-Базис [ 1 есть (2 и 3)4, 2 есть (1 и 3)5, 3 есть (1 и 2)6, 4 есть (5 и 6)1, 5 есть (4 и 6)2, 6 есть (4 и 5)3 ]. Двойная противоречивая рекурсия Борромео.
-1, 2, 3 — борромеевы символы.
-4, 5, 6 — операторы реляции и противоречия.
+#### *Глава 0. Синтаксис Сингулярности.*
+Базис [ 1 есть (2 и 3)<sup>4</sup>, 2 есть (1 и 3)<sup>5</sup>, 3 есть (1 и 2)<sup>6</sup>, 4 есть (5 и 6)<sup>1</sup>, 5 есть (4 и 6)<sup>2</sup>, 6 есть (4 и 5)<sup>3</sup> ].
+
+Двойная противоречивая рекурсия Борромео. 1, 2, 3 — борромеевы символы; 4, 5, 6 — операторы реляции и противоречия.
 
 Базис есть «лингвистический порок».
 
