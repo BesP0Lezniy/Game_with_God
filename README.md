@@ -3,7 +3,7 @@
 (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview.
 
 Euclid-Gödel Extensions
-Chapter 0. Game with God
+Chapter 0. Game with God.
 Basis [ 1 is (2 and 3)4, 2 is (1 and 3)5, 3 is (1 and 2)6, 4 is (5 and 6)1, 5 is (4 and 6)2, 6 is (4 and 5)3 ]. Double contradictory Borromean recursion.
 1, 2, 3 — Symbols of Borromeo.
 4, 5, 6 — Operators of Relation and Contradiction.
@@ -24,10 +24,10 @@ Antigravity (υ) is the «force» opposing Matter (↓ μ).
 Hegel's Connection (κ) is the formation of an arbitrary pair [a ∼ b].
 First level of Hegel's connections is [a = b] or [a ≠ b].
 Second level of Hegel's connections is [a > b] for [a ≠ b].
-First «Limit» (Ω) is [a = b].
-Second «Limit» (Δ) is [a ≠ b].
-Third «Limit» (Λ) is [a > b].
-Fourth «Limit» is the absence (rupture) of Hegel's connection [a ∣ b].
+First «limit» (Ω) is [a = b].
+Second «limit» (Δ) is [a ≠ b].
+Third «limit» (Λ) is [a > b].
+Fourth «limit» is the absence (rupture) of Hegel's connection [a ∣ b].
 
 Mutation of Planck-Szilard (γ) is «change» upon reaching a First , Second or Third Limit [a ⇌ ?].
 Mutation «constancy» of Bohr-Dyson (∞) is [a ⇌ a].
@@ -46,7 +46,7 @@ Mutation «stability» of Lyapunov-Poincaré (π) is [Σ1 ⇌ Σ2, α1 ⇌ α2].
 Mutation «evolution» of Darwin-Schrödinger (ρ) is [Σ ⇌ α, α ⇌ Σ].
 Mutation «collapse» of Boltzmann-Anderson (Φ) is [IS ⇌ ES, ES ⇌ IS].
 
-Chapter 2. Theory of System Mutations
+Chapter 2. Theory of System Mutations.
 Principal Units (PU) of von Neumann-Turing is the form of IS existence during mutations.
 Principal States (PS) of Born-Pauli is the form of ES existence during mutations.
 
@@ -97,13 +97,13 @@ PS-8 is «merging» of Penrose-Hawking.
 
 (РУС) Метаязык. Неоформализм. Холистический и Системный Взгляд.
 Продолжения Евклида-Гёделя
-Глава 0. Игра с Богом
+Глава 0. Игра с Богом.
 Базис [ 1 есть (2 и 3)4, 2 есть (1 и 3)5, 3 есть (1 и 2)6, 4 есть (5 и 6)1, 5 есть (4 и 6)2, 6 есть (4 и 5)3 ]. Двойная противоречивая рекурсия Борромео.
 1, 2, 3 — Символы Борромео.
 4, 5, 6 — Операторы Реляции и Противоречия.
 Базис есть «Лингвистический Порок».
 
-Глава 1. Теория Функциональных Состояний
+Глава 1. Теория Функциональных Состояний.
 Материя (μ) есть Топология Энергии и Информации.
 Энергия (ε) есть Симметрия Материи и Информации.
 Информация (ι) есть Асимметрия Материи и Энергии.
@@ -191,13 +191,13 @@ PS-8 is «merging» of Penrose-Hawking.
 ПС-5 есть «скачок» Ландау-Видома.
 ПС-8 есть «схождение» Пенроуза-Хокинга.
 
-Глава 3. Теория Биологии
+Глава 3. Теория Биологии.
 Клетка есть ИС.
 Интерстиций есть ЭС.
 Метамер ткани есть ИС1 + α + ЭС + α + ИС2 → ИС3.
 Ткань есть метамерное пространство [ИС1 + α + ЭС + α + ИС2 → ИС3].
 /…/
 
-Глава 4. Теория Космологии
+Глава 4. Теория Космологии.
 Ххх.
 /…/
