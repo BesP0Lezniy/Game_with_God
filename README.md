@@ -1,18 +1,18 @@
 # Game_with_God
 
-(ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview.
+## (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview.
 
-Euclid-Gödel Extensions.
-Chapter 0. Theory of Contradiction.
-Basis [ 1 is (2 and 3)4, 2 is (1 and 3)5, 3 is (1 and 2)6, 4 is (5 and 6)1, 5 is (4 and 6)2, 6 is (4 and 5)3 ]. Double contradictory Borromean recursion.
-1, 2, 3 — borromean symbols.
+### **Euclid-Gödel Extensions.**
+#### *Chapter 0. Theory of Contradiction.*
+Basis [ 1 is (2 and 3)4, 2 is (1 and 3)5, 3 is (1 and 2)6, 4 is (5 and 6)1, 5 is (4 and 6)2, 6 is (4 and 5)3 ]. Double contradictory Borromean recursion.  
+1, 2, 3 — borromean symbols.  
 4, 5, 6 — operators of relation and contradiction.
 
 Basis is a «linguistic vice».
 
-Chapter 1. Theory of Cosmos.
-Matter (μ) is the Topology of Energy and Information.
-Energy (ε) is the Symmetry of Matter and Information.
+#### *Chapter 1. Theory of Cosmos.*  
+Matter (μ) is the Topology of Energy and Information.  
+Energy (ε) is the Symmetry of Matter and Information.  
 Information (ι) is the Asymmetry of Matter and Energy.
 
 Entropy (ζ) is the «force» of maintaining Energy (↑ ε).
@@ -47,7 +47,7 @@ Mutation «stability» of Lyapunov-Poincaré (π) is [Σ1 ⇌ Σ2, α1 ⇌ α2].
 Mutation «evolution» of Darwin-Schrödinger (ρ) is [Σ ⇌ α, α ⇌ Σ].
 Mutation «collapse» of Boltzmann-Anderson (Φ) is [IS ⇌ ES, ES ⇌ IS].
 
-Chapter 2. Theory of System Mutations.
+#### *Chapter 2. Theory of System Mutations.*
 Principal Units (PU) of von-Neumann-Turing is the form of IS existence during mutations.
 Principal States (PS) of Born-Pauli is the form of ES existence during mutations.
 
@@ -95,16 +95,16 @@ PS-5 is «jump» of Landau-Widom.
 PS-8 is «merging» of Penrose-Hawking.
 
 
-(РУС) Метаязык. Неоформализм. Холистический и Системный Взгляд.
-Продолжения Евклида-Гёделя.
-Глава 0. Теория Противоречия.
+## (РУС) Метаязык. Неоформализм. Холистический и Системный Взгляд.
+### **Продолжения Евклида-Гёделя.**
+#### *Глава 0. Теория Противоречия.*
 Базис [ 1 есть (2 и 3)4, 2 есть (1 и 3)5, 3 есть (1 и 2)6, 4 есть (5 и 6)1, 5 есть (4 и 6)2, 6 есть (4 и 5)3 ]. Двойная противоречивая рекурсия Борромео.
 1, 2, 3 — борромеевы символы.
 4, 5, 6 — операторы реляции и противоречия.
 
 Базис есть «лингвистический порок».
 
-Глава 1. Теория Космоса.
+#### *Глава 1. Теория Космоса.*
 Материя (μ) есть Топология Энергии и Информации.
 Энергия (ε) есть Симметрия Материи и Информации.
 Информация (ι) есть Асимметрия Материи и Энергии.
@@ -144,7 +144,7 @@ PS-8 is «merging» of Penrose-Hawking.
 Мутация «эволюция» Дарвина-Шрёдингера (ρ) есть [Σ ⇌ α, α ⇌ Σ].
 Мутация «коллапс» Больцмана-Андерсона (φ) [ИС ⇌ ЭС, ЭС ⇌ ИС].
 
-Глава 2. Теория Мутаций Систем.
+#### *Глава 2. Теория Мутаций Систем.*
 Принципиальные Единицы фон-Неймана-Тьюринга (ПЕ) есть форма существования ИС при мутациях.
 Принципиальные Состояния Борна-Паули (ПС) есть форма существования ЭС при мутациях.
 
