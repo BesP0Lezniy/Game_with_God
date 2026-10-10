@@ -4,10 +4,9 @@
 
 ### **Euclid-Gödel Extensions.**
 #### *Chapter 0. Theory of Contradiction.*
-Basis [ 1 is (2 and 3)<sup>4</sup>, 2 is (1 and 3)<sup>4</sup>, 3 is (1 and 2)<sup>6</sup>, 4 is (5 and 6)<sup>1</sup>, 5 is (4 and 6)<sup>2</sup>, 6 is (4 and 5)<sup>3</sup> ].  
-<center>Double contradictory Borromean recursion.  
-  1, 2, 3 — borromean symbols.  
-  4, 5, 6 — operators of relation and contradiction.</center>
+Basis [ 1 is (2 and 3)<sup>4</sup>, 2 is (1 and 3)<sup>4</sup>, 3 is (1 and 2)<sup>6</sup>, 4 is (5 and 6)<sup>1</sup>, 5 is (4 and 6)<sup>2</sup>, 6 is (4 and 5)<sup>3</sup> ]. Double contradictory Borromean recursion.
+1, 2, 3 — borromean symbols.
+4, 5, 6 — operators of relation and contradiction.
 
 Basis is a «linguistic vice».
 
