@@ -48,7 +48,7 @@ Mutation «evolution» of Darwin-Schrödinger (ρ) is [Σ ⇌ α, α ⇌ Σ].
 Mutation «collapse» of Boltzmann-Anderson (Φ) is [IS ⇌ ES, ES ⇌ IS].
 
 Chapter 2. Theory of System Mutations.
-Principal Units (PU) of von Neumann-Turing is the form of IS existence during mutations.
+Principal Units (PU) of von-Neumann-Turing is the form of IS existence during mutations.
 Principal States (PS) of Born-Pauli is the form of ES existence during mutations.
 
 Mutation «constancy»: ↻ Σ.
