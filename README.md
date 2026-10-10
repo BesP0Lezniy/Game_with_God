@@ -2,7 +2,7 @@
 
 (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview.
 
-Euclid-Gödel Extensions
+Euclid-Gödel Extensions.
 Chapter 0. Theory of Contradiction.
 Basis [ 1 is (2 and 3)4, 2 is (1 and 3)5, 3 is (1 and 2)6, 4 is (5 and 6)1, 5 is (4 and 6)2, 6 is (4 and 5)3 ]. Double contradictory Borromean recursion.
 1, 2, 3 — borromean symbols.
@@ -85,7 +85,7 @@ PS-3 is «propagation» of Maxwell-Kruskal.
 PS-5 is «jump» of Landau-Widom.
 PS-7 is «separation» of Andronov-Lorentz.
 
-Second type of «evolution": Σ1 + α + Σ2 → Σ3.
+Second type of «evolution»: Σ1 + α + Σ2 → Σ3.
 PU-2 is «interface» of Wiener-Gibson
 PU-3 is «dispersion» of Hebb-Rashevsky.
 PU-5 is «phase transition» of Thom-Haldane.
@@ -97,7 +97,7 @@ PS-8 is «merging» of Penrose-Hawking.
 
 
 (РУС) Метаязык. Неоформализм. Холистический и Системный Взгляд.
-Продолжения Евклида-Гёделя
+Продолжения Евклида-Гёделя.
 Глава 0. Теория Противоречия.
 Базис [ 1 есть (2 и 3)4, 2 есть (1 и 3)5, 3 есть (1 и 2)6, 4 есть (5 и 6)1, 5 есть (4 и 6)2, 6 есть (4 и 5)3 ]. Двойная противоречивая рекурсия Борромео.
 1, 2, 3 — борромеевы символы.
