@@ -5,8 +5,8 @@
 Euclid-Gödel Extensions
 Chapter 0. Theory of Contradiction.
 Basis [ 1 is (2 and 3)4, 2 is (1 and 3)5, 3 is (1 and 2)6, 4 is (5 and 6)1, 5 is (4 and 6)2, 6 is (4 and 5)3 ]. Double contradictory Borromean recursion.
-1, 2, 3 — Symbols of Borromeo.
-4, 5, 6 — Operators of Relation and Contradiction.
+1, 2, 3 — borromean symbols.
+4, 5, 6 — operators of relation and contradiction.
 
 Basis is a «linguistic vice».
 
@@ -100,8 +100,8 @@ PS-8 is «merging» of Penrose-Hawking.
 Продолжения Евклида-Гёделя
 Глава 0. Теория Противоречия.
 Базис [ 1 есть (2 и 3)4, 2 есть (1 и 3)5, 3 есть (1 и 2)6, 4 есть (5 и 6)1, 5 есть (4 и 6)2, 6 есть (4 и 5)3 ]. Двойная противоречивая рекурсия Борромео.
-1, 2, 3 — Символы Борромео.
-4, 5, 6 — Операторы Реляции и Противоречия.
+1, 2, 3 — борромеевы символы.
+4, 5, 6 — операторы реляции и противоречия.
 
 Базис есть «лингвистический порок».
 
