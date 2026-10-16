@@ -1,9 +1,9 @@
 # Game_with_God
 
-## (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview
+## (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview. «Non-Science».
 
 ### **Euclid-Gödel Extensions**
-#### *Chapter 0. Syntax of Singularity*
+#### *Chapter 0. Syntax of Singularity (Theory of Properties)*
 Basis [ 1 is (2 and 3)<sup>4</sup>, 2 is (1 and 3)<sup>5</sup>, 3 is (1 and 2)<sup>6</sup>, 4 is (5 and 6)<sup>1</sup>, 5 is (4 and 6)<sup>2</sup>, 6 is (4 and 5)<sup>3</sup> ].
 
 Double contradictory recursion of Borromeo. 1, 2, 3 — borromean symbols; 4, 5, 6 — operators of relation and contradiction.
@@ -100,9 +100,9 @@ PS-5 is «jump» of Landau-Widom.
 PS-8 is «merging» of Penrose-Hawking.
 
 
-## (РУС) Метаязык. Неоформализм. Холистический и Системный Взгляд
+## (РУС) Метаязык. Неоформализм. Холистический и Системный Взгляд «Не-Наука».
 ### **Продолжения Евклида-Гёделя**
-#### *Глава 0. Синтаксис Сингулярности*
+#### *Глава 0. Синтаксис Сингулярности (Теория Свойств)*
 Базис [ 1 есть (2 и 3)<sup>4</sup>, 2 есть (1 и 3)<sup>5</sup>, 3 есть (1 и 2)<sup>6</sup>, 4 есть (5 и 6)<sup>1</sup>, 5 есть (4 и 6)<sup>2</sup>, 6 есть (4 и 5)<sup>3</sup> ].
 
 Двойная противоречивая рекурсия Борромео. 1, 2, 3 — борромеевы символы; 4, 5, 6 — операторы реляции и противоречия.
