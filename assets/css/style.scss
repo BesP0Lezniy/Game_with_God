@@ -3,6 +3,8 @@
 
 @import "minima";
 @import url("https://" + "fonts.bunny.net/css?family=roboto-mono:400,400i,700,700i&display=swap");
+@import url("https://" + "fonts.bunny.net/css?family=comfortaa:600,700&display=swap");
+
 
 body {
   font-family: 'Roboto Mono', 'Courier New', monospace;
@@ -40,9 +42,10 @@ body {
 }
 
 .site-title {
+  font-family: 'Comfortaa', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 28px !important;
-  letter-spacing: -0.5px;
+  font-size: 30px !important;
+  letter-spacing: 0.5px;
 }
 
 /* Прижимаем подвал к низу экрана, даже если текста на странице мало */
