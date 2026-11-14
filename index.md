@@ -1,13 +1,13 @@
 ---
-layout: home
+layout: default
 title: Главная
 ---
 
-# Заголовок первого уровня
-## Заголовок второго уровня
+Проверка формулы: $$V \otimes_{\mathbb{k}} W$$
 
-Обычный текст набран шрифтом Roboto Mono. Внутри строки формула пишется через двойные доллары вот так: $$V \otimes_{\mathbb{k}} W$$.
-
-Выносные сложные формулы (например, коассоциативность коалгебры) отделяются пустыми строками сверху и снизу:
-
-$$(\Delta \otimes \mathrm{id}_C) \circ \Delta = (\mathrm{id}_C \otimes \Delta) \circ \Delta$$
+<link rel="stylesheet" href="https://unpkg.com">
+<script src="https://unpkg.com"></script>
+<script src="https://unpkg.com"></script>
+<script>
+  renderMathInElement(document.body);
+</script>
