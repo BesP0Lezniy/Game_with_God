@@ -8,20 +8,100 @@ body {
   font-family: 'Roboto Mono', 'Courier New', monospace;
   font-size: 17px;
   line-height: 1.65;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Выравниваем размер формул под основной текст */
+/* Расширяем границы контента почти на весь экран */
+.wrapper {
+  max-width: 1180px !important;
+  width: 92% !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Стильный фон-сетка для шапки сайта */
+.custom-banner {
+  background-color: #f4f6f9;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  border-top: 4px solid #e63946;
+  border-bottom: 1px solid #d0d7de;
+  padding: 18px 0;
+}
+
+.site-title {
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  letter-spacing: -0.5px;
+}
+
+/* Прижимаем подвал к низу экрана, даже если текста на странице мало */
+.page-content {
+  flex: 1;
+}
+
+.site-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e1e4e8;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-desc, .footer-tags {
+  text-indent: 0 !important;
+  margin-bottom: 4px;
+}
+
+/* Выравнивание текста по ширине и красная строка */
+.page-content p {
+  text-align: justify;
+  text-indent: 2em;
+  margin-bottom: 0.8em;
+}
+
+.page-content h1 + p,
+.page-content h2 + p,
+.page-content h3 + p,
+.page-content p:has(img) {
+  text-indent: 0;
+}
+
+/* Выносные формулы строго по центру */
+.katex-display {
+  text-align: center !important;
+  margin: 1.2em 0 !important;
+  width: 100%;
+}
+
 .katex {
   font-size: 1.05em !important;
 }
 
-/* Выносные формулы по центру можно оставить чуть крупнее для читаемости */
 .katex-display > .katex {
   font-size: 1.15em !important;
 }
+
+/* Классы цвета, второго шрифта и теорем */
+.accent {
+  color: #741b47;
+}
+
 .courier {
   font-family: 'Courier New', Courier, monospace;
 }
-.accent {
-  color: #741b47;
+
+.theorem {
+  border-left: 4px solid #e63946;
+  background-color: #f8f9fa;
+  padding: 12px 18px;
+  margin: 1.5em 0;
+}
+
+.theorem p {
+  text-indent: 0 !important;
+  margin-bottom: 0;
 }
