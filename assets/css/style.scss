@@ -5,7 +5,6 @@
 @import url("https://" + "fonts.bunny.net/css?family=roboto-mono:400,400i,700,700i&display=swap");
 @import url("https://" + "fonts.bunny.net/css?family=comfortaa:600,700&display=swap");
 
-
 body {
   font-family: 'Roboto Mono', 'Courier New', monospace;
   font-size: 17px;
@@ -15,7 +14,6 @@ body {
   min-height: 100vh;
 }
 
-/* Расширяем границы контента почти на весь экран */
 .wrapper {
   max-width: 1180px !important;
   width: 92% !important;
@@ -23,26 +21,24 @@ body {
   padding-right: 20px;
 }
 
-/* Фирменный сливовый фон #741b47 с геометрическим узором как в Google Sites */
+/* Темно-фиолетовая шапка с подключаемым векторным узором */
 .custom-banner {
-  background-color: #741b47;
+  background-color: #360e3b;
   background-image: 
-    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.06) 0px, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 18px),
-    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.06) 0px, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 18px),
-    radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
-  border-bottom: 4px solid #4c1130;
-  padding: 36px 0;
+    url("{{ '/assets/banner.svg' | relative_url }}"),
+    linear-gradient(135deg, #27092b 0%, #4a1345 55%, #2f0b34 100%);
+  background-size: 360px 200px, cover;
+  border-bottom: 4px solid #1d0620;
+  padding: 38px 0;
 }
 
-/* Делаем заголовок сайта и ссылки меню белыми на темном фоне */
-.custom-banner {
-  background-color: #3c1042;
-  background-image: 
-    url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='320' height='220' viewBox='0 0 320 220'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.07' stroke-width='1'%3E%3Cpolygon points='25,15 95,45 55,110' fill='%23ffffff' fill-opacity='0.03'/%3E%3Cpolygon points='180,10 270,35 235,120 155,85'/%3E%3Cpolygon points='90,145 165,125 140,205 65,190' fill='%23000000' fill-opacity='0.12'/%3E%3Cpolygon points='250,135 315,155 285,215' fill='%23ffffff' fill-opacity='0.02'/%3E%3Cline x1='0' y1='65' x2='140' y2='15'/%3E%3Cline x1='110' y1='220' x2='240' y2='70'/%3E%3Cline x1='190' y1='0' x2='320' y2='130'/%3E%3Cline x1='10' y1='175' x2='195' y2='150'/%3E%3Ccircle cx='55' cy='110' r='2.5' fill='%23ffffff' fill-opacity='0.15'/%3E%3Ccircle cx='235' cy='120' r='2' fill='%23ffffff' fill-opacity='0.15'/%3E%3Ccircle cx='140' cy='205' r='3' fill='%23ffffff' fill-opacity='0.12'/%3E%3C/g%3E%3C/svg%3E"),
-    linear-gradient(135deg, #2d0b33 0%, #4e1548 55%, #350d3b 100%);
-  background-size: 320px 220px, cover;
-  border-bottom: 4px solid #220726;
-  padding: 38px 0;
+/* Ярко-белый цвет для названия и всех ссылок меню в шапке */
+.custom-banner .site-title,
+.custom-banner .site-title:visited,
+.custom-banner .site-title:hover,
+.custom-banner .site-nav .page-link,
+.custom-banner .site-nav .page-link:visited {
+  color: #ffffff !important;
 }
 
 .site-title {
@@ -52,7 +48,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Прижимаем подвал к низу экрана, даже если текста на странице мало */
 .page-content {
   flex: 1;
 }
@@ -69,7 +64,6 @@ body {
   margin-bottom: 4px;
 }
 
-/* Выравнивание текста по ширине и красная строка */
 .page-content p {
   text-align: justify;
   text-indent: 2em;
@@ -83,7 +77,6 @@ body {
   text-indent: 0;
 }
 
-/* Выносные формулы строго по центру */
 .katex-display {
   text-align: center !important;
   margin: 1.2em 0 !important;
@@ -98,7 +91,6 @@ body {
   font-size: 1.15em !important;
 }
 
-/* Классы цвета, второго шрифта и теорем */
 .accent {
   color: #741b47;
 }
@@ -107,13 +99,9 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.accent {
-  color: #741b47;
-}
-
 .theorem {
   border-left: 4px solid #741b47;
-  background-color: #f9f6f8;
+  background-color: #f7f4f8;
   padding: 12px 18px;
   margin: 1.5em 0;
 }
