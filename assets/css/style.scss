@@ -70,15 +70,19 @@ body {
 }
 
 /* Крупное звонкое название строго по центру шапки */
+/* Крупное двухстрочное название строго по центру шапки и симметричное друг относительно друга */
 .site-title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  display: block !important;
+  text-align: center !important;
+  width: max-content;
   font-family: 'Comfortaa', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 42px !important;
-  letter-spacing: 1px;
-  white-space: nowrap;
+  font-size: 38px !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.8px;
 }
 
 /* Вкладка "Главная" и будущее меню прижаты строго к правому краю */
