@@ -30,9 +30,7 @@ $$
 \mathcal{F} = \{
 1 \xrightarrow{\alpha_1} 2\otimes 3\otimes 4,\quad
 2 \xrightarrow{\alpha_2} 1\otimes 3\otimes 5,\quad
-3 \xrightarrow{\alpha_3} 1\otimes 2\otimes 6,
-$$
-$$
+3 \xrightarrow{\alpha_3} 1\otimes 2\otimes 6,\quad
 4 \xrightarrow{\alpha_4} 5\otimes 6\otimes 1,\quad
 5 \xrightarrow{\alpha_5} 4\otimes 6\otimes 2,\quad
 6 \xrightarrow{\alpha_6} 4\otimes 5\otimes 3
