@@ -21,15 +21,31 @@ body {
   padding-right: 20px;
 }
 
-/* Темно-фиолетовая шапка с подключаемым векторным узором */
+/* Темно-фиолетовая шапка со встроенным узором */
 .custom-banner {
+  position: relative;
+  overflow: hidden;
   background-color: #360e3b;
-  background-image: 
-    url("{{ '/assets/banner.svg' | relative_url }}"),
-    linear-gradient(135deg, #27092b 0%, #4a1345 55%, #2f0b34 100%);
-  background-size: 360px 200px, cover;
+  background-image: linear-gradient(135deg, #27092b 0%, #4a1345 55%, #2f0b34 100%);
   border-bottom: 4px solid #1d0620;
   padding: 38px 0;
+}
+
+.banner-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
 }
 
 /* Ярко-белый цвет для названия и всех ссылок меню в шапке */
