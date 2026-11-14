@@ -38,9 +38,20 @@
   </script>
 </head>
 <body>
-  <header class="site-header" role="banner">
+  <header class="site-header custom-banner" role="banner">
     <div class="wrapper">
       <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      
+      <!-- Автоматическое меню со всеми страницами сайта -->
+      <nav class="site-nav">
+        <div class="trigger">
+          {%- for path in site.pages -%}
+            {%- if path.title -%}
+              <a class="page-link" href="{{ path.url | relative_url }}">{{ path.title | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -49,5 +60,19 @@
       {{ content }}
     </div>
   </main>
+
+  <footer class="site-footer h-card">
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        <div class="footer-col">
+          <strong>{{ site.title | escape }}</strong>
+          <p class="footer-desc">{{ site.description | default: "Заметки по высшим алгебрам, коалгебрам и теории категорий" }}</p>
+        </div>
+        <div class="footer-col footer-tags">
+          <span>#Метаязык</span> · <span>#Неоформализм</span> · <span>#Не_Наука</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
