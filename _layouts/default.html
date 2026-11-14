@@ -7,10 +7,23 @@
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   
-  <!-- Подключение KaTeX для формул -->
   <link rel="stylesheet" href="https://unpkg.com">
   <script defer src="https://unpkg.com"></script>
-  <script defer src="https://unpkg.com" onload="renderMathInElement(document.body);"></script>
+  <script defer src="https://unpkg.com"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false,
+        strict: false
+      });
+    });
+  </script>
 </head>
 <body>
   <header class="site-header" role="banner">
