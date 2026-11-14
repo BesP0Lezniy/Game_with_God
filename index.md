@@ -12,7 +12,7 @@ title: Главная
 $$(\Delta \otimes \mathrm{id}_C) \circ \Delta = (\mathrm{id}_C \otimes \Delta) \circ \Delta$$
 <span class="courier accent">Важное замечание другим шрифтом и вашим цветом</span>
 
-<span class="courier">##Раздел I. Искусственная артикуляция (KaTeX-safe)</span>
+<span class="courier">Раздел I. Искусственная артикуляция (KaTeX-safe)</span>
 
 **Метатеория.** ZF — теория множеств Цермело–Френкеля без дополнительных аксиом: без AC, без BPI, без дополнительных принципов выбора. ZF принимается как стандартный дефолт метатеории; вопрос о более слабых фрагментах (PRA, арифметика второго порядка) на шаге I не ставится и относится к мета-уровню, внешнему по отношению к настоящему разделу.
 
@@ -30,7 +30,9 @@ $$
 \mathcal{F} = \{
 1 \xrightarrow{\alpha_1} 2\otimes 3\otimes 4,\quad
 2 \xrightarrow{\alpha_2} 1\otimes 3\otimes 5,\quad
-3 \xrightarrow{\alpha_3} 1\otimes 2\otimes 6,\quad
+3 \xrightarrow{\alpha_3} 1\otimes 2\otimes 6,
+$$
+$$
 4 \xrightarrow{\alpha_4} 5\otimes 6\otimes 1,\quad
 5 \xrightarrow{\alpha_5} 4\otimes 6\otimes 2,\quad
 6 \xrightarrow{\alpha_6} 4\otimes 5\otimes 3
