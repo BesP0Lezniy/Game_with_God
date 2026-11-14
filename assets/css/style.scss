@@ -50,6 +50,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  box-sizing: border-box;
 }
 
 .custom-banner .site-title,
