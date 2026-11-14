@@ -1,3 +1,6 @@
+---
+layout: home
+---
 # Game_with_God
 
 ## (ENG) Metalanguage. Neoformalism. Holistic and Systemic Overview. «Non-Science».
