@@ -10,3 +10,4 @@ title: Главная
 Выносная формула коассоциативности:
 
 $$(\Delta \otimes \mathrm{id}_C) \circ \Delta = (\mathrm{id}_C \otimes \Delta) \circ \Delta$$
+<span class="courier accent">Важное замечание другим шрифтом и вашим цветом</span>
