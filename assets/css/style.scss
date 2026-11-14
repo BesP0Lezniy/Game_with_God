@@ -21,14 +21,14 @@ body {
   padding-right: 20px;
 }
 
-/* Возвращаем темно-фиолетовую шапку увеличенной высоты */
+/* Увеличенная по высоте темно-фиолетовая шапка-обложка */
 .custom-banner {
   position: relative;
   overflow: hidden;
   background-color: #360e3b;
   background-image: linear-gradient(135deg, #27092b 0%, #4a1345 55%, #2f0b34 100%);
-  border-bottom: 3px solid #1d0620;
-  padding: 40px 0 !important;
+  border-bottom: 4px solid #1d0620;
+  padding: 68px 0 !important;
   min-height: auto !important;
 }
 
@@ -43,7 +43,7 @@ body {
   z-index: 1;
 }
 
-/* Выравниваем название и меню по вертикальному центру и разводим по краям */
+/* Контейнер шапки во всю ширину экрана */
 .banner-content {
   position: relative;
   z-index: 2;
@@ -69,24 +69,42 @@ body {
   float: none !important;
 }
 
+/* Крупное звонкое название строго по центру шапки */
 .site-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Comfortaa', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 30px !important;
-  letter-spacing: 0.5px;
+  font-size: 42px !important;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
-/* Прижимаем вкладку "Главная" строго к правому краю */
+/* Вкладка "Главная" и будущее меню прижаты строго к правому краю */
 .custom-banner .site-nav {
   float: none !important;
   line-height: 1.2 !important;
   margin-left: auto !important;
-  position: static !important;
+  position: relative !important;
+  z-index: 3;
 }
 
 .custom-banner .site-nav .trigger {
   display: flex;
   gap: 24px;
+}
+
+/* Адаптация для узких экранов (телефонов), чтобы заголовок не наезжал на меню */
+@media screen and (max-width: 768px) {
+  .custom-banner {
+    padding: 36px 0 !important;
+  }
+  .site-title {
+    position: static;
+    transform: none;
+    font-size: 28px !important;
+  }
 }
 
 .page-content {
