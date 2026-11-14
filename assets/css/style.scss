@@ -28,9 +28,10 @@ body {
   background-color: #360e3b;
   background-image: linear-gradient(135deg, #27092b 0%, #4a1345 55%, #2f0b34 100%);
   border-bottom: 4px solid #1d0620;
-  padding: 68px 0 !important;
+  padding: 85px 0 !important;
   min-height: auto !important;
 }
+
 
 /* Растягиваем узор строго на 100% высоты и ширины шапки */
 .banner-pattern {
@@ -69,8 +70,7 @@ body {
   float: none !important;
 }
 
-/* Крупное звонкое название строго по центру шапки */
-/* Крупное двухстрочное название строго по центру шапки и симметричное друг относительно друга */
+/* Крупное двухстрочное название 48pt с полуторным интервалом 1.5 строго по центру */
 .site-title {
   position: absolute;
   left: 50%;
@@ -80,9 +80,9 @@ body {
   width: max-content;
   font-family: 'Comfortaa', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 38px !important;
-  line-height: 1.25 !important;
-  letter-spacing: 0.8px;
+  font-size: 48pt !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.5px;
 }
 
 /* Вкладка "Главная" и будущее меню прижаты строго к правому краю */
