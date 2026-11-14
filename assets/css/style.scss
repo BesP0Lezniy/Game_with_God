@@ -2,9 +2,20 @@
 ---
 
 @import "minima";
-@import url('https://bunny.net');
+@import url("https://" + "fonts.bunny.net/css?family=roboto-mono:400,400i,700,700i&display=swap");
 
 body {
   font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* Выравниваем размер формул под основной текст */
+.katex {
+  font-size: 1.05em !important;
+}
+
+/* Выносные формулы по центру можно оставить чуть крупнее для читаемости */
+.katex-display > .katex {
+  font-size: 1.15em !important;
 }
