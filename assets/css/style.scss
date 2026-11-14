@@ -21,21 +21,15 @@ body {
   padding-right: 20px;
 }
 
-/* Темно-фиолетовая шапка увеличенной высоты (в 2 раза больше) */
-.custom-banner .site-nav {
-  float: none !important;
-  line-height: 1.2 !important;
-  margin-left: auto !important;
-  position: static !important;
-}
-
-.custom-banner .site-nav .trigger {
-  display: flex;
-  gap: 24px;
-}
-
-.custom-banner .site-nav .page-link {
-  margin: 0 !important;
+/* Возвращаем темно-фиолетовую шапку увеличенной высоты */
+.custom-banner {
+  position: relative;
+  overflow: hidden;
+  background-color: #360e3b;
+  background-image: linear-gradient(135deg, #27092b 0%, #4a1345 55%, #2f0b34 100%);
+  border-bottom: 3px solid #1d0620;
+  padding: 40px 0 !important;
+  min-height: auto !important;
 }
 
 /* Растягиваем узор строго на 100% высоты и ширины шапки */
@@ -49,7 +43,7 @@ body {
   z-index: 1;
 }
 
-/* Выравниваем название и меню строго по центру высоты (вертикали) */
+/* Выравниваем название и меню по вертикальному центру и разводим по краям */
 .banner-content {
   position: relative;
   z-index: 2;
@@ -63,6 +57,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Ярко-белый цвет для названия и всех ссылок меню */
 .custom-banner .site-title,
 .custom-banner .site-title:visited,
 .custom-banner .site-title:hover,
@@ -77,29 +72,21 @@ body {
 .site-title {
   font-family: 'Comfortaa', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 26px !important;
+  font-size: 30px !important;
   letter-spacing: 0.5px;
 }
 
+/* Прижимаем вкладку "Главная" строго к правому краю */
 .custom-banner .site-nav {
   float: none !important;
   line-height: 1.2 !important;
+  margin-left: auto !important;
+  position: static !important;
 }
 
-/* Ярко-белый цвет для названия и всех ссылок меню в шапке */
-.custom-banner .site-title,
-.custom-banner .site-title:visited,
-.custom-banner .site-title:hover,
-.custom-banner .site-nav .page-link,
-.custom-banner .site-nav .page-link:visited {
-  color: #ffffff !important;
-}
-
-.site-title {
-  font-family: 'Comfortaa', sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 30px !important;
-  letter-spacing: 0.5px;
+.custom-banner .site-nav .trigger {
+  display: flex;
+  gap: 24px;
 }
 
 .page-content {
