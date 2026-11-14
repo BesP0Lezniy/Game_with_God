@@ -3,18 +3,10 @@ layout: default
 title: Главная
 ---
 
-Проверка формулы: $$V \otimes_{\mathbb{k}} W$$
+# Высшие алгебры и коалгебры
 
-<link rel="stylesheet" href="https://unpkg.com">
-<script src="https://unpkg.com"></script>
-<script src="https://unpkg.com"></script>
-<script>
-  renderMathInElement(document.body, {
-    delimiters: [
-      {left: '$$', right: '$$', display: true},
-      {left: '$', right: '$', display: false},
-      {left: '\\(', right: '\\)', display: false},
-      {left: '\\[', right: '\\]', display: true}
-    ]
-  });
-</script>
+Строчная формула: $$V \otimes_{\mathbb{k}} W$$.
+
+Выносная формула коассоциативности:
+
+$$(\Delta \otimes \mathrm{id}_C) \circ \Delta = (\mathrm{id}_C \otimes \Delta) \circ \Delta$$
