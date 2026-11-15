@@ -133,13 +133,6 @@ body {
   margin-bottom: 0.8em;
 }
 
-.page-content h1 + p,
-.page-content h2 + p,
-.page-content h3 + p,
-.page-content p:has(img) {
-  text-indent: 0;
-}
-
 .katex-display {
   text-align: center !important;
   margin: 1.2em 0 !important;
