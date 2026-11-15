@@ -217,3 +217,11 @@ body {
   color: #360e3b;
   border-bottom-color: #360e3b;
 }
+
+/* Плавная бледная подсветка строки или блока при переходе по якорю */
+.page-content :target {
+  background-color: rgba(116, 27, 71, 0.14) !important;
+  box-shadow: -6px 0 0 rgba(116, 27, 71, 0.14), 6px 0 0 rgba(116, 27, 71, 0.14);
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
