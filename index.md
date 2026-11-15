@@ -19,16 +19,16 @@ title: Главная
 #### — [Определение I.2] Полиадическая сигнатура
 {: .courier}
 
-Пусть $\mathcal G = (\Sigma,\mathcal F)$ — полиадическая сигнатура, где $\mathcal F$ — множество из шести генераторов (1-ячеек). Каждый генератор имеет профиль сортов $$\alpha_i: i \to j_i \otimes k_i \otimes l_i, \qquad i, j_i, k_i, l_i \in \Sigma$$, где индексы $$j_i, k_i, l_i$$ зависят от $$i$$ согласно таблице:
+Пусть $\mathcal G = (\Sigma,\mathcal F)$ — полиадическая сигнатура, где $\mathcal F$ — множество из шести генераторов (1-ячеек). Каждый генератор имеет профиль сортов $$\alpha_i: i \to j_i \otimes k_i \otimes l_i$$, $$i, j_i, k_i, l_i \in \Sigma$$, где индексы $$j_i, k_i, l_i$$ зависят от $$i$$ согласно таблице:
 
 $$
-\mathcal F = \left\{\, 1 \xrightarrow{\alpha_1} 2\otimes 3\otimes 4,\quad 2 \xrightarrow{\alpha_2} 1\otimes 3\otimes 5,\quad 3 \xrightarrow{\alpha_3} 1\otimes 2\otimes 6,\quad 4 \xrightarrow{\alpha_4} 5\otimes 6\otimes 1,\quad 5 \xrightarrow{\alpha_5} 4\otimes 6\otimes 2,\quad 6 \xrightarrow{\alpha_6} 4\otimes 5\otimes 3 \,\right\} \tag{I.1}
+\mathcal F = \{\, 1 \xrightarrow{\alpha_1} 2\otimes 3\otimes 4,\quad 2 \xrightarrow{\alpha_2} 1\otimes 3\otimes 5,\quad 3 \xrightarrow{\alpha_3} 1\otimes 2\otimes 6,\quad 4 \xrightarrow{\alpha_4} 5\otimes 6\otimes 1,\quad 5 \xrightarrow{\alpha_5} 4\otimes 6\otimes 2,\quad 6 \xrightarrow{\alpha_6} 4\otimes 5\otimes 3 \, \} \tag{I.1}
 $$
 
 #### — [Определение I.3] Свободный цветной PROP
 {: .courier}
 
-Оператор искусственной инициализации $\mathcal I_{art}$ сопоставляет сигнатуре $\mathcal G$ свободный $\Sigma$-цветной PROP $$\mathbf C = \operatorname{FreePROP}_\Sigma(\mathcal G)$$, порождённый сигнатурой $\mathcal G$. Инициализация является исключительно синтаксической: 2-ячейки (соотношения) на шаге I не задаются.
+Оператор искусственной инициализации $\mathcal I_{art}$ сопоставляет сигнатуре $\mathcal G$ свободный $\Sigma$-цветной PROP $$\mathbf C = \mathrm{FreePROP}_\Sigma(\mathcal G)$$, порождённый сигнатурой $\mathcal G$. Инициализация является исключительно синтаксической: 2-ячейки (соотношения) на шаге I не задаются.
 
 #### — [Лемма I.1] Объекты $$\mathbf C$$ — слова
 
@@ -67,7 +67,7 @@ $$\mathbf C$$ является инициальным объектом в кат
 
 **1. С чего начали и почему.** Мы начали с **чистого синтаксиса**: конечный алфавит $\Sigma$ и шесть генераторов $\alpha_i: i \to j_i\otimes k_i\otimes l_i$. Никакой семантики, никакой модели, никакой категории алгебр. Причина: любой дальнейший шаг должен быть **вынужден** предыдущим, а не постулирован. Если начать с семантики, мы **предположим** то, что должно быть **выведено**.
 
-**2. Какие шаги выполнили.** Построили свободный $\Sigma$-цветной PROP $\mathbf C = \operatorname{FreePROP}_\Sigma(\mathcal G)$. Установили: (i) объекты $\mathbf C$ — слова над $\Sigma$ (Лемма I.1); (ii) симметрии $\sigma_{i,j}$ каноничны, порядок множителей не инвариантен (Лемма I.2, Замечание I.1); (iii) $\mathbf C$ инициальный в категории $\Sigma$-цветных PROP (Теорема I.1); (iv) семантика не фиксирована (Следствие I.1).
+**2. Какие шаги выполнили.** Построили свободный $\Sigma$-цветной PROP $\mathbf C = \mathrm{FreePROP}_\Sigma(\mathcal G)$. Установили: (а) объекты $\mathbf C$ — слова над $\Sigma$ (Лемма I.1); (б) симметрии $\sigma_{i,j}$ каноничны, порядок множителей не инвариантен (Лемма I.2, Замечание I.1); (в) $\mathbf C$ инициальный в категории $\Sigma$-цветных PROP (Теорема I.1); (г) семантика не фиксирована (Следствие I.1).
 
 **3. К чему пришли.** Получили **чисто синтаксический объект** $\mathbf C$, который: (а) полностью определён конечными данными $(\Sigma,\mathcal F)$; (б) универсален в категории PROP; (в) не содержит никакой семантики; (г) является **инициальным** — из него единственным образом отображается в любой PROP с теми же генераторами.
 
