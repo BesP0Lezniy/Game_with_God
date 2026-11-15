@@ -96,13 +96,43 @@
       </div>
     </div>
   </footer>
-    <script>
-    document.addEventListener("click", function(e) {
-      /* Если кликнули не по самой ссылке-якорю, а в любое другое место страницы */
-      if (!e.target.closest('a[href^="#"]') && window.location.hash) {
-        history.replaceState(null, null, window.location.pathname + window.location.search);
+     <script>
+    function highlightAnchor() {
+      /* Снимаем старую подсветку со всех элементов */
+      document.querySelectorAll('.anchor-highlight').forEach(function(el) {
+        el.classList.remove('anchor-highlight');
+      });
+
+      /* Если в адресе есть #якорь, подсвечиваем нужный элемент */
+      if (window.location.hash) {
+        var id = decodeURIComponent(window.location.hash.substring(1));
+        var target = document.getElementById(id);
+        if (target) {
+          target.classList.add('anchor-highlight');
+        }
+      }
+    }
+
+    /* Срабатывает при загрузке страницы с якорем и при каждом переходе по ссылке */
+    window.addEventListener('DOMContentLoaded', highlightAnchor);
+    window.addEventListener('hashchange', highlightAnchor);
+
+    /* При клике мимо ссылки убираем подсветку и чистим адресную строку */
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a[href^="#"]');
+      if (link) {
+        setTimeout(highlightAnchor, 10);
+      } else {
+        document.querySelectorAll('.anchor-highlight').forEach(function(el) {
+          el.classList.remove('anchor-highlight');
+        });
+        if (window.location.hash) {
+          history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
       }
     });
   </script>
+</body>
+
 </body>
 </html>
