@@ -217,3 +217,16 @@ body {
 .page-content h4 {
   scroll-margin-top: 1.5em;
 }
+
+/* Фирменный фиолетовый цвет для всех ссылок и якорей в тексте статей */
+.page-content a,
+.page-content a:visited {
+  color: #741b47;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(116, 27, 71, 0.35);
+}
+
+.page-content a:hover {
+  color: #360e3b;
+  border-bottom-color: #360e3b;
+}
