@@ -96,5 +96,13 @@
       </div>
     </div>
   </footer>
+    <script>
+    document.addEventListener("click", function(e) {
+      /* Если кликнули не по самой ссылке-якорю, а в любое другое место страницы */
+      if (!e.target.closest('a[href^="#"]') && window.location.hash) {
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+      }
+    });
+  </script>
 </body>
 </html>
