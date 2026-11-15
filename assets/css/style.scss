@@ -15,10 +15,10 @@ body {
 }
 
 .wrapper {
-  max-width: 1180px !important;
-  width: 92% !important;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1500px !important;   /* КНОПКА A — ширина контента на десктопе */
+  width: 96% !important;          /* КНОПКА B — ширина на средних экранах */
+  padding-left: 12px;             /* КНОПКА C — внутренние поля */
+  padding-right: 12px;
 }
 
 /* Темно-фиолетовая шапка с ровным сплошным затемнением (без градиента) */
