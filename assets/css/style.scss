@@ -226,4 +226,26 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* ===== Межстрочный интервал текста и формул ===== */
 
+/* КНОПКА 1 — межстрочный интервал основного текста (включая inline $...$) */
+.page-content p,
+.page-content li {
+  line-height: 1.8;   /* было 1.65; 1.9 — просторнее, 1.7 — плотнее */
+}
+
+/* КНОПКА 2 — вертикальный зазор вокруг display-формул $$...$$ */
+.katex-display {
+  margin: 1.8em 0 !important;   /* было 1.2em; 2.2em — ещё просторнее */
+}
+
+/* КНОПКА 3 — межстрочный интервал внутри многострочных формул
+   (\begin{aligned}, \begin{cases}, \begin{pmatrix} и т.п.) */
+.katex-display .katex {
+  line-height: 1.35;
+}
+
+/* Inline-формулы не должны раздувать строку выше текста */
+.page-content p .katex {
+  line-height: inherit;
+}
