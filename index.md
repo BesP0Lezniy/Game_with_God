@@ -437,10 +437,9 @@ $\mathbb{H}\_{core}$ — счётная $F$-коалгебра с $\omega\_{core
 #### <span class="accent">— [Определение IV.1]</span>
 {: .courier #def-IV-1}
 
-Для $A \in \mathbf{BoolAlg}$: $\mathrm{Spec}(A) := \mathrm{Hom}_{\mathbf{BoolAlg}}(A, \mathbb{F}\_{2})$ с базой $\{U\_{a} := \{h : h(a) = 1\}\}\_{a \in A}$. Обозначим $\partial\mathbb{H}\_{core} := \mathrm{Spec}(\mathbb{H}\_{core})$, $\partial\mathbb{H}\_{brunn} := \mathrm{Spec}(\mathbb{H}\_{brunn})$.
+Для $A \in \mathbf{BoolAlg}$: $\mathrm{Spec}(A) := \mathrm{Hom}_{\mathbf{BoolAlg}}(A, \mathbb{F}\_{2})$ с базой $\{U\_{a} := \{h : h(a) = 1\}\}\_{a \in A}$.
 
-#### <span class="accent">— [Замечание IV.1]</span>
-{: .courier #rem-IV-0}
+Обозначим $\partial\mathbb{H}\_{core} := \mathrm{Spec}(\mathbb{H}\_{core})$, $\partial\mathbb{H}\_{brunn} := \mathrm{Spec}(\mathbb{H}\_{brunn})$.
 
 Формализм ZF не запрещает ввести $\mathrm{Spec}$.
 
@@ -520,7 +519,7 @@ $\partial\mathbb{H}\_{brunn}$ имеет ровно одну изолирова�
 
 (3) Двойственность Стоуна: точка $h \in \mathrm{Spec}(A)$ соответствует атому $A$ тогда и только тогда, когда $h$ изолирована. Нет атомов — нет точек, реализуемых элементами. $\square$
 
-#### <span class="accent">— [Замечание IV.2]</span>
+#### <span class="accent">— [Замечание IV.1]</span>
 {: .courier #rem-IV-1}
 
 $\mathrm{Spec}$ есть канонический дуал, определённый для любой булевой алгебры. Здесь он идентифицируется в момент, когда исходный объект обнаруживает дефицит атомов.
@@ -539,17 +538,19 @@ $\partial\mathbb{H}\_{core} \cong \varprojlim \mathrm{Spec}(\mathcal{L}\_{k})$ �
 
 $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 2^{\aleph\_{0}}$.
 
-***<span class="accent">Доказательство для $\partial\mathbb{H}\_{core}$***.
+***<span class="accent">Доказательство***</span>.
+
+Для $\partial\mathbb{H}\_{core}$:
 
 (1) Верхняя граница: $\partial\mathbb{H}\_{core} \subset \prod\_{k} \mathrm{Spec}(\mathcal{L}\_{k})$, $\vert\mathrm{Spec}(\mathcal{L}\_{k})\vert = 2^{6\cdot 3^{k}}$, значит $\vert\partial\mathbb{H}\_{core}\vert \leq \prod\_{k} 2^{6\cdot 3^{k}} = 2^{\sum\_{k} 6\cdot 3^{k}} = 2^{\aleph\_{0}}$.
 
 (2) Нижняя граница: слои $\alpha\_{k}^{\*}$ имеют размер $\geq 16$ (Лемма IV.2). Строим инъекцию $\{0,1\}^{\mathbb{N}} \hookrightarrow \partial\mathbb{H}\_{core}$: на каждом шаге из прообраза выбираем первый и второй элементы по лексикографическому порядку. Явная конструкция в ZF. Cantor–Bernstein. $\square$
 
-***<span class="accent">Доказательство для $\partial\mathbb{H}\_{brunn}$***.
+Для $\partial\mathbb{H}\_{brunn}$:
 
 (1) Верхняя граница: $\vert\mathrm{Spec}(\mathcal{L}\_{k}^{brunn})\vert = 2^{2^{3^{k}}}$, значит $\vert\partial\mathbb{H}\_{brunn}\vert \leq 2^{\sum\_{k} 2^{3^{k}}} = 2^{\aleph\_{0}}$.
 
-(2) Нижняя граница: замкнутое подмножество $Z \subset \partial\mathbb{H}\_{brunn}$ нитей с $u^{(0)} = \mathbf{0}$ и $u^{(k)}\_{3m} = 0$ для каждого $k \geq 1$, $m$: свободных координат на слое $k \geq 1$ — $2\cdot 3^{k-1}$, значит $Z \cong \{0,1\}^{\mathbb{N}}$, $\vert Z\vert = 2^{\aleph\_{0}}$. Cantor–Bernstein. $\square$
+(2) Нижняя граница: замкнутое подмножество $Z \subset \partial\mathbb{H}\_{brunn}$ нитей с $u^{(0)} = \mathbf{0}$ и $u^{(k)}\_{3m} = 0$ для каждого $k \geq 1$, $m$: свободных координат на слое $k \geq 1$ — $2\cdot 3^{k-1}$, значит $Z \cong \{0,1\}^{\mathbb{N}}$, $\vert Z\vert = 2^{\aleph\_{0}}$, Кантор-Бернштейн. $\square$
 
 #### <span class="accent">— [Следствие IV.3]</span>
 {: .courier #cor-IV-3}
@@ -560,9 +561,13 @@ $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Совершенность — [\[Следствие IV.1\]](#cor-IV-1); вес $\aleph_0$ — база $\{U_a : a \in \mathbb{H}_{core}\}$, $\vert\mathbb{H}_{core}\vert = \aleph_0$; мощность — [\[Теорема IV.3\]](#thm-IV-3).
+(1) Совершенность — [\[Следствие IV.1\]](#cor-IV-1); мощность — [\[Теорема IV.3\]](#thm-IV-3); вес —
 
-(2) Единственная изолированная точка — Следствие IV.2; вес и мощность — аналогично. $\square$
+ $$
+ \aleph_0$ — база $\{U_a : a \in \mathbb{H}_{core}\}$, $\vert\mathbb{H}_{core}\vert = \aleph_0.
+ $$
+
+(2) Единственная изолированная точка — [\[Следствие IV.2\]](#cor-IV-2); вес и мощность — аналогично. $\square$
 
 ---
 
