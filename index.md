@@ -274,7 +274,7 @@ $$
 
 ---
 
-### **Раздел III. Счётная бесконечность**
+### **Раздел III. Рекурсия**
 {: .accent #prt-III}
 
 #### <span class="accent">— [Определение III.1]</span>
@@ -378,13 +378,13 @@ $I\_{k} = \ker(\mathcal{L}\_{k} \twoheadrightarrow (B\_{6}/I)^{\otimes 3^{k}})$ 
 #### <span class="accent">— [Теорема III.2]</span>
 {: .courier #thm-III-2}
 
-$|\mathbb{H}\_{core}| = |\mathbb{H}\_{brunn}| = \aleph\_{0}$ в ZF.
+$\vert \mathbb{H}\_{core}\vert = \vert \mathbb{H}\_{brunn}\vert = \aleph\_{0}$ в ZF.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) $|B\_{6}| = 2^{6} = 64$, $\dim\_{\mathbb{F}\_{2}}(B\_{6}) = 6$; $|\mathcal{L}\_{k}| = 2^{6 \cdot 3^{k}}$. $|B\_{6}/I| = 4$ ($\dim\_{\mathbb{F}\_{2}}(B\_{6}/I) = 2$); $|F^{k}(B\_{6}/I)| = 2^{2^{3^{k}}}$ (так как $\dim\_{\mathbb{F}\_{2}}((B\_{6}/I)^{\otimes 3^{k}}) = 2^{3^{k}}$).
+(1) $\vert B\_{6}\vert = 2^{6} = 64$, $\dim\_{\mathbb{F}\_{2}}(B\_{6}) = 6$; $\vert \mathcal{L}\_{k}\vert = 2^{6 \cdot 3^{k}}$. $\vert B\_{6}/I\vert = 4$ ($\dim\_{\mathbb{F}\_{2}}(B\_{6}/I) = 2$); $\vert F^{k}(B\_{6}/I)\vert = 2^{2^{3^{k}}}$ (так как $\dim\_{\mathbb{F}\_{2}}((B\_{6}/I)^{\otimes 3^{k}}) = 2^{3^{k}}$).
 
-(2) Каждый слой конечен, явно упорядочен, инъекции $\alpha\_{k}$ сохраняют «старые» элементы. Нумерация: элемент из $\mathcal{L}\_{k}$ под номером $m$ получает номер $\sum\_{j<k}|\mathcal{L}\_{j}| + m$. Явная биекция с $\mathbb{N}$, без AC. $\square$
+(2) Каждый слой конечен, явно упорядочен, инъекции $\alpha\_{k}$ сохраняют «старые» элементы. Нумерация: элемент из $\mathcal{L}\_{k}$ под номером $m$ получает номер $\sum\_{j \lt k}\vert \mathcal{L}\_{j}\vert + m$. Явная биекция с $\mathbb{N}$, без AC. $\square$
 
 #### <span class="accent">— [Следствие III.2]</span>
 {: .courier #cor-III-2}
