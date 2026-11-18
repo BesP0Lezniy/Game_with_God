@@ -561,11 +561,11 @@ $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Совершенность — [\[Следствие IV.1\]](#cor-IV-1); мощность — [\[Теорема IV.3\]](#thm-IV-3); вес —
+(1) Совершенность — [\[Следствие IV.1\]](#cor-IV-1); мощность — [\[Теорема IV.3\]](#thm-IV-3); вес $\aleph_0$ — база —
 
- $$
- \aleph_0$ — база $\{U_a : a \in \mathbb{H}_{core}\}$, $\vert\mathbb{H}_{core}\vert = \aleph_0.
- $$
+$$
+\{U_a : a \in \mathbb{H}_{core}\}$, $\vert\mathbb{H}_{core}\vert = \aleph_0.
+$$
 
 (2) Единственная изолированная точка — [\[Следствие IV.2\]](#cor-IV-2); вес и мощность — аналогично. $\square$
 
