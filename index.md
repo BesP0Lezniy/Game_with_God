@@ -312,7 +312,7 @@ $\alpha$ инъективно.
 (4) Если $i \notin S$, то $c(i)$-координата $\alpha\_{i}$ не входит в соответствующее множество (уникальность), значит соответствующая $v$-координата равна 0, и $T\_{i} = 0$. $\square$
 
 #### <span class="accent">— [Замечание III.1]</span>
-{: .courier #rem-III-1}.
+{: .courier #rem-III-3}
 
 ***<span class="accent">Доказательство</span>*** использует фиксированную таблицу $\mathcal{F}$ (свидетели). Замена таблицы может нарушить инъективность.
 
@@ -394,7 +394,7 @@ $|\mathbb{H}\_{core}| = |\mathbb{H}\_{brunn}| = \aleph\_{0}$ в ZF.
 ***<span class="accent">Доказательство</span>***. $\pi\_{\infty}$ — сюръекция по определению фактора. Коммутативность с коалгебраическими структурами: $\omega\_{brunn}\circ\pi\_{\infty} = (\pi\_{\infty}^{\otimes 3})\circ\omega\_{core}$ — следует из спуска $\alpha\_{\infty}$ на фактор [\[Теорема III.1\]](#thm-III-1). $\square$
 
 #### <span class="accent">— [Замечание III.2]</span>
-{: .courier #rem-III-2}.
+{: .courier #rem-III-2}
 
 ***<span class="accent">Доказательство</span>*** $\mathbb{H}\_{brunn}$ — фактор $\mathbb{H}\_{core}$, не подобъект: в $\mathbf{BoolAlg}$ у сюръекции нет канонического сечения.
 
