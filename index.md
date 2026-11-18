@@ -538,7 +538,7 @@ $\partial\mathbb{H}\_{core} \cong \varprojlim \mathrm{Spec}(\mathcal{L}\_{k})$ �
 
 $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 2^{\aleph\_{0}}$.
 
-***<span class="accent">Доказательство***</span>.
+***<span class="accent">Доказательство</span>***.
 
 Для $\partial\mathbb{H}\_{core}$:
 
