@@ -166,11 +166,11 @@ $$
 
 (1) $B\_{6} \cong \mathbb{F}\_{2}^{64}$ (произведение копий $\mathbb{F}\_{2}$ по точкам $\mathbb{F}\_{2}^{6}$).
 
-(2) Всякий идеал в $B\_{6}$ радикален [\[Замечание II.1\]](#rem-II-1). $V(I) = \{\mathbf{0}, \mathbf{1}\}$ [\[Теорема II.1\]](#thm-II-1).
+(2) Всякий идеал в $B\_{6}$ радикален [\[Замечание II.1\]](#rem-II-1), $V(I) = \{\mathbf{0}, \mathbf{1}\}$ [\[Теорема II.1\]](#thm-II-1).
 
 (3) Многочлен $x\_{i} + x\_{6}$ обращается в нуль на обеих точках, по радикальности $I = I(V(I)) = \langle x\_{i} + x\_{6}\rangle\_{i=1}^{5}$.
 
-(4) Само вычисление $I(V(I))$ в $B_6$ также корректно вследствие описанного свойства: [\[Замечание II.1\]](#rem-II-1) $\square$
+(4) Само вычисление $I(V(I))$ в $B_6$ также корректно вследствие описанного свойства [\[Замечание II.1\]](#rem-II-1) $\square$
 
 #### <span class="accent">— [Определение II.4]</span>
 {: .courier}
@@ -194,7 +194,7 @@ $$
 
 (1) Сильная связность — проверена в доказательстве при прямой выписке достижимости [\[Теорема II.1\]](#thm-II-1).
 
-(2) Конъюнктивная форма задано по определению [\[Определение II.2\]](#def-II-2).
+(2) Конъюнктивная форма — задана по определению [\[Определение II.2\]](#def-II-2).
 
 (3) $\mathrm{Fix}(T) = V(I) = \{\mathbf{0}, \mathbf{1}\}$ — [\[Теорема II.1\]](#thm-II-1), [\[Определение II.3\]](#def-II-3).
 
@@ -244,7 +244,7 @@ $$
 
 **1. <span class="accent">С чего начали и почему</span>?**
 
-Начали с чисто синтаксического $\mathbf{C}$ ([Раздел I](#prt-I)). $\mathbf{C}$ полон как свободный PROP. Но $\mathbf{C}$ не содержит семантики: ни идемпотентности, ни идеала, ни многообразия. Формализм не запрещает задать вопрос «чему равно $V(I)$?» — это разрешает ввести семантизацию.
+Начали с чисто синтаксического $\mathbf{C}$ ([Раздел I](#prt-I)), оно полно как свободный PROP, но $\mathbf{C}$ не содержит семантики: ни идемпотентности, ни идеала, ни многообразия. Формализм не запрещает задать вопрос «чему равно $V(I)$?» — это разрешает ввести семантизацию в принципе.
 
 **2. <span class="accent">Какие шаги выполнили</span>?**
 
@@ -270,6 +270,164 @@ $$
 
 (в) Коллапс при любом нуле.
 
-Это есть, и это доказано. Формализм не запрещает перейти к коалгебраическому развёртыванию ([Раздел III](#prt-III)): статика $B_6$ не даёт коалгебры, поэтому вводится копредел.
+Это есть, и это доказано. Формализм не запрещает перейти к коалгебраическому развёртыванию ([Раздел III](#prt-III)): статика $B_6$ не даёт коалгебры, поэтому принципиально разрешено ввести копредел.
+
+---
+
+### **Раздел III. Счётная бесконечность**
+{: .accent #prt-III}
+
+#### <span class="accent">— [Определение III.1]</span>
+{: .courier #def-III-1}
+
+Тензорный эндофунктор $F: \mathbf{BoolAlg} \to \mathbf{BoolAlg}$, $F(X) = X \otimes_{\mathbb{F}\_{2}} X \otimes_{\mathbb{F}\_{2}} X$. В $\mathbf{BoolAlg}$ тензор есть копроизведение; $F$ сохраняет фильтрованные копределы.
+
+#### <span class="accent">— [Определение III.2]</span>
+{: .courier #def-III-2}
+
+Структурное отображение $\alpha: B\_{6} \to F(B\_{6}) = B\_{6}^{\otimes 3}$ — гомоморфизм $\mathbb{F}\_{2}$-алгебр, заданный на образующих $x\_{i} \mapsto x\_{j\_{i}} \otimes x\_{k\_{i}} \otimes x\_{l\_{i}}$.
+
+Корректность: $\alpha(x\_{i}^{2}) = x\_{j\_{i}}^{2} \otimes x\_{k\_{i}}^{2} \otimes x\_{l\_{i}}^{2} = x\_{j\_{i}} \otimes x\_{k\_{i}} \otimes x\_{l\_{i}} = \alpha(x\_{i})$ в силу идемпотентности $x^{2} = x$ в $B\_{6}$. Значит, $\alpha$ продолжается до гомоморфизма на $B\_{6}$.
+
+#### <span class="accent">— [Определение III.3]</span>
+{: .courier #def-III-3}
+
+Для $A \in \mathbf{BoolAlg}$ и идеала $J \subset A$: $J^{[n]} := \ker(A^{\otimes n} \twoheadrightarrow (A/J)^{\otimes n}) = \sum_{s=1}^{n} A^{\otimes(s-1)} \otimes J \otimes A^{\otimes(n-s)} \subset A^{\otimes n}$.
+
+Канонический изоморфизм: $A^{\otimes n}/J^{[n]} \cong (A/J)^{\otimes n}$. В частности, $I^{[3]} = I \otimes B\_{6} \otimes B\_{6} + B\_{6} \otimes I \otimes B\_{6} + B\_{6} \otimes B\_{6} \otimes I$.
+
+#### <span class="accent">— [Лемма III.1]</span>
+{: .courier #lem-III-1}
+
+$\alpha$ инъективно.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Достаточно сюръективности $\mathrm{Spec}(\alpha)$ на $\mathbb{F}\_{2}$-точках.
+
+(2) Положим $T(v^{1},v^{2},v^{3})\_{i} = v^{1}\_{j\_{i}}v^{2}\_{k\_{i}}v^{3}\_{l\_{i}}$. Для $w \in \mathbb{F}\_{2}^{6}$: $S = \{i: w\_{i} = 1\}$; $v^{1}\_{j} = 1 \iff j \in \{j\_{i} : i \in S\}$, $v^{2}\_{k} = 1 \iff k \in \{k\_{i} : i \in S\}$, $v^{3}\_{l} = 1 \iff l \in \{l\_{i} : i \in S\}$.
+
+(3) Тогда $T\_{i} = 1 \iff i \in S$ — по таблице $\mathcal{F}$: для каждого $i$ существует координата $c(i) \in \{j,k,l\}$, значение которой у $\alpha\_{i}$ не встречается у $\alpha\_{i'}$ при $i' \neq i$: $c(1)=j$ (значение 2), $c(2)=l$ (5), $c(3)=k$ (2), $c(4)=j$ (5), $c(5)=l$ (2), $c(6)=k$ (5).
+
+(4) Если $i \notin S$, то $c(i)$-координата $\alpha\_{i}$ не входит в соответствующее множество (уникальность), значит соответствующая $v$-координата равна 0, и $T\_{i} = 0$. $\square$
+
+#### <span class="accent">— [Замечание III.1]</span>
+{: .courier #rem-III-1}.
+
+***<span class="accent">Доказательство</span>*** использует фиксированную таблицу $\mathcal{F}$ (свидетели). Замена таблицы может нарушить инъективность.
+
+#### <span class="accent">— [Лемма III.2]</span>
+{: .courier #lem-III-2}
+
+$\alpha(I) \subset I^{[3]}$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) В $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ — две точки $\mathbf{0}, \mathbf{1}$. В $(B\_{6}/I)^{\otimes 3}$ — 8 точек.
+
+(2) Для $x \in I$ и $u = (u^{1},u^{2},u^{3}) \in \{(\mathbf{0},\mathbf{0},\mathbf{0}), \ldots, (\mathbf{1},\mathbf{1},\mathbf{1})\}$: если хотя бы один $u^{k} = \mathbf{0}$, то оба слагаемых $= 0$; если $u^{1}=u^{2}=u^{3}=\mathbf{1}$, то оба $=1$, сумма $1+1=0$ в $\mathbb{F}\_{2}$.
+
+(3) Во всех 8 случаях $=0$, значит $\alpha(x\_{i} + x\_{j\_{i}}x\_{k\_{i}}x\_{l\_{i}}) \in \ker(\pi^{\otimes 3}) = I^{[3]}$. $\square$
+
+#### <span class="accent">— [Определение III.4]</span>
+{: .courier #def-III-4}
+
+Итерационная цепь: $\mathcal{L}\_{0} = B\_{6}$, $\mathcal{L}\_{k+1} = F(\mathcal{L}\_{k})$, $\alpha\_{k} = F^{k}(\alpha): \mathcal{L}\_{k} \to \mathcal{L}\_{k+1}$. Идеалы: $I\_{0} = I \subset \mathcal{L}\_{0}$; $I\_{k+1} := \ker(\mathcal{L}\_{k+1} \twoheadrightarrow (B\_{6}/I)^{\otimes 3^{k+1}})$.
+
+Канонические вложения копредела: $\iota\_{k}: \mathcal{L}\_{k} \to \mathbb{H}\_{core}$, согласованные с $\alpha\_{k}$.
+
+#### <span class="accent">— [Лемма III.3]</span>
+{: .courier #lem-III-3}
+
+$I\_{k+1} = I\_{k}^{[3]}$ и $\alpha\_{k}(I\_{k}) \subset I\_{k+1}$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) По Определению III.4, $\mathcal{L}\_{k+1} = \mathcal{L}\_{k}^{\otimes 3}$ и $(B\_{6}/I)^{\otimes 3^{k+1}} = ((B\_{6}/I)^{\otimes 3^{k}})^{\otimes 3}$, следовательно $I\_{k+1} = \ker(\mathcal{L}\_{k}^{\otimes 3} \twoheadrightarrow (\mathcal{L}\_{k}/I\_{k})^{\otimes 3}) = I\_{k}^{[3]}$.
+
+(2) Индукция: $k=0$ [\[Лемма III.2\]](#lem-III-2); $k \Rightarrow k+1$: $\alpha\_{k+1}(I\_{k+1}) = \alpha\_{k}^{\otimes 3}(I\_{k}^{[3]}) = (\alpha\_{k}(I\_{k}))^{[3]} \subset I\_{k+1}^{[3]} = I\_{k+2}$ (использовано $\alpha\_{k+1} = \alpha\_{k}^{\otimes 3}$, что следует из $\alpha\_{k} = F^{k}(\alpha)$). $\square$
+
+#### <span class="accent">— [Теорема III.1]</span>
+{: .courier #thm-III-1}
+
+В $\mathbf{BoolAlg}$ существуют:
+
+(а) $\mathbb{H}\_{core} = \varinjlim\_{k} \mathcal{L}\_{k}$ с $F$-коалгебраической структурой $\omega\_{core}: \mathbb{H}\_{core} \to F(\mathbb{H}\_{core})$.
+
+(б) Идеал $I\_{\infty} = \varinjlim\_{k} I\_{k} \subset \mathbb{H}\_{core}$, $\alpha\_{\infty}$-инвариантный: $\alpha\_{\infty}(I\_{\infty}) \subset I\_{\infty}^{[3]}$.
+
+(в) Фактор-коалгебра $\mathbb{H}\_{brunn} = \mathbb{H}\_{core}/I\_{\infty}$ с $\omega\_{brunn}$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Копредел существует (фильтрованная диаграмма, коконечность $\mathbf{BoolAlg}$). $\otimes\_{\mathbb{F}\_{2}}$ — копроизведение, сохраняет копределы: $F(\mathbb{H}\_{core}) = \varinjlim F(\mathcal{L}\_{k}) = \varinjlim \mathcal{L}\_{k+1} \cong \mathbb{H}\_{core}$; канонический изоморфизм даёт $\omega\_{core}$.
+
+(2) $I\_{\infty}$ — идеал (фильтрованный копредел идеалов). $\alpha\_{\infty}(I\_{\infty}) = \varinjlim \alpha\_{k}(I\_{k}) \subset \varinjlim I\_{k+1} = \varinjlim I\_{k}^{[3]} = (\varinjlim I\_{k})^{[3]} = I\_{\infty}^{[3]}$ (последнее равенство — сохранение копределов тензором: $I\_{k}^{[3]}$ есть сумма $I\_{k} \otimes \mathcal{L}\_{k} \otimes \mathcal{L}\_{k} + \ldots$, и копредел суммы есть сумма копределов).
+
+(3) По (2) $\alpha\_{\infty}$ пропускается через $\mathbb{H}\_{core}/I\_{\infty}$, давая $\omega\_{brunn}$. $\square$
+
+#### <span class="accent">— [Следствие III.1]</span>
+{: .courier #cor-III-1}
+
+$\mathbb{H}\_{brunn} \cong \varinjlim\_{k} F^{k}(B\_{6}/I)$.
+
+***<span class="accent">Доказательство</span>***.
+
+$I\_{k} = \ker(\mathcal{L}\_{k} \twoheadrightarrow (B\_{6}/I)^{\otimes 3^{k}})$ [\[Определение III.4\]](#def-III-4), значит $\mathcal{L}\_{k}/I\_{k} \cong (B\_{6}/I)^{\otimes 3^{k}}$. Тогда $\varinjlim (\mathcal{L}\_{k}/I\_{k}) \cong \varinjlim (B\_{6}/I)^{\otimes 3^{k}}$. $\square$
+
+#### <span class="accent">— [Теорема III.2]</span>
+{: .courier #thm-III-2}
+
+$|\mathbb{H}\_{core}| = |\mathbb{H}\_{brunn}| = \aleph\_{0}$ в ZF.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) $|B\_{6}| = 2^{6} = 64$, $\dim\_{\mathbb{F}\_{2}}(B\_{6}) = 6$; $|\mathcal{L}\_{k}| = 2^{6 \cdot 3^{k}}$. $|B\_{6}/I| = 4$ ($\dim\_{\mathbb{F}\_{2}}(B\_{6}/I) = 2$); $|F^{k}(B\_{6}/I)| = 2^{2^{3^{k}}}$ (так как $\dim\_{\mathbb{F}\_{2}}((B\_{6}/I)^{\otimes 3^{k}}) = 2^{3^{k}}$).
+
+(2) Каждый слой конечен, явно упорядочен, инъекции $\alpha\_{k}$ сохраняют «старые» элементы. Нумерация: элемент из $\mathcal{L}\_{k}$ под номером $m$ получает номер $\sum\_{j<k}|\mathcal{L}\_{j}| + m$. Явная биекция с $\mathbb{N}$, без AC. $\square$
+
+#### <span class="accent">— [Следствие III.2]</span>
+{: .courier #cor-III-2}
+
+Каноническая проекция $\pi\_{\infty}: \mathbb{H}\_{core} \twoheadrightarrow \mathbb{H}\_{brunn} = \mathbb{H}\_{core}/I\_{\infty}$ есть сюръективный морфизм $F$-коалгебр.
+
+***<span class="accent">Доказательство</span>***. $\pi\_{\infty}$ — сюръекция по определению фактора. Коммутативность с коалгебраическими структурами: $\omega\_{brunn}\circ\pi\_{\infty} = (\pi\_{\infty}^{\otimes 3})\circ\omega\_{core}$ — следует из спуска $\alpha\_{\infty}$ на фактор [\[Теорема III.1\]](#thm-III-1). $\square$
+
+#### <span class="accent">— [Замечание III.2]</span>
+{: .courier #rem-III-2}.
+
+***<span class="accent">Доказательство</span>*** $\mathbb{H}\_{brunn}$ — фактор $\mathbb{H}\_{core}$, не подобъект: в $\mathbf{BoolAlg}$ у сюръекции нет канонического сечения.
+
+#### <span class="accent">— [Следствие III.3]</span>
+{: .courier #cor-III-3}
+
+$\omega\_{core}\circ\iota\_{0} = F(\iota\_{0})\circ\alpha$ как морфизмы $B\_{6} \to \mathbb{H}\_{core}^{\otimes 3}$.
+
+***<span class="accent">Доказательство</span>***. Тождество следует из определения $\omega\_{core} = \varinjlim \alpha\_{k}$ и согласованности $\iota\_{k+1}\circ\alpha\_{k} = \iota\_{k}$ (каноническое свойство копредела). $\square$
+
+---
+
+#### <span class="accent">— [Интуитивное описание III]</span>
+{: .courier}
+
+**1. <span class="accent">С чего начали и почему</span>?**
+
+Начали с $B\_{6}$ и идеала $I$ ([Раздел II](#prt-II)). $B\_{6}$ конечна; формализм не запрещает ввести копредел.
+
+**2. <span class="accent">Какие шаги выполнили</span>?**
+
+(а) Построили $\alpha: B\_{6} \to B\_{6}^{\otimes 3}$.
+
+(б) Доказали: $\alpha$ инъективно ([\[Лемма III.1\]](#lem-III-1)); $\alpha(I) \subset I^{[3]}$ ([\[Лемма III.2\]](#lem-III-2)); $I\_{k+1} = I\_{k}^{[3]}$, $\alpha\_{k}(I\_{k}) \subset I\_{k+1}$ ([\[Лемма III.3\]](#lem-III-3)). А также счётность ([\[Теорема III.2\]](#thm-III-2)), проекцию ([\[Следствие III.2\]](#cor-III-2)), коммутативность с $\iota\_{0}$ ([\[Следствие III.3\]](#cor-III-3)).
+
+(в) Ввели $\mathbb{H}\_{core}$, $I\_{\infty}$, $\mathbb{H}\_{brunn}$ ([\[Теорема III.1\]](#thm-III-1)).
+
+**3. <span class="accent">К чему пришли</span>?**
+
+$\mathbb{H}\_{core}$ — счётная $F$-коалгебра с $\omega\_{core}: \mathbb{H}\_{core} \to F(\mathbb{H}\_{core})$ (изоморфизм, так как $F$ сохраняет копределы). $\mathbb{H}\_{brunn}$ — фактор-коалгебра. Оба счётны.
+
+**4. <span class="accent">Что это значит сейчас</span>?**
+
+Получили бесконечный счётный остов с коалгебраической структурой. Это есть, и это доказано.
 
 ---
