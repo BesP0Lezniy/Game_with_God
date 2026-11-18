@@ -544,7 +544,7 @@ $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 
 
 (1) Верхняя граница: $\partial\mathbb{H}\_{core} \subset \prod\_{k} \mathrm{Spec}(\mathcal{L}\_{k})$, $\vert\mathrm{Spec}(\mathcal{L}\_{k})\vert = 2^{6\cdot 3^{k}}$, значит $\vert\partial\mathbb{H}\_{core}\vert \leq \prod\_{k} 2^{6\cdot 3^{k}} = 2^{\sum\_{k} 6\cdot 3^{k}} = 2^{\aleph\_{0}}$.
 
-(2) Нижняя граница: слои $\alpha\_{k}^{\*}$ имеют размер $\geq 16$ (Лемма IV.2). Строим инъекцию $\{0,1\}^{\mathbb{N}} \hookrightarrow \partial\mathbb{H}\_{core}$: на каждом шаге из прообраза выбираем первый и второй элементы по лексикографическому порядку. Явная конструкция в ZF. Cantor–Bernstein. $\square$
+(2) Нижняя граница: слои $\alpha\_{k}^{\*}$ имеют размер $\geq 16$ [\[Лемма IV.2\]](#lem-IV-2). Строим инъекцию $\{0,1\}^{\mathbb{N}} \hookrightarrow \partial\mathbb{H}\_{core}$: на каждом шаге из прообраза выбираем первый и второй элементы по лексикографическому порядку. Явная конструкция в ZF, Кантор-Бернштейн. $\square$
 
 Для $\partial\mathbb{H}\_{brunn}$:
 
