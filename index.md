@@ -342,7 +342,7 @@ $I\_{k+1} = I\_{k}^{[3]}$ и $\alpha\_{k}(I\_{k}) \subset I\_{k+1}$.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) По Определению III.4, $\mathcal{L}\_{k+1} = \mathcal{L}\_{k}^{\otimes 3}$ и $(B\_{6}/I)^{\otimes 3^{k+1}} = ((B\_{6}/I)^{\otimes 3^{k}})^{\otimes 3}$, следовательно $I\_{k+1} = \ker(\mathcal{L}\_{k}^{\otimes 3} \twoheadrightarrow (\mathcal{L}\_{k}/I\_{k})^{\otimes 3}) = I\_{k}^{[3]}$.
+(1) $\mathcal{L}\_{k+1} = \mathcal{L}\_{k}^{\otimes 3}$ и $(B\_{6}/I)^{\otimes 3^{k+1}} = ((B\_{6}/I)^{\otimes 3^{k}})^{\otimes 3}$ [\[Определение III.3\]](#def-III-3), следовательно $I\_{k+1} = \ker(\mathcal{L}\_{k}^{\otimes 3} \twoheadrightarrow (\mathcal{L}\_{k}/I\_{k})^{\otimes 3}) = I\_{k}^{[3]}$.
 
 (2) Индукция: $k=0$ [\[Лемма III.2\]](#lem-III-2); $k \Rightarrow k+1$: $\alpha\_{k+1}(I\_{k+1}) = \alpha\_{k}^{\otimes 3}(I\_{k}^{[3]}) = (\alpha\_{k}(I\_{k}))^{[3]} \subset I\_{k+1}^{[3]} = I\_{k+2}$ (использовано $\alpha\_{k+1} = \alpha\_{k}^{\otimes 3}$, что следует из $\alpha\_{k} = F^{k}(\alpha)$). $\square$
 
@@ -359,7 +359,7 @@ $I\_{k+1} = I\_{k}^{[3]}$ и $\alpha\_{k}(I\_{k}) \subset I\_{k+1}$.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Копредел существует (фильтрованная диаграмма, коконечность $\mathbf{BoolAlg}$). $\otimes\_{\mathbb{F}\_{2}}$ — копроизведение, сохраняет копределы: $F(\mathbb{H}\_{core}) = \varinjlim F(\mathcal{L}\_{k}) = \varinjlim \mathcal{L}\_{k+1} \cong \mathbb{H}\_{core}$; канонический изоморфизм даёт $\omega\_{core}$.
+(1) Копредел существует (фильтрованная диаграмма, коконечность $\mathbf{BoolAlg}$). Копроизведение $\otimes\_{\mathbb{F}\_{2}}$ сохраняет копределы: $F(\mathbb{H}\_{core}) = \varinjlim F(\mathcal{L}\_{k}) = \varinjlim \mathcal{L}\_{k+1} \cong \mathbb{H}\_{core}$; канонический изоморфизм даёт $\omega\_{core}$.
 
 (2) $I\_{\infty}$ — идеал (фильтрованный копредел идеалов). $\alpha\_{\infty}(I\_{\infty}) = \varinjlim \alpha\_{k}(I\_{k}) \subset \varinjlim I\_{k+1} = \varinjlim I\_{k}^{[3]} = (\varinjlim I\_{k})^{[3]} = I\_{\infty}^{[3]}$ (последнее равенство — сохранение копределов тензором: $I\_{k}^{[3]}$ есть сумма $I\_{k} \otimes \mathcal{L}\_{k} \otimes \mathcal{L}\_{k} + \ldots$, и копредел суммы есть сумма копределов).
 
@@ -590,4 +590,130 @@ $\partial\mathbb{H}\_{core}$ — совершенный компакт веса 
 
 ---
 
-Х
+### **Раздел V. Несчётная бесконечность**
+{: .accent #prt-V}
+
+#### <span class="accent">— [Определение V.1]</span>
+{: .courier #def-V-1}
+
+$\Phi\_{core} := \mathrm{Spec}(\omega\_{core}): (\partial\mathbb{H}\_{core})^{3} \xrightarrow{\sim} \partial\mathbb{H}\_{core}$; $\Phi\_{brunn} := \mathrm{Spec}(\omega\_{brunn}): (\partial\mathbb{H}\_{brunn})^{3} \xrightarrow{\sim} \partial\mathbb{H}\_{brunn}$.
+
+#### <span class="accent">— Замечание V.1]</span>
+{: .courier #rem-V-1}
+
+$\omega\_{core}$, $\omega\_{brunn}$ индуцированы $\alpha\_{k}: \mathcal{L}\_{k} \to \mathcal{L}\_{k}^{\otimes 3}$ с фиксированным порядком трёх тензорных факторов, заданным $F(X) = X \otimes X \otimes X$. Симметрии [Раздела I](#prt-I) относятся к цветам (сортам), не к факторам $F$. Проекции ниже определены корректно.
+
+#### <span class="accent">— [Определение V.2]</span>
+{: .courier #def-V-2}
+
+$\sigma\_{r} := p\_{r} \circ \Phi^{-1}: \partial\mathbb{H} \to \partial\mathbb{H}$, $r = 1,2,3$, где $p\_{r}$ — $r$-я координатная проекция, $\Phi \in \{\Phi\_{core}, \Phi\_{brunn}\}$.
+
+#### <span class="accent">— [Лемма V.1]</span>
+{: .courier #lem-V-1}
+
+Каждое $\sigma\_{r}$ — непрерывная сюръекция; не инъекция: $\sigma\_{r}^{-1}(\eta) \cong (\partial\mathbb{H})^{2}$.
+
+***<span class="accent">Доказательство</span>***.
+
+$\Phi^{-1}$ — гомеоморфизм, $p\_{r}$ — непрерывная сюръекция. Неинъективность: $p\_{r}$ склеивает квадрат $(\partial\mathbb{H})^{2}$ в точку. $\square$
+
+#### <span class="accent">— [Лемма V.2]</span>
+{: .courier #lem-V-2}
+
+(а) $\sigma\_{r}(\mathbf{1}\_{\infty}) = \mathbf{1}\_{\infty}$ для $r = 1,2,3$.
+
+(б) $\sigma\_{r}(\mathbf{0}\_{\infty}) = \mathbf{0}\_{\infty}$ для $r = 1,2,3$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) $\Phi\_{brunn}(\mathbf{1},\mathbf{1},\mathbf{1}) = \mathbf{1}$.
+
+(2) $\Phi\_{brunn}(\mathbf{0},\mathbf{0},\mathbf{0}) = \mathbf{0}$. $\square$
+
+#### <span class="accent">— [Лемма V.3]</span>
+{: .courier #lem-V-3}
+
+(а) $\sigma\_{r}(K\_{coll}) = \partial\mathbb{H}\_{brunn}$ (в частности, $\mathbf{1}\_{\infty} \in \sigma\_{r}(K\_{coll})$).
+
+(б) $\sigma\_{r}^{-1}(\mathbf{1}\_{\infty}) = \Phi\_{brunn}(\{(\eta\_{1}, \eta\_{2}, \eta\_{3}) \in (\partial\mathbb{H})^{3} : \eta\_{r} = \mathbf{1}\_{\infty}\})$ — $r$-я грань куба $(\partial\mathbb{H})^{3}$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Для $\eta \in \partial\mathbb{H}\_{brunn}$ положим $\pi := \Phi\_{brunn}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$. На слое 0: $\pi^{(0)} = \eta^{(0)} \cdot 0 \cdot 0 = 0 \neq 1$, значит $\pi \neq \mathbf{1}\_{\infty}$, т.е. $\pi \in K\_{coll}$; $\sigma\_{1}(\pi) = \eta$.
+
+(2) Значит $\sigma\_{1}(K\_{coll}) = \partial\mathbb{H}\_{brunn}$. Аналогично для $r = 2, 3$: $\pi := \Phi\_{brunn}(\mathbf{0}\_{\infty}, \eta, \mathbf{0}\_{\infty})$ для $r=2$; $\pi := \Phi\_{brunn}(\mathbf{0}\_{\infty}, \mathbf{0}\_{\infty}, \eta)$ для $r=3$.
+
+(3) По биективности $\Phi$: $\sigma\_{r}(\pi) = \mathbf{1}\_{\infty}$ $\iff$ $p\_{r}(\Phi^{-1}(\pi)) = \mathbf{1}\_{\infty}$ $\iff$ $r$-я координата $\Phi^{-1}(\pi)$ равна $\mathbf{1}\_{\infty}$. $\square$
+
+#### <span class="accent">— [Следствие V.1]</span>
+{: .courier #cor-V-1}
+
+$\{\mathbf{1}\_{\infty}\}$ инвариантно вперёд, но не назад. $K\_{coll}$ не инвариантно ни вперёд ($\sigma\_{r}(K\_{coll}) = \partial\mathbb{H}\_{brunn}$), ни в смысле $\sigma\_{r}^{-1}$ ($\sigma\_{r}^{-1}(\mathbf{1}\_{\infty}) \cap K\_{coll} \neq \varnothing$).
+
+***<span class="accent">Доказательство</span>***. Непосредственно [\[Лемма V.2\]](#lem-V-2) и [\[Лемма V.3\]](#lem-V-3). $\square$
+
+#### <span class="accent">— [Теорема V.1]</span>
+{: .courier #thm-V-1}
+
+В ZF без AC: $\partial\mathbb{H}\_{core} \cong 2^{\omega}$; $K\_{coll} \cong 2^{\omega}$.
+
+***<span class="accent">Доказательство</span>***.
+
+Оба — непустые, компактные, метризуемые, нульмерные, совершенные (для $K\_{coll}$ — Лемма V.4 ниже). Характеризация Брауэра (нульмерный совершенный метризуемый компакт $\cong 2^{\omega}$) доказуема в ZF: метрика и счётная база заданы в [Разделе IV](#prt-IV). $\square$
+
+#### <span class="accent">— [Лемма V.4]</span>
+{: .courier #lem-V-4}
+
+$K\_{coll}$ не имеет изолированных точек.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Пусть $\pi \in K\_{coll}$ изолирована в $K\_{coll}$. Тогда существует $V \subseteq \partial\mathbb{H}\_{brunn}$ открытое с $V \cap K\_{coll} = \{\pi\}$, значит $V \subseteq \{\pi, \mathbf{1}\_{\infty}\}$ (поскольку $\partial\mathbb{H}\_{brunn} = K\_{coll} \sqcup \{\mathbf{1}\_{\infty}\}$). Если $V = \{\pi\}$, то $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие с [\[Следствием IV.2\]](#cor-IV-2).
+
+(2) Если $V = \{\pi, \mathbf{1}\_{\infty}\}$, то $\{\mathbf{1}\_{\infty}\}$ открыто (изолированная точка [\[Следствие IV.2\]](#cor-IV-2)), следовательно $\{\pi\} = V \setminus \{\mathbf{1}\_{\infty}\}$ открыто как разность открытых, значит $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие с [\[Следствие IV.2\]](#cor-IV-2). $\square$
+
+#### <span class="accent">— [Теорема V.2]</span>
+{: .courier #thm-V-2}
+
+Имеет место топологическое разложение $\partial\mathbb{H}\_{brunn} = \{\mathbf{1}\_{\infty}\} \sqcup K\_{coll}$, где $\{\mathbf{1}\_{\infty}\}$ — clopen синглтон, $K\_{coll} \cong 2^{\omega}$. При этом:
+
+(а) $\{\mathbf{1}\_{\infty}\}$ инвариантно вперёд: $\sigma\_{r}(\mathbf{1}\_{\infty}) = \mathbf{1}\_{\infty}$.
+
+(б) $\sigma\_{r}^{-1}(\mathbf{1}\_{\infty})$ — континуальное множество, пересекающее $K\_{coll}$.
+
+(в) $K\_{coll}$ не инвариантно; $\sigma\_{r}(K\_{coll}) = \partial\mathbb{H}\_{brunn}$.
+
+(г) На уровне прямого гомеоморфизма: $\Phi\_{brunn}(K\_{coll}^{3}) \subsetneq K\_{coll}$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Топологическое разложение — [Раздел IV](#prt-IV); для (а) — [\[Лемма V.2\]](#lem-V-2); для (б), (в) — [\[Лемма V.3\]](#lem-V-3).
+
+(2) Если $a,b,c \in K\_{coll}$ (все $\neq \mathbf{1}\_{\infty}$), то каждый не содержит атом $e\_{\mathbf{1}}$ (иначе был бы главным ультрафильтром $=\mathbf{1}\_{\infty}$), значит $a^{(0)} = b^{(0)} = c^{(0)} = \mathbf{0}$, и $\Phi\_{brunn}(a,b,c)^{(0)} = 0 \cdot 0 \cdot 0 = 0$, т.е. $\Phi\_{brunn}(a,b,c) \neq \mathbf{1}\_{\infty}$, значит в $K\_{coll}$.
+
+(3) Строгость: $\Phi\_{brunn}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \in K\_{coll}$ (так как на слое 0: $1 \cdot 1 \cdot 0 = 0$), но $(\mathbf{1}\_{\infty},\mathbf{1}\_{\infty},\mathbf{0}\_{\infty}) \notin K\_{coll}^{3}$. $\square$
+
+---
+
+#### <span class="accent">— [Интуитивное описание V]</span>
+{: .courier}
+
+**1. <span class="accent">С чего начали и почему</span>?**
+
+С $\partial\mathbb{H}\_{core}$, $\partial\mathbb{H}\_{brunn}$ ([Раздел IV](#prt-IV)). Они компактны, мощность $2^{\aleph\_{0}}$. Формализм не запрещает ввести динамику через $\mathrm{Spec}(\omega)$.
+
+**2. <span class="accent">Какие шаги выполнили</span>?**
+
+(1) Определили $\Phi\_{core}$, $\Phi\_{brunn}$, $\sigma\_{r}$.
+
+(2) Доказали: сюръекции, не инъекции ([\[Лемма V.1\]](#lem-V-1)); неподвижные точки $\mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}$ ([\[Лемма V.2\]](#lem-V-2)); неинвариантность $K\_{coll}$ ([\[Лемма V.3\]](#lem-V-3)); асимметрия ([\[Следствие V.1\]](#cor-V-1)); характеризация Брауэра ([\[Теорема V.1\]](#thm-V-1)); совершенность $K\_{coll}$ ([\[Лемма V.4\]](#lem-V-4)); разложение и динамическая асимметрия ([\[Теорема V.2\]](#thm-V-2)).
+
+**3. <span class="accent">К чему пришли</span>?**
+
+$\partial\mathbb{H}\_{core} \cong 2^{\omega}$, $\partial\mathbb{H}\_{brunn} = \{\mathbf{1}\_{\infty}\} \sqcup K\_{coll}$ с $K\_{coll} \cong 2^{\omega}$. Три сдвига $\sigma\_{r}$ — сюръекции, не инъекции. $\mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}$ неподвижны. Динамическая асимметрия: $\{\mathbf{1}\_{\infty}\}$ инвариантно вперёд, но не назад; $\sigma\_{r}(K\_{coll}) = \partial\mathbb{H}\_{brunn}$.
+
+**4. <span class="accent">Что это значит сейчас</span>?**
+
+Несчётность из IV стала динамической: континуум нитей, континуум орбит.
+
+---
