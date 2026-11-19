@@ -417,9 +417,9 @@ $\omega\_{core}\circ\iota\_{0} = F(\iota\_{0})\circ\alpha$ как морфизм
 
 (а) Построили $\alpha: B\_{6} \to B\_{6}^{\otimes 3}$.
 
-(б) Доказали: $\alpha$ инъективно ([\[Лемма III.1\]](#lem-III-1)); $\alpha(I) \subset I^{[3]}$ ([\[Лемма III.2\]](#lem-III-2)); $I\_{k+1} = I\_{k}^{[3]}$, $\alpha\_{k}(I\_{k}) \subset I\_{k+1}$ ([\[Лемма III.3\]](#lem-III-3)). А также счётность ([\[Теорема III.2\]](#thm-III-2)), проекцию ([\[Следствие III.2\]](#cor-III-2)), коммутативность с $\iota\_{0}$ ([\[Следствие III.3\]](#cor-III-3)).
+(б) Доказали: $\alpha$ инъективно [\[Лемма III.1\]](#lem-III-1); $\alpha(I) \subset I^{[3]}$ [\[Лемма III.2\]](#lem-III-2); $I\_{k+1} = I\_{k}^{[3]}$, $\alpha\_{k}(I\_{k}) \subset I\_{k+1}$ [\[Лемма III.3\]](#lem-III-3). А также счётность [\[Теорема III.2\]](#thm-III-2), проекцию [\[Следствие III.2\]](#cor-III-2), коммутативность с $\iota\_{0}$ [\[Следствие III.3\]](#cor-III-3).
 
-(в) Ввели $\mathbb{H}\_{core}$, $I\_{\infty}$, $\mathbb{H}\_{brunn}$ ([\[Теорема III.1\]](#thm-III-1)).
+(в) Ввели $\mathbb{H}\_{core}$, $I\_{\infty}$, $\mathbb{H}\_{brunn}$ [\[Теорема III.1\]](#thm-III-1).
 
 **3. <span class="accent">К чему пришли</span>?**
 
@@ -668,7 +668,7 @@ $K\_{coll}$ не имеет изолированных точек.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Пусть $\pi \in K\_{coll}$ изолирована в $K\_{coll}$. Тогда существует $V \subseteq \partial\mathbb{H}\_{brunn}$ открытое с $V \cap K\_{coll} = \{\pi\}$, значит $V \subseteq \{\pi, \mathbf{1}\_{\infty}\}$ (поскольку $\partial\mathbb{H}\_{brunn} = K\_{coll} \sqcup \{\mathbf{1}\_{\infty}\}$). Если $V = \{\pi\}$, то $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие с [\[Следствием IV.2\]](#cor-IV-2).
+(1) Пусть $\pi \in K\_{coll}$ изолирована в $K\_{coll}$. Тогда существует $V \subseteq \partial\mathbb{H}\_{brunn}$ открытое с $V \cap K\_{coll} = \{\pi\}$, значит $V \subseteq \{\pi, \mathbf{1}\_{\infty}\}$ (поскольку $\partial\mathbb{H}\_{brunn} = K\_{coll} \sqcup \{\mathbf{1}\_{\infty}\}$). Если $V = \{\pi\}$, то $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие, так как [\[Следствие IV.2\]](#cor-IV-2).
 
 (2) Если $V = \{\pi, \mathbf{1}\_{\infty}\}$, то $\{\mathbf{1}\_{\infty}\}$ открыто (изолированная точка [\[Следствие IV.2\]](#cor-IV-2)), следовательно $\{\pi\} = V \setminus \{\mathbf{1}\_{\infty}\}$ открыто как разность открытых, значит $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие с [\[Следствие IV.2\]](#cor-IV-2). $\square$
 
@@ -748,7 +748,9 @@ $$
 
 ***<span class="accent">Доказательство</span>***.
 
-Сдвинутая подцепь $\varinjlim\_{k \geq 1} \mathcal{L}\_{k}$ конфинальна исходной $\varinjlim\_{k \geq 0} \mathcal{L}\_{k} = \mathbb{H}\_{core}$; копредел по конфинальной подкатегории совпадает с копределом по исходной, откуда $\mathbb{H}\_{core} \cong \varinjlim\_{k \geq 1} \mathcal{L}\_{k} = \varinjlim\_{k \geq 0} F(\mathcal{L}\_{k})$. Так как $F(X) = X^{\otimes 3}$ сохраняет фильтрованные копределы [\[Определение III.1\]](#def-III-1)), канонический морфизм $\varinjlim F(\mathcal{L}\_{k}) \xrightarrow{\sim} F(\mathbb{H}\_{core})$ — изоморфизм; композиция даёт $\omega\_{core}$. На конечных слоях $\Phi^{-1}$ индуцируется каноническими биекциями $\mathrm{Spec}(\mathcal{L}\_{k+1}) = \mathrm{Spec}(\mathcal{L}\_{k}^{\otimes 3}) \xrightarrow{\sim} (\mathrm{Spec}(\mathcal{L}\_{k}))^{3}$, поэтому $n$-кратное применение $p\_{r} \circ \Phi^{-1}$ переводит ограничения уровня $0$ в ограничения на $r^{n}$-м множителе слоя $\mathcal{L}\_{n}$. $\square$
+(1) Сдвинутая подцепь $\varinjlim\_{k \geq 1} \mathcal{L}\_{k}$ конфинальна исходной $\varinjlim\_{k \geq 0} \mathcal{L}\_{k} = \mathbb{H}\_{core}$; копредел по конфинальной подкатегории совпадает с копределом по исходной, откуда $\mathbb{H}\_{core} \cong \varinjlim\_{k \geq 1} \mathcal{L}\_{k} = \varinjlim\_{k \geq 0} F(\mathcal{L}\_{k})$.
+
+(2) Так как $F(X) = X^{\otimes 3}$ сохраняет фильтрованные копределы [\[Определение III.1\]](#def-III-1), канонический морфизм $\varinjlim F(\mathcal{L}\_{k}) \xrightarrow{\sim} F(\mathbb{H}\_{core})$ — изоморфизм; композиция даёт $\omega\_{core}$. На конечных слоях $\Phi^{-1}$ индуцируется каноническими биекциями $\mathrm{Spec}(\mathcal{L}\_{k+1}) = \mathrm{Spec}(\mathcal{L}\_{k}^{\otimes 3}) \xrightarrow{\sim} (\mathrm{Spec}(\mathcal{L}\_{k}))^{3}$, поэтому $n$-кратное применение $p\_{r} \circ \Phi^{-1}$ переводит ограничения уровня $0$ в ограничения на $r^{n}$-м множителе слоя $\mathcal{L}\_{n}$. $\square$
 
 #### <span class="accent">— [Определение VI.2]</span>
 {: .courier #def-VI-2}
@@ -762,7 +764,9 @@ $$
 
 ***<span class="accent">Доказательство</span>***.
 
-Пусть $\mathcal{U}\_{0}$ — конечное clopen-разбиение уровня $0$. Измельчение $\mathcal{U}\_{0} \vee \sigma\_{r}^{-1}\mathcal{U}\_{0} \vee \cdots \vee \sigma\_{r}^{-(n-1)}\mathcal{U}\_{0}$ разделяет все компоненты слоя $\mathcal{L}\_{n-1}$ [\[Лемма VI.1\]](#lem-VI-1). Для $\partial\mathbb{H}\_{core}$ число непустых элементов измельчения $\geq \vert\mathrm{Spec}(\mathcal{L}\_{n-1})\vert = 2^{6 \cdot 3^{n-1}}$, откуда $h\_{top}(\sigma\_{r}\vert{}\_{\partial\mathbb{H}\_{core}}) \geq \lim\_{n \to \infty} \frac{1}{n}\log(2^{6\cdot 3^{n-1}}) = +\infty$. Аналогично для $\partial\mathbb{H}\_{brunn}$: $\vert\mathrm{Spec}(\mathcal{L}\_{n-1}^{brunn})\vert = 2^{2^{3^{n-1}}}$, и $\lim\_{n \to \infty} \frac{2^{3^{n-1}}\log 2}{n} = +\infty$. $\square$
+Пусть $\mathcal{U}\_{0}$ — конечное clopen-разбиение уровня $0$. Измельчение $\mathcal{U}\_{0} \vee \sigma\_{r}^{-1}\mathcal{U}\_{0} \vee \cdots \vee \sigma\_{r}^{-(n-1)}\mathcal{U}\_{0}$ разделяет все компоненты слоя $\mathcal{L}\_{n-1}$ [\[Лемма VI.1\]](#lem-VI-1).
+
+Для $\partial\mathbb{H}\_{core}$ число непустых элементов измельчения $\geq \vert\mathrm{Spec}(\mathcal{L}\_{n-1})\vert = 2^{6 \cdot 3^{n-1}}$, откуда $h\_{top}(\sigma\_{r}\vert{}\_{\partial\mathbb{H}\_{core}}) \geq \lim\_{n \to \infty} \frac{1}{n}\log(2^{6\cdot 3^{n-1}}) = +\infty$. Аналогично для $\partial\mathbb{H}\_{brunn}$: $\vert\mathrm{Spec}(\mathcal{L}\_{n-1}^{brunn})\vert = 2^{2^{3^{n-1}}}$, и $\lim\_{n \to \infty} \frac{2^{3^{n-1}}\log 2}{n} = +\infty$. $\square$
 
 #### <span class="accent">— [Теорема VI.2]</span>
 {: .courier #thm-VI-2}
@@ -875,15 +879,15 @@ $h\_{top}(\sigma\_{r}) = +\infty$ на обоих пространствах; $\
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) $\mathcal{R}\_{1} \to \mathcal{R}\_{2}$: в свободном $\Sigma$-цветном PROP $\mathbf{C} = \mathrm{FreePROP}\_{\Sigma}(\mathcal{G})$ морфизмы суть свободные композиции без соотношений; идемпотентность и коллапс $I + \langle x\_{i}\rangle = \mathfrak{m}$ невыразимы без введения $B\_{6}$ и $I$ ([Раздел II](#prt-II)). Обратно, $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ не содержит синтаксической свободы морфизмов $\mathbf{C}$.
+(1) $\mathcal{R}\_{1} \to \mathcal{R}\_{2}$: в свободном $\Sigma$-цветном PROP $\mathbf{C} = \mathrm{FreePROP}\_{\Sigma}(\mathcal{G})$ морфизмы суть свободные композиции без соотношений; идемпотентность и коллапс $I + \langle x\_{i}\rangle = \mathfrak{m}$ невыразимы без введения $B\_{6}$ и $I$ в [Разделе II](#prt-II). Обратно, $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ не содержит синтаксической свободы морфизмов $\mathbf{C}$.
 
 (2) $\mathcal{R}\_{2} \to \mathcal{R}\_{3}$: конечная 64-элементная алгебра $B\_{6}$ не содержит бесконечных цепей; копредел $\mathbb{H}\_{core}$ вводится в [Разделе III](#prt-III). Обратно, в $\mathbb{H}\_{core}$ отсутствует конечность носителя.
 
 (3) $\mathcal{R}\_{3} \to \mathcal{R}\_{4}$: счётная безатомная алгебра $\mathbb{H}\_{core}$ не содержит минимальных идемпентов, кодирующих глобальные состояния [\[Теорема IV.1\]](#thm-IV-1); переход к $\mathrm{Spec}(\mathbb{H}\_{core})$ вводится в [Разделе IV](#prt-IV). В $\partial\mathbb{H}\_{brunn}$ появляется изолированный атом $\mathbf{1}\_{\infty}$ [\[Лемма IV.3\]](#lem-IV-3). Обратно, «голый» компакт $\partial\mathbb{H}\_{core} \cong 2^{\omega}$ стирает коалгебраический морфизм $\omega\_{core}$.
 
-(4) $\mathcal{R}\_{4} \to \mathcal{R}\_{5}$: на статическом компакте топология не выделяет сдвигов $\sigma\_{r}$; их введение — поднятие $\omega$ до динамической системы ([Раздел V](#prt-V)). Обратно, необратимая динамика сдвигов нарушает статическую однородность $2^{\omega}$.
+(4) $\mathcal{R}\_{4} \to \mathcal{R}\_{5}$: на статическом компакте топология не выделяет сдвигов $\sigma\_{r}$; их введение — поднятие $\omega$ до динамической системы в [Разделе V](#prt-V). Обратно, необратимая динамика сдвигов нарушает статическую однородность $2^{\omega}$.
 
-(5) $\mathcal{R}\_{5} \to \mathcal{R}\_{6}$: топологическая динамика не фиксирует скорость ветвления; введение фильтрационной ультраметрики $d(\pi\_{1}, \pi\_{2}) = 2^{-k}$ выявляет $\dim\_{H} = +\infty$ и $h\_{top}(\sigma\_{r}) = +\infty$ ([Раздел VI](#prt-VI)). Обратно, послойно-нормированная ультраметрика $d\_{norm}$ даёт $\dim\_{H} = 1$; значения $\dim\_{H}$ зависят от выбора метрики.
+(5) $\mathcal{R}\_{5} \to \mathcal{R}\_{6}$: топологическая динамика не фиксирует скорость ветвления; введение фильтрационной ультраметрики $d(\pi\_{1}, \pi\_{2}) = 2^{-k}$ выявляет $\dim\_{H} = +\infty$ и $h\_{top}(\sigma\_{r}) = +\infty$ в [Разделе VI](#prt-VI). Обратно, послойно-нормированная ультраметрика $d\_{norm}$ даёт $\dim\_{H} = 1$; значения $\dim\_{H}$ зависят от выбора метрики.
 
 $\square$
 
@@ -908,7 +912,7 @@ $\square$
 #### <span class="accent">— [Замечание VII.1]</span>
 {: .courier #rem-VII-1}
 
-[Раздел VII](#prt-VII) не утверждает логического противоречия вида $A \wedge \neg A$ (метатеория ZF остаётся непротиворечивой) и не утверждает замыкание цепи. Его предмет:
+[Раздел VII](#prt-VII) не утверждает логического противоречия вида $A \wedge \neg A$ (ZF остаётся непротиворечивой) и не утверждает замыкание цепи. Его предмет:
 
 (а) Пять асимметричных смен рамок.
 
@@ -936,3 +940,5 @@ $\square$
 **4. <span class="accent">Что это значит сейчас</span>?**
 
 Получили точную картину цепи I–VI как последовательности смен рамок с открытым звеном.
+
+---
