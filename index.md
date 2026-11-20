@@ -972,9 +972,11 @@ $\square$
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Алгебра $\mathbb{H}\_{core}(\mathcal{G})$ счётна ([Теорема III.2](#thm-III-2)) и безатомна [\[Лемма IV.2\]](#lem-IV-2)) для любой $\mathcal{G} \in \mathfrak{P}\_{6}$; в ZF без AC все счётные безатомные булевы алгебры изоморфны $\mathrm{FreeBool}(\aleph\_{0})$ (теорема Кантора).
+(1) Алгебра $\mathbb{H}\_{core}(\mathcal{G})$ счётна [\[Теорема III.2\]](#thm-III-2)) и безатомна [\[Лемма IV.2\]](#lem-IV-2)) для любой $\mathcal{G} \in \mathfrak{P}\_{6}$; в ZF без AC все счётные безатомные булевы алгебры изоморфны $\mathrm{FreeBool}(\aleph\_{0})$ (теорема Кантора).
 
-(2) Зададим на свободных образующих $\{x\_{n}\}\_{n \in \mathbb{N}}$ алгебры $\mathrm{FreeBool}(\aleph\_{0})$ унитальный булев гомоморфизм $\omega\_{deg}: \mathrm{FreeBool}(\aleph\_{0}) \to \mathrm{FreeBool}(\aleph\_{0})^{\otimes 3}$ правилом $\omega\_{deg}(x\_{n}) := x\_{1} \otimes x\_{1} \otimes x\_{1}$ для всех $n \in \mathbb{N}$. Поскольку $\omega\_{deg}(x\_{1}) = \omega\_{deg}(x\_{2})$ при $x\_{1} \neq x\_{2}$, морфизм $\omega\_{deg}$ не инъективен, тогда как для любой $\mathcal{G} \in \mathfrak{P}\_{6}$ морфизм $\omega\_{core}(\mathcal{G})$ строго инъективен [\[Лемма III.1\]](#lem-III-1)). Если бы существовал изоморфизм $\phi: \mathrm{FreeBool}(\aleph\_{0}) \to \mathbb{H}\_{core}(\mathcal{G})$ с $\omega\_{core} \circ \phi = \phi^{\otimes 3} \circ \omega\_{deg}$, то из $\omega\_{deg}(x\_{1}) = \omega\_{deg}(x\_{2})$ следовало бы $\omega\_{core}(\phi(x\_{1})) = \omega\_{core}(\phi(x\_{2}))$, откуда по инъективности $\omega\_{core}$ получаем $\phi(x\_{1}) = \phi(x\_{2})$, что противоречит биективности $\phi$. Значит, $(\mathrm{FreeBool}(\aleph\_{0}), \omega\_{deg}) \not\cong (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
+(2) Зададим на свободных образующих $\{x\_{n}\}\_{n \in \mathbb{N}}$ алгебры $\mathrm{FreeBool}(\aleph\_{0})$ унитальный булев гомоморфизм $\omega\_{deg}: \mathrm{FreeBool}(\aleph\_{0}) \to \mathrm{FreeBool}(\aleph\_{0})^{\otimes 3}$ правилом $\omega\_{deg}(x\_{n}) := x\_{1} \otimes x\_{1} \otimes x\_{1}$ для всех $n \in \mathbb{N}$. Поскольку $\omega\_{deg}(x\_{1}) = \omega\_{deg}(x\_{2})$ при $x\_{1} \neq x\_{2}$, морфизм $\omega\_{deg}$ не инъективен, тогда как для любой $\mathcal{G} \in \mathfrak{P}\_{6}$ морфизм $\omega\_{core}(\mathcal{G})$ строго инъективен [\[Лемма III.1\]](#lem-III-1)).
+
+Если бы существовал изоморфизм $\phi: \mathrm{FreeBool}(\aleph\_{0}) \to \mathbb{H}\_{core}(\mathcal{G})$ с $\omega\_{core} \circ \phi = \phi^{\otimes 3} \circ \omega\_{deg}$, то из $\omega\_{deg}(x\_{1}) = \omega\_{deg}(x\_{2})$ следовало бы $\omega\_{core}(\phi(x\_{1})) = \omega\_{core}(\phi(x\_{2}))$, откуда по инъективности $\omega\_{core}$ получаем $\phi(x\_{1}) = \phi(x\_{2})$, что противоречит биективности $\phi$. Значит, $(\mathrm{FreeBool}(\aleph\_{0}), \omega\_{deg}) \not\cong (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
 
 (3) Из (1)–(2): объект $\mathrm{FreeBool}(\aleph\_{0})$ в $\mathbf{BoolAlg}$ не выделяет $\omega\_{core}(\mathcal{G})$ без входного морфизма из $\mathfrak{P}\_{6}$. $\square$
 
@@ -983,7 +985,7 @@ $\square$
 
 Для любой $\mathcal{G} \in \mathfrak{P}\_{6}$:
 
-(а) в $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная минимальная нетривиальная конечная подкоалгебра;
+(а) В $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная минимальная нетривиальная конечная подкоалгебра;
 
 (б) $\mathrm{Aut}(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G})) \cong \mathrm{Aut}(B\_{6}, \alpha\_{0}) \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$.
 
@@ -1031,7 +1033,7 @@ $\square$
 
 (1) Обе презентации удовлетворяют условиям I–VI и [\[Теорема VIII.2\]](#thm-VIII-2).
 
-(2) Прямое следствие [\[Лемма VIII.1\]](#lem-VIII-1) (б).
+(2) Прямое следствие [\[Лемма VIII.1\]](#lem-VIII-1).
 
 (3) На $B\_{3}$ нетривиальные перестановки из $S\_{3}$ не сохраняют упорядоченные триплеты $\alpha\_{sym}$ (например, $(1'\,2')^{\otimes 3}(1'\otimes 2'\otimes 3') = 2'\otimes 1'\otimes 3' \neq \alpha\_{sym}(3')$), откуда $\mathrm{Aut}(B\_{3}, \alpha\_{sym}) = \{\mathrm{id}\}$. В $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ инверсия $\tau: e\_{0} \leftrightarrow e\_{1}$ не согласована с $\bar{\alpha}\_{0}(e\_{1}) = e\_{1}^{1} \otimes e\_{1}^{2} \otimes e\_{1}^{3}$ на смешанной точке $(e\_{1}, e\_{1}, e\_{0})$: $\bar{\alpha}\_{0}(\tau(e\_{1}))(e\_{1}, e\_{1}, e\_{0}) = 1 \neq 0 = \tau^{\otimes 3}(\bar{\alpha}\_{0}(e\_{1}))(e\_{1}, e\_{1}, e\_{0})$, откуда $\mathrm{Aut}(B\_{6}/I, \bar{\alpha}\_{0}) = \{\mathrm{id}\}$. В обоих случаях фактор-морфизмы не обратимы, информация о 6-сортовой таблице $\mathcal{F}$ стирается. $\square$
 
@@ -1040,7 +1042,7 @@ $\square$
 
 Артикуляция $\Sigma$, $\mathcal{F}$ ([Раздел I](#prt-I)) получает внутреннее структурное обоснование: открытость начального звена не является внешним дефектом формализма, а представляет собой следствие двух теорем: невозможности беспрезентационного старта [\[Теорема VIII.1\]](#thm-VIII-1) и неустранимой неоднозначности при симметричной $\mathcal{F}$ [\[Теорема VIII.3\]](#thm-VIII-3).
 
-***<span class="accent">Доказательство</span>***. Без звена из $\mathfrak{P}\_{6}$ коалгебраическая динамика I–VI не определена) [\[Теорема VIII.1\]](#thm-VIII-1) и неустранимая неоднозначность или потеря $\mathcal{F}$ при факторизации [\[Теорема VIII.3\]](#thm-VIII-3). $\square$
+***<span class="accent">Доказательство</span>***. Без звена из $\mathfrak{P}\_{6}$ коалгебраическая динамика I–VI не определена [\[Теорема VIII.1\]](#thm-VIII-1) и неустранимая неоднозначность или потеря $\mathcal{F}$ при факторизации [\[Теорема VIII.3\]](#thm-VIII-3). $\square$
 
 ---
 
