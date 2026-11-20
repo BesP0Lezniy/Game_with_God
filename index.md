@@ -942,3 +942,125 @@ $\square$
 Получили точную картину цепи I–VI как последовательности смен рамок с открытым звеном.
 
 ---
+
+### **Раздел VIII. Естественная артикуляция**
+{: .accent #prt-VIII}
+
+#### <span class="accent">— [Определение VIII.1]</span>
+{: .courier #def-VIII-1}
+
+Класс допустимых презентаций $\mathfrak{P}\_{6}$ — все 6-сортовые тернарные сигнатуры $\mathcal{G} = (\Sigma, \mathcal{F})$ ($\vert\Sigma\vert = 6$, $\mathcal{F} = \{\alpha\_{i}: i \to j\_{i} \otimes k\_{i} \otimes l\_{i}\}\_{i \in \Sigma}$), удовлетворяющие условиям конструктивности Разделов I–III:
+
+(а) Отсутствие самоссылок и различие множителей в каждом триплете.
+
+(б) Сильная связность и примитивность матрицы инцидентности $M$ ($M^{3} > 0$).
+
+(в) Наличие уникальных свидетелей координат, обеспечивающих инъективность $\alpha\_{0}: B\_{6} \hookrightarrow B\_{6}^{\otimes 3}$.
+
+Для $\mathcal{G} \in \mathfrak{P}\_{6}$ через $\mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F}) \leq S\_{6}$ обозначим группу перестановок, сохраняющих упорядоченные тройки $(j\_{i}, k\_{i}, l\_{i})$.
+
+#### <span class="accent">— [Теорема VIII.1]</span>
+{: .courier #thm-VIII-1}
+
+В категории $\mathbf{BoolAlg}$ счётная безатомная булева алгебра $\mathrm{FreeBool}(\aleph\_{0})$ (любой объект, изоморфный $\mathbb{H}\_{core}(\mathcal{G})$) не определяет канонического коалгебраического эндоморфизма $\omega: \mathrm{FreeBool}(\aleph\_{0}) \to F(\mathrm{FreeBool}(\aleph\_{0}))$, порождающего структуру Разделов I–VI:
+
+(а) любые две презентации $\mathcal{G}, \mathcal{G}' \in \mathfrak{P}\_{6}$ порождают изоморфные булевы алгебры $\mathbb{H}\_{core}(\mathcal{G}) \cong \mathbb{H}\_{core}(\mathcal{G}') \cong \mathrm{FreeBool}(\aleph\_{0})$;
+
+(б) на объекте $\mathrm{FreeBool}(\aleph\_{0})$ существуют коалгебраические структуры, не изоморфные ни одной $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ для $\mathcal{G} \in \mathfrak{P}\_{6}$;
+
+(в) без звена из $\mathfrak{P}\_{6}$ коалгебраическая динамика I–VI не определена.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Алгебра $\mathbb{H}\_{core}(\mathcal{G})$ счётна ([Теорема III.2](#thm-III-2)) и безатомна [\[Лемма IV.2\]](#lem-IV-2)) для любой $\mathcal{G} \in \mathfrak{P}\_{6}$; в ZF без AC все счётные безатомные булевы алгебры изоморфны $\mathrm{FreeBool}(\aleph\_{0})$ (теорема Кантора).
+
+(2) Зададим на свободных образующих $\{x\_{n}\}\_{n \in \mathbb{N}}$ алгебры $\mathrm{FreeBool}(\aleph\_{0})$ унитальный булев гомоморфизм $\omega\_{deg}: \mathrm{FreeBool}(\aleph\_{0}) \to \mathrm{FreeBool}(\aleph\_{0})^{\otimes 3}$ правилом $\omega\_{deg}(x\_{n}) := x\_{1} \otimes x\_{1} \otimes x\_{1}$ для всех $n \in \mathbb{N}$. Поскольку $\omega\_{deg}(x\_{1}) = \omega\_{deg}(x\_{2})$ при $x\_{1} \neq x\_{2}$, морфизм $\omega\_{deg}$ не инъективен, тогда как для любой $\mathcal{G} \in \mathfrak{P}\_{6}$ морфизм $\omega\_{core}(\mathcal{G})$ строго инъективен [\[Лемма III.1\]](#lem-III-1)). Если бы существовал изоморфизм $\phi: \mathrm{FreeBool}(\aleph\_{0}) \to \mathbb{H}\_{core}(\mathcal{G})$ с $\omega\_{core} \circ \phi = \phi^{\otimes 3} \circ \omega\_{deg}$, то из $\omega\_{deg}(x\_{1}) = \omega\_{deg}(x\_{2})$ следовало бы $\omega\_{core}(\phi(x\_{1})) = \omega\_{core}(\phi(x\_{2}))$, откуда по инъективности $\omega\_{core}$ получаем $\phi(x\_{1}) = \phi(x\_{2})$, что противоречит биективности $\phi$. Значит, $(\mathrm{FreeBool}(\aleph\_{0}), \omega\_{deg}) \not\cong (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
+
+(3) Из (1)–(2): объект $\mathrm{FreeBool}(\aleph\_{0})$ в $\mathbf{BoolAlg}$ не выделяет $\omega\_{core}(\mathcal{G})$ без входного морфизма из $\mathfrak{P}\_{6}$. $\square$
+
+#### <span class="accent">— [Лемма VIII.1]</span>
+{: .courier #lem-VIII-1}
+
+Для любой $\mathcal{G} \in \mathfrak{P}\_{6}$:
+
+(а) в $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная минимальная нетривиальная конечная подкоалгебра;
+
+(б) $\mathrm{Aut}(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G})) \cong \mathrm{Aut}(B\_{6}, \alpha\_{0}) \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Любая конечная подкоалгебра $C \subset \mathbb{H}\_{core}$, $C \neq \mathbb{F}\_{2}$, лежит в некотором слое $\iota\_{m}(\mathcal{L}\_{m})$ ($m \geq 0$) и двойственно задаётся конгруэнцией $\approx$ на $(\mathbb{F}\_{2}^{6})^{3^{m}}$, согласованной с $T^{\times 3^{m}}$. Изоляция произвольной различающейся координаты $t\_{0} \in \{1, \dots, 3^{m}\}$ нулевыми масками на $t \neq t\_{0}$ (в силу $T(x, \mathbf{0}, \mathbf{0}) = \mathbf{0}$) и сильная связность внутри $t\_{0}$-го блока влекут распад $\approx$ в прямое произведение $\approx\_{1} \times \dots \times \approx\_{3^{m}}$, где каждая $\approx\_{t}$ либо тривиальна, либо полна (отсутствие собственных нетривиальных конгруэнций на $\mathbb{F}\_{2}^{6}$ [\[Теорема II.1\]](#thm-II-1)). Инвариантность относительно $\alpha\_{m}$ даёт $C = \mathcal{L}\_{m}$; по минимальности $m = 0$ и $C = \iota\_{0}(B\_{6})$.
+
+(2) В силу единственности $\iota\_{0}(B\_{6})$ любой автоморфизм $\Psi$ пары сохраняет $\iota\_{0}(B\_{6})$ и однозначно определяется ограничением $\varphi$ на $\mathrm{Spec}(B\_{6}) = \mathbb{F}\_{2}^{6}$.
+
+Шаг 1: $\varphi(\mathbf{0}) = \mathbf{0}$, $\varphi(\mathbf{1}) = \mathbf{1}$. Из $V(I) = \{\mathbf{0}, \mathbf{1}\}$ и $T(\varphi(\mathbf{0}), \varphi(\mathbf{0}), \varphi(\mathbf{0})) = \varphi(T(\mathbf{0}, \mathbf{0}, \mathbf{0})) = \varphi(\mathbf{0})$: $\varphi(\mathbf{0}) \in V(I)$. Если $\varphi(\mathbf{0}) = \mathbf{1}$, то для $v^{2}$ с $\varphi(v^{2}) = \mathbf{0}$ (сюръективность) имеем $\mathbf{1} = \varphi(\mathbf{0}) = \varphi(T(\mathbf{0}, v^{2}, \mathbf{1})) = T(\mathbf{1}, \mathbf{0}, \varphi(\mathbf{1})) = \mathbf{0}$ — противоречие. Значит $\varphi(\mathbf{0}) = \mathbf{0}$ и $\varphi(\mathbf{1}) = \mathbf{1}$.
+
+Шаг 2: $\varphi$ коммутирует с линейными операторами $P\_{1}, P\_{2}, P\_{3}$, где $(P\_{1} u)\_{i} = u\_{j\_{i}}$, $(P\_{2} u)\_{i} = u\_{k\_{i}}$, $(P\_{3} u)\_{i} = u\_{l\_{i}}$. Подстановка констант $\mathbf{1}$ на две из трёх позиций в $\varphi(T(v^{1}, v^{2}, v^{3})) = T(\varphi v^{1}, \varphi v^{2}, \varphi v^{3})$ даёт $\varphi(T(u, \mathbf{1}, \mathbf{1})) = T(\varphi u, \mathbf{1}, \mathbf{1})$, т.е. $\varphi(P\_{1} u) = P\_{1} \varphi(u)$; аналогично для $P\_{2}$, $P\_{3}$.
+
+Шаг 3: $\varphi(x \odot z) = \varphi(x) \odot \varphi(z)$ для $z \in \mathrm{Im}(P\_{1}) \cup \mathrm{Im}(P\_{2})$. Используем $P\_{3}^{2} = \mathrm{id}$ (так как $l = (4,5,6,1,2,3)$, $l^{2} = \mathrm{id}$) и тождество $x \odot P\_{1}(y) = T(y, \mathbf{1}, P\_{3}(x))$: действительно, $(x \odot P\_{1} y)\_{i} = x\_{i} y\_{j\_{i}}$ и $T(y, \mathbf{1}, P\_{3} x)\_{i} = y\_{j\_{i}} \cdot 1 \cdot (P\_{3} x)\_{l\_{i}} = y\_{j\_{i}} \cdot x\_{l\_{l\_{i}}} = y\_{j\_{i}} x\_{i}$. Тогда $\varphi(x \odot P\_{1} y) = \varphi(T(y, \mathbf{1}, P\_{3} x)) = T(\varphi y, \mathbf{1}, \varphi(P\_{3} x)) = T(\varphi y, \mathbf{1}, P\_{3} \varphi x) = \varphi(x) \odot P\_{1}(\varphi y) = \varphi(x) \odot \varphi(P\_{1} y)$ (использовано Шаг 2). Аналогично для $P\_{2}$: $x \odot P\_{2}(y) = T(\mathbf{1}, y, P\_{3}(x))$, откуда $\varphi(x \odot P\_{2} y) = \varphi(x) \odot \varphi(P\_{2} y)$.
+
+Шаг 4: выражение базисных ортов. По таблице $\mathcal{F}$: $e\_{1} = P\_{1}(e\_{2})$ (так как $j\_{1} = 2$), $e\_{4} = P\_{1}(e\_{5})$ (так как $j\_{4} = 5$), $e\_{3} = P\_{2}(e\_{2})$ (так как $k\_{3} = 2$), $e\_{6} = P\_{2}(e\_{5})$ (так как $k\_{6} = 5$). Далее: $e\_{2} = P\_{1}(e\_{1}) \odot P\_{2}(e\_{3})$ (проверка: $(P\_{1} e\_{1})\_{i} (P\_{2} e\_{3})\_{i} = (e\_{1})\_{j\_{i}} (e\_{3})\_{k\_{i}} = 1 \iff j\_{i} = 1$ и $k\_{i} = 3 \iff i = 2$); $e\_{5} = P\_{1}(e\_{4}) \odot P\_{2}(e\_{6})$ (аналогично: $j\_{i} = 4$ и $k\_{i} = 6 \iff i = 5$).
+
+Шаг 5: для $m \in \{1, 3, 4, 6\}$ имеем $e\_{m} \in \mathrm{Im}(P\_{1}) \cup \mathrm{Im}(P\_{2})$, значит по Шагу 3 $\varphi(x \odot e\_{m}) = \varphi(x) \odot \varphi(e\_{m})$. Для $m = 2$: $x \odot e\_{2} = (x \odot P\_{1} e\_{1}) \odot P\_{2} e\_{3}$; применяя Шаг 3 последовательно к $z = P\_{2} e\_{3}$ и $z = P\_{1} e\_{1}$, получаем $\varphi(x \odot e\_{2}) = \varphi(x) \odot \varphi(e\_{2})$. Аналогично для $m = 5$.
+
+Шаг 6: $\varphi(e\_{m})$ — атом для каждого $m$. Если $f \leq \varphi(e\_{m})$ для атома $f$, то $f = \varphi(y)$ (сюръективность), и $\varphi(y \odot e\_{m}) = f \odot \varphi(e\_{m}) = f = \varphi(y)$; по инъективности $\varphi$ имеем $y \odot e\_{m} = y$, т.е. $y \leq e\_{m}$; так как $e\_{m}$ — атом и $f \neq \mathbf{0}$, $y = e\_{m}$ и $f = \varphi(e\_{m})$. Значит $\varphi(e\_{m}) = e\_{\pi(m)}$ для $\pi \in S\_{6}$, и из $\varphi(x) \odot e\_{\pi(m)} = \varphi(x \odot e\_{m})$ следует $\varphi(x)\_{\pi(m)} = x\_{m}$, т.е. $\varphi$ индуцирована $\pi \in S\_{6}$. Сплетение с $T$ эквивалентно $\pi \in \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$. $\square$
+
+#### <span class="accent">— [Теорема VIII.2]</span>
+{: .courier #thm-VIII-2}
+
+(а) Два элемента $\mathcal{G}, \mathcal{G}' \in \mathfrak{P}\_{6}$ порождают изоморфные коалгебраические структуры $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G})) \cong (\mathbb{H}\_{core}(\mathcal{G}'), \omega\_{core}(\mathcal{G}'))$ тогда и только тогда, когда $\mathcal{G}'$ получена из $\mathcal{G}$ действием перестановки из $\mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$.
+
+(б) Класс $\mathfrak{P}\_{6}$ не сводится к единственному типу симметрии: для зеркально-симметричной таблицы $\mathcal{F}$ ([Раздел I](#prt-I)) $\mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F}) = \{\mathrm{id}, P\_{3}\} \cong \mathbb{Z}\_{2}$, $P\_{3} = (1\,4)(2\,5)(3\,6)$; для асимметричной таблицы $\mathcal{F}'$ ($1 \to 2\otimes 3\otimes 4$, $2 \to 1\otimes 3\otimes 5$, $3 \to 1\otimes 2\otimes 6$, $4 \to 1\otimes 2\otimes 3$, $5 \to 1\otimes 3\otimes 2$, $6 \to 4\otimes 5\otimes 1$) $\mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F}') = \{\mathrm{id}\}$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Изоморфизм коалгебр переводит единственную минимальную подкоалгебру $\iota\_{0}(B\_{6})$ в $\iota\_{0}'(B\_{6}')$ [\[Лемма VIII.1\]](#lem-VIII-1) а), откуда $\mathcal{F}' = \pi(\mathcal{F})$ для $\pi \in \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ [\[Лемма VIII.1\]](#lem-VIII-1).
+
+(2) Для $\mathcal{F}$ перебор по инвариантным парам $P\_{3}$ и уникальным свидетелям $j\_{1} = 2$, $j\_{4} = 5$, $k\_{3} = 2$, $k\_{6} = 5$ оставляет $\{\mathrm{id}, P\_{3}\}$. Для $\mathcal{F}'$: условия $\mathfrak{P}\_{6}$ проверяются прямой выпиской (отсутствие самоссылок и различие множителей — по каждой строке; сильная связность — из $1 \to \{2,3,4\}$, $2 \to \{1,3,5\}$, $3 \to \{1,2,6\}$, $4 \to \{1,2,3\}$, $5 \to \{1,3,2\}$, $6 \to \{4,5,1\}$ достижимы все; свидетели — по $l$-координате $l = (4,5,6,3,2,1)$, все шесть значений различны). Коммутирование с $j = (2,1,1,1,1,4)$ и $k = (3,3,2,2,3,5)$ фиксирует все 6 элементов, оставляя $\{\mathrm{id}\}$. $\square$
+
+#### <span class="accent">— [Теорема VIII.3]</span>
+{: .courier #thm-VIII-3}
+
+(а) Система I–VII допускает неизоморфные коалгебраические реализации ($\mathbb{Z}\_{2}$ для симметричной $\mathcal{F}$, $\{\mathrm{id}\}$ для асимметричной $\mathcal{F}'$); ни одна не выделена внутренними средствами I–VII.
+
+(б) При симметричной $\mathcal{F}$ регенерация из $(\mathbb{H}\_{core}, \omega\_{core})$ оставляет $\mathbb{Z}\_{2}$-неоднозначность двух представителей ($\mathcal{G}$ и $P\_{3}(\mathcal{G})$).
+
+(в) Факторизация по орбитам симметрий или идеалам даёт профиль автоморфизмов $(\mathbb{Z}\_{2}, \{\mathrm{id}\}, \{\mathrm{id}\})$: на 6-сортовом уровне $B\_{6}$ — $\mathbb{Z}\_{2} = \langle P\_{3}\rangle$; на 3-сортовом факторе $B\_{3} = B\_{6}/J\_{sym}$ ($J\_{sym} = \langle x\_{1}+x\_{4}, x\_{2}+x\_{5}, x\_{3}+x\_{6}\rangle$) — $\{\mathrm{id}\}$; на 2-атомном брунновском факторе $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ — $\{\mathrm{id}\}$. Снятие биполярности ($\mathbb{F}\_{2} \times \mathbb{F}\_{2} \twoheadrightarrow \mathbb{F}\_{2}$) уничтожает многообразие $V(I) = \{\mathbf{0}, \mathbf{1}\}$.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Обе презентации удовлетворяют условиям I–VI и [\[Теорема VIII.2\]](#thm-VIII-2).
+
+(2) Прямое следствие [\[Лемма VIII.1\]](#lem-VIII-1) (б).
+
+(3) На $B\_{3}$ нетривиальные перестановки из $S\_{3}$ не сохраняют упорядоченные триплеты $\alpha\_{sym}$ (например, $(1'\,2')^{\otimes 3}(1'\otimes 2'\otimes 3') = 2'\otimes 1'\otimes 3' \neq \alpha\_{sym}(3')$), откуда $\mathrm{Aut}(B\_{3}, \alpha\_{sym}) = \{\mathrm{id}\}$. В $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ инверсия $\tau: e\_{0} \leftrightarrow e\_{1}$ не согласована с $\bar{\alpha}\_{0}(e\_{1}) = e\_{1}^{1} \otimes e\_{1}^{2} \otimes e\_{1}^{3}$ на смешанной точке $(e\_{1}, e\_{1}, e\_{0})$: $\bar{\alpha}\_{0}(\tau(e\_{1}))(e\_{1}, e\_{1}, e\_{0}) = 1 \neq 0 = \tau^{\otimes 3}(\bar{\alpha}\_{0}(e\_{1}))(e\_{1}, e\_{1}, e\_{0})$, откуда $\mathrm{Aut}(B\_{6}/I, \bar{\alpha}\_{0}) = \{\mathrm{id}\}$. В обоих случаях фактор-морфизмы не обратимы, информация о 6-сортовой таблице $\mathcal{F}$ стирается. $\square$
+
+#### <span class="accent">— [Следствие VIII.1]</span>
+{: .courier #cor-VIII-1}
+
+Артикуляция $\Sigma$, $\mathcal{F}$ ([Раздел I](#prt-I)) получает внутреннее структурное обоснование: открытость начального звена не является внешним дефектом формализма, а представляет собой следствие двух теорем: невозможности беспрезентационного старта [\[Теорема VIII.1\]](#thm-VIII-1) и неустранимой неоднозначности при симметричной $\mathcal{F}$ [\[Теорема VIII.3\]](#thm-VIII-3).
+
+***<span class="accent">Доказательство</span>***. Без звена из $\mathfrak{P}\_{6}$ коалгебраическая динамика I–VI не определена) [\[Теорема VIII.1\]](#thm-VIII-1) и неустранимая неоднозначность или потеря $\mathcal{F}$ при факторизации [\[Теорема VIII.3\]](#thm-VIII-3). $\square$
+
+---
+
+#### <span class="accent">— [Интуитивное описание VIII]</span>
+{: .courier}
+
+**1. <span class="accent">С чего начали и почему</span>?**
+
+С цепи I–VII, оставившей открытое звено — артикуляцию $\Sigma$, $\mathcal{F}$. Формализм не запрещает рассмотреть класс $\mathfrak{P}\_{6}$ всевозможных презентаций.
+
+**2. <span class="accent">Какие шаги выполнили</span>?**
+
+(1) Определили класс $\mathfrak{P}\_{6}$ [\[Определение VIII.1\]](#def-VIII-1).
+
+(2) Доказали: невозможность беспрезентационного старта через $\omega\_{deg}$ [\[Теорема VIII.1\]](#thm-VIII-1); единственность минимальной подкоалгебры и $\mathrm{Aut} \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ [\[Лемма VIII.1\]](#lem-VIII-1); вариативность ($\mathbb{Z}\_{2}$ vs $\{\mathrm{id}\}$) [\[Теорема VIII.2\]](#thm-VIII-2); trade-off с профилем $(\mathbb{Z}\_{2}, \{\mathrm{id}\}, \{\mathrm{id}\})$ [\[Теорема VIII.3\]](#thm-VIII-3); структурное обоснование артикуляции [\[Следствие VIII.1\]](#cor-VIII-1).
+
+**3. <span class="accent">К чему пришли</span>?**
+
+Коалгебраическая структура $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ определяется презентацией $\mathcal{G} \in \mathfrak{P}\_{6}$ с точностью до $\mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$. Для симметричной $\mathcal{F}$ — $\mathbb{Z}\_{2}$-неоднозначность; для асимметричной $\mathcal{F}'$ — однозначность. Факторизация по орбитам даёт тривиальную группу, но стирает $\mathcal{F}$.
+
+**4. <span class="accent">Что это значит сейчас</span>?**
+
+Артикуляция $\Sigma$, $\mathcal{F}$ получает внутреннее обоснование: её открытость — следствие структуры, а не что-то иное.
