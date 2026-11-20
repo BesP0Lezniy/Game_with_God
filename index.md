@@ -14,7 +14,7 @@ title: Главная
 #### <span class="accent">— [Определение I.1]</span>
 {: .courier #def-I-1}
 
-Пусть $\Sigma = \{1,2,3,4,5,6\}$ — конечный алфавит сортов.
+Пусть $\Sigma = \{1,2,3,4,5,6\}$ — конечный алфавит сортов в ZF.
 
 #### <span class="accent">— [Определение I.2]</span>
 {: .courier #def-I-2}
@@ -22,7 +22,7 @@ title: Главная
 Пусть $\mathcal{G} = (\Sigma,\mathcal{F})$ — полиадическая сигнатура, где $\mathcal{F}$ — множество из шести генераторов (1-ячеек). Каждый генератор имеет профиль сортов $\alpha\_{i}: i \to j\_{i} \otimes k\_{i} \otimes l\_{i}$, $i, j\_{i}, k\_{i}, l\_{i} \in \Sigma$, где индексы $j\_{i}, k\_{i}, l\_{i}$ зависят от $i$ согласно таблице:
 
 $$
-\mathcal{F} = \{\, 1 \xrightarrow{\alpha\_{1}} 2\otimes 3\otimes 4,\quad 2 \xrightarrow{\alpha\_{2}} 1\otimes 3\otimes 5,\quad 3 \xrightarrow{\alpha\_{3}} 1\otimes 2\otimes 6,\quad 4 \xrightarrow{\alpha\_{4}} 5\otimes 6\otimes 1,\quad 5 \xrightarrow{\alpha\_{5}} 4\otimes 6\otimes 2,\quad 6 \xrightarrow{\alpha\_{6}} 4\otimes 5\otimes 3 \,\}.
+\mathcal{F} = \{\, 1 \xrightarrow{\alpha_{1}} 2\otimes 3\otimes 4,\quad 2 \xrightarrow{\alpha_{2}} 1\otimes 3\otimes 5,\quad 3 \xrightarrow{\alpha_{3}} 1\otimes 2\otimes 6,\quad 4 \xrightarrow{\alpha_{4}} 5\otimes 6\otimes 1,\quad 5 \xrightarrow{\alpha_{5}} 4\otimes 6\otimes 2,\quad 6 \xrightarrow{\alpha_{6}} 4\otimes 5\otimes 3 \,\}
 $$
 
 #### <span class="accent">— [Определение I.3]</span>
@@ -105,7 +105,15 @@ $\mathbf{C}$ — свободный синтаксический PROP. Его м
 
 **3. <span class="accent">К чему пришли</span>?**
 
-Получили чисто синтаксический объект $\mathbf{C}$, который: (а) определён конечными данными $(\Sigma,\mathcal{F})$; (б) инициалиен в категории $\mathcal{G}$-размеченных PROP; (в) не содержит семантики; (г) имеет модели в любой SMC $\mathbf{V}$, но конкретная модель не зафиксирована.
+Получили чисто синтаксический объект $\mathbf{C}$, который:
+
+(а) Определён конечными данными $(\Sigma,\mathcal{F})$.
+
+(б) Инициалиен в категории $\mathcal{G}$-размеченных PROP.
+
+(в) Не содержит семантики.
+
+(г) Имеет модели в любой SMC $\mathbf{V}$, но конкретная модель не зафиксирована.
 
 **4. <span class="accent">Что это значит сейчас</span>?**
 
