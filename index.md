@@ -124,22 +124,23 @@ $\mathbf{C}$ не содержит ни булевой алгебры, ни ид
 ### **Раздел II. Брунновость**
 {: .accent #prt-II}
 
-Всё дальнейшее ведётся в ZF без AC.
-
 #### <span class="accent">— [Определение II.1]</span>
 {: .courier #def-II-1}
 
 Семантический функтор $\mathrm{Sem}: \mathbf{C} \to \mathbf{BoolAlg}$ — симметричный моноидальный функтор из свободного $\Sigma$-цветного PROP $\mathbf{C}$ ([Раздел I](#prt-I)) в категорию $\mathbf{BoolAlg}$ коммутативных идемпотентных $\mathbb{F}\_{2}$-алгебр с единицей (тензор $\otimes\_{\mathbb{F}\_{2}}$ — копроизведение в $\mathbf{BoolAlg}$):
 
-- на объектах: $\mathrm{Sem}(i) = \mathbb{F}\_{2}[x\_{i}]/(x\_{i}^{2} - x\_{i})$ для $i \in \Sigma$; $\mathrm{Sem}(i\_{1} \otimes \dots \otimes i\_{n}) = \mathrm{Sem}(i\_{1}) \otimes\_{\mathbb{F}\_{2}} \dots \otimes\_{\mathbb{F}\_{2}} \mathrm{Sem}(i\_{n})$;
-- на морфизмах: $\mathrm{Sem}(\alpha\_{i}): \mathrm{Sem}(i) \to \mathrm{Sem}(j\_{i}) \otimes \mathrm{Sem}(k\_{i}) \otimes \mathrm{Sem}(l\_{i})$ — гомоморфизм $\mathbb{F}\_{2}$-алгебр, заданный $x\_{i} \mapsto x\_{j\_{i}} \otimes x\_{k\_{i}} \otimes x\_{l\_{i}}$.
+(а) На объектах: $\mathrm{Sem}(i) = \mathbb{F}\_{2}[x\_{i}]/(x\_{i}^{2} - x\_{i})$ для $i \in \Sigma$; $\mathrm{Sem}(i\_{1} \otimes \dots \otimes i\_{n}) = \mathrm{Sem}(i\_{1}) \otimes\_{\mathbb{F}\_{2}} \dots \otimes\_{\mathbb{F}\_{2}} \mathrm{Sem}(i\_{n})$;
+
+(б) На морфизмах: $\mathrm{Sem}(\alpha\_{i}): \mathrm{Sem}(i) \to \mathrm{Sem}(j\_{i}) \otimes \mathrm{Sem}(k\_{i}) \otimes \mathrm{Sem}(l\_{i})$ — гомоморфизм $\mathbb{F}\_{2}$-алгебр, заданный $x\_{i} \mapsto x\_{j\_{i}} \otimes x\_{k\_{i}} \otimes x\_{l\_{i}}$.
 
 Корректность: $\mathrm{Sem}(i)$ — свободная $\mathbb{F}\_{2}$-алгебра на одной образующей $x\_{i}$ с $x\_{i}^{2} = x\_{i}$; гомоморфизм из свободной алгебры однозначно определяется значением на образующей.
 
 #### <span class="accent">— [Определение II.2]</span>
 {: .courier #def-II-2}
 
-Булево кольцо $B\_{6} := \mathrm{Sem}(1 \otimes 2 \otimes 3 \otimes 4 \otimes 5 \otimes 6) = \mathbb{F}\_{2}[x\_{1},\dots,x\_{6}]/\langle x\_{i}^{2} - x\_{i}\rangle\_{i=1}^{6}$. Элементы $B\_{6}$ — функции $\mathbb{F}\_{2}^{6} \to \mathbb{F}\_{2}$, то есть $B\_{6} \cong \mathbb{F}\_{2}^{64}$.
+Булево кольцо $B\_{6} := \mathrm{Sem}(1 \otimes 2 \otimes 3 \otimes 4 \otimes 5 \otimes 6) = \mathbb{F}\_{2}[x\_{1},\dots,x\_{6}]/\langle x\_{i}^{2} - x\_{i}\rangle\_{i=1}^{6}$.
+
+Элементы $B\_{6}$ — функции $\mathbb{F}\_{2}^{6} \to \mathbb{F}\_{2}$, то есть $B\_{6} \cong \mathbb{F}\_{2}^{64}$.
 
 #### <span class="accent">— [Определение II.3]</span>
 {: .courier #def-II-3}
@@ -359,7 +360,7 @@ $I\_{k+1} = I\_{k}^{[3]}$ и $\alpha\_{k}(I\_{k}) \subset I\_{k+1}$.
 
 (1) Копредел существует (фильтрованная диаграмма, коконечность $\mathbf{BoolAlg}$). Копроизведение $\otimes\_{\mathbb{F}\_{2}}$ сохраняет копределы: $F(\mathbb{H}\_{core}) = \varinjlim F(\mathcal{L}\_{k}) = \varinjlim \mathcal{L}\_{k+1} \cong \mathbb{H}\_{core}$; канонический изоморфизм даёт $\omega\_{core}$.
 
-(2) $I\_{\infty}$ — идеал (фильтрованный копредел идеалов). $\alpha\_{\infty}(I\_{\infty}) = \varinjlim \alpha\_{k}(I\_{k}) \subset \varinjlim I\_{k+1} = \varinjlim I\_{k}^{[3]} = (\varinjlim I\_{k})^{[3]} = I\_{\infty}^{[3]}$ (последнее равенство — сохранение копределов тензором: $I\_{k}^{[3]}$ есть сумма $I\_{k} \otimes \mathcal{L}\_{k} \otimes \mathcal{L}\_{k} + \ldots$, и копредел суммы есть сумма копределов). Фильтрованные копределы коммутируют с конечными копроизведениями, и $\otimes_{\mathbb{F}\_{2}}$ является левым сопряженным (или конечным копроизведением в локально презентабельной категории), что гарантирует сохранение копределов.
+(2) $I\_{\infty}$ — идеал (фильтрованный копредел идеалов). $\alpha\_{\infty}(I\_{\infty}) = \varinjlim \alpha\_{k}(I\_{k}) \subset \varinjlim I\_{k+1} = \varinjlim I\_{k}^{[3]} = (\varinjlim I\_{k})^{[3]} = I\_{\infty}^{[3]}$ (последнее равенство — сохранение копределов тензором: $I\_{k}^{[3]}$ есть сумма $I\_{k} \otimes \mathcal{L}\_{k} \otimes \mathcal{L}\_{k} + \ldots$, и копредел суммы есть сумма копределов).
 
 (3) По (2) $\alpha\_{\infty}$ пропускается через $\mathbb{H}\_{core}/I\_{\infty}$, давая $\omega\_{brunn}$. $\square$
 
