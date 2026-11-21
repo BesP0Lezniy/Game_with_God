@@ -366,7 +366,7 @@ $\mathcal{L}\_{k+1} = \mathcal{L}\_{k}^{\otimes 3}$ и $(B\_{6}/I)^{\otimes 3^{k
 
 (2) $I\_{\infty}$ — идеал (фильтрованный копредел идеалов). $\alpha\_{\infty}(I\_{\infty}) = \varinjlim \alpha\_{k}(I\_{k}) \subset \varinjlim I\_{k+1} = \varinjlim I\_{k}^{[3]} = (\varinjlim I\_{k})^{[3]} = I\_{\infty}^{[3]}$ (последнее — сохранение копределов тензором: $I\_{k}^{[3]}$ есть сумма $I\_{k} \otimes \mathcal{L}\_{k} \otimes \mathcal{L}\_{k} + \ldots$, копредел суммы — сумма копределов).
 
-(3) По (б) $\alpha\_{\infty}$ пропускается через $\mathbb{H}\_{core}/I\_{\infty}$, давая $\omega\_{brunn}$. $\square$
+(3) По (2) $\alpha\_{\infty}$ пропускается через $\mathbb{H}\_{core}/I\_{\infty}$, давая $\omega\_{brunn}$. $\square$
 
 #### <span class="accent">— [Следствие III.1]</span>
 {: .courier #cor-III-1}
@@ -450,11 +450,12 @@ $\mathbb{H}\_{core}$ — счётная $F$-коалгебра с $\omega\_{core
 #### <span class="accent">— [Определение IV.1]</span>
 {: .courier #def-IV-1}
 
-Для $A \in \mathbf{BoolAlg}$: $\mathrm{Spec}(A) := \mathrm{Hom}_{\mathbf{BoolAlg}}(A, \mathbb{F}\_{2})$ с базой $\{U\_{a} := \{h : h(a) = 1\}\}\_{a \in A}$.
+Для $A \in \mathbf{BoolAlg}$: $\mathrm{Spec}(A) := \mathrm{Hom}_{\mathbf{BoolAlg}}(A, \mathbb{F}\_{2})$ с базой $\{U\_{a} := \{h : h(a) = 1\}\}\_{a \in A}$. Обозначим $\partial\mathbb{H}\_{core} := \mathrm{Spec}(\mathbb{H}\_{core})$, $\partial\mathbb{H}\_{brunn} := \mathrm{Spec}(\mathbb{H}\_{brunn})$.
 
-Обозначим $\partial\mathbb{H}\_{core} := \mathrm{Spec}(\mathbb{H}\_{core})$, $\partial\mathbb{H}\_{brunn} := \mathrm{Spec}(\mathbb{H}\_{brunn})$.
+#### <span class="accent">— [Замечание IV.1]</span>
+{: .courier #rem-IV-1}
 
-Формализм ZF не запрещает ввести $\mathrm{Spec}$.
+Для счётной булевой алгебры ($\vert A\vert \le \aleph_{0}$) двойственность Стоуна — биекция $\mathrm{Atom}(A) \leftrightarrow \mathrm{Isol}(\mathrm{Spec}(A))$, тождество $\mathrm{Spec}(\varinjlim A_{k}) \cong \varprojlim \mathrm{Spec}(A_{k})$, компактность $\mathrm{Spec}(A)$ — доказуема в ZF без AC: ультрафильтр на счётной алгебре строится явной рекурсией по перенумерации; для обратных пределов конечных дискретных пространств — как замкнутое подмножество счётного произведения конечных метризуемых компактов. Полная теорема Стоуна для произвольных булевых алгебр требует BPI; здесь она не используется.
 
 #### <span class="accent">— [Лемма IV.1]</span>
 {: .courier #lem-IV-1}
@@ -463,7 +464,7 @@ $\partial\mathbb{H}\_{core} \cong \varprojlim\_{k} \mathrm{Spec}(\mathcal{L}\_{k
 
 ***<span class="accent">Доказательство</span>***.
 
-Двойственность Стоуна переводит копределы в пределы. $\square$
+$\mathbb{H}\_{core} = \varinjlim \mathcal{L}\_{k}$ — счётный копредел; двойственность Стоуна для счётных алгебр в ZF переводит копределы в пределы [\[Замечание IV.1\]](#rem-IV-1). $\square$
 
 #### <span class="accent">— [Лемма IV.2]</span>
 {: .courier #lem-IV-2}
@@ -474,11 +475,11 @@ $\mathbb{H}\_{core}$ не имеет атомов.
 
 (1) Пусть $x \in \mathbb{H}\_{core}$, $x \neq 0$. Без ограничения $x = e\_{p}$ для атома $e\_{p} \in \mathcal{L}\_{k}$, $p \in \mathrm{Spec}(\mathcal{L}\_{k})$. Тогда $\alpha\_{k}(e\_{p}) = \sum\_{q \in (\alpha\_{k}^{\*})^{-1}(p)} e\_{q}$ в $\mathcal{L}\_{k+1}$.
 
-(2) Пусть $p = (p\_{1},\dots,p\_{3^{k}})$, $p\_{t} \in \mathbb{F}\_{2}^{6}$. Тогда $\vert(\alpha\_{k}^{\*})^{-1}(p)\vert = \prod\_{t=1}^{3^{k}} \vert T^{-1}(p\_{t})\vert$, где $T: (\mathbb{F}\_{2}^{6})^{3} \to \mathbb{F}\_{2}^{6}$, $T(v^{1},v^{2},v^{3})\_{i} = v^{1}\_{j\_{i}}v^{2}\_{k\_{i}}v^{3}\_{l\_{i}}$.
+(2) Пусть $p = (p\_{1},\dots,p\_{3^{k}})$, $p\_{t} \in \mathbb{F}\_{2}^{6}$; тогда $\vert(\alpha\_{k}^{\*})^{-1}(p)\vert = \prod\_{t=1}^{3^{k}} \vert T^{-1}(p\_{t})\vert$.
 
-(3) Конечная проверка: для $p\_{t} = \mathbf{1}$: $j\_{i}$ принимает значения $\{2,1,1,5,4,4\}$, уникальные $\{1,2,4,5\}$ фиксированы, свободны 2; $k\_{i}$: $\{3,3,2,6,6,5\}$, уникальные $\{2,3,5,6\}$, свободны 2; $l\_{i}$: $\{4,5,6,1,2,3\}$, все 6 фиксированы.
+(3) Оценка $\vert T^{-1}(p\_{t})\vert \ge 16$ для любого $p\_{t} \in \mathbb{F}\_{2}^{6}$: по таблице $\mathcal{F}$ индексы $j\_{i}$ принимают значения из $\{1,2,4,5\}$, индексы $k\_{i}$ — из $\{2,3,5,6\}$; следовательно, координаты $v^{1}\_{3}, v^{1}\_{6}, v^{2}\_{1}, v^{2}\_{4}$ не входят ни в одно из уравнений $T(v^{1}, v^{2}, v^{3}) = p\_{t}$. Множество $T^{-1}(p\_{t})$ непусто; изменение этих четырёх координат произвольно даёт $2^{4} = 16$ различных элементов $T^{-1}(p\_{t})$ [\[Лемма III.1]\](#lem-III-1).
 
-(4) Итого $\vert T^{-1}(\mathbf{1})\vert = 2^{2} \cdot 2^{2} \cdot 1 = 16$. Для остальных $p\_{t}$ перебор 64 случаев даёт $\vert T^{-1}(p\_{t})\vert \geq 16$. Следовательно, $\vert(\alpha\_{k}^{\*})^{-1}(p)\vert \geq 16^{3^{k}} \geq 2$, и $\alpha\_{k}(e\_{p})$ — сумма $\geq 2$ различных атомов, значит не атом. $\square$
+Значит, $\vert(\alpha\_{k}^{\*})^{-1}(p)\vert \ge 16^{3^{k}} \ge 2$: $\alpha\_{k}(e\_{p})$ — сумма $\ge 2$ различных атомов, не атом. $\square$
 
 #### <span class="accent">— [Следствие IV.1]</span>
 {: .courier #cor-IV-1}
@@ -487,7 +488,7 @@ $\partial\mathbb{H}\_{core}$ не имеет изолированных точе
 
 ***<span class="accent">Доказательство</span>***.
 
-Изолированная точка $\partial\mathbb{H}\_{core}$ соответствует атому $\mathbb{H}\_{core}$ (двойственность Стоуна). Атомов нет [\[Лемма IV.2\]](#lem-IV-2). $\square$
+Изолированная точка $\partial\mathbb{H}\_{core}$ соответствует атому $\mathbb{H}\_{core}$ [\[Замечание IV.1\]](#rem-IV-1) для счётной алгебры в ZF. Атомов нет [\[Лемма IV.2]\](#lem-IV-2). $\square$
 
 #### <span class="accent">— [Лемма IV.3]</span>
 {: .courier #lem-IV-3}
@@ -496,11 +497,9 @@ $\mathbb{H}\_{brunn}$ имеет ровно один атом — образ $e\
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) В $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ — два атома $e\_{\mathbf{0}}, e\_{\mathbf{1}}$. Индуцированное $\alpha'$: $x \mapsto x^{1} x^{2} x^{3}$.
+(1) В $B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}$ — два атома $e\_{\mathbf{0}}, e\_{\mathbf{1}}$. Индуцированное $\bar\alpha: B\_{6}/I \to (B\_{6}/I)^{\otimes 3}$, $x \mapsto x^{1} x^{2} x^{3}$. На слое $k$: для $q \in \{0,1\}^{3^{k}}$ с $z(q)$ нулями, $\vert(\bar\alpha\_{k}^{\*})^{-1}(q)\vert = 7^{z(q)}$ (при $q = \mathbf{1}$: $z(q) = 0$, один прообраз $(1,1,1)$; при $q \neq \mathbf{1}$: $z(q) \ge 1$, $\ge 7$ прообразов — все тройки, кроме $(1,1,1)$).
 
-(2) На слое $k$: для $q \in \{0,1\}^{3^{k}}$ с $z(q)$ нулями, $\vert(\alpha\_{k}'^{\*})^{-1}(q)\vert = 7^{z(q)}$. При $q = \mathbf{1}$: $z(q) = 0$, один прообраз. При $q \neq \mathbf{1}$: $z(q) \geq 1$, $\geq 7$ прообразов.
-
-(3) Индукцией: в каждом слое ровно один атом, выживающий при переходе — образ $e\_{\mathbf{1}}$. $\square$
+(2) Индукцией: в каждом слое ровно один атом, выживающий при переходе — образ $e\_{\mathbf{1}}$. $\square$
 
 #### <span class="accent">— [Следствие IV.2]</span>
 {: .courier #cor-IV-2}
@@ -509,7 +508,7 @@ $\partial\mathbb{H}\_{brunn}$ имеет ровно одну изолирова�
 
 ***<span class="accent">Доказательство</span>***.
 
-Изолированная точка $\leftrightarrow$ атом (двойственность Стоуна). Атом один [\[Лемма IV.3\]](#lem-IV-3). $\square$
+Изолированная точка $\leftrightarrow$ атом [\[Замечание IV.1\]](#rem-IV-1). Атом один [\[Лемма IV.3\]](#lem-IV-3). $\square$
 
 #### <span class="accent">— [Теорема IV.1]</span>
 {: .courier #thm-IV-1}
@@ -526,16 +525,14 @@ $\partial\mathbb{H}\_{brunn}$ имеет ровно одну изолирова�
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) $B\_{6} \cong \mathbb{F}\_{2}^{64}$.
+(1) Для (а): $B\_{6} \cong \mathbb{F}\_{2}^{64}$; для (б): [\[Лемма IV.2\]](#lem-IV-2); для (в): [\[Лемма IV.3\]](#lem-IV-3).
 
-(2) [\[Лемма IV.2\]](#lem-IV-2), [\[Лемма IV.3\]](#lem-IV-3).
+(2) Для счётных алгебр в ZF: точка $h \in \mathrm{Spec}(A)$ соответствует атому $A$ тогда и только тогда, когда $h$ изолирована [Замечание IV.1](#rem-IV-1) . Нет атомов — нет точек, реализуемых элементами. $\square$
 
-(3) Двойственность Стоуна: точка $h \in \mathrm{Spec}(A)$ соответствует атому $A$ тогда и только тогда, когда $h$ изолирована. Нет атомов — нет точек, реализуемых элементами. $\square$
+#### <span class="accent">— [Замечание IV.2]</span>
+{: .courier #rem-IV-2}
 
-#### <span class="accent">— [Замечание IV.1]</span>
-{: .courier #rem-IV-1}
-
-$\mathrm{Spec}$ есть канонический дуал, определённый для любой булевой алгебры. Здесь он идентифицируется в момент, когда исходный объект обнаруживает дефицит атомов.
+$\mathrm{Spec}$ — канонический дуал, определённый для любой булевой алгебры. Здесь он идентифицируется в момент, когда исходный объект обнаруживает дефицит атомов.
 
 #### <span class="accent">— [Теорема IV.2]</span>
 {: .courier #thm-IV-2}
@@ -544,26 +541,30 @@ $\partial\mathbb{H}\_{core}$ и $\partial\mathbb{H}\_{brunn}$ — компакт
 
 ***<span class="accent">Доказательство</span>***.
 
-$\partial\mathbb{H}\_{core} \cong \varprojlim \mathrm{Spec}(\mathcal{L}\_{k})$ — замкнутое подмножество $\prod\_{k} \mathrm{Spec}(\mathcal{L}\_{k})$ (конечные дискретные). На произведении — метрика $d(u,v) = 2^{-\min\{k : u\_{k} \neq v\_{k}\}}$, полная и вполне ограниченная. Компактность метрического пространства — теорема ZF. Замкнутое подмножество компакта компактно. Аналогично для $\partial\mathbb{H}\_{brunn}$. $\square$
+$\partial\mathbb{H}\_{core} \cong \varprojlim \mathrm{Spec}(\mathcal{L}\_{k})$ — замкнутое подмножество $\prod\_{k} \mathrm{Spec}(\mathcal{L}\_{k})$ (конечные дискретные). На произведении — метрика $d(u,v) = 2^{-\min\{k : u\_{k} \neq v\_{k}\}}$, полная и вполне ограниченная; компактность метрического пространства — теорема ZF. Замкнутое подмножество компакта компактно. Аналогично для $\partial\mathbb{H}\_{brunn}$. $\square$
 
 #### <span class="accent">— [Теорема IV.3]</span>
 {: .courier #thm-IV-3}
 
 $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 2^{\aleph\_{0}}$.
 
-***<span class="accent">Доказательство</span>***.
+***<span class="accent">Доказательство***.
 
-Для $\partial\mathbb{H}\_{core}$:
+$\partial\mathbb{H}\_{core}$:
 
-(1) Верхняя граница: $\partial\mathbb{H}\_{core} \subset \prod\_{k} \mathrm{Spec}(\mathcal{L}\_{k})$, $\vert\mathrm{Spec}(\mathcal{L}\_{k})\vert = 2^{6\cdot 3^{k}}$, значит $\vert\partial\mathbb{H}\_{core}\vert \leq \prod\_{k} 2^{6\cdot 3^{k}} = 2^{\sum\_{k} 6\cdot 3^{k}} = 2^{\aleph\_{0}}$.
+(1) Верхняя граница: $\vert\mathrm{Spec}(\mathcal{L}\_{k})\vert = \dim\_{\mathbb{F}\_{2}}(\mathcal{L}\_{k}) = 2^{6\cdot 3^{k}}$; значит $\vert\partial\mathbb{H}\_{core}\vert \le \prod\_{k} 2^{6\cdot 3^{k}} = 2^{\sum\_{k} 6\cdot 3^{k}} = 2^{\aleph\_{0}}$.
 
-(2) Нижняя граница: слои $\alpha\_{k}^{\*}$ имеют размер $\geq 16$ [\[Лемма IV.2\]](#lem-IV-2). Строим инъекцию $\{0,1\}^{\mathbb{N}} \hookrightarrow \partial\mathbb{H}\_{core}$: на каждом шаге из прообраза выбираем первый и второй элементы по лексикографическому порядку. Явная конструкция в ZF, Кантор-Бернштейн. $\square$
+(2) Нижняя граница: слои $\alpha\_{k}^{\*}$ имеют размер $\ge 16$ [\[Лемма IV.2\]](#lem-IV-2); строим инъекцию $\{0,1\}^{\mathbb{N}} \hookrightarrow \partial\mathbb{H}\_{core}$, выбирая в каждом прообразе первый и второй элементы по лексикографическому порядку. Явная конструкция в ZF без AC, Кантор-Бернштейн. $\square$
 
-Для $\partial\mathbb{H}\_{brunn}$:
+***<span class="accent">Доказательство***.
 
-(1) Верхняя граница: $\vert\mathrm{Spec}(\mathcal{L}\_{k}^{brunn})\vert = 2^{2^{3^{k}}}$, значит $\vert\partial\mathbb{H}\_{brunn}\vert \leq 2^{\sum\_{k} 2^{3^{k}}} = 2^{\aleph\_{0}}$.
+$\partial\mathbb{H}\_{brunn}$:
 
-(2) Нижняя граница: замкнутое подмножество $Z \subset \partial\mathbb{H}\_{brunn}$ нитей с $u^{(0)} = \mathbf{0}$ и $u^{(k)}\_{3m} = 0$ для каждого $k \geq 1$, $m$: свободных координат на слое $k \geq 1$ — $2\cdot 3^{k-1}$, значит $Z \cong \{0,1\}^{\mathbb{N}}$, $\vert Z\vert = 2^{\aleph\_{0}}$, Кантор-Бернштейн. $\square$
+(1) Верхняя граница: $\vert\mathrm{Spec}(\mathcal{L}\_{k}^{brunn})\vert = \dim\_{\mathbb{F}\_{2}}((B\_{6}/I)^{\otimes 3^{k}}) = 2^{3^{k}}$; значит $\vert\partial\mathbb{H}\_{brunn}\vert \le \prod\_{k} 2^{3^{k}} = 2^{\sum\_{k} 3^{k}} = 2^{\aleph\_{0}}$.
+
+(2) Нижняя граница: для каждой $\varepsilon = (\varepsilon\_{0}, \varepsilon\_{1}, \ldots) \in \{0,1\}^{\mathbb{N}}$ индуктивно строим нить $\pi = (u^{(0)}, u^{(1)}, \ldots) \in \partial\mathbb{H}\_{brunn}$: $u^{(0)} = 0$; при переходе $k \to k+1$ пусть $m\_{k} \in \{1, \ldots, 3^{k}\}$ — наименьший индекс с $u^{(k)}\_{m\_{k}} = 0$ (существует: $u^{(0)} = 0$, и индуктивно в позиции $m\_{k}$ сохраняется ноль); для $m \neq m\_{k}$ полагаем тройку равной $(0,0,0)$ если $u^{(k)}\_{m} = 0$, и $(1,1,1)$ если $u^{(k)}\_{m} = 1$; для $m = m\_{k}$ полагаем $(0,0,0)$ если $\varepsilon\_{k} = 0$, и $(1,0,0)$ если $\varepsilon\_{k} = 1$.
+
+(3) Обе тройки дают произведение $0 = u^{(k)}\_{m\_{k}}$; для $m \neq m\_{k}$ произведение тройки равно $u^{(k)}\_{m}$; нить когерентна. Отображение $\varepsilon \mapsto \pi$ инъективно: если $\varepsilon\_{k} \neq \varepsilon'\_{k}$ при наименьшем таком $k$, то $u^{(k)} = u'^{(k)}$ (по индукции), значит $m\_{k} = m'\_{k}$, и $u^{(k+1)} \neq u'^{(k+1)}$ в позиции $3m\_{k}-2$. Явная рекурсия в ZF без AC, Кантор-Бернштейн. $\square$
 
 #### <span class="accent">— [Следствие IV.3]</span>
 {: .courier #cor-IV-3}
@@ -574,7 +575,7 @@ $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Совершенность — [\[Следствие IV.1\]](#cor-IV-1); мощность — [\[Теорема IV.3\]](#thm-IV-3). Вес $\aleph\_{0}$: база $\{U\_{a} : a \in \mathbb{H}\_{core}\}$ имеет мощность $\vert\mathbb{H}\_{core}\vert = \aleph\_{0}$.
+(1) Совершенность — [\[Следствие IV.1\]](#cor-IV-1); вес $\aleph\_{0}$ — база $\{U\_{a}: a \in \mathbb{H}\_{core}\}$, $\vert\mathbb{H}\_{core}\vert = \aleph\_{0}$; мощность — [\[Теорема IV.3\]](#thm-IV-3).
 
 (2) Единственная изолированная точка — [\[Следствие IV.2\]](#cor-IV-2); вес и мощность — аналогично. $\square$
 
@@ -589,9 +590,7 @@ $\vert\partial\mathbb{H}\_{core}\vert = \vert\partial\mathbb{H}\_{brunn}\vert = 
 
 **2. <span class="accent">Какие шаги выполнили</span>?**
 
-(а) Определили $\mathrm{Spec}$.
-
-(б) Доказали: тождество с обратным пределом [\[Лемма IV.1\]](#lem-IV-1); безатомность $\mathbb{H}\_{core}$ [\[Лемма IV.2\]](#lem-IV-2); совершенность [\[Следствие IV.1\]](#cor-IV-1); единственный атом $\mathbb{H}\_{brunn}$ [\[Лемма IV.3\]](#lem-IV-3); изолированная точка [\[Следствие IV.2\]](#cor-IV-2); переход к спектру [\[Теорема IV.1\]](#thm-IV-1); компактность [\[Теорема IV.2\]](#thm-IV-2); мощность $2^{\aleph\_{0}}$ [\[Теорема IV.3\]](#thm-IV-3); спектральная структура [\[Следствие IV.3\]](#cor-IV-3).
+Определили $\mathrm{Spec}$. Доказали: тождество с обратным пределом [\[Лемма IV.1\]](#lem-IV-1); безатомность $\mathbb{H}\_{core}$ [\[Лемма IV.2\]](#lem-IV-2); совершенность [\[Следствие IV.1\]](#cor-IV-1); единственный атом $\mathbb{H}\_{brunn}$ [\[Лемма IV.3\]](#lem-IV-3); изолированная точка [\[Следствие IV.2\]](#cor-IV-2); переход к спектру [\[Теорема IV.1\]](#thm-IV-1); компактность [\[Теорема IV.2\]](#thm-IV-2); мощность $2^{\aleph\_{0}}$ [\[Теорема IV.3\]](#thm-IV-3); спектральная структура [\[Следствие IV.3\]](#cor-IV-3).
 
 **3. <span class="accent">К чему пришли</span>?**
 
@@ -614,7 +613,7 @@ $\Phi\_{core} := \mathrm{Spec}(\omega\_{core}): (\partial\mathbb{H}\_{core})^{3}
 #### <span class="accent">— Замечание V.1]</span>
 {: .courier #rem-V-1}
 
-$\omega\_{core}$, $\omega\_{brunn}$ индуцированы $\alpha\_{k}: \mathcal{L}\_{k} \to \mathcal{L}\_{k}^{\otimes 3}$ с фиксированным порядком трёх тензорных факторов, заданным $F(X) = X \otimes X \otimes X$. Симметрии [Раздела I](#prt-I) относятся к цветам (сортам), не к факторам $F$. Проекции ниже определены корректно.
+$\omega\_{core}$, $\omega\_{brunn}$ индуцированы $\alpha\_{k}: \mathcal{L}\_{k} \to \mathcal{L}\_{k}^{\otimes 3}$ с фиксированным порядком трёх тензорных факторов, заданным $F(X) = X \otimes X \otimes X$. Симметрии из [Раздела I](#prt-I) относятся к цветам (сортам), не к факторам $F$. Проекции ниже определены корректно.
 
 #### <span class="accent">— [Определение V.2]</span>
 {: .courier #def-V-2}
