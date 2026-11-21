@@ -602,12 +602,14 @@ $\partial\mathbb{H}\_{core}$ — совершенный компакт веса 
 #### <span class="accent">— [Определение V.1]</span>
 {: .courier #def-V-1}
 
-$\Phi\_{core}: (\partial\mathbb{H}\_{core})^{3} \to \partial\mathbb{H}\_{core}$ — морфизм в $\mathbf{Stone}$, равный композиции $\mathrm{Spec}(\omega\_{core}): \mathrm{Spec}(\mathbb{H}\_{core}^{\otimes 3}) \to \partial\mathbb{H}\_{core}$ с каноническим гомеоморфизмом $\mathrm{Spec}(\mathbb{H}\_{core}^{\otimes 3}) \cong (\partial\mathbb{H}\_{core})^{3}$ (универсальное свойство копроизведения в $\mathbf{BoolAlg}$). Аналогично $\Phi\_{brunn}: (\partial\mathbb{H}\_{brunn})^{3} \to \partial\mathbb{H}\_{brunn}$.
+$\Phi\_{core}: (\partial\mathbb{H}\_{core})^{3} \to \partial\mathbb{H}\_{core}$ — морфизм в $\mathbf{Stone}$, равный композиции $\mathrm{Spec}(\omega\_{core}): \mathrm{Spec}(\mathbb{H}\_{core}^{\otimes 3}) \to \partial\mathbb{H}\_{core}$ с каноническим гомеоморфизмом $\mathrm{Spec}(\mathbb{H}\_{core}^{\otimes 3}) \cong (\partial\mathbb{H}\_{core})^{3}$ (универсальное свойство копроизведения в $\mathbf{BoolAlg}$).
+
+Аналогично $\Phi\_{brunn}: (\partial\mathbb{H}\_{brunn})^{3} \to \partial\mathbb{H}\_{brunn}$.
 
 #### <span class="accent">— [Замечание V.1]</span>
 {: .courier #rem-V-1}
 
-$\omega\_{core}$, $\omega\_{brunn}$ индуцированы $\alpha\_{k}: \mathcal{L}\_{k} \to \mathcal{L}\_{k}^{\otimes 3}$ с фиксированным порядком тензорных факторов ($F(X) = X^{\otimes 3}$). Симметрии [Раздела I](#prt-I) относятся к цветам, не к факторам $F$. Проекции ниже определены корректно.
+$\omega\_{core}$, $\omega\_{brunn}$ индуцированы $\alpha\_{k}: \mathcal{L}\_{k} \to \mathcal{L}\_{k}^{\otimes 3}$ с фиксированным порядком тензорных факторов ($F(X) = X^{\otimes 3}$). Симметрии из [Раздела I](#prt-I) относятся к цветам, не к факторам $F$. Проекции ниже определены корректно.
 
 #### <span class="accent">— [Лемма V.1]</span>
 {: .courier #lem-V-1}
@@ -699,7 +701,7 @@ $\{\mathbf{1}\_{\infty}\}$ инвариантно вперёд, но не наз
 
 (5) Непустота: $\mathbf{0}\_{\infty} \in K\_{coll}$.
 
-(6) Счётная база $\{U\_{a} : a \in \mathbb{H}\}$ явно перенумерована [\[Теорема III.2\]](#thm-III-2), $\vert\mathbb{H}\vert = \aleph\_{0}$). Характеризация Брауэра: гомеоморфизм на $2^{\omega}$ строится индуктивно; на каждом шаге выбирается в перенумерованной базе наименьшее по номеру clopen-подмножество, измельчающее текущее разбиение. Выбор детерминирован перенумерацией — AC не используется. $\square$
+(6) Счётная база $\{U\_{a} : a \in \mathbb{H}\}$ явно перенумерована [\[Теорема III.2\]](#thm-III-2), $\vert\mathbb{H}\vert = \aleph\_{0}$. Характеризация Брауэра: гомеоморфизм на $2^{\omega}$ строится индуктивно; на каждом шаге выбирается в перенумерованной базе наименьшее по номеру clopen-подмножество, измельчающее текущее разбиение. Выбор детерминирован перенумерацией — AC не используется. $\square$
 
 #### <span class="accent">— [Лемма V.5]</span>
 {: .courier #lem-V-5}
@@ -729,7 +731,9 @@ $K\_{coll}$ не имеет изолированных точек.
 
 (1) Для (а): [\[Лемма V.3\]](#lem-V-3); для (б): [\[Лемма V.4\]](#lem-V-4)(а); для (в): [\[Лемма V.4\]](#lem-V-4)(б).
 
-(2) Пусть $a, b, c \in K\_{coll}$; $a^{(0)} = b^{(0)} = c^{(0)} = \mathbf{0}$  [\[Определение V.3\]](#def-V-3), значит $\Phi\_{brunn}(a,b,c)^{(0)} = 0 \cdot 0 \cdot 0 = 0$, т.е. $\Phi\_{brunn}(a,b,c) \in K\_{coll}$ — включение. Строгость: $\Phi\_{brunn}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \in K\_{coll}$ (на слое 0: $1 \cdot 1 \cdot 0 = 0$), но $(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \notin K\_{coll}^{3}$. $\square$
+(2) Пусть $a, b, c \in K\_{coll}$; $a^{(0)} = b^{(0)} = c^{(0)} = \mathbf{0}$  [\[Определение V.3\]](#def-V-3), значит $\Phi\_{brunn}(a,b,c)^{(0)} = 0 \cdot 0 \cdot 0 = 0$, т.е. $\Phi\_{brunn}(a,b,c) \in K\_{coll}$ — включение.
+
+Корректность: $\Phi\_{brunn}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \in K\_{coll}$ (на слое 0: $1 \cdot 1 \cdot 0 = 0$), но $(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \notin K\_{coll}^{3}$. $\square$
 
 ---
 
