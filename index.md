@@ -148,7 +148,7 @@ $\mathbf{C}$ не содержит ни булевой алгебры, ни ид
 Идеал ограничений $I \subset B\_{6}$ — идеал, порождённый разностями $\mathrm{Sem}(\alpha\_{i})(x\_{i}) - x\_{i}$ для $i \in \Sigma$ (где $x\_{i}$ в $B\_{6}$ — образующая $i$-го тензорного множителя):
 
 $$
-I = \langle x\_{1} + x\_{2}x\_{3}x\_{4},\; x\_{2} + x\_{1}x\_{3}x\_{5},\; x\_{3} + x\_{1}x\_{2}x\_{6},\; x\_{4} + x\_{5}x\_{6}x\_{1},\; x\_{5} + x\_{4}x\_{6}x\_{2},\; x\_{6} + x\_{4}x\_{5}x\_{3} \rangle \subset B\_{6}.
+I = \langle x_{1} + x_{2}x_{3}x_{4},\; x_{2} + x_{1}x_{3}x_{5},\; x_{3} + x_{1}x_{2}x_{6},\; x_{4} + x_{5}x_{6}x_{1},\; x_{5} + x_{4}x_{6}x_{2},\; x_{6} + x_{4}x_{5}x_{3} \rangle \subset B_{6}
 $$
 
 #### <span class="accent">— [Определение II.4]</span>
@@ -185,13 +185,19 @@ $V(I) = \{\mathbf{0}, \mathbf{1}\}$.
 В $B\_{6}$:
 
 $$
-I = \langle x\_{1} + x\_{6},\; x\_{2} + x\_{6},\; x\_{3} + x\_{6},\; x\_{4} + x\_{6},\; x\_{5} + x\_{6} \rangle.
+I = \langle x_{1} + x_{6},\; x_{2} + x_{6},\; x_{3} + x_{6},\; x_{4} + x_{6},\; x_{5} + x_{6} \rangle
 $$
 
-***<span class="accent">Доказательство</span>***. (1) $B\_{6} \cong \mathbb{F}\_{2}^{64}$ (произведение копий $\mathbb{F}\_{2}$ по точкам $\mathbb{F}\_{2}^{6}$). (2) Всякий идеал в $B\_{6}$ радикален [\[Замечание II.1\]](#rem-II-1); $V(I) = \{\mathbf{0}, \mathbf{1}\}$ [\[Теорема II.1\]](#thm-II-1). (3) Многочлен $x\_{i} + x\_{6}$ обращается в нуль на обеих точках, по радикальности $I = I(V(I)) = \langle x\_{i} + x\_{6}\rangle\_{i=1}^{5}$. $\square$
+***<span class="accent">Доказательство</span>***.
 
-#### <span class="accent">— [Определение II.4]</span>
-{: .courier #def-II-4}
+(1) $B\_{6} \cong \mathbb{F}\_{2}^{64}$ (произведение копий $\mathbb{F}\_{2}$ по точкам $\mathbb{F}\_{2}^{6}$).
+
+(2) Всякий идеал в $B\_{6}$ радикален [\[Замечание II.1\]](#rem-II-1); $V(I) = \{\mathbf{0}, \mathbf{1}\}$ [\[Теорема II.1\]](#thm-II-1).
+
+(3) Многочлен $x\_{i} + x\_{6}$ обращается в нуль на обеих точках, по радикальности $I = I(V(I)) = \langle x\_{i} + x\_{6}\rangle\_{i=1}^{5}$. $\square$
+
+#### <span class="accent">— [Определение II.5]</span>
+{: .courier #def-II-5}
 
 Комбинаторная 3-сеть — ориентированный 3-гиперграф $\mathcal{H}$ на конечном множестве $\Sigma$ с оператором $T\_{\mathcal{H}}(v)\_{i} = v\_{j\_{i}}v\_{k\_{i}}v\_{l\_{i}}$, удовлетворяющий:
 
@@ -218,7 +224,7 @@ $$
 Для любого $i \in \Sigma$:
 
 $$
-I + \langle x\_{i}\rangle = \mathfrak{m} = \langle x\_{1},\dots,x\_{6}\rangle, \qquad V(I + \langle x\_{i}\rangle) = \{\mathbf{0}\}.
+I + \langle x_{i}\rangle = \mathfrak{m} = \langle x_{1},\dots,x_{6}\rangle, \qquad V(I + \langle x_{i}\rangle) = \{\mathbf{0}\}
 $$
 
 ***<span class="accent">Доказательство</span>***.
@@ -233,7 +239,7 @@ $$
 {: .courier #cor-II-3}
 
 $$
-B\_{6}/I \cong \mathbb{F}\_{2} \times \mathbb{F}\_{2}, \qquad B\_{6}/(I + \langle x\_{i}\rangle) \cong \mathbb{F}\_{2} \quad (i \in \Sigma).
+B_{6}/I \cong \mathbb{F}_{2} \times \mathbb{F}_{2}, \qquad B_{6}/(I + \langle x_{i}\rangle) \cong \mathbb{F}_{2} \quad (i \in \Sigma)
 $$
 
 ***<span class="accent">Доказательство</span>***.
