@@ -912,17 +912,22 @@ $h\_{top}(\sigma\_{r}) = +\infty$ на обоих пространствах; $\
 
 Шесть рамок:
 
-- $\mathcal{R}\_{1} = \mathbf{PROP}\_{\Sigma}$: свободные $\Sigma$-цветные PROP ([Раздел I](#prt-I)).
-- $\mathcal{R}\_{2} = \mathbf{BoolAlg}$: коммутативные идемпотентные $\mathbb{F}\_{2}$-алгебры с единицей ([Раздел II](#prt-II)).
-- $\mathcal{R}\_{3} = \mathbf{Coalg}\_{F}(\mathbf{BoolAlg})$: $F$-коалгебры в $\mathbf{BoolAlg}$ ([Раздел III](#prt-III)).
-- $\mathcal{R}\_{4} = \mathbf{Stone}$: компактные хаусдорфовы нульмерные пространства ([Раздел IV](#prt-IV)).
-- $\mathcal{R}\_{5} = \mathbf{Dyn}(\mathbf{Stone})$: пары $(X, (\sigma\_{1}, \sigma\_{2}, \sigma\_{3}))$ с непрерывными $\sigma\_{r}: X \to X$ ([Раздел V](#prt-V)).
-- $\mathcal{R}\_{6} = \mathbf{UMetDyn}$: $(X, (\sigma\_{1}, \sigma\_{2}, \sigma\_{3}), d)$ с ультраметрикой $d$, согласованной с топологией ([Раздел VI](#prt-VI)).
+(а) $\mathcal{R}\_{1} = \mathbf{PROP}\_{\Sigma}$: свободные $\Sigma$-цветные PROP ([Раздел I](#prt-I)).
+
+(б) $\mathcal{R}\_{2} = \mathbf{BoolAlg}$: коммутативные идемпотентные $\mathbb{F}\_{2}$-алгебры с единицей ([Раздел II](#prt-II)).
+
+(в) $\mathcal{R}\_{3} = \mathbf{Coalg}\_{F}(\mathbf{BoolAlg})$: $F$-коалгебры в $\mathbf{BoolAlg}$ ([Раздел III](#prt-III)).
+
+(г) $\mathcal{R}\_{4} = \mathbf{Stone}$: компактные хаусдорфовы нульмерные пространства ([Раздел IV](#prt-IV)).
+
+(д) $\mathcal{R}\_{5} = \mathbf{Dyn}(\mathbf{Stone})$: пары $(X, (\sigma\_{1}, \sigma\_{2}, \sigma\_{3}))$ с непрерывными $\sigma\_{r}: X \to X$ ([Раздел V](#prt-V)).
+
+(е) $\mathcal{R}\_{6} = \mathbf{UMetDyn}$: $(X, (\sigma\_{1}, \sigma\_{2}, \sigma\_{3}), d)$ с ультраметрикой $d$, согласованной с топологией ([Раздел VI](#prt-VI)).
 
 #### <span class="accent">— [Определение VII.2]</span>
 {: .courier #def-VII-2}
 
-Смена рамки $\mathcal{R}\_{i} \to \mathcal{R}\_{i+1}$ — функтор между соседними рамками (направление указано в таблице [\[Теорема VII.1\]](#thm-VII-1)), который **не отражает изоморфизмы**: существуют объекты $A, A' \in \mathcal{R}\_{i+1}$ с $A \not\cong A'$, но $F(A) \cong F(A')$ в $\mathcal{R}\_{i}$.
+Смена рамки $\mathcal{R}\_{i} \to \mathcal{R}\_{i+1}$ — функтор между соседними рамками (направление указано в таблице [\[Теорема VII.1\]](#thm-VII-1)), который не отражает изоморфизмы: существуют объекты $A, A' \in \mathcal{R}\_{i+1}$ с $A \not\cong A'$, но $F(A) \cong F(A')$ в $\mathcal{R}\_{i}$.
 
 Инвариант $I$ уровня $\mathcal{R}\_{i+1}$ невыразим в $\mathcal{R}\_{i}$, если $I(A) \neq I(A')$ для таких $A, A'$.
 
