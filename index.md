@@ -969,7 +969,7 @@ $h\_{top}$ — инвариант рамки $\mathcal{R}\_{5}$ (тополог�
 Ни одна из шести рамок $\mathcal{R}\_{1}, \dots, \mathcal{R}\_{6}$ не покрывает цепь I–VI целиком: ни один из пяти функторов зигзага
 
 $$
-\mathcal{R}\_{1} \xrightarrow{\ \mathrm{Sem}\ } \mathcal{R}\_{2} \xleftarrow{\ U\_{2}\ } \mathcal{R}\_{3} \xrightarrow{\ \mathrm{Spec}\ } \mathcal{R}\_{4} \xleftarrow{\ U\_{4}\ } \mathcal{R}\_{5} \xleftarrow{\ U\_{5}\ } \mathcal{R}\_{6}
+\mathcal{R}_{1} \xrightarrow{\ \mathrm{Sem}\ } \mathcal{R}_{2} \xleftarrow{\ U_{2}\ } \mathcal{R}_{3} \xrightarrow{\ \mathrm{Spec}\ } \mathcal{R}_{4} \xleftarrow{\ U_{4}\ } \mathcal{R}_{5} \xleftarrow{\ U_{5}\ } \mathcal{R}_{6}
 $$
 
 не является эквивалентностью категорий; $\mathcal{R}\_{6}$ не покрывает $\mathcal{R}\_{1}$–$\mathcal{R}\_{3}$ (в $\mathcal{R}\_{6}$ нет ни синтаксиса $\mathbf{PROP}\_{\Sigma}$, ни алгебраических операций $\mathbf{BoolAlg}$, ни коалгебраической структуры $\omega$).
