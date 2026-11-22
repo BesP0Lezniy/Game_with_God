@@ -766,116 +766,116 @@ $\partial\mathbb{H}\_{core} \cong 2^{\omega}$, $\partial\mathbb{H}\_{brunn} = \{
 #### <span class="accent">— [Определение VI.1]</span>
 {: .courier #def-VI-1}
 
-Сигнатура $\mathcal{G} = (\Sigma, \mathcal{F})$ из [Раздела I](#prt-I) задаёт тернарную подстановку постоянной длины $\theta: \Sigma \to \Sigma^{3}$ по правилу $\theta(i) = j_{i}k_{i}l_{i}$:
+Сигнатура $\mathcal{G} = (\Sigma, \mathcal{F})$ из [Раздела I](#prt-I) задаёт тернарную подстановку постоянной длины $\theta: \Sigma \to \Sigma^{3}$ по правилу $\theta(i) = j\_{i}k\_{i}l\_{i}$:
 
 $$
 \theta(1) = 234,\quad \theta(2) = 135,\quad \theta(3) = 126,\quad \theta(4) = 561,\quad \theta(5) = 462,\quad \theta(6) = 453.
 $$
 
-Матрица инцидентности $M \in \mathbb{N}^{6 \times 6}$: $M_{ij} = 1$ при $j \in \{j_{i}, k_{i}, l_{i}\}$, $0$ иначе. Сумма каждой строки и каждого столбца $M$ равна $3$ (каждый сорт входит в три триплета, каждый триплет содержит три сорта); значит $M$ примитивна ($M^{3} > 0$; индекс примитивности 3: например, $(M^{2})_{14} = 0$, так как $N(1) = \{2,3,4\}$ и $N(4) = \{5,6,1\}$ не пересекаются, а $(M^{3})_{14} = 7 > 0$), $\lambda_{PF}(M) = 3$, правый и левый векторы Перрона–Фробениуса равны $\mathbf{1} = (1,\dots,1)^{T}$.
+Матрица инцидентности $M \in \mathbb{N}^{6 \times 6}$: $M\_{ij} = 1$ при $j \in \{j\_{i}, k\_{i}, l\_{i}\}$, $0$ иначе. Сумма каждой строки и каждого столбца $M$ равна $3$ (каждый сорт входит в три триплета, каждый триплет содержит три сорта); значит $M$ примитивна ($M^{3} > 0$; индекс примитивности 3: например, $(M^{2})\_{14} = 0$, так как $N(1) = \{2,3,4\}$ и $N(4) = \{5,6,1\}$ не пересекаются, а $(M^{3})\_{14} = 7 > 0$), $\lambda\_{PF}(M) = 3$, правый и левый векторы Перрона–Фробениуса равны $\mathbf{1} = (1,\dots,1)^{T}$.
 
 #### <span class="accent">— [Замечание VI.1]</span>
 {: .courier #rem-VI-1}
 
 Два уровня необходимо различать.
 
-(а) Типовой подстановочный подшифт $(X_{\theta}, S)$: пространство последовательностей $X_{\theta} \subseteq \Sigma^{\mathbb{N}}$, порождённое $\theta$, с односторонним сдвигом $S$. По теореме Мосье сложность $p(n)$ растёт линейно, откуда $h_{top}(S\vert_{X_{\theta}}) = 0$; система строго эргодична с равномерными частотами $1/6$. Число $\log 3 = \log \lambda_{PF}(M)$ характеризует скорость роста длины $|\theta^{k}(i)| = 3^{k}$, а не энтропию.
+(а) Типовой подстановочный подшифт $(X\_{\theta}, S)$: пространство последовательностей $X\_{\theta} \subseteq \Sigma^{\mathbb{N}}$, порождённое $\theta$, с односторонним сдвигом $S$. По теореме Мосье сложность $p(n)$ растёт линейно, откуда $h\_{top}(S\vert\_{X\_{\theta}}) = 0$; система строго эргодична с равномерными частотами $1/6$. Число $\log 3 = \log \lambda\_{PF}(M)$ характеризует скорость роста длины $\vert\theta^{k}(i)\vert = 3^{k}$, а не энтропию.
 
-(б) Спектральная динамика $(\partial\mathbb{H}, \sigma_{r})$: пространство булевых оценок на координатной сетке. Мощность слоёв растёт сверхэкспоненциально ($2^{6\cdot 3^{k}}$ для $\partial\mathbb{H}_{core}$, $2^{3^{k}}$ для $\partial\mathbb{H}_{brunn}$).
+(б) Спектральная динамика $(\partial\mathbb{H}, \sigma\_{r})$: пространство булевых оценок на координатной сетке. Мощность слоёв растёт сверхэкспоненциально ($2^{6\cdot 3^{k}}$ для $\partial\mathbb{H}\_{core}$, $2^{3^{k}}$ для $\partial\mathbb{H}\_{brunn}$).
 
 #### <span class="accent">— [Определение VI.2]</span>
 {: .courier #def-VI-2}
 
-Нить $\mathbf{0}_{\infty} \in \partial\mathbb{H}_{core}$ — постоянная нить с $u^{(k)} = \mathbf{0}$ для всех $k \geq 0$ (корректность: $T(\mathbf{0},\mathbf{0},\mathbf{0}) = \mathbf{0}$ покомпонентно). Нить $\mathbf{1}_{\infty} \in \partial\mathbb{H}_{core}$ — постоянная нить с $u^{(k)} = \mathbf{1}$ для всех $k \geq 0$ (корректность: $T(\mathbf{1},\mathbf{1},\mathbf{1}) = \mathbf{1}$ покомпонентно).
+Нить $\mathbf{0}\_{\infty} \in \partial\mathbb{H}\_{core}$ — постоянная нить с $u^{(k)} = \mathbf{0}$ для всех $k \geq 0$ (корректность: $T(\mathbf{0},\mathbf{0},\mathbf{0}) = \mathbf{0}$ покомпонентно). Нить $\mathbf{1}\_{\infty} \in \partial\mathbb{H}\_{core}$ — постоянная нить с $u^{(k)} = \mathbf{1}$ для всех $k \geq 0$ (корректность: $T(\mathbf{1},\mathbf{1},\mathbf{1}) = \mathbf{1}$ покомпонентно).
 
 #### <span class="accent">— [Лемма VI.1]</span>
 {: .courier #lem-VI-1}
 
-$\Phi_{core}$ и $\Phi_{brunn}$ — гомеоморфизмы [\[Лемма V.1\]](#lem-V-1). Для любого $n \geq 1$ и любого $r \in \{1,2,3\}$ прообраз $\sigma_{r}^{-n}(\mathcal{U}_{0})$ базового clopen-разбиения уровня 0 совпадает с разбиением $\mathcal{U}_{n}$, индуцированным компонентой с мультииндексом $(r, r, \ldots, r) \in \{1,2,3\}^{n}$ слоя $\mathcal{L}_{n}$.
+$\Phi\_{core}$ и $\Phi\_{brunn}$ — гомеоморфизмы [\[Лемма V.1\]](#lem-V-1). Для любого $n \geq 1$ и любого $r \in \{1,2,3\}$ прообраз $\sigma\_{r}^{-n}(\mathcal{U}\_{0})$ базового clopen-разбиения уровня 0 совпадает с разбиением $\mathcal{U}\_{n}$, индуцированным компонентой с мультииндексом $(r, r, \ldots, r) \in \{1,2,3\}^{n}$ слоя $\mathcal{L}\_{n}$.
 
 ***<span class="accent">Доказательство</span>***.
 
-На конечных слоях $\Phi^{-1}$ индуцируется каноническими биекциями $\mathrm{Spec}(\mathcal{L}_{k+1}) = \mathrm{Spec}(\mathcal{L}_{k}^{\otimes 3}) \xrightarrow{\sim} (\mathrm{Spec}(\mathcal{L}_{k}))^{3}$, поэтому $n$-кратное применение $p_{r} \circ \Phi^{-1}$ переводит ограничения уровня 0 в ограничения на компоненте с мультииндексом $(r, \ldots, r)$ слоя $\mathcal{L}_{n}$. $\square$
+На конечных слоях $\Phi^{-1}$ индуцируется каноническими биекциями $\mathrm{Spec}(\mathcal{L}\_{k+1}) = \mathrm{Spec}(\mathcal{L}\_{k}^{\otimes 3}) \cong (\mathrm{Spec}(\mathcal{L}\_{k}))^{3}$, поэтому $n$-кратное применение $p\_{r} \circ \Phi^{-1}$ переводит ограничения уровня 0 в ограничения на компоненте с мультииндексом $(r, \ldots, r)$ слоя $\mathcal{L}\_{n}$. $\square$
 
 #### <span class="accent">— [Определение VI.3]</span>
 {: .courier #def-VI-3}
 
-На $\partial\mathbb{H} \in \{\partial\mathbb{H}_{core}, \partial\mathbb{H}_{brunn}\}$: экспоненциальная фильтрационная ультраметрика $d(\pi_{1}, \pi_{2}) := 2^{-k(\pi_{1}, \pi_{2})}$ при $\pi_{1} \neq \pi_{2}$, $d(\pi, \pi) := 0$, где $k(\pi_{1}, \pi_{2}) := \min\{k \in \mathbb{N} : \pi_{1}^{(k)} \neq \pi_{2}^{(k)}\}$; послойно-нормированная ультраметрика $d_{norm}(\pi_{1}, \pi_{2}) := |\mathrm{Spec}(\mathcal{L}_{k(\pi_{1}, \pi_{2})})|^{-1}$ при $\pi_{1} \neq \pi_{2}$, $d_{norm}(\pi, \pi) := 0$. Обе совместимы с топологией Стоуна и заданы конструктивно в ZF.
+На $\partial\mathbb{H} \in \{\partial\mathbb{H}\_{core}, \partial\mathbb{H}\_{brunn}\}$: экспоненциальная фильтрационная ультраметрика $d(\pi\_{1}, \pi\_{2}) := 2^{-k(\pi\_{1}, \pi\_{2})}$ при $\pi\_{1} \neq \pi\_{2}$, $d(\pi, \pi) := 0$, где $k(\pi\_{1}, \pi\_{2}) := \min\{k \in \mathbb{N} : \pi\_{1}^{(k)} \neq \pi\_{2}^{(k)}\}$; послойно-нормированная ультраметрика $d\_{norm}(\pi\_{1}, \pi\_{2}) := \vert\mathrm{Spec}(\mathcal{L}\_{k(\pi\_{1}, \pi\_{2})})\vert^{-1}$ при $\pi\_{1} \neq \pi\_{2}$, $d\_{norm}(\pi, \pi) := 0$. Обе совместимы с топологией Стоуна и заданы конструктивно в ZF.
 
 #### <span class="accent">— [Теорема VI.1]</span>
 {: .courier #thm-VI-1}
 
-Для каждого $r \in \{1,2,3\}$: $h_{top}(\sigma_{r}\vert_{\partial\mathbb{H}_{core}}) = h_{top}(\sigma_{r}\vert_{\partial\mathbb{H}_{brunn}}) = +\infty$.
+Для каждого $r \in \{1,2,3\}$: $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}) = h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{brunn}}) = +\infty$.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Пусть $\mathcal{U}_{0}$ — конечное clopen-разбиение уровня 0. Измельчение $\mathcal{U}_{0} \vee \sigma_{r}^{-1}\mathcal{U}_{0} \vee \cdots \vee \sigma_{r}^{-(n-1)}\mathcal{U}_{0}$ разделяет все компоненты слоя $\mathcal{L}_{n-1}$ [\[Лемма VI.1\]](#lem-VI-1).
+(1) Пусть $\mathcal{U}\_{0}$ — конечное clopen-разбиение уровня 0. Измельчение $\mathcal{U}\_{0} \vee \sigma\_{r}^{-1}\mathcal{U}\_{0} \vee \cdots \vee \sigma\_{r}^{-(n-1)}\mathcal{U}\_{0}$ разделяет все компоненты слоя $\mathcal{L}\_{n-1}$ [\[Лемма VI.1\]](#lem-VI-1).
 
-(2) Для $\partial\mathbb{H}_{core}$ число непустых элементов измельчения $\geq |\mathrm{Spec}(\mathcal{L}_{n-1})| = 2^{6 \cdot 3^{n-1}}$, откуда $h_{top}(\sigma_{r}\vert_{\partial\mathbb{H}_{core}}) \geq \lim_{n \to \infty} \frac{1}{n}\log(2^{6\cdot 3^{n-1}}) = +\infty$. Аналогично для $\partial\mathbb{H}_{brunn}$: $|\mathrm{Spec}(\mathcal{L}_{n-1}^{brunn})| = 2^{3^{n-1}}$, и $\lim_{n \to \infty} \frac{3^{n-1}\log 2}{n} = +\infty$. $\square$
+(2) Для $\partial\mathbb{H}\_{core}$ число непустых элементов измельчения $\geq \vert\mathrm{Spec}(\mathcal{L}\_{n-1})\vert = 2^{6 \cdot 3^{n-1}}$, откуда $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}) \geq \lim\_{n \to \infty} \frac{1}{n}\log(2^{6\cdot 3^{n-1}}) = +\infty$. Аналогично для $\partial\mathbb{H}\_{brunn}$: $\vert\mathrm{Spec}(\mathcal{L}\_{n-1}^{brunn})\vert = 2^{3^{n-1}}$, и $\lim\_{n \to \infty} \frac{3^{n-1}\log 2}{n} = +\infty$. $\square$
 
 #### <span class="accent">— [Теорема VI.2]</span>
 {: .courier #thm-VI-2}
 
-В ультраметрике $d = 2^{-k}$: $\dim_{H}(\partial\mathbb{H}_{core}, d) = \dim_{H}(K_{coll}, d) = +\infty$. В $d_{norm}$: $\dim_{H}(\partial\mathbb{H}_{core}, d_{norm}) = \dim_{H}(K_{coll}, d_{norm}) = 1$.
+В ультраметрике $d = 2^{-k}$: $\dim\_{H}(\partial\mathbb{H}\_{core}, d) = \dim\_{H}(K\_{coll}, d) = +\infty$. В $d\_{norm}$: $\dim\_{H}(\partial\mathbb{H}\_{core}, d\_{norm}) = \dim\_{H}(K\_{coll}, d\_{norm}) = 1$.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) При $d = 2^{-k}$: $N_{k}(\partial\mathbb{H}_{core}) = |\mathrm{Spec}(\mathcal{L}_{k})| = 2^{6\cdot 3^{k}}$, $\varepsilon_{k} = 2^{-k}$, откуда $\underline{\dim}_{B}(\partial\mathbb{H}_{core}, d) = \lim_{k} \frac{6\cdot 3^{k}\log 2}{k\log 2} = +\infty$; для $K_{coll}$: $N_{k}(K_{coll}) = 2^{3^{k}} - 1$, $\underline{\dim}_{B} = +\infty$. Так как $\dim_{H} \leq \underline{\dim}_{B}$, получаем $\dim_{H} \leq +\infty$; нижняя оценка $\dim_{H} \geq +\infty$ — по лемме Фростмана (масс-распределение ниже), $\dim_{H} = +\infty$.
+(1) При $d = 2^{-k}$: $N\_{k}(\partial\mathbb{H}\_{core}) = \vert\mathrm{Spec}(\mathcal{L}\_{k})\vert = 2^{6\cdot 3^{k}}$, $\varepsilon\_{k} = 2^{-k}$, откуда $\underline{\dim}\_{B}(\partial\mathbb{H}\_{core}, d) = \lim\_{k} \frac{6\cdot 3^{k}\log 2}{k\log 2} = +\infty$; для $K\_{coll}$: $N\_{k}(K\_{coll}) = 2^{3^{k}} - 1$, $\underline{\dim}\_{B} = +\infty$. Так как $\dim\_{H} \leq \underline{\dim}\_{B}$, получаем $\dim\_{H} \leq +\infty$; нижняя оценка $\dim\_{H} \geq +\infty$ — по лемме Фростмана (масс-распределение ниже), $\dim\_{H} = +\infty$.
 
-(2) При $d_{norm}$: цилиндры уровня $k$ имеют диаметр ровно $|\mathrm{Spec}(\mathcal{L}_{k})|^{-1}$; их число $N_{k} = |\mathrm{Spec}(\mathcal{L}_{k})|$, откуда $\underline{\dim}_{B} = \lim_{k} \frac{\log N_{k}}{\log N_{k}} = 1$. Верхняя оценка $\dim_{H} \leq \dim_{B} = 1$. Нижняя оценка ($\dim_{H} \geq 1$): зададим вероятностную меру $\mu$ на цилиндрах уровня $k$ равенством $\mu(C_{k}(u)) := 1/N_{k}$ (равномерное распределение).
+(2) При $d\_{norm}$: цилиндры уровня $k$ имеют диаметр ровно $\vert\mathrm{Spec}(\mathcal{L}\_{k})\vert^{-1}$; их число $N\_{k} = \vert\mathrm{Spec}(\mathcal{L}\_{k})\vert$, откуда $\underline{\dim}\_{B} = \lim\_{k} \frac{\log N\_{k}}{\log N\_{k}} = 1$. Верхняя оценка $\dim\_{H} \leq \dim\_{B} = 1$. Нижняя оценка ($\dim\_{H} \geq 1$): зададим вероятностную меру $\mu$ на цилиндрах уровня $k$ равенством $\mu(C\_{k}(u)) := 1/N\_{k}$ (равномерное распределение).
 
-(3) Для любого шара $B$ уровня $k$ (clopen-цилиндр): $\mu(B) = 1/N_{k} = \mathrm{diam}_{norm}(B)^{1}$, то есть $\mu(B) \leq \mathrm{diam}(B)^{1}$. По лемме Фростмана (mass distribution principle) $\mathcal{H}^{1}(X) \geq 1 > 0$, значит $\dim_{H}(X) \geq 1$. Для $K_{coll}$: $\mu(C_{k}(u)) := 1/(2^{3^{k}} - 1)$ (равномерно на $K_{coll}$); для шара $B$ уровня $k$ имеем $\mu(B) \leq 2 \cdot (2^{3^{k}})^{-1} = 2\cdot \mathrm{diam}(B)$, откуда $\mathcal{H}^{1}(K_{coll}) \geq 1/2 > 0$, значит $\dim_{H}(K_{coll}) \geq 1$. В итоге $\dim_{H}(\cdot, d_{norm}) = 1$. Мера $\mu$ счётно-аддитивна в ZF: цилиндры clopen, компактность даёт конечное подпокрытие для любого счётного открытого покрытия. $\square$
+(3) Для любого шара $B$ уровня $k$ (clopen-цилиндр): $\mu(B) = 1/N\_{k} = \mathrm{diam}\_{norm}(B)^{1}$, то есть $\mu(B) \leq \mathrm{diam}(B)^{1}$. По лемме Фростмана (mass distribution principle) $\mathcal{H}^{1}(X) \geq 1 > 0$, значит $\dim\_{H}(X) \geq 1$. Для $K\_{coll}$: $\mu(C\_{k}(u)) := 1/(2^{3^{k}} - 1)$ (равномерно на $K\_{coll}$); для шара $B$ уровня $k$ имеем $\mu(B) \leq 2 \cdot (2^{3^{k}})^{-1} = 2\cdot \mathrm{diam}(B)$, откуда $\mathcal{H}^{1}(K\_{coll}) \geq 1/2 > 0$, значит $\dim\_{H}(K\_{coll}) \geq 1$. В итоге $\dim\_{H}(\cdot, d\_{norm}) = 1$. Мера $\mu$ счётно-аддитивна в ZF: цилиндры clopen, компактность даёт конечное подпокрытие для любого счётного открытого покрытия. $\square$
 
 #### <span class="accent">— [Замечание VI.2]</span>
 {: .courier #rem-VI-2}
 
-При $d = 2^{-k}$ нижняя оценка $\dim_{H} = +\infty$ через лемму Фростмана тривиальна ($\dim_{B} = +\infty$ уже даёт $+\infty$ как верхнюю границу для любой меры, но у нас $\dim_{H} = \dim_{B} = +\infty$ по нижней оценке выше: любая мера даёт $\dim_{H} \leq +\infty$, и $\dim_{H} \geq +\infty$ следует из $N_{k} \geq 2^{3^{k}}$ и масс-распределения с $\mu(B) \leq 2^{-3^{k}t}$ для любого $t > 0$).
+При $d = 2^{-k}$ нижняя оценка $\dim\_{H} = +\infty$ через лемму Фростмана тривиальна ($\dim\_{B} = +\infty$ уже даёт $+\infty$ как верхнюю границу для любой меры, но у нас $\dim\_{H} = \dim\_{B} = +\infty$ по нижней оценке выше: любая мера даёт $\dim\_{H} \leq +\infty$, и $\dim\_{H} \geq +\infty$ следует из $N\_{k} \geq 2^{3^{k}}$ и масс-распределения с $\mu(B) \leq 2^{-3^{k}t}$ для любого $t > 0$).
 
 #### <span class="accent">— [Теорема VI.3]</span>
 {: .courier #thm-VI-3}
 
-(а) $\partial\mathbb{H}_{core} = V_{0} \sqcup V_{+}$, где $V_{0} := \{\pi : \pi^{(0)} = \mathbf{0}\}$, $V_{+} := \{\pi : \pi^{(0)} \neq \mathbf{0}\}$ — непустые clopen.
+(а) $\partial\mathbb{H}\_{core} = V\_{0} \sqcup V\_{+}$, где $V\_{0} := \{\pi : \pi^{(0)} = \mathbf{0}\}$, $V\_{+} := \{\pi : \pi^{(0)} \neq \mathbf{0}\}$ — непустые clopen.
 
-(б) $V_{+}$ инвариантно вперёд относительно всех трёх сдвигов ($\sigma_{r}(V_{+}) \subseteq V_{+}$), причём для $r \in \{1, 2\}$ включение строгое, а для $r = 3$ — равенство ($\sigma_{3}(V_{+}) = V_{+}$). $V_{0}$ отображается на всё пространство: $\sigma_{r}(V_{0}) = \partial\mathbb{H}_{core}$.
+(б) $V\_{+}$ инвариантно вперёд относительно всех трёх сдвигов ($\sigma\_{r}(V\_{+}) \subseteq V\_{+}$), причём для $r \in \{1, 2\}$ включение строгое, а для $r = 3$ — равенство ($\sigma\_{3}(V\_{+}) = V\_{+}$). $V\_{0}$ отображается на всё пространство: $\sigma\_{r}(V\_{0}) = \partial\mathbb{H}\_{core}$.
 
-(в) Ни $(\partial\mathbb{H}_{core}, \sigma_{r})$, ни $(\partial\mathbb{H}_{brunn}, \sigma_{r})$ не являются топологически транзитивными и не обладают свойством топологического перемешивания.
+(в) Ни $(\partial\mathbb{H}\_{core}, \sigma\_{r})$, ни $(\partial\mathbb{H}\_{brunn}, \sigma\_{r})$ не являются топологически транзитивными и не обладают свойством топологического перемешивания.
 
 ***<span class="accent">Доказательство</span>***.
 
 (1) Из дискретности слоя 0 (а) — очевидно.
 
-(2) Если $\pi \in V_{+}$, то $T(\pi_{1}^{(0)}, \pi_{2}^{(0)}, \pi_{3}^{(0)}) = \pi^{(0)} \neq \mathbf{0}$, откуда $\pi_{r}^{(0)} \neq \mathbf{0}$ для всех $r$, т.е. $\sigma_{r}(\pi) \in V_{+}$. Для $r=1$ множество $\{j_{i}\} = \{1,2,4,5\}$ не содержит $6$; если $\eta \in V_{+}$ с $\eta^{(0)} = e_{6}$, то $T(e_{6}, v^{2}, v^{3}) = \mathbf{0}$ для любых $v^{2}, v^{3}$ (так как $(e_{6})_{j_{i}} = 0$), значит $\sigma_{1}^{-1}(\eta) \subseteq V_{0}$, т.е. $\eta \notin \sigma_{1}(V_{+})$ — строгое включение.
+(2) Если $\pi \in V\_{+}$, то $T(\pi\_{1}^{(0)}, \pi\_{2}^{(0)}, \pi\_{3}^{(0)}) = \pi^{(0)} \neq \mathbf{0}$, откуда $\pi\_{r}^{(0)} \neq \mathbf{0}$ для всех $r$, т.е. $\sigma\_{r}(\pi) \in V\_{+}$. Для $r=1$ множество $\{j\_{i}\} = \{1,2,4,5\}$ не содержит $6$; если $\eta \in V\_{+}$ с $\eta^{(0)} = e\_{6}$, то $T(e\_{6}, v^{2}, v^{3}) = \mathbf{0}$ для любых $v^{2}, v^{3}$ (так как $(e\_{6})\_{j\_{i}} = 0$), значит $\sigma\_{1}^{-1}(\eta) \subseteq V\_{0}$, т.е. $\eta \notin \sigma\_{1}(V\_{+})$ — строгое включение.
 
-(3) Для $r=2$: $\{k_{i}\} = \{2,3,5,6\}$ не содержит $1$; если $\eta^{(0)} = e_{1}$, то $T(v^{1}, e_{1}, v^{3}) = \mathbf{0}$, значит $\eta \notin \sigma_{2}(V_{+})$ — строгое включение. Для $r=3$: $i \mapsto l_{i}$ — биекция $\{4,5,6,1,2,3\}$; для любого $\eta \in V_{+}$ точка $\pi := \Phi_{core}(\mathbf{1}_{\infty}, \mathbf{1}_{\infty}, \eta)$ (где $\mathbf{1}_{\infty} \in \partial\mathbb{H}_{core}$ имеет $\pi^{(0)}_{i} = T(\mathbf{1}, \mathbf{1}, \eta^{(0)})_{i} = 1 \cdot 1 \cdot \eta^{(0)}_{l_{i}} = \eta^{(0)}_{l_{i}}$ [\[Определение VI.2\]](#def-VI-2); так как $l$ — биекция и $\eta^{(0)} \neq \mathbf{0}$, $\pi^{(0)} \neq \mathbf{0}$, т.е. $\pi \in V_{+}$, и $\sigma_{3}(\pi) = \eta$ — равенство. Для $V_{0}$: при $\pi = \Phi_{core}(\eta, \mathbf{0}_{\infty}, \mathbf{0}_{\infty})$ имеем $\sigma_{1}(\pi) = \eta$ (аналогично для $r=2,3$).
+(3) Для $r=2$: $\{k\_{i}\} = \{2,3,5,6\}$ не содержит $1$; если $\eta^{(0)} = e\_{1}$, то $T(v^{1}, e\_{1}, v^{3}) = \mathbf{0}$, значит $\eta \notin \sigma\_{2}(V\_{+})$ — строгое включение. Для $r=3$: $i \mapsto l\_{i}$ — биекция $\{4,5,6,1,2,3\}$; для любого $\eta \in V\_{+}$ точка $\pi := \Phi\_{core}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \eta)$ (где $\mathbf{1}\_{\infty} \in \partial\mathbb{H}\_{core}$ — [\[Определение VI.2\]](#def-VI-2)) имеет $\pi^{(0)}\_{i} = T(\mathbf{1}, \mathbf{1}, \eta^{(0)})\_{i} = 1 \cdot 1 \cdot \eta^{(0)}\_{l\_{i}} = \eta^{(0)}\_{l\_{i}}$; так как $l$ — биекция и $\eta^{(0)} \neq \mathbf{0}$, $\pi^{(0)} \neq \mathbf{0}$, т.е. $\pi \in V\_{+}$, и $\sigma\_{3}(\pi) = \eta$ — равенство. Для $V\_{0}$: при $\pi = \Phi\_{core}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ имеем $\sigma\_{1}(\pi) = \eta$ (аналогично для $r=2,3$).
 
-(4) В силу $\sigma_{r}^{n}(V_{+}) \subseteq V_{+}$ и $V_{0} \cap V_{+} = \varnothing$ имеем $V_{+} \cap \sigma_{r}^{-n}(V_{0}) = \varnothing$ для всех $n \geq 0$; для $\partial\mathbb{H}_{brunn}$ — $\{\mathbf{1}_{\infty}\} \cap \sigma_{r}^{-n}(K_{coll}) = \varnothing$ [\[Теорема V.2\]](#thm-V-2). $\square$
+(4) В силу $\sigma\_{r}^{n}(V\_{+}) \subseteq V\_{+}$ и $V\_{0} \cap V\_{+} = \varnothing$ имеем $V\_{+} \cap \sigma\_{r}^{-n}(V\_{0}) = \varnothing$ для всех $n \geq 0$; для $\partial\mathbb{H}\_{brunn}$ — $\{\mathbf{1}\_{\infty}\} \cap \sigma\_{r}^{-n}(K\_{coll}) = \varnothing$ [\[Теорема V.2\]](#thm-V-2). $\square$
 
 #### <span class="accent">— [Замечание VI.3]</span>
 {: .courier #rem-VI-3}
 
-Динамическая асимметрия $\partial\mathbb{H}_{core} = V_{0} \sqcup V_{+}$ структурно аналогична разложению $\partial\mathbb{H}_{brunn} = \{\mathbf{1}_{\infty}\} \sqcup K_{coll}$, но не тождественна: в $\partial\mathbb{H}_{brunn}$ инвариантное вперёд ядро $\{\mathbf{1}_{\infty}\}$ — одна изолированная точка, тогда как в $\partial\mathbb{H}_{core}$ ядро $V_{+}$ — несчётное clopen, строго вложенное в себя под действием $\sigma_{1}, \sigma_{2}$.
+Динамическая асимметрия $\partial\mathbb{H}\_{core} = V\_{0} \sqcup V\_{+}$ структурно аналогична разложению $\partial\mathbb{H}\_{brunn} = \{\mathbf{1}\_{\infty}\} \sqcup K\_{coll}$, но не тождественна: в $\partial\mathbb{H}\_{brunn}$ инвариантное вперёд ядро $\{\mathbf{1}\_{\infty}\}$ — одна изолированная точка, тогда как в $\partial\mathbb{H}\_{core}$ ядро $V\_{+}$ — несчётное clopen, строго вложенное в себя под действием $\sigma\_{1}, \sigma\_{2}$.
 
 #### <span class="accent">— [Лемма VI.2]</span>
 {: .courier #lem-VI-2}
 
-(а) В $\partial\mathbb{H}_{brunn}$ множество общих неподвижных точек $\sigma_{1}, \sigma_{2}, \sigma_{3}$ плотно.
+(а) В $\partial\mathbb{H}\_{brunn}$ множество общих неподвижных точек $\sigma\_{1}, \sigma\_{2}, \sigma\_{3}$ плотно.
 
-(б) В $\partial\mathbb{H}_{core}$ точки $\mathbf{0}_{\infty} \in V_{0}$, $\mathbf{1}_{\infty} \in V_{+}$ — общие неподвижные точки всех $\sigma_{r}$, но множество неподвижных не плотно.
+(б) В $\partial\mathbb{H}\_{core}$ точки $\mathbf{0}\_{\infty} \in V\_{0}$, $\mathbf{1}\_{\infty} \in V\_{+}$ — общие неподвижные точки всех $\sigma\_{r}$, но множество неподвижных не плотно.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Любое непустое базовое clopen $U \subseteq \partial\mathbb{H}_{brunn}$ задаётся фиксацией $u^{(k)} \in \{0,1\}^{3^{k}}$ на уровне $k$. В силу идемпотентности $a \cdot a \cdot a = a^{3} = a$ в $\mathbb{F}_{2}$, тройка $(u^{(k)}, u^{(k)}, u^{(k)})$ проектируется в $u^{(k)}$ при $(\alpha_{k}')^{*}$. Рекурсивно для всех $m \geq k$ получаем $\pi \in U$, для которой $\Phi_{brunn}^{-1}(\pi) = (\pi, \pi, \pi)$, откуда $\sigma_{r}(\pi) = p_{r}(\Phi^{-1}(\pi)) = p_{r}(\pi,\pi,\pi) = \pi$ для всех $r$.
+(1) Любое непустое базовое clopen $U \subseteq \partial\mathbb{H}\_{brunn}$ задаётся фиксацией $u^{(k)} \in \{0,1\}^{3^{k}}$ на уровне $k$. В силу идемпотентности $a \cdot a \cdot a = a^{3} = a$ в $\mathbb{F}\_{2}$, тройка $(u^{(k)}, u^{(k)}, u^{(k)})$ проектируется в $u^{(k)}$ при $(\alpha\_{k}')^{*}$. Рекурсивно для всех $m \geq k$ получаем $\pi \in U$, для которой $\Phi\_{brunn}^{-1}(\pi) = (\pi, \pi, \pi)$, откуда $\sigma\_{r}(\pi) = p\_{r}(\Phi^{-1}(\pi)) = p\_{r}(\pi,\pi,\pi) = \pi$ для всех $r$.
 
-(2) Для $\mathbf{0}_{\infty}, \mathbf{1}_{\infty}$ неподвижность следует из $T(\mathbf{0}, \mathbf{0}, \mathbf{0}) = \mathbf{0}$, $T(\mathbf{1}, \mathbf{1}, \mathbf{1}) = \mathbf{1}$. Clopen $\{\pi \in \partial\mathbb{H}_{core} : \pi^{(0)} = e_{1}\}$ не содержит неподвижных точек $\sigma_{1}$: если $\sigma_{1}(\pi) = \pi$ и $\pi^{(0)} = e_{1}$, то $\pi_{1}^{(0)} = e_{1}$ (так как $\sigma_{1}(\pi)^{(0)} = p_{1}(\Phi^{-1}(\pi))^{(0)} = \pi_{1}^{(0)}$), и $T(e_{1}, \pi_{2}^{(0)}, \pi_{3}^{(0)}) = \pi^{(0)} = e_{1}$; но $T(e_{1}, v^{2}, v^{3})_{1} = (e_{1})_{j_{1}} \cdot (v^{2})_{k_{1}} \cdot (v^{3})_{l_{1}} = (e_{1})_{2} \cdot \ldots = 0 \neq 1 = (e_{1})_{1}$ — противоречие. Значит $\pi_{1}^{(0)} \neq e_{1}$, т.е. $\sigma_{1}(\pi)^{(0)} \neq \pi^{(0)}$ — не неподвижна. $\square$
+(2) Для $\mathbf{0}\_{\infty}, \mathbf{1}\_{\infty}$ неподвижность следует из $T(\mathbf{0}, \mathbf{0}, \mathbf{0}) = \mathbf{0}$, $T(\mathbf{1}, \mathbf{1}, \mathbf{1}) = \mathbf{1}$. Clopen $\{\pi \in \partial\mathbb{H}\_{core} : \pi^{(0)} = e\_{1}\}$ не содержит неподвижных точек $\sigma\_{1}$: если $\sigma\_{1}(\pi) = \pi$ и $\pi^{(0)} = e\_{1}$, то $\pi\_{1}^{(0)} = e\_{1}$ (так как $\sigma\_{1}(\pi)^{(0)} = p\_{1}(\Phi^{-1}(\pi))^{(0)} = \pi\_{1}^{(0)}$), и $T(e\_{1}, \pi\_{2}^{(0)}, \pi\_{3}^{(0)}) = \pi^{(0)} = e\_{1}$; но $T(e\_{1}, v^{2}, v^{3})\_{1} = (e\_{1})\_{j\_{1}} \cdot (v^{2})\_{k\_{1}} \cdot (v^{3})\_{l\_{1}} = (e\_{1})\_{2} \cdot \ldots = 0 \neq 1 = (e\_{1})\_{1}$ — противоречие. Значит $\pi\_{1}^{(0)} \neq e\_{1}$, т.е. $\sigma\_{1}(\pi)^{(0)} \neq \pi^{(0)}$ — не неподвижна. $\square$
 
 #### <span class="accent">— [Замечание VI.4]</span>
 {: .courier #rem-VI-4}
 
-Границы [Раздела VI](#prt-V):
+Границы Раздела VI:
 
-(а) Классификация периодических орбит произвольных периодов $p \geq 2$ в $\partial\mathbb{H}_{core}$ не проводится.
+(а) Классификация периодических орбит произвольных периодов $p \geq 2$ в $\partial\mathbb{H}\_{core}$ не проводится.
 
-(б) Проективно согласованная равномерная послойная мера (приписывающая равный вес $1/|\mathrm{Spec}(\mathcal{L}_{k})|$ всем точкам слоя $k$) не образует проективной системы при $\alpha_{k}^{*}$, поскольку мощности слоёв $(\alpha_{k}^{*})^{-1}(p)$ непостоянны (зависимость $7^{z(q)}$ для $\partial\mathbb{H}_{brunn}$ и зависимость от $p_{t}$ для $\partial\mathbb{H}_{core}$); тривиальные инвариантные меры $\delta_{\mathbf{0}_{\infty}}$, $\delta_{\mathbf{1}_{\infty}}$ существуют; построение неатомарных эргодических $\sigma_{r}$-инвариантных мер остаётся за рамками и не является необходимым [Раздел VI](#prt-VI).
+(б) Проективно согласованная равномерная послойная мера (приписывающая равный вес $1/\vert\mathrm{Spec}(\mathcal{L}\_{k})\vert$ всем точкам слоя $k$) не образует проективной системы при $\alpha\_{k}^{*}$, поскольку мощности слоёв $(\alpha\_{k}^{*})^{-1}(p)$ непостоянны (зависимость $7^{z(q)}$ для $\partial\mathbb{H}\_{brunn}$ и зависимость от $p\_{t}$ для $\partial\mathbb{H}\_{core}$); тривиальные инвариантные меры $\delta\_{\mathbf{0}\_{\infty}}$, $\delta\_{\mathbf{1}\_{\infty}}$ существуют; построение неатомарных эргодических $\sigma\_{r}$-инвариантных мер остаётся за рамками и не является необходимым для Раздела VI.
 
 (в) Аттракторные свойства в смысле сходимости орбит не устанавливаются.
 
@@ -886,17 +886,17 @@ $\Phi_{core}$ и $\Phi_{brunn}$ — гомеоморфизмы [\[Лемма V.1
 
 **1. <span class="accent">С чего начали и почему</span>?**
 
-С $\partial\mathbb{H}_{core}$, $\partial\mathbb{H}_{brunn}$ с динамикой $\sigma_{r}$ ([Раздел V](#prt-V)). Формализм не запрещает ввести метрику, энтропию, матрицу подстановки.
+С $\partial\mathbb{H}\_{core}$, $\partial\mathbb{H}\_{brunn}$ с динамикой $\sigma\_{r}$ ([Раздел V](#prt-V)). Формализм не запрещает ввести метрику, энтропию, матрицу подстановки.
 
 **2. <span class="accent">Какие шаги выполнили</span>?**
 
-(а) Ввели подстановку $\theta$ и матрицу $M$ [\[Определение VI.1\]](#def-VI-1); разделили уровни (типовая сетка vs спектр) [\[Замечание VI.1\]](#rem-VI-0); определили $\mathbf{0}_{\infty}, \mathbf{1}_{\infty} \in \partial\mathbb{H}_{core}$ [\[Определение VI.2\]](#def-VI-2) и ультраметрики [\[Определение VI.3\]](#def-VI-3).
+(а) Ввели подстановку $\theta$ и матрицу $M$ [\[Определение VI.1\]](#def-VI-1); разделили уровни (типовая сетка vs спектр) [\[Замечание VI.1\]](#rem-VI-1); определили $\mathbf{0}\_{\infty}, \mathbf{1}\_{\infty} \in \partial\mathbb{H}\_{core}$ [\[Определение VI.2\]](#def-VI-2) и ультраметрики [\[Определение VI.3\]](#def-VI-3).
 
-(б) Доказали сдвиг уровней [\[Лемма VI.1\]](#lem-VI-1); $h_{top}(\sigma_{r}) = +\infty$ [\[Теорема VI.1\]](#thm-VI-1); no-mixing и расщепление $V_{0} \sqcup V_{+}$ [\[Теорема VI.3\]](#thm-VI-3); вычислили $\dim_{H}$ через $\dim_{B}$ и лемму Фростмана [\[Теорема VI.2\]](#thm-VI-2); плотность/неплотность неподвижных [\[Лемма VI.2\]](#lem-VI-2).
+(б) Доказали сдвиг уровней [\[Лемма VI.1\]](#lem-VI-1); $h\_{top}(\sigma\_{r}) = +\infty$ [\[Теорема VI.1\]](#thm-VI-1); no-mixing и расщепление $V\_{0} \sqcup V\_{+}$ [\[Теорема VI.3\]](#thm-VI-3); вычислили $\dim\_{H}$ через $\dim\_{B}$ и лемму Фростмана [\[Теорема VI.2\]](#thm-VI-2); плотность/неплотность неподвижных [\[Лемма VI.2\]](#lem-VI-2).
 
 **3. <span class="accent">К чему пришли</span>?**
 
-$h_{top}(\sigma_{r}) = +\infty$ на обоих пространствах; $\dim_{H} = +\infty$ при $d = 2^{-k}$, $\dim_{H} = 1$ при $d_{norm}$ (через $\dim_{B} + $ лемму Фростмана); $\partial\mathbb{H}_{core} = V_{0} \sqcup V_{+}$ с $V_{+}$ инвариантным вперёд (строго для $r=1,2$; сюръекция для $r=3$); $\sigma_{r}(V_{0}) = \partial\mathbb{H}_{core}$; no-mixing; неподвижные точки плотны в $\partial\mathbb{H}_{brunn}$, не плотны в $\partial\mathbb{H}_{core}$.
+$h\_{top}(\sigma\_{r}) = +\infty$ на обоих пространствах; $\dim\_{H} = +\infty$ при $d = 2^{-k}$, $\dim\_{H} = 1$ при $d\_{norm}$ (через $\dim\_{B}$ и лемму Фростмана); $\partial\mathbb{H}\_{core} = V\_{0} \sqcup V\_{+}$ с $V\_{+}$ инвариантным вперёд (строго для $r=1,2$; сюръекция для $r=3$); $\sigma\_{r}(V\_{0}) = \partial\mathbb{H}\_{core}$; no-mixing; неподвижные точки плотны в $\partial\mathbb{H}\_{brunn}$, не плотны в $\partial\mathbb{H}\_{core}$.
 
 **4. <span class="accent">Что это значит сейчас</span>?**
 
