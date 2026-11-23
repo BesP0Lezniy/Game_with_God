@@ -132,7 +132,7 @@ body {
 
 .mini-banner-title {
   font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;                  /* Увеличенный шрифт заголовка в полоске */
   color: #ffffff;
   letter-spacing: 0.4px;
@@ -361,7 +361,7 @@ body {
   background-color: rgba(250, 248, 250, 0.97);
   backdrop-filter: blur(6px);
   border-top: 1px solid #d8c8d4;
-  padding: 14px 40px;               /* Увеличена толщина нижней панели */
+  padding: 14px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -378,19 +378,19 @@ body {
 .nav-center-group {
   display: flex;
   align-items: center;
-  gap: 22px;                        /* Расстояние между центром и кнопками прокрутки */
+  gap: 22px;
 }
 
-/* Основные кнопки в рамке (Пред. глава, Главная, След. глава) */
+/* Базовый каркас кнопок в рамке */
 .nav-btn {
   display: inline-block;
   padding: 9px 18px;
-  border: 1px solid #741b47;
+  border: 1px solid var(--btn-color);
   border-radius: 5px;
   background-color: #ffffff;
-  color: #741b47 !important;
+  color: var(--btn-color) !important;
   font-family: inherit;
-  font-size: 18px;                  /* Увеличенный шрифт кнопок */
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none !important;
   cursor: pointer;
@@ -398,11 +398,16 @@ body {
 }
 
 .nav-btn:hover {
-  background-color: #741b47;
+  background-color: var(--btn-color);
   color: #ffffff !important;
 }
 
-/* Кнопки прокрутки: стрелка в кружочке + подпись без контура */
+/* Индивидуальные цвета для каждой кнопки перехода */
+.nav-home { --btn-color: var(--home-color); }
+.nav-prev { --btn-color: var(--prev-color); }
+.nav-next { --btn-color: var(--next-color); }
+
+/* Кнопки прокрутки (всегда в цвет текущей страницы) */
 .scroll-action-btn {
   display: inline-flex;
   align-items: center;
@@ -410,7 +415,7 @@ body {
   background: none;
   border: none;
   padding: 4px 6px;
-  color: #741b47;
+  color: var(--current-color);
   font-family: inherit;
   font-size: 17px;
   font-weight: 700;
@@ -419,7 +424,7 @@ body {
 }
 
 .scroll-action-btn:hover {
-  color: #360e3b;
+  opacity: 0.78;
 }
 
 .circle-arrow {
@@ -428,19 +433,19 @@ body {
   justify-content: center;
   width: 34px;
   height: 34px;
-  border: 2px solid #741b47;
+  border: 2px solid var(--current-color);
   border-radius: 50%;
   font-size: 19px;
   font-weight: 700;
   line-height: 1;
   background-color: #ffffff;
+  color: var(--current-color);
   transition: all 0.2s ease;
 }
 
 .scroll-action-btn:hover .circle-arrow {
-  background-color: #741b47;
+  background-color: var(--current-color);
   color: #ffffff;
-  border-color: #360e3b;
 }
 
 /* Нижний подвал (футер) */
