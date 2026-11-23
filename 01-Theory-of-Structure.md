@@ -1,6 +1,13 @@
 ---
 layout: default
 title: Глава 1
+banner_title: "Глава 1.<br>Теория Структуры"
+banner_color: "#1e0722"
+banner_border: "#120414"
+accent_color: "#741b47"
+next_url: /02-Theory-of-Formalism.html
+next_title: "Глава 2. Теория Формализма"
+next_color: "#186a56"
 ---
 
 # **(РУС) Продолжения Евклида-Гёделя**
