@@ -17,5 +17,6 @@ title: Главная
 
 * [Глава 1.](01-Theory-of-Structure.html) Теория Структуры
 * [Глава 2.](02-Theory-of-Formalism.html) Теория Формализма
+* [Глава 3.](03-Theory-of-X.html) Теория X
 
 </div>
