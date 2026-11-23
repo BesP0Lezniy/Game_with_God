@@ -1146,7 +1146,7 @@ $$
 
 (а) Определили класс $\mathfrak{P}\_{6}$ [\[Определение VIII.1\]](#def-VIII-1); зафиксировали $(6,3)$ как выбор [\[Замечание VIII.1\]](#rem-VIII-1).
 
-(б) Доказали: невозможность беспрезентационного старта через $\omega\_{\mathrm{deg}} = \varepsilon\cdot(1\otimes 1\otimes 1)$ [\[Теорема VIII.1\]](#thm-VIII-1); единственность минимальной подкоалгебры (с проверкой $\iota\_{0}(B\_{6})$ — подкоалгебра) и $\mathrm{Aut} \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ через сохранение порядка (для любой $\mathcal{G} \in \mathfrak{P}\_{6}$) [\[Лемма VIII.1\]](#lem-VIII-1); вариативность $\mathbb{Z}\_{2}$ vs $\{\mathrm{id}\}$, проверка $M'^{3} > 0$ для $\mathcal{F}'$ [\[Теорема VIII.2\]](#thm-VIII-2); trade-off с профилем $(\mathbb{Z}\_{2}, \{\mathrm{id}\}, \{\mathrm{id}\})$, коидеал $J\_{\mathrm{sym}}$, явная $\alpha\_{\mathrm{sym}}$ ([\[Теорема VIII.3\]](#thm-VIII-3)); структурное обоснование [\[Следствие VIII.1\]](#cor-VIII-1).
+(б) Доказали: невозможность беспрезентационного старта через $\omega\_{\mathrm{deg}} = \varepsilon\cdot(1\otimes 1\otimes 1)$ [\[Теорема VIII.1\]](#thm-VIII-1); единственность минимальной подкоалгебры (с проверкой $\iota\_{0}(B\_{6})$ — подкоалгебра) и $\mathrm{Aut} \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ через сохранение порядка (для любой $\mathcal{G} \in \mathfrak{P}\_{6}$) [\[Лемма VIII.1\]](#lem-VIII-1); вариативность $\mathbb{Z}\_{2}$ vs $\{\mathrm{id}\}$, проверка $M'^{3} > 0$ для $\mathcal{F}'$ [\[Теорема VIII.2\]](#thm-VIII-2); trade-off с профилем $(\mathbb{Z}\_{2}, \{\mathrm{id}\}, \{\mathrm{id}\})$, коидеал $J\_{\mathrm{sym}}$, явная $\alpha\_{\mathrm{sym}}$ [\[Теорема VIII.3\]](#thm-VIII-3); структурное обоснование [\[Следствие VIII.1\]](#cor-VIII-1).
 
 **3. <span class="accent">К чему пришли</span>?**
 
@@ -1155,3 +1155,5 @@ $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ определ�
 **4. <span class="accent">Что это значит сейчас</span>?**
 
 Выбор $\mathcal{G}$ получает внутреннее обоснование: его открытость — следствие структуры.
+
+---
