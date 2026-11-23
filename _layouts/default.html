@@ -41,7 +41,14 @@
     })();
   </script>
 </head>
-<body>
+<body style="
+  --banner-color: {{ page.banner_color | default: '#262a33' }};
+  --banner-border: {{ page.banner_border | default: '#121419' }};
+  --accent-color: {{ page.accent_color | default: '#262a33' }};
+  --home-color: #262a33;
+  --prev-color: {{ page.prev_color | default: '#262a33' }};
+  --next-color: {{ page.next_color | default: '#741b47' }};
+">
 
    <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
   <header id="main-banner" class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#262a33' }}; border-bottom-color: {{ page.banner_border | default: '#121419' }};">
@@ -98,11 +105,11 @@
     </div>
   </main>
 
-   <!-- БЛОК 5: Закрепленная нижняя панель навигации -->
+    <!-- БЛОК 5: Закрепленная нижняя панель навигации -->
   <nav class="fixed-bottom-bar">
     <div class="nav-side nav-left">
       {% if page.prev_url %}
-        <a href="{{ page.prev_url | relative_url }}" class="nav-btn">← {{ page.prev_title | default: "Пред. глава" }}</a>
+        <a href="{{ page.prev_url | relative_url }}" class="nav-btn nav-prev">← {{ page.prev_title | default: "Пред. глава" }}</a>
       {% endif %}
     </div>
 
@@ -124,7 +131,7 @@
 
     <div class="nav-side nav-right">
       {% if page.next_url %}
-        <a href="{{ page.next_url | relative_url }}" class="nav-btn">{{ page.next_title | default: "След. глава" }} →</a>
+        <a href="{{ page.next_url | relative_url }}" class="nav-btn nav-next">{{ page.next_title | default: "След. глава" }} →</a>
       {% endif %}
     </div>
   </nav>
