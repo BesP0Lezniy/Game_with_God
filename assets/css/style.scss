@@ -247,3 +247,47 @@ body {
 .page-content p .katex {
   line-height: inherit;
 }
+
+/* Многоуровневое оглавление в книжном / Word-стиле */
+.toc {
+  background-color: #faf8fa;
+  border: 1px solid #e5dce3;
+  border-left: 4px solid #741b47;
+  padding: 20px 28px;
+  margin: 1.5em 0;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc ul ul {
+  padding-left: 24px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border-left: 1px dashed #cbb8c6;
+}
+
+.toc li {
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.toc > ul > li {
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+.toc > ul > li:first-child {
+  margin-top: 0;
+}
+
+.toc .toc-note {
+  display: block;
+  font-size: 14px;
+  color: #555555;
+  font-weight: 400;
+  margin-top: 3px;
+}
