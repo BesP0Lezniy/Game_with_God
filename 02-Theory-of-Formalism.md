@@ -2,8 +2,8 @@
 layout: default
 title: Глава 2
 banner_title: "Глава 2.<br>Теория Формализма"
-banner_color: "#0b2922"
-banner_border: "#051410"
+banner_color: "#061c17"
+banner_border: "#030f0c"
 accent_color: "#186a56"
 prev_url: /01-Theory-of-Structure.html
 prev_title: "Глава 1. Теория Структуры"
