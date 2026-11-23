@@ -294,3 +294,38 @@ body {
   font-weight: 400;
   margin-top: 3px;
 }
+
+/* Нижняя панель навигации между главами */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid #e5dce3;
+  gap: 12px;
+}
+
+.nav-left, .nav-center, .nav-right {
+  flex: 1;
+}
+
+.nav-center { text-align: center; }
+.nav-right { text-align: right; }
+
+.page-content .nav-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #741b47;
+  border-radius: 4px;
+  background-color: #faf8fa;
+  color: #741b47 !important;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.page-content .nav-btn:hover {
+  background-color: #741b47;
+  color: #ffffff !important;
+  border-bottom-color: #741b47;
+}
