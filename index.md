@@ -1051,11 +1051,11 @@ $$
 
 В $\mathbf{BoolAlg}$ счётная безатомная булева алгебра $\mathrm{FreeBool}(\aleph\_{0})$ (любой объект, изоморфный $\mathbb{H}\_{core}(\mathcal{G})$) не определяет канонического коалгебраического эндоморфизма $\omega: \mathrm{FreeBool}(\aleph\_{0}) \to F(\mathrm{FreeBool}(\aleph\_{0}))$, порождающего структуру I–VI:
 
-(1) любые две $\mathcal{G}, \mathcal{G}' \in \mathfrak{P}\_{6}$ дают $\mathbb{H}\_{core}(\mathcal{G}) \cong \mathbb{H}\_{core}(\mathcal{G}') \cong \mathrm{FreeBool}(\aleph\_{0})$;
+(1) Любые две $\mathcal{G}, \mathcal{G}' \in \mathfrak{P}\_{6}$ дают $\mathbb{H}\_{core}(\mathcal{G}) \cong \mathbb{H}\_{core}(\mathcal{G}') \cong \mathrm{FreeBool}(\aleph\_{0})$;
 
-(2) на $\mathrm{FreeBool}(\aleph\_{0})$ существуют коалгебраические структуры, не изоморфные ни одной $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$;
+(2) На $\mathrm{FreeBool}(\aleph\_{0})$ существуют коалгебраические структуры, не изоморфные ни одной $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$;
 
-(3) без выбора $\mathcal{G} \in \mathfrak{P}\_{6}$ коалгебраическая динамика I–VI не определена.
+(3) Без выбора $\mathcal{G} \in \mathfrak{P}\_{6}$ коалгебраическая динамика I–VI не определена.
 
 ***<span class="accent">Доказательство</span>***.
 
@@ -1070,7 +1070,7 @@ $$
 
 Для любой $\mathcal{G} \in \mathfrak{P}\_{6}$:
 
-(а) в $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная минимальная нетривиальная конечная подкоалгебра;
+(а) В $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная минимальная нетривиальная конечная подкоалгебра;
 
 (б) $\mathrm{Aut}(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G})) \cong \mathrm{Aut}(B\_{6}, \alpha\_{0}) \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$.
 
@@ -1101,9 +1101,19 @@ $$
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Изоморфизм коалгебр переводит единственную минимальную подкоалгебру $\iota\_{0}(B\_{6})$ в $\iota\_{0}'(B\_{6}')$ [\[Лемма VIII.1\]](#lem-VIII-1) а), откуда $\mathcal{F}' = \pi(\mathcal{F})$ для $\pi \in \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ [\[Лемма VIII.1\]](#lem-VIII-1) б).
+(1) Изоморфизм коалгебр переводит единственную минимальную подкоалгебру $\iota\_{0}(B\_{6})$ в $\iota\_{0}'(B\_{6}')$ [\[Лемма VIII.1\]](#lem-VIII-1), откуда $\mathcal{F}' = \pi(\mathcal{F})$ для $\pi \in \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ [\[Лемма VIII.1\]](#lem-VIII-1).
 
-(2) Для $\mathcal{F}$ перебор по инвариантным парам $P\_{3}$ и уникальным свидетелям $j\_{1} = 2$, $j\_{4} = 5$, $k\_{3} = 2$, $k\_{6} = 5$ оставляет $\{\mathrm{id}, P\_{3}\}$. Для $\mathcal{F}'$: (i) отсутствие самоссылок и различие множителей — прямая проверка по каждой строке; (ii) сильная связность: из $1$ достижимы $\{2,3,4\}$, из них — $\{1,2,3,4,5,6\}$ (например, $4 \to 1, 2, 3$; $3 \to 6$; $2 \to 5$), значит все; (iii) свидетели: $l' = (4, 5, 6, 3, 2, 1)$ — все 6 значений различны, значит инъективность $\alpha\_{0}'$; (iv) примитивность $M'^{3} > 0$: из $1$ за 1 шаг $\{2,3,4\}$, за 2 — $\{1,2,3,5,6\}$, за 3 — все $6$; из $6$ за 1 — $\{1,4,5\}$, за 2 — $\{1,2,3,4\}$, за 3 — все $6$; аналогично для остальных (симметрия конструкции). Коммутирование с $j' = (2,1,1,1,1,4)$ и $k' = (3,3,2,2,3,5)$ фиксирует все 6 элементов, оставляя $\{\mathrm{id}\}$. $\square$
+(2) Для $\mathcal{F}$ перебор по инвариантным парам $P\_{3}$ и уникальным свидетелям $j\_{1} = 2$, $j\_{4} = 5$, $k\_{3} = 2$, $k\_{6} = 5$ оставляет $\{\mathrm{id}, P\_{3}\}$.
+
+(3) Для $\mathcal{F}'$:
+
+Шаг 1: отсутствие самоссылок и различие множителей — прямая проверка по каждой строке.
+
+Шаг 2: сильная связность — из $1$ достижимы $\{2,3,4\}$, из них — $\{1,2,3,4,5,6\}$ (например, $4 \to 1, 2, 3$; $3 \to 6$; $2 \to 5$), значит все.
+
+Шаг 3: свидетели: $l' = (4, 5, 6, 3, 2, 1)$ — все 6 значений различны, значит инъективность $\alpha\_{0}'$.
+
+Шаг 4: примитивность $M'^{3} > 0$: из $1$ за 1 шаг $\{2,3,4\}$, за 2 — $\{1,2,3,5,6\}$, за 3 — все $6$; из $6$ за 1 — $\{1,4,5\}$, за 2 — $\{1,2,3,4\}$, за 3 — все $6$; аналогично для остальных (симметрия конструкции). Коммутирование с $j' = (2,1,1,1,1,4)$ и $k' = (3,3,2,2,3,5)$ фиксирует все 6 элементов, оставляя $\{\mathrm{id}\}$. $\square$
 
 #### <span class="accent">— [Теорема VIII.3]</span>
 {: .courier #thm-VIII-3}
@@ -1120,18 +1130,30 @@ $$
 
 (2) Прямое следствие [\[Лемма VIII.1\]](#lem-VIII-1).
 
-(3) Уровень $B\_{3}$. Идеал $J\_{\mathrm{sym}}$ — коидеал: $\alpha\_{0}(x\_{1} + x\_{4}) = x\_{2}\otimes x\_{3}\otimes x\_{4} + x\_{5}\otimes x\_{6}\otimes x\_{1}$; в $B\_{3}^{\otimes 3}$ (где $x\_{1} = x\_{4} = a$, $x\_{2} = x\_{5} = b$, $x\_{3} = x\_{6} = c$) это $b\otimes c\otimes a + b\otimes c\otimes a = 0$, значит $\alpha\_{0}(x\_{1}+x\_{4}) \in J\_{\mathrm{sym}}^{[3]}$; аналогично $\alpha\_{0}(x\_{2}+x\_{5}) = a\otimes c\otimes b + a\otimes c\otimes b = 0$ и $\alpha\_{0}(x\_{3}+x\_{6}) = a\otimes b\otimes c + a\otimes b\otimes c = 0$. Индуцированное $\alpha\_{\mathrm{sym}}: B\_{3} \to B\_{3}^{\otimes 3}$: $\alpha\_{\mathrm{sym}}(1') = 2'\otimes 3'\otimes 1'$, $\alpha\_{\mathrm{sym}}(2') = 1'\otimes 3'\otimes 2'$, $\alpha\_{\mathrm{sym}}(3') = 1'\otimes 2'\otimes 3'$ (где $1' = \{1,4\}$, $2' = \{2,5\}$, $3' = \{3,6\}$). Автоморфизмы: $(1'\,2')^{\otimes 3}(1'\otimes 2'\otimes 3') = 2'\otimes 1'\otimes 3' \neq \alpha\_{\mathrm{sym}}(3') = 1'\otimes 2'\otimes 3'$; $(1'\,3')$, $(2'\,3')$ аналогично; 3-циклы $(1'\,2'\,3')$ дают $(1'\,2'\,3')^{\otimes 3}(2'\otimes 3'\otimes 1') = 3'\otimes 1'\otimes 2' \neq \alpha\_{\mathrm{sym}}(2') = 1'\otimes 3'\otimes 2'$; аналогично $(1'\,3'\,2')$. Единственный — $\{\mathrm{id}\}$.
+(3) Уровень $B\_{3}$.
 
-(4) Уровень $B\_{6}/I$. Атомы $B\_{6}/I$ обозначим $e\_{\mathbf{0}}, e\_{\mathbf{1}}$ (индикаторы точек $\mathbf{0}, \mathbf{1}$). $\bar\alpha\_{0}(e\_{\mathbf{1}}) = e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}$ (моном), $\bar\alpha\_{0}(e\_{\mathbf{0}}) = 1 - e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}$ (сумма 7 атомов). Инверсия $\tau: e\_{\mathbf{0}} \leftrightarrow e\_{\mathbf{1}}$ на $B\_{6}/I$: $\bar\alpha\_{0}(\tau(e\_{\mathbf{1}})) = \bar\alpha\_{0}(e\_{\mathbf{0}}) = 1 - e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}$, тогда как $\tau^{\otimes 3}(\bar\alpha\_{0}(e\_{\mathbf{1}})) = \tau^{\otimes 3}(e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}) = e\_{\mathbf{0}} \otimes e\_{\mathbf{0}} \otimes e\_{\mathbf{0}}$. В $(B\_{6}/I)^{\otimes 3}$: первое — сумма 7 атомов, второе — один атом $e\_{(\mathbf{0},\mathbf{0},\mathbf{0})}$; различны. Значит $\mathrm{Aut}(B\_{6}/I, \bar\alpha\_{0}) = \{\mathrm{id}\}$.
+Идеал $J\_{\mathrm{sym}}$ — коидеал: $\alpha\_{0}(x\_{1} + x\_{4}) = x\_{2}\otimes x\_{3}\otimes x\_{4} + x\_{5}\otimes x\_{6}\otimes x\_{1}$; в $B\_{3}^{\otimes 3}$ (где $x\_{1} = x\_{4} = a$, $x\_{2} = x\_{5} = b$, $x\_{3} = x\_{6} = c$) это $b\otimes c\otimes a + b\otimes c\otimes a = 0$, значит $\alpha\_{0}(x\_{1}+x\_{4}) \in J\_{\mathrm{sym}}^{[3]}$; аналогично $\alpha\_{0}(x\_{2}+x\_{5}) = a\otimes c\otimes b + a\otimes c\otimes b = 0$ и $\alpha\_{0}(x\_{3}+x\_{6}) = a\otimes b\otimes c + a\otimes b\otimes c = 0$.
+
+Индуцированное $\alpha\_{\mathrm{sym}}: B\_{3} \to B\_{3}^{\otimes 3}$: $\alpha\_{\mathrm{sym}}(1') = 2'\otimes 3'\otimes 1'$, $\alpha\_{\mathrm{sym}}(2') = 1'\otimes 3'\otimes 2'$, $\alpha\_{\mathrm{sym}}(3') = 1'\otimes 2'\otimes 3'$ (где $1' = \{1,4\}$, $2' = \{2,5\}$, $3' = \{3,6\}$).
+
+Автоморфизмы: $(1'\,2')^{\otimes 3}(1'\otimes 2'\otimes 3') = 2'\otimes 1'\otimes 3' \neq \alpha\_{\mathrm{sym}}(3') = 1'\otimes 2'\otimes 3'$; $(1'\,3')$, $(2'\,3')$ аналогично; 3-циклы $(1'\,2'\,3')$ дают $(1'\,2'\,3')^{\otimes 3}(2'\otimes 3'\otimes 1') = 3'\otimes 1'\otimes 2' \neq \alpha\_{\mathrm{sym}}(2') = 1'\otimes 3'\otimes 2'$; аналогично $(1'\,3'\,2')$. Единственный — $\{\mathrm{id}\}$.
+
+(4) Уровень $B\_{6}/I$.
+
+Атомы $B\_{6}/I$ обозначим $e\_{\mathbf{0}}, e\_{\mathbf{1}}$ (индикаторы точек $\mathbf{0}, \mathbf{1}$). $\bar\alpha\_{0}(e\_{\mathbf{1}}) = e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}$ (моном), $\bar\alpha\_{0}(e\_{\mathbf{0}}) = 1 - e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}$ (сумма 7 атомов).
+
+Инверсия $\tau: e\_{\mathbf{0}} \leftrightarrow e\_{\mathbf{1}}$ на $B\_{6}/I$: $\bar\alpha\_{0}(\tau(e\_{\mathbf{1}})) = \bar\alpha\_{0}(e\_{\mathbf{0}}) = 1 - e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}$, тогда как $\tau^{\otimes 3}(\bar\alpha\_{0}(e\_{\mathbf{1}})) = \tau^{\otimes 3}(e\_{\mathbf{1}} \otimes e\_{\mathbf{1}} \otimes e\_{\mathbf{1}}) = e\_{\mathbf{0}} \otimes e\_{\mathbf{0}} \otimes e\_{\mathbf{0}}$. В $(B\_{6}/I)^{\otimes 3}$: первое — сумма 7 атомов, второе — один атом $e\_{(\mathbf{0},\mathbf{0},\mathbf{0})}$; различны. Значит $\mathrm{Aut}(B\_{6}/I, \bar\alpha\_{0}) = \{\mathrm{id}\}$.
 
 (5) В обоих случаях фактор-морфизмы не обратимы, информация о $\mathcal{F}$ стирается. Снятие биполярности $\mathbb{F}\_{2}\times\mathbb{F}\_{2} \twoheadrightarrow \mathbb{F}\_{2}$ (отождествление $\mathbf{0} = \mathbf{1}$) уничтожает $V(I)$, так как $0 = 1$ в $\mathbb{F}\_{2}$. $\square$
 
 #### <span class="accent">— [Следствие VIII.1]</span>
 {: .courier #cor-VIII-1}
 
-Выбор $\mathcal{G} = (\Sigma, \mathcal{F})$ (искусственная артикуляция, [Раздел I](#prt-I)) получает внутреннее структурное обоснование: открытость начального звена не является внешним дефектом формализма, а следует из двух теорем: невозможности беспрезентационного старта [\[Теорема VIII.1\]](#thm-VIII-1)) и неустранимой неоднозначности при $\mathcal{F}$ [\[Теорема VIII.3\]](#thm-VIII-3)).
+Выбор $\mathcal{G} = (\Sigma, \mathcal{F})$ (Искусственная артикуляция, [Раздел I](#prt-I)) получает внутреннее структурное обоснование: открытость начального звена не является внешним дефектом формализма, а следует из двух теорем: невозможности беспрезентационного начала [\[Теорема VIII.1\]](#thm-VIII-1) и неустранимой неоднозначности при $\mathcal{F}$ [\[Теорема VIII.3\]](#thm-VIII-3).
 
-***<span class="accent">Доказательство</span>***. Непосредственно [\[Теорема VIII.1\]](#thm-VIII-1) (без выбора $\mathcal{G} \in \mathfrak{P}\_{6}$ динамика I–VI не определена) и [\[Теорема VIII.3\]](#thm-VIII-3) (неустранимая неоднозначность или потеря $\mathcal{F}$ при факторизации). $\square$
+***<span class="accent">Доказательство</span>***.
+
+Непосредственно [\[Теорема VIII.1\]](#thm-VIII-1) (без выбора $\mathcal{G} \in \mathfrak{P}\_{6}$ динамика I–VI не определена) и [\[Теорема VIII.3\]](#thm-VIII-3) (неустранимая неоднозначность или потеря $\mathcal{F}$ при факторизации). $\square$
 
 ---
 
