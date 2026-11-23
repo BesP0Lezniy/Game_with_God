@@ -80,6 +80,29 @@
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       {{ content }}
+            <!-- Умная нижняя навигация между главами -->
+      {% if page.prev_url or page.next_url or page.url != "/" %}
+      <nav class="chapter-nav">
+        <div class="nav-left">
+          {% if page.prev_url %}
+            <a href="{{ page.prev_url | relative_url }}" class="nav-btn">← {{ page.prev_title | default: "Предыдущая глава" }}</a>
+          {% endif %}
+        </div>
+
+        <div class="nav-center">
+          {% if page.url != "/" %}
+            <a href="{{ '/' | relative_url }}" class="nav-btn nav-home">Главная</a>
+          {% endif %}
+        </div>
+
+        <div class="nav-right">
+          {% if page.next_url %}
+            <a href="{{ page.next_url | relative_url }}" class="nav-btn">{{ page.next_title | default: "Следующая глава" }} →</a>
+          {% endif %}
+        </div>
+      </nav>
+      {% endif %}
+
     </div>
   </main>
 
