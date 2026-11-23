@@ -50,8 +50,8 @@
   --next-color: {{ page.next_color | default: '#741b47' }};
 ">
 
-   <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
-  <header id="main-banner" class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#262a33' }}; border-bottom-color: {{ page.banner_border | default: '#121419' }};">
+     <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
+  <header id="main-banner" class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#181b21' }}; border-bottom-color: {{ page.banner_border | default: '#0d0f12' }};">
     <svg class="banner-pattern" width="100%" height="100%" xmlns="http://w3.org">
       <defs>
         <pattern id="geo-pattern" width="360" height="200" patternUnits="userSpaceOnUse">
@@ -74,9 +74,35 @@
     </svg>
 
     <div class="wrapper banner-content">
+      <!-- Кнопка "Содержание" слева в большом баннере -->
+      <div class="mini-toc-wrapper big-banner-nav">
+        <button id="big-toc-toggle" class="big-banner-toc-btn" type="button" title="Открыть содержание">
+          <span>Содержание</span>
+          <span class="dropdown-arrow">▾</span>
+        </button>
+
+        <!-- Выпадающее меню оглавления для большого баннера -->
+        <div id="big-toc-dropdown" class="mini-toc-dropdown">
+          <div class="dropdown-section-label">Разделы главы</div>
+          <ul id="big-page-headings" class="dropdown-list"></ul>
+          
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-section-label">Переход по страницам</div>
+          <ul class="dropdown-list">
+            <li><a href="{{ '/' | relative_url }}" style="--item-color: #181b21;">Главная</a></li>
+            <li><a href="{{ '/01-Theory-of-Structure.html' | relative_url }}" style="--item-color: #741b47;">Глава 1. Теория Структуры</a></li>
+            <li><a href="{{ '/02-Theory-of-Formalism.html' | relative_url }}" style="--item-color: #186a56;">Глава 2. Теория Формализма</a></li>
+            <li><a href="{{ '/03-Theory-of-X.html' | relative_url }}" style="--item-color: #234b8c;">Глава 3. Теория X</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Крупное название строго по центру -->
       <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
         {{ page.banner_title | default: "To be or Not to be...<br>a Contradiction?" }}
       </a>
+
+      <!-- Ссылка на Главную справа -->
       <nav class="site-nav">
         <div class="trigger">
           <a class="page-link" href="{{ '/' | relative_url }}">Главная</a>
@@ -170,7 +196,7 @@
     </div>
   </footer>
 
-     <!-- БЛОК 7: Скрипты (подсветка якорей, выезжающая полоска и выпадающее оглавление) -->
+       <!-- БЛОК 7: Скрипты (подсветка якорей, выезжающая полоска и оба выпадающих оглавления) -->
   <script>
     /* 1. Подсветка строки/блока при переходе по якорю и сброс при клике мимо */
     function highlightAnchor() {
@@ -186,31 +212,35 @@
     window.addEventListener('DOMContentLoaded', highlightAnchor);
     window.addEventListener('hashchange', highlightAnchor);
 
-    /* 2. Показ тонкой верхней полоски, когда большой баннер ушел за экран */
+    /* 2. Показ тонкой верхней полоски при прокрутке и закрытие меню большого баннера */
     window.addEventListener('scroll', function() {
       var mainBanner = document.getElementById('main-banner');
       var stickyBar = document.getElementById('sticky-top-bar');
-      var dropdown = document.getElementById('mini-toc-dropdown');
+      var miniDrop = document.getElementById('mini-toc-dropdown');
+      var bigDrop = document.getElementById('big-toc-dropdown');
       if (mainBanner && stickyBar) {
         if (window.scrollY > mainBanner.offsetHeight - 20) {
           stickyBar.classList.add('visible');
+          if (bigDrop) bigDrop.classList.remove('open');
         } else {
           stickyBar.classList.remove('visible');
-          if (dropdown) dropdown.classList.remove('open');
+          if (miniDrop) miniDrop.classList.remove('open');
         }
       }
     });
 
-    /* 3. Сборка только параграфов третьего уровня (###) в список "Разделы главы" */
+    /* 3. Сборка параграфов третьего уровня (###) сразу в оба меню */
     window.addEventListener('DOMContentLoaded', function() {
-      var headingsList = document.getElementById('current-page-headings');
-      var toggleBtn = document.getElementById('mini-toc-toggle');
-      var dropdown = document.getElementById('mini-toc-dropdown');
-      
-      if (headingsList) {
-        var headings = document.querySelectorAll('.page-content h3');
+      var lists = [
+        document.getElementById('current-page-headings'),
+        document.getElementById('big-page-headings')
+      ];
+      var headings = document.querySelectorAll('.page-content h3');
+
+      lists.forEach(function(listEl) {
+        if (!listEl) return;
         if (headings.length === 0) {
-          headingsList.innerHTML = '<li class="empty-note">Нет подразделов</li>';
+          listEl.innerHTML = '<li class="empty-note">Нет подразделов</li>';
         } else {
           headings.forEach(function(h, index) {
             if (!h.id) h.id = 'auto-sec-' + index;
@@ -219,29 +249,45 @@
             a.href = '#' + h.id;
             a.textContent = h.textContent;
             li.appendChild(a);
-            headingsList.appendChild(li);
+            listEl.appendChild(li);
           });
         }
+      });
+
+      /* Переключение меню в выезжающей полоске */
+      var miniBtn = document.getElementById('mini-toc-toggle');
+      var miniDrop = document.getElementById('mini-toc-dropdown');
+      if (miniBtn && miniDrop) {
+        miniBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          miniDrop.classList.toggle('open');
+        });
       }
 
-      if (toggleBtn && dropdown) {
-        toggleBtn.addEventListener('click', function(e) {
+      /* Переключение меню в большом баннере */
+      var bigBtn = document.getElementById('big-toc-toggle');
+      var bigDrop = document.getElementById('big-toc-dropdown');
+      if (bigBtn && bigDrop) {
+        bigBtn.addEventListener('click', function(e) {
           e.stopPropagation();
-          dropdown.classList.toggle('open');
+          bigDrop.classList.toggle('open');
         });
       }
     });
 
     /* 4. Единый обработчик кликов по странице */
     document.addEventListener('click', function(e) {
-      var dropdown = document.getElementById('mini-toc-dropdown');
-      if (dropdown && !e.target.closest('.mini-toc-wrapper')) {
-        dropdown.classList.remove('open');
+      if (!e.target.closest('.mini-toc-wrapper')) {
+        document.querySelectorAll('.mini-toc-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
       }
 
       var link = e.target.closest('a[href^="#"]');
       if (link) {
-        if (dropdown) dropdown.classList.remove('open');
+        document.querySelectorAll('.mini-toc-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
         setTimeout(highlightAnchor, 10);
       } else {
         document.querySelectorAll('.anchor-highlight').forEach(function(el) {
