@@ -64,16 +64,12 @@
     <div class="wrapper banner-content">
       <a class="site-title" rel="author" href="{{ '/' | relative_url }}">To be or Not to be...<br>a Contradiction?</a>
       
-      <nav class="site-nav">
-        <div class="trigger">
-          {%- for path in site.pages -%}
-            {%- if path.title -%}
-              <a class="page-link" href="{{ path.url | relative_url }}">{{ path.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-      </nav>
-    </div>
+    <nav class="site-nav">
+  <div class="trigger">
+    <a class="page-link" href="{{ '/' | relative_url }}">Главная</a>
+  </div>
+</nav>
+
   </header>
 
 
