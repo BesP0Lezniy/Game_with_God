@@ -15,6 +15,8 @@ title: Главная
 
 <div class="toc" markdown="1">
 
+* [Глава 3. Теория Структуры](01-Theory-of-Structure.html)
+* [Глава 4. Теория Формализма](02-Theory-of-Formalism.html)
 * [Глава 1. Коалгебры и комодули](coalgebras.html)
   <span class="toc-note">Базовые аксиомы, двойственность к алгебрам и локальная конечность.</span>
   * [1.1. Определение коалгебры и коунитальность](coalgebras.html#def-coalgebra)
