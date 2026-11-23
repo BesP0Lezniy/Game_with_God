@@ -2,8 +2,8 @@
 layout: default
 title: Глава 3
 banner_title: "Глава 3.<br>Теория X"
-banner_color: "#0f1e36"
-banner_border: "#070f1c"
+banner_color: "#091324"
+banner_border: "#040912"
 accent_color: "#234b8c"
 prev_url: /02-Theory-of-Formalism.html
 prev_title: "Глава 2. Теория Формализма"
@@ -11,6 +11,8 @@ prev_color: "#186a56"
 ---
 
 #### *Глава 0. Синтаксис Сингулярности (Теория Свойств)*
+{: .accent}
+
 Базис [ 1 есть (2 и 3)<sup>4</sup>, 2 есть (1 и 3)<sup>5</sup>, 3 есть (1 и 2)<sup>6</sup>, 4 есть (5 и 6)<sup>1</sup>, 5 есть (4 и 6)<sup>2</sup>, 6 есть (4 и 5)<sup>3</sup> ].
 
 Двойная противоречивая рекурсия Борромео. 1, 2, 3 — борромеевы символы; 4, 5, 6 — операторы реляции и противоречия.
