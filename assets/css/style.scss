@@ -253,7 +253,7 @@ body {
   background-color: #faf8fa;
   border: 1px solid #e5dce3;
   border-left: 4px solid #741b47;
-  padding: 20px 28px;
+  padding: 30px 40px;
   margin: 1.5em 0;
 }
 
@@ -263,6 +263,7 @@ body {
   margin: 0;
 }
 
+/* Отступ вправо (ступенька) для вложенных подразделов */
 .toc ul ul {
   padding-left: 24px;
   margin-top: 6px;
@@ -270,14 +271,16 @@ body {
   border-left: 1px dashed #cbb8c6;
 }
 
+/* Расстояние между строчками внутри списка подразделов */
 .toc li {
   margin-bottom: 8px;
   line-height: 1.45;
 }
 
+/* Размер шрифта главных пунктов (названий глав) и Вертикальный отступ между главами */
 .toc > ul > li {
-  margin-top: 14px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 22px;
 }
 
 .toc > ul > li:first-child {
