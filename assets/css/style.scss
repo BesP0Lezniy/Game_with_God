@@ -66,50 +66,47 @@ body {
   box-sizing: border-box;
 }
 
-/* Кнопка "Содержание ▾" слева — полностью в едином стиле со словом "Главная" справа */
+/* Единый стиль матовых капсул для кнопок "Содержание ▾" и "Главная" */
 .big-banner-nav {
   position: relative;
   z-index: 4;
 }
 
-.big-banner-toc-btn {
-  display: inline-flex;
+.big-banner-toc-btn,
+.custom-banner .site-nav .page-link {
+  display: inline-flex !important;
   align-items: center;
   gap: 8px;
-  background: none;
-  border: none;
-  padding: 0;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  border-radius: 8px;
+  padding: 8px 18px !important;
   font-family: inherit;
-  font-size: 21px;
-  font-weight: 400;
-  color: #ffffff;
-  line-height: 1.2;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+  float: none !important;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.big-banner-toc-btn:hover span:first-child {
-  text-decoration: underline;
+.big-banner-toc-btn:hover,
+.custom-banner .site-nav .page-link:hover {
+  background-color: rgba(255, 255, 255, 0.18) !important;
+  border-color: rgba(255, 255, 255, 0.75) !important;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.12);
 }
 
-/* Стили заголовка по центру и ссылки "Главная" справа в большом баннере */
 .custom-banner .site-title,
 .custom-banner .site-title:visited,
-.custom-banner .site-title:hover,
-.custom-banner .site-nav .page-link,
-.custom-banner .site-nav .page-link:visited {
+.custom-banner .site-title:hover {
   color: #ffffff !important;
   margin: 0 !important;
   float: none !important;
-}
-
-.custom-banner .site-nav .page-link {
-  font-size: 21px !important;
-  font-weight: 400 !important;
-  line-height: 1.2 !important;
-}
-
-.custom-banner .site-nav .page-link:hover {
-  text-decoration: underline;
 }
 
 .site-title {
@@ -194,7 +191,7 @@ body {
   font-size: 20px;
 }
 
-/* Выпадающее окно оглавления (общее для большого баннера и полоски) */
+/* Выпадающее окно оглавления */
 .mini-toc-dropdown {
   display: none;
   position: absolute;
