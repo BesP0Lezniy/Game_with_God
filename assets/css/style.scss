@@ -44,7 +44,6 @@ body {
   min-height: auto !important;
 }
 
-/* Слой с геометрическим узором внутри шапок */
 .banner-pattern {
   position: absolute;
   inset: 0;
@@ -55,7 +54,6 @@ body {
   z-index: 1;
 }
 
-/* Контейнер текста внутри большого баннера */
 .banner-content {
   position: relative;
   z-index: 2;
@@ -69,7 +67,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Белый цвет и сброс отступов для заголовка и кнопки "Главная" в шапке */
 .custom-banner .site-title,
 .custom-banner .site-title:visited,
 .custom-banner .site-title:hover,
@@ -80,7 +77,6 @@ body {
   float: none !important;
 }
 
-/* Крупное двухстрочное название строго по центру большого баннера */
 .site-title {
   position: absolute;
   left: 50%;
@@ -90,12 +86,11 @@ body {
   width: max-content;
   font-family: 'Comfortaa', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 48pt !important;       /* Размер названия в пунктах */
-  line-height: 1.5 !important;      /* Полуторный интервал между строками */
+  font-size: 48pt !important;
+  line-height: 1.5 !important;
   letter-spacing: 0.5px;
 }
 
-/* Кнопка "Главная" у правого края большого баннера */
 .custom-banner .site-nav {
   float: none !important;
   line-height: 1.2 !important;
@@ -104,23 +99,23 @@ body {
   z-index: 3;
 }
 
-/* Выезжающая при прокрутке тонкая верхняя полоска */
+/* Выезжающая при прокрутке верхняя полоска (увеличенная) */
 .sticky-mini-banner {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1001;
-  padding: 12px 0;                  /* Высота тонкой полоски */
+  padding: 18px 0;                  /* Увеличена толщина полоски */
   border-bottom: 3px solid #1d0620;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
-  transform: translateY(-100%);     /* Спрятана за верхним краем экрана */
-  transition: transform 0.28s ease; /* Плавность выезда */
+  transform: translateY(-100%);
+  transition: transform 0.28s ease;
   overflow: hidden;
 }
 
 .sticky-mini-banner.visible {
-  transform: translateY(0);         /* Появляется при прокрутке */
+  transform: translateY(0);
 }
 
 .mini-banner-content {
@@ -129,17 +124,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  width: 100%;
+  padding-left: calc(40px + 1cm);   /* Отступ слева + красная строка 1 см */
+  padding-right: 40px;              /* Прижимает "Главная" к правому краю */
   box-sizing: border-box;
 }
 
 .mini-banner-title {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;                  /* Увеличенный шрифт заголовка в полоске */
   color: #ffffff;
   letter-spacing: 0.4px;
 }
@@ -147,16 +141,17 @@ body {
 .mini-banner-home,
 .mini-banner-home:visited {
   color: #ffffff !important;
-  font-size: 16px;
+  font-size: 19px;                  /* Увеличенный шрифт кнопки "Главная" */
+  font-weight: 700;
   text-decoration: none;
   border-bottom: none !important;
+  margin-left: auto;
 }
 
 .mini-banner-home:hover {
   text-decoration: underline;
 }
 
-/* Адаптация большого баннера для узких экранов смартфонов */
 @media screen and (max-width: 768px) {
   .custom-banner { padding: 36px 0 !important; }
   .site-title {
@@ -164,6 +159,10 @@ body {
     transform: none;
     text-align: left !important;
     font-size: 26px !important;
+  }
+  .mini-banner-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -351,7 +350,7 @@ body {
 }
 
 /* ==========================================================================
-   РАЗДЕЛ 9. ЗАКРЕПЛЕННАЯ НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ (5 КНОПОК) И ПОДВАЛ
+   РАЗДЕЛ 9. ЗАКРЕПЛЕННАЯ НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ И ПОДВАЛ
    ========================================================================== */
 .fixed-bottom-bar {
   position: fixed;
@@ -359,10 +358,10 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(250, 248, 250, 0.96);
+  background-color: rgba(250, 248, 250, 0.97);
   backdrop-filter: blur(6px);
   border-top: 1px solid #d8c8d4;
-  padding: 10px 40px;
+  padding: 14px 40px;               /* Увеличена толщина нижней панели */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -373,29 +372,25 @@ body {
   flex: 1;
 }
 
-.nav-left {
-  text-align: left;
-}
-
-.nav-right {
-  text-align: right;
-}
+.nav-left { text-align: left; }
+.nav-right { text-align: right; }
 
 .nav-center-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 22px;                        /* Расстояние между центром и кнопками прокрутки */
 }
 
+/* Основные кнопки в рамке (Пред. глава, Главная, След. глава) */
 .nav-btn {
   display: inline-block;
-  padding: 7px 15px;
+  padding: 9px 18px;
   border: 1px solid #741b47;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: #ffffff;
   color: #741b47 !important;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 18px;                  /* Увеличенный шрифт кнопок */
   font-weight: 700;
   text-decoration: none !important;
   cursor: pointer;
@@ -407,21 +402,56 @@ body {
   color: #ffffff !important;
 }
 
-.scroll-btn {
-  padding: 7px 12px;
-  background-color: #f4eef2;
+/* Кнопки прокрутки: стрелка в кружочке + подпись без контура */
+.scroll-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 4px 6px;
+  color: #741b47;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.scroll-action-btn:hover {
+  color: #360e3b;
+}
+
+.circle-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #741b47;
+  border-radius: 50%;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.scroll-action-btn:hover .circle-arrow {
+  background-color: #741b47;
+  color: #ffffff;
+  border-color: #360e3b;
 }
 
 /* Нижний подвал (футер) */
 .site-footer {
   background-color: #f8f9fa;
   border-top: 1px solid #e1e4e8;
-  padding: 20px 0;
-  font-size: 14px;
+  padding: 20px 0 40px 0;
+  font-size: 15px;
 }
 
 .footer-desc, .footer-tags {
   text-indent: 0 !important;
   margin-bottom: 4px;
 }
-
