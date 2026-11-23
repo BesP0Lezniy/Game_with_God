@@ -234,38 +234,33 @@ body {
 /* ==========================================================================
    РАЗДЕЛ 6. ЦВЕТНЫЕ ВЫДЕЛЕНИЯ, ВТОРОЙ ШРИФТ И АКАДЕМИЧЕСКИЕ БЛОКИ
    ========================================================================== */
-/* Фирменный акцентный цвет */
 .accent {
-  color: #741b47;
+  color: var(--accent-color, #741b47);
 }
 
-/* Второй шрифт (Courier New) для выделений */
 .courier {
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Блок Теоремы / Леммы */
 .theorem {
-  border-left: 4px solid #741b47;
-  background-color: #f7f4f8;
+  border-left: 4px solid var(--accent-color, #741b47);
+  background-color: #f8f7fa;
   padding: 12px 18px;
   margin: 1.5em 0;
 }
 
-/* Блок Определения */
 .definition {
-  border-left: 4px solid #360e3b;
-  border-top: 1px solid #e5dce3;
-  border-right: 1px solid #e5dce3;
-  border-bottom: 1px solid #e5dce3;
+  border-left: 4px solid var(--banner-color, #360e3b);
+  border-top: 1px solid #e2dfe5;
+  border-right: 1px solid #e2dfe5;
+  border-bottom: 1px solid #e2dfe5;
   background-color: #ffffff;
   padding: 12px 18px;
   margin: 1.5em 0;
 }
 
-/* Блок Доказательства с пустым квадратом в конце */
 .proof {
-  border-left: 2px solid #b5a3b0;
+  border-left: 2px solid #b5b0b8;
   padding: 4px 0 4px 18px;
   margin: 1.2em 0 1.8em 0;
 }
@@ -274,12 +269,11 @@ body {
   content: "□";
   display: block;
   text-align: right;
-  color: #741b47;
+  color: var(--accent-color, #741b47);
   font-size: 18px;
   line-height: 1;
 }
 
-/* Отменяем красную строку внутри всех академических блоков */
 .theorem p,
 .definition p,
 .proof p {
@@ -292,21 +286,20 @@ body {
    ========================================================================== */
 .page-content a,
 .page-content a:visited {
-  color: #741b47;
+  color: var(--accent-color, #741b47);
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 1px solid rgba(116, 27, 71, 0.35);
+  border-bottom: 1px solid currentColor;
 }
 
 .page-content a:hover {
-  color: #360e3b;
-  border-bottom-color: #360e3b;
+  color: var(--banner-color, #360e3b);
+  border-bottom-color: var(--banner-color, #360e3b);
 }
 
-/* Подсветка целевой строки/блока при переходе по якорю */
 .page-content .anchor-highlight {
-  background-color: rgba(116, 27, 71, 0.14) !important;
-  box-shadow: -6px 0 0 rgba(116, 27, 71, 0.14), 6px 0 0 rgba(116, 27, 71, 0.14);
+  background-color: rgba(116, 27, 71, 0.12) !important;
+  box-shadow: -6px 0 0 rgba(116, 27, 71, 0.12), 6px 0 0 rgba(116, 27, 71, 0.12);
   border-radius: 3px;
   transition: background-color 0.3s ease;
 }
@@ -358,9 +351,9 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(250, 248, 250, 0.97);
+  background-color: rgba(250, 249, 250, 0.97);
   backdrop-filter: blur(6px);
-  border-top: 1px solid #d8c8d4;
+  border-top: 1px solid #d5d0d8;
   padding: 14px 40px;
   display: flex;
   justify-content: space-between;
@@ -381,11 +374,16 @@ body {
   gap: 22px;
 }
 
-/* Базовый каркас кнопок в рамке */
+/* Индивидуальные цвета для каждой кнопки перехода */
+.nav-home { --btn-color: var(--home-color, #262a33); }
+.nav-prev { --btn-color: var(--prev-color, #262a33); }
+.nav-next { --btn-color: var(--next-color, #741b47); }
+
+/* Кнопки в рамке (Пред. глава, Главная, След. глава) */
 .nav-btn {
   display: inline-block;
   padding: 9px 18px;
-  border: 1px solid var(--btn-color);
+  border: 2px solid var(--btn-color);
   border-radius: 5px;
   background-color: #ffffff;
   color: var(--btn-color) !important;
@@ -402,12 +400,7 @@ body {
   color: #ffffff !important;
 }
 
-/* Индивидуальные цвета для каждой кнопки перехода */
-.nav-home { --btn-color: var(--home-color); }
-.nav-prev { --btn-color: var(--prev-color); }
-.nav-next { --btn-color: var(--next-color); }
-
-/* Кнопки прокрутки (всегда в цвет текущей страницы) */
+/* Кнопки прокрутки (берут акцентный цвет текущей страницы) */
 .scroll-action-btn {
   display: inline-flex;
   align-items: center;
@@ -415,7 +408,7 @@ body {
   background: none;
   border: none;
   padding: 4px 6px;
-  color: var(--current-color);
+  color: var(--accent-color, #262a33);
   font-family: inherit;
   font-size: 17px;
   font-weight: 700;
@@ -433,18 +426,18 @@ body {
   justify-content: center;
   width: 34px;
   height: 34px;
-  border: 2px solid var(--current-color);
+  border: 2px solid var(--accent-color, #262a33);
   border-radius: 50%;
   font-size: 19px;
   font-weight: 700;
   line-height: 1;
   background-color: #ffffff;
-  color: var(--current-color);
+  color: var(--accent-color, #262a33);
   transition: all 0.2s ease;
 }
 
 .scroll-action-btn:hover .circle-arrow {
-  background-color: var(--current-color);
+  background-color: var(--accent-color, #262a33);
   color: #ffffff;
 }
 
