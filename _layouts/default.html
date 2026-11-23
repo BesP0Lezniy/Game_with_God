@@ -204,5 +204,21 @@
   </script>
 </body>
 
+    <script>
+    window.addEventListener('scroll', function() {
+      var mainBanner = document.getElementById('main-banner');
+      var stickyBar = document.getElementById('sticky-top-bar');
+      if (mainBanner && stickyBar) {
+        /* Показываем тонкую полоску, как только большой баннер ушел за верхний край экрана */
+        if (window.scrollY > mainBanner.offsetHeight - 20) {
+          stickyBar.classList.add('visible');
+        } else {
+          stickyBar.classList.remove('visible');
+        }
+      }
+    });
+  </script>
+</body>
+
 </body>
 </html>
