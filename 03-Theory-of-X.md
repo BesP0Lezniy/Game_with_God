@@ -1,11 +1,13 @@
 ---
 layout: default
 title: Глава 3
-banner_title: "Глава 3. Теория Формализма"
+banner_title: "Глава 3.<br>Теория X"
+banner_color: "#0f1e36"
+banner_border: "#070f1c"
+accent_color: "#234b8c"
 prev_url: /02-Theory-of-Formalism.html
 prev_title: "Глава 2. Теория Формализма"
-banner_color: "#12382b"
-banner_border: "#081c15"
+prev_color: "#186a56"
 ---
 
 #### *Глава 0. Синтаксис Сингулярности (Теория Свойств)*
