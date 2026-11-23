@@ -99,6 +99,7 @@ body {
   z-index: 3;
 }
 
+/* Выезжающая при прокрутке верхняя полоска */
 .sticky-mini-banner {
   position: fixed;
   top: 0;
@@ -158,6 +159,7 @@ body {
   font-size: 18px;
 }
 
+/* Выпадающее окно оглавления */
 .mini-toc-dropdown {
   display: none;
   position: absolute;
@@ -181,9 +183,10 @@ body {
 }
 
 .dropdown-section-label {
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
-  color: #777777;
+  letter-spacing: 0.5px;
+  color: #666666;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -199,20 +202,16 @@ body {
   line-height: 1.35;
 }
 
-.dropdown-list li.sub-item {
-  padding-left: 16px;
-  font-size: 0.92em;
-}
-
 .dropdown-list a {
   display: block;
   padding: 5px 8px;
   border-radius: 4px;
-  color: var(--accent-color, #262a33) !important;
+  color: var(--item-color, var(--accent-color, #262a33)) !important;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   border-bottom: none !important;
+  transition: background-color 0.15s ease;
 }
 
 .dropdown-list a:hover {
@@ -223,6 +222,12 @@ body {
   height: 1px;
   background-color: #e5e0e8;
   margin: 12px 0;
+}
+
+.empty-note {
+  font-size: 14px;
+  color: #888888;
+  font-style: italic;
 }
 
 .mini-banner-home,
@@ -250,6 +255,10 @@ body {
   .mini-banner-content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .mini-toc-dropdown {
+    min-width: 280px;
+    max-width: 90vw;
   }
 }
 
