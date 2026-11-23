@@ -43,9 +43,8 @@
 </head>
 <body>
 
-  <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
-  <header id="main-banner" class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#1e0722' }}; border-bottom-color: {{ page.banner_border | default: '#1d0620' }};">
-    <!-- Встроенный геометрический узор (не зависит от внешних картинок) -->
+   <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
+  <header id="main-banner" class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#262a33' }}; border-bottom-color: {{ page.banner_border | default: '#121419' }};">
     <svg class="banner-pattern" width="100%" height="100%" xmlns="http://w3.org">
       <defs>
         <pattern id="geo-pattern" width="360" height="200" patternUnits="userSpaceOnUse">
@@ -68,11 +67,9 @@
     </svg>
 
     <div class="wrapper banner-content">
-      <!-- Название сайта (на главах заменяется на page.banner_title) -->
       <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
         {{ page.banner_title | default: "To be or Not to be...<br>a Contradiction?" }}
       </a>
-      <!-- Ссылка на Главную справа в большом баннере -->
       <nav class="site-nav">
         <div class="trigger">
           <a class="page-link" href="{{ '/' | relative_url }}">Главная</a>
@@ -81,8 +78,8 @@
     </div>
   </header>
 
-    <!-- БЛОК 3: Тонкая полоска, которая выезжает сверху при прокрутке страницы вниз -->
-  <div id="sticky-top-bar" class="sticky-mini-banner" style="background-color: {{ page.banner_color | default: '#1e0722' }}; border-bottom-color: {{ page.banner_border | default: '#1d0620' }};">
+  <!-- БЛОК 3: Тонкая полоска, которая выезжает сверху при прокрутке страницы вниз -->
+  <div id="sticky-top-bar" class="sticky-mini-banner" style="background-color: {{ page.banner_color | default: '#262a33' }}; border-bottom-color: {{ page.banner_border | default: '#121419' }};">
     <svg class="banner-pattern" width="100%" height="100%" xmlns="http://w3.org">
       <rect width="100%" height="100%" fill="url(#geo-pattern)" />
     </svg>
@@ -93,7 +90,6 @@
       <a class="mini-banner-home" href="{{ '/' | relative_url }}">Главная</a>
     </div>
   </div>
-
 
   <!-- БЛОК 4: Основной текст статьи -->
   <main class="page-content" aria-label="Content">
