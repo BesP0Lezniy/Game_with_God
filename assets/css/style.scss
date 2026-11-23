@@ -1,37 +1,50 @@
 ---
 ---
 
+/* ==========================================================================
+   РАЗДЕЛ 1. ПОДКЛЮЧЕНИЕ ТЕМЫ И ШРИФТОВ
+   ========================================================================== */
 @import "minima";
 @import url("https://" + "fonts.bunny.net/css?family=roboto-mono:400,400i,700,700i&display=swap");
 @import url("https://" + "fonts.bunny.net/css?family=comfortaa:600,700&display=swap");
 
+/* ==========================================================================
+   РАЗДЕЛ 2. ОБЩИЕ НАСТРОЙКИ СТРАНИЦЫ И ШИРИНА ТЕКСТА
+   ========================================================================== */
 body {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 23px;
+  font-family: 'Roboto Mono', 'Courier New', monospace; /* Основной шрифт сайта */
+  font-size: 23px;                                      /* Размер основного текста */
   line-height: 1.65;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-bottom: 65px; /* Запас снизу, чтобы закрепленная панель не закрывала подвал */
 }
 
 .wrapper {
-  max-width: 1500px !important;   /* КНОПКА A — ширина контента на десктопе */
-  width: 96% !important;          /* КНОПКА B — ширина на средних экранах */
-  padding-left: 12px;             /* КНОПКА C — внутренние поля */
-  padding-right: 12px;
+  max-width: 1500px !important;   /* Ширина контента на широких экранах */
+  width: 96% !important;          /* Ширина на средних экранах */
+  padding-left: 12px;             /* Левое внутреннее поле */
+  padding-right: 12px;            /* Правое внутреннее поле */
 }
 
-/* Темно-фиолетовая шапка с ровным сплошным затемнением (без градиента) */
+.page-content {
+  flex: 1; /* Растягивает контент, чтобы подвал всегда был внизу */
+}
+
+/* ==========================================================================
+   РАЗДЕЛ 3. БОЛЬШОЙ ВЕРХНИЙ БАННЕР И ВЫЕЗЖАЮЩАЯ ТОНКАЯ ПОЛОСКА
+   ========================================================================== */
 .custom-banner {
   position: relative;
   overflow: hidden;
-  background-color: #1e0722;
-  border-bottom: 4px solid #1d0620;
-  padding: 115px 0 !important;
+  background-color: #1e0722;        /* Цвет шапки по умолчанию (для Главной) */
+  border-bottom: 4px solid #1d0620; /* Нижняя кайма шапки */
+  padding: 115px 0 !important;      /* Высота (толщина) большого баннера */
   min-height: auto !important;
 }
 
-/* Растягиваем узор строго на 100% высоты и ширины шапки */
+/* Слой с геометрическим узором внутри шапок */
 .banner-pattern {
   position: absolute;
   inset: 0;
@@ -42,7 +55,7 @@ body {
   z-index: 1;
 }
 
-/* Контейнер шапки во всю ширину экрана */
+/* Контейнер текста внутри большого баннера */
 .banner-content {
   position: relative;
   z-index: 2;
@@ -56,19 +69,18 @@ body {
   box-sizing: border-box;
 }
 
-/* Ярко-белый цвет для названия и всех ссылок меню */
+/* Белый цвет и сброс отступов для заголовка и кнопки "Главная" в шапке */
 .custom-banner .site-title,
 .custom-banner .site-title:visited,
 .custom-banner .site-title:hover,
 .custom-banner .site-nav .page-link,
 .custom-banner .site-nav .page-link:visited {
   color: #ffffff !important;
-  line-height: 1.2 !important;
   margin: 0 !important;
   float: none !important;
 }
 
-/* Крупное двухстрочное название 48pt с полуторным интервалом 1.5 строго по центру */
+/* Крупное двухстрочное название строго по центру большого баннера */
 .site-title {
   position: absolute;
   left: 50%;
@@ -78,256 +90,18 @@ body {
   width: max-content;
   font-family: 'Comfortaa', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 48pt !important;
-  line-height: 1.5 !important;
+  font-size: 48pt !important;       /* Размер названия в пунктах */
+  line-height: 1.5 !important;      /* Полуторный интервал между строками */
   letter-spacing: 0.5px;
 }
 
-/* Вкладка "Главная" и будущее меню прижаты строго к правому краю */
+/* Кнопка "Главная" у правого края большого баннера */
 .custom-banner .site-nav {
   float: none !important;
   line-height: 1.2 !important;
   margin-left: auto !important;
   position: relative !important;
   z-index: 3;
-}
-
-.custom-banner .site-nav .trigger {
-  display: flex;
-  gap: 24px;
-}
-
-/* Адаптация для узких экранов (телефонов), чтобы заголовок не наезжал на меню */
-@media screen and (max-width: 768px) {
-  .custom-banner {
-    padding: 36px 0 !important;
-  }
-  .site-title {
-    position: static;
-    transform: none;
-    font-size: 28px !important;
-  }
-}
-
-.page-content {
-  flex: 1;
-}
-
-.site-footer {
-  background-color: #f8f9fa;
-  border-top: 1px solid #e1e4e8;
-  padding: 20px 0;
-  font-size: 14px;
-}
-
-.footer-desc, .footer-tags {
-  text-indent: 0 !important;
-  margin-bottom: 4px;
-}
-
-.page-content p {
-  text-align: justify;
-  text-indent: 1cm;
-  margin-bottom: 0.8em;
-}
-
-.katex-display {
-  text-align: center !important;
-  margin: 1.2em 0 !important;
-  width: 100%;
-}
-
-.katex {
-  font-size: 1.15em !important;
-}
-
-.katex-display > .katex {
-  font-size: 1.25em !important;
-}
-
-.accent {
-  color: #741b47;
-}
-
-.courier {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.theorem {
-  border-left: 4px solid #741b47;
-  background-color: #f7f4f8;
-  padding: 12px 18px;
-  margin: 1.5em 0;
-}
-
-.theorem p {
-  text-indent: 0 !important;
-  margin-bottom: 0;
-}
-
-/* ===== Заголовки: отступы, размеры, красная строка ===== */
-
-/* КНОПКА 1 — единый отступ красной строки (1cm ≈ как в Word) */
-.page-content h1,
-.page-content h2,
-.page-content h3,
-.page-content h4,
-.page-content h5,
-.page-content h6 {
-  text-indent: 1cm;
-}
-
-/* КНОПКА 2 — размер шрифта заголовков (тело 17px, не меняется) */
-.page-content h1 { font-size: 2em; }
-.page-content h2 { font-size: 1.7em; }
-.page-content h3 { font-size: 1.5em; }
-.page-content h4 { font-size: 1.35em; }
-
-/* КНОПКА 3 — отступ сверху/снизу (расстояние между блоками) */
-.page-content h1 { margin-top: 0.5em; margin-bottom: 0.5em; }
-.page-content h2 { margin-top: 1.5em; margin-bottom: 1.5em; }
-.page-content h3 { margin-top: 1em; margin-bottom: 1em; }
-.page-content h4 { margin-top: 2em; margin-bottom: 0.5em; }
-
-/* Первый заголовок страницы — без верхнего отступа */
-.page-content > :first-child {
-  margin-top: 0 !important;
-}
-
-/* Отступ при переходе по якорю */
-.page-content h1,
-.page-content h2,
-.page-content h3,
-.page-content h4 {
-  scroll-margin-top: 1.5em;
-}
-
-/* Фирменный фиолетовый цвет для всех ссылок и якорей в тексте статей */
-.page-content a,
-.page-content a:visited {
-  color: #741b47;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(116, 27, 71, 0.35);
-}
-
-.page-content a:hover {
-  color: #360e3b;
-  border-bottom-color: #360e3b;
-}
-
-/* Плавная бледная подсветка строки или блока при переходе по якорю */
-.page-content .anchor-highlight {
-  background-color: rgba(116, 27, 71, 0.14) !important;
-  box-shadow: -6px 0 0 rgba(116, 27, 71, 0.14), 6px 0 0 rgba(116, 27, 71, 0.14);
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-/* ===== Межстрочный интервал текста и формул ===== */
-
-/* КНОПКА 4 — межстрочный интервал основного текста (включая inline $...$) */
-.page-content p,
-.page-content li {
-  line-height: 1.8;   /* было 1.65; 1.9 — просторнее, 1.7 — плотнее */
-}
-
-/* КНОПКА 5 — вертикальный зазор вокруг display-формул $$...$$ */
-.katex-display {
-  margin: 1.8em 0 !important;   /* было 1.2em; 2.2em — ещё просторнее */
-}
-
-/* КНОПКА 6 — межстрочный интервал внутри многострочных формул
-   (\begin{aligned}, \begin{cases}, \begin{pmatrix} и т.п.) */
-.katex-display .katex {
-  line-height: 1.35;
-}
-
-/* Inline-формулы не должны раздувать строку выше текста */
-.page-content p .katex {
-  line-height: inherit;
-}
-
-/* Многоуровневое оглавление в книжном / Word-стиле */
-.toc {
-  background-color: #faf8fa;
-  border: 1px solid #e5dce3;
-  border-left: 4px solid #741b47;
-  padding: 30px 40px;
-  margin: 1.5em 0;
-}
-
-.toc ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-/* Отступ вправо (ступенька) для вложенных подразделов */
-.toc ul ul {
-  padding-left: 24px;
-  margin-top: 6px;
-  margin-bottom: 12px;
-  border-left: 1px dashed #cbb8c6;
-}
-
-/* Расстояние между строчками внутри списка подразделов */
-.toc li {
-  margin-bottom: 8px;
-  line-height: 1.45;
-}
-
-/* Размер шрифта главных пунктов (названий глав) и Вертикальный отступ между главами */
-.toc > ul > li {
-  margin-top: 20px;
-  font-size: 22px;
-}
-
-.toc > ul > li:first-child {
-  margin-top: 0;
-}
-
-.toc .toc-note {
-  display: block;
-  font-size: 14px;
-  color: #555555;
-  font-weight: 400;
-  margin-top: 3px;
-}
-
-/* Нижняя панель навигации между главами */
-.chapter-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 3.5em;
-  padding-top: 1.5em;
-  border-top: 1px solid #e5dce3;
-  gap: 12px;
-}
-
-.nav-left, .nav-center, .nav-right {
-  flex: 1;
-}
-
-.nav-center { text-align: center; }
-.nav-right { text-align: right; }
-
-.page-content .nav-btn {
-  display: inline-block;
-  padding: 8px 16px;
-  border: 1px solid #741b47;
-  border-radius: 4px;
-  background-color: #faf8fa;
-  color: #741b47 !important;
-  font-size: 15px;
-  transition: all 0.2s ease;
-}
-
-.page-content .nav-btn:hover {
-  background-color: #741b47;
-  color: #ffffff !important;
-  border-bottom-color: #741b47;
 }
 
 /* Выезжающая при прокрутке тонкая верхняя полоска */
@@ -337,16 +111,16 @@ body {
   left: 0;
   right: 0;
   z-index: 1001;
-  padding: 12px 0;
+  padding: 12px 0;                  /* Высота тонкой полоски */
   border-bottom: 3px solid #1d0620;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
-  transform: translateY(-100%);
-  transition: transform 0.28s ease;
+  transform: translateY(-100%);     /* Спрятана за верхним краем экрана */
+  transition: transform 0.28s ease; /* Плавность выезда */
   overflow: hidden;
 }
 
 .sticky-mini-banner.visible {
-  transform: translateY(0);
+  transform: translateY(0);         /* Появляется при прокрутке */
 }
 
 .mini-banner-content {
@@ -381,3 +155,273 @@ body {
 .mini-banner-home:hover {
   text-decoration: underline;
 }
+
+/* Адаптация большого баннера для узких экранов смартфонов */
+@media screen and (max-width: 768px) {
+  .custom-banner { padding: 36px 0 !important; }
+  .site-title {
+    position: static;
+    transform: none;
+    text-align: left !important;
+    font-size: 26px !important;
+  }
+}
+
+/* ==========================================================================
+   РАЗДЕЛ 4. ЗАГОЛОВКИ, АБЗАЦЫ И МЕЖСТРОЧНЫЕ ИНТЕРВАЛЫ ТЕКСТА
+   ========================================================================== */
+/* Красная строка (1 см) для обычных абзацев и всех заголовков */
+.page-content p,
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+  text-indent: 1cm;
+}
+
+.page-content p {
+  text-align: justify;              /* Выравнивание текста по ширине */
+  margin-bottom: 0.8em;
+}
+
+.page-content p,
+.page-content li {
+  line-height: 1.8;                 /* Межстрочный интервал основного текста */
+}
+
+/* Размеры заголовков */
+.page-content h1 { font-size: 2em;    margin-top: 0.5em; margin-bottom: 0.5em; }
+.page-content h2 { font-size: 1.7em;  margin-top: 1.5em; margin-bottom: 1.5em; }
+.page-content h3 { font-size: 1.5em;  margin-top: 1em;   margin-bottom: 1em; }
+.page-content h4 { font-size: 1.35em; margin-top: 2em;   margin-bottom: 0.5em; }
+
+/* Убираем лишний верхний отступ у самого первого заголовка на странице */
+.page-content > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Отступ сверху при переходе к заголовку по якорю (чтобы не прятался под полоской) */
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  scroll-margin-top: 75px;
+}
+
+/* ==========================================================================
+   РАЗДЕЛ 5. МАТЕМАТИЧЕСКИЕ ФОРМУЛЫ (KATEX)
+   ========================================================================== */
+.katex {
+  font-size: 1.15em !important;     /* Размер строчных формул $$...$$ */
+}
+
+.page-content p .katex {
+  line-height: inherit;             /* Чтобы строчные формулы не рвали интервал строк */
+}
+
+.katex-display {
+  text-align: center !important;    /* Выносные формулы строго по центру */
+  margin: 1.8em 0 !important;       /* Вертикальный отступ до и после формулы */
+  width: 100%;
+}
+
+.katex-display > .katex {
+  font-size: 1.25em !important;     /* Размер выносных формул по центру */
+  line-height: 1.35;                /* Интервал внутри многострочных формул */
+}
+
+/* ==========================================================================
+   РАЗДЕЛ 6. ЦВЕТНЫЕ ВЫДЕЛЕНИЯ, ВТОРОЙ ШРИФТ И АКАДЕМИЧЕСКИЕ БЛОКИ
+   ========================================================================== */
+/* Фирменный акцентный цвет */
+.accent {
+  color: #741b47;
+}
+
+/* Второй шрифт (Courier New) для выделений */
+.courier {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Блок Теоремы / Леммы */
+.theorem {
+  border-left: 4px solid #741b47;
+  background-color: #f7f4f8;
+  padding: 12px 18px;
+  margin: 1.5em 0;
+}
+
+/* Блок Определения */
+.definition {
+  border-left: 4px solid #360e3b;
+  border-top: 1px solid #e5dce3;
+  border-right: 1px solid #e5dce3;
+  border-bottom: 1px solid #e5dce3;
+  background-color: #ffffff;
+  padding: 12px 18px;
+  margin: 1.5em 0;
+}
+
+/* Блок Доказательства с пустым квадратом в конце */
+.proof {
+  border-left: 2px solid #b5a3b0;
+  padding: 4px 0 4px 18px;
+  margin: 1.2em 0 1.8em 0;
+}
+
+.proof::after {
+  content: "□";
+  display: block;
+  text-align: right;
+  color: #741b47;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Отменяем красную строку внутри всех академических блоков */
+.theorem p,
+.definition p,
+.proof p {
+  text-indent: 0 !important;
+  margin-bottom: 0.5em;
+}
+
+/* ==========================================================================
+   РАЗДЕЛ 7. ССЫЛКИ, ЯКОРЯ И БЛЕДНАЯ ПОДСВЕТКА ПРИ ПЕРЕХОДЕ
+   ========================================================================== */
+.page-content a,
+.page-content a:visited {
+  color: #741b47;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(116, 27, 71, 0.35);
+}
+
+.page-content a:hover {
+  color: #360e3b;
+  border-bottom-color: #360e3b;
+}
+
+/* Подсветка целевой строки/блока при переходе по якорю */
+.page-content .anchor-highlight {
+  background-color: rgba(116, 27, 71, 0.14) !important;
+  box-shadow: -6px 0 0 rgba(116, 27, 71, 0.14), 6px 0 0 rgba(116, 27, 71, 0.14);
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+/* ==========================================================================
+   РАЗДЕЛ 8. ОГЛАВЛЕНИЕ НА ГЛАВНОЙ (.toc)
+   ========================================================================== */
+.toc {
+  background-color: #faf8fa;
+  border: 1px solid #e5dce3;
+  border-left: 4px solid #741b47;
+  padding: 30px 40px;
+  margin: 1.5em 0;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc ul ul {
+  padding-left: 24px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border-left: 1px dashed #cbb8c6;
+}
+
+.toc li {
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.toc > ul > li {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.toc > ul > li:first-child {
+  margin-top: 0;
+}
+
+/* ==========================================================================
+   РАЗДЕЛ 9. ЗАКРЕПЛЕННАЯ НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ (5 КНОПОК) И ПОДВАЛ
+   ========================================================================== */
+.fixed-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(250, 248, 250, 0.96);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid #d8c8d4;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-side {
+  flex: 1;
+}
+
+.nav-left {
+  text-align: left;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.nav-center-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid #741b47;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #741b47 !important;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #741b47;
+  color: #ffffff !important;
+}
+
+.scroll-btn {
+  padding: 7px 12px;
+  background-color: #f4eef2;
+}
+
+/* Нижний подвал (футер) */
+.site-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e1e4e8;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-desc, .footer-tags {
+  text-indent: 0 !important;
+  margin-bottom: 4px;
+}
+
