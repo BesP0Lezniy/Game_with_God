@@ -38,7 +38,9 @@
   </script>
 </head>
 <body>
-    <header class="site-header custom-banner" role="banner">
+      <header class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#360e3b' }}; border-bottom-color: {{ page.banner_border | default: '#1d0620' }};">
+    <!-- (здесь остается ваш <svg class="banner-pattern"> без изменений) -->
+
     <!-- Встроенный геометрический узор -->
     <svg class="banner-pattern" width="100%" height="100%" xmlns="http://w3.org">
       <defs>
@@ -60,9 +62,11 @@
       </defs>
       <rect width="100%" height="100%" fill="url(#geo-pattern)" />
     </svg>
-
+        
     <div class="wrapper banner-content">
-      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">To be or Not to be...<br>a Contradiction?</a>
+      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
+        {{ page.banner_title | default: "To be or Not to be...<br>a Contradiction?" }}
+      </a>
       
     <nav class="site-nav">
   <div class="trigger">
