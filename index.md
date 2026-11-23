@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Главная
-banner_color: "#262a33"
-banner_border: "#121419"
+banner_color: "#181b21"
+banner_border: "#0d0f12"
 accent_color: "#262a33"
 next_url: /01-Theory-of-Structure.html
 next_title: "Глава 1. Теория Структуры"
