@@ -184,12 +184,14 @@
     </div>
   </nav>
 
-    <!-- БЛОК 6: Нижний подвал (футер) — Вариант 1 (Лого + название слева, теги справа) -->
+      <!-- БЛОК 6: Нижний подвал (футер) с цветным оттиском уробороса -->
   <footer class="site-footer">
     <div class="wrapper footer-flex">
-      <!-- Левая часть: квадратный логотип + название и год -->
+      <!-- Левая часть: квадратный логотип в цвете текущей страницы + название -->
       <div class="footer-brand">
-        <div class="footer-logo-colored" title="Логотип"></div>
+        <div class="footer-logo-wrap">
+          <img src="{{ '/logo.png' | relative_url }}" alt="Логотип" class="footer-logo">
+        </div>
         <div class="footer-info">
           <div class="footer-title">To be or Not to be... a Contradiction?</div>
           <div class="footer-meta">2026 · Высшие алгебры, коалгебры и теория категорий</div>
