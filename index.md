@@ -21,6 +21,11 @@ next_color: "#4a1442"
 {: .accent}
 
 <div class="toc" markdown="1">
+  
+# **(РУС) Продолжения Евклида-Гёделя**
+
+## *Глава 1. Теория Структур*
+{: .#ch-1}
 
 * [Глава 1.](01-Theory-of-Structure.html) Теория Структуры
 * [Глава 2.](02-Theory-of-Formalism.html) Теория Формализма
