@@ -574,11 +574,18 @@ body {
 }
 
 .footer-flex {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
+}
+
+/* Убираем скрытый элемент темы minima, который мешал тегам дойти до правого края */
+.footer-flex::before,
+.footer-flex::after {
+  display: none !important;
+  content: none !important;
 }
 
 .footer-brand {
@@ -587,21 +594,20 @@ body {
   gap: 18px;
 }
 
-/* Автоматическая обрезка прямоугольного лого в квадрат и приглушенный графитовый тон */
+/* Обрезка в квадрат + растворение светло-серой клеточки фона через multiply */
 .footer-logo {
-  width: 62px;
-  height: 62px;
+  width: 64px;
+  height: 64px;
   object-fit: cover;
   object-position: center;
-  border-radius: 8px;
-  border: 1px solid #d5d8de;
-  background-color: #ffffff;
-  filter: grayscale(100%) contrast(0.9) opacity(0.75);
+  border-radius: 6px;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1.35) brightness(1.08) opacity(0.8);
   transition: filter 0.25s ease;
 }
 
 .footer-logo:hover {
-  filter: grayscale(0%) contrast(1) opacity(1);
+  filter: grayscale(0%) contrast(1.2) brightness(1.05) opacity(1);
 }
 
 .footer-title {
@@ -619,11 +625,13 @@ body {
   line-height: 1.4;
 }
 
+/* Прижимаем теги строго к правому краю ширины текста */
 .footer-tags {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: auto;
 }
 
 .tag-badge {
@@ -643,5 +651,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+  .footer-tags {
+    margin-left: 0;
+  }
 }
-
