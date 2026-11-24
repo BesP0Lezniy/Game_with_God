@@ -21,12 +21,8 @@ next_color: "#4a1442"
 
 <div class="toc" markdown="1">
 
-
-## *Глава 1. Теория Структур*
-{: .#ch-1}
-
-* [Глава 1.](01-Theory-of-Structure.html) Теория Структуры
-* [Глава 2.](02-Theory-of-Formalism.html) Теория Формализма
-* [Глава 3.](03-Theory-of-X.html) Теория X
+* [Глава 1.](01-Theory-of-Structure.html){: .ch1} Теория Структуры
+* [Глава 2.](02-Theory-of-Formalism.html){: .ch2} Теория Формализма
+* [Глава 3.](03-Theory-of-X.html){: .ch3} Теория Космоса
 
 </div>
