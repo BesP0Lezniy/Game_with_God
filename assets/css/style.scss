@@ -337,25 +337,147 @@ body {
 }
 
 /* ==========================================================================
-   РАЗДЕЛ 5. МАТЕМАТИЧЕСКИЕ ФОРМУЛЫ (KATEX)
+   РАЗДЕЛ 5. МАТЕМАТИЧЕСКИЕ ФОРМУЛЫ (KATEX), КОПИРОВАНИЕ И ПРОГРЕСС ЧТЕНИЯ
    ========================================================================== */
 .katex {
-  font-size: 1.15em !important;     /* Размер строчных формул $$...$$ */
+  font-size: 1.15em !important;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.18s ease, box-shadow 0.18s ease;
 }
 
-.page-content p .katex {
-  line-height: inherit;             /* Чтобы строчные формулы не рвали интервал строк */
+/* Строчные формулы внутри абзацев */
+.page-content p .katex,
+.page-content li .katex {
+  line-height: inherit;
+  padding: 1px 4px;
 }
 
+/* Бледная подсветка в цвет текущей страницы при наведении на строчную формулу */
+.page-content p .katex:hover,
+.page-content li .katex:hover {
+  background-color: color-mix(in srgb, var(--accent-color, #741b47) 10%, transparent);
+  box-shadow: inset 0 -1.5px 0 color-mix(in srgb, var(--accent-color, #741b47) 45%, transparent);
+}
+
+/* Вспышка формулы при успешном копировании */
+.katex.tex-copied-flash {
+  background-color: color-mix(in srgb, var(--accent-color, #741b47) 22%, transparent) !important;
+}
+
+/* Выносные формулы по центру страницы */
 .katex-display {
-  text-align: center !important;    /* Выносные формулы строго по центру */
-  margin: 1.8em 0 !important;       /* Вертикальный отступ до и после формулы */
+  position: relative;
+  text-align: center !important;
+  margin: 1.8em 0 !important;
   width: 100%;
 }
 
 .katex-display > .katex {
-  font-size: 1.25em !important;     /* Размер выносных формул по центру */
-  line-height: 1.35;                /* Интервал внутри многострочных формул */
+  font-size: 1.25em !important;
+  line-height: 1.35;
+  padding: 6px 12px;
+}
+
+/* Бледная подсветка выносной формулы при наведении в цвет текущей страницы */
+.katex-display > .katex:hover {
+  background-color: color-mix(in srgb, var(--accent-color, #741b47) 8%, transparent);
+}
+
+/* Значок копирования на левом поле: серый в покое, цветной при наведении */
+.formula-copy-btn {
+  position: absolute;
+  left: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: #8c929c;
+  opacity: 0.65;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.katex-display:hover .formula-copy-btn,
+.formula-copy-btn:hover {
+  opacity: 1;
+  color: var(--nav-color, #2c313c);
+  border-color: var(--nav-color, #2c313c);
+  background-color: #faf8fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.formula-copy-btn .icon-check {
+  display: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.formula-copy-btn.copied {
+  opacity: 1;
+  background-color: var(--nav-color, #2c313c);
+  border-color: var(--nav-color, #2c313c);
+  color: #ffffff;
+}
+
+.formula-copy-btn.copied .icon-copy {
+  display: none;
+}
+
+.formula-copy-btn.copied .icon-check {
+  display: inline;
+}
+
+@media screen and (max-width: 900px) {
+  .formula-copy-btn {
+    left: 0;
+    top: -16px;
+    transform: none;
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* Тонкая полоска прогресса чтения у верхнего края экрана */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: var(--accent-color, #741b47);
+  z-index: 1010;
+  transition: width 0.1s linear;
+}
+
+/* Всплывающее уведомление о копировании формулы */
+.tex-toast {
+  position: fixed;
+  bottom: 85px;
+  right: 40px;
+  background-color: var(--banner-color, #181b21);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 1020;
+}
+
+.tex-toast.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ==========================================================================
