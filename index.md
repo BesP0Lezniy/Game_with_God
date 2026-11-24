@@ -3,10 +3,11 @@ layout: default
 title: Главная
 banner_color: "#181b21"
 banner_border: "#0d0f12"
+nav_color: "#2c313c"
 accent_color: "#262a33"
 next_url: /01-Theory-of-Structure.html
 next_title: "Глава 1. Теория Структуры"
-next_color: "#741b47"
+next_color: "#4a1442"
 ---
 
 # *О работе*
