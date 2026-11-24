@@ -182,17 +182,23 @@
     </div>
   </nav>
 
-  <!-- БЛОК 6: Нижний подвал (футер) с вашими тегами -->
-  <footer class="site-footer h-card">
-    <div class="wrapper">
-      <div class="footer-col-wrapper">
-        <div class="footer-col">
-          <strong>{{ site.title | escape }}</strong>
-          <p class="footer-desc">{{ site.description | default: "Заметки по высшим алгебрам, коалгебрам и теории категорий" }}</p>
+    <!-- БЛОК 6: Нижний подвал (футер) — Вариант 1 (Лого + название слева, теги справа) -->
+  <footer class="site-footer">
+    <div class="wrapper footer-flex">
+      <!-- Левая часть: квадратный логотип + название и год -->
+      <div class="footer-brand">
+        <img src="{{ '/logo.png' | relative_url }}" alt="Логотип" class="footer-logo">
+        <div class="footer-info">
+          <div class="footer-title">To be or Not to be... a Contradiction?</div>
+          <div class="footer-meta">2026 · Высшие алгебры, коалгебры и теория категорий</div>
         </div>
-        <div class="footer-col footer-tags">
-          <span>#Метаязык</span> · <span>#Неоформализм</span> · <span>#Не_Наука</span>
-        </div>
+      </div>
+
+      <!-- Правая часть: строгие графитовые хэштеги-бейджики -->
+      <div class="footer-tags">
+        <span class="tag-badge">#Метаязык</span>
+        <span class="tag-badge">#Неоформализм</span>
+        <span class="tag-badge">#Не_Наука</span>
       </div>
     </div>
   </footer>
