@@ -470,7 +470,7 @@ body {
 }
 
 /* ==========================================================================
-   РАЗДЕЛ 9. ЗАКРЕПЛЕННАЯ НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ (--nav-color) И ПОДВАЛ
+   РАЗДЕЛ 9. ЗАКРЕПЛЕННАЯ НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ И ФУТЕР (КОЛОФОН)
    ========================================================================== */
 .fixed-bottom-bar {
   position: fixed;
@@ -501,12 +501,10 @@ body {
   gap: 22px;
 }
 
-/* Индивидуальные средне-глубокие цвета для кнопок перехода */
 .nav-home { --btn-color: var(--home-color, #2c313c); }
 .nav-prev { --btn-color: var(--prev-color, #2c313c); }
 .nav-next { --btn-color: var(--next-color, #4a1442); }
 
-/* Кнопки в рамке (Пред. глава, Главная, След. глава) */
 .nav-btn {
   display: inline-block;
   padding: 9px 18px;
@@ -527,7 +525,6 @@ body {
   color: #ffffff !important;
 }
 
-/* Кнопки прокрутки (берут средне-глубокий цвет --nav-color текущей страницы) */
 .scroll-action-btn {
   display: inline-flex;
   align-items: center;
@@ -568,16 +565,83 @@ body {
   color: #ffffff;
 }
 
-/* Нижний подвал (футер) */
+/* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) --- */
 .site-footer {
-  background-color: #f8f9fa;
-  border-top: 1px solid #e1e4e8;
-  padding: 20px 0 40px 0;
-  font-size: 15px;
+  background-color: #f4f4f6;
+  border-top: 1px solid #dcdfe4;
+  padding: 28px 0 36px 0;
+  margin-top: 40px;
 }
 
-.footer-desc, .footer-tags {
-  text-indent: 0 !important;
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Автоматическая обрезка прямоугольного лого в квадрат и приглушенный графитовый тон */
+.footer-logo {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  border: 1px solid #d5d8de;
+  background-color: #ffffff;
+  filter: grayscale(100%) contrast(0.9) opacity(0.75);
+  transition: filter 0.25s ease;
+}
+
+.footer-logo:hover {
+  filter: grayscale(0%) contrast(1) opacity(1);
+}
+
+.footer-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: #262a33;
+  line-height: 1.3;
   margin-bottom: 4px;
+}
+
+.footer-meta {
+  font-size: 14px;
+  color: #666b75;
+  line-height: 1.4;
+}
+
+.footer-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c313c;
+  background-color: #ffffff;
+  border: 1px solid #cfd3dc;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
