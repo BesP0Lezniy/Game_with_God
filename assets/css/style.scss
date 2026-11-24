@@ -691,7 +691,7 @@ body {
 /* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) --- */
 .site-footer {
   background-color: #f4f4f6;
-  border-top: 2px solid color-mix(in srgb, var(--accent-color, #262a33) 26%, transparent);
+  border-top: 2px solid color-mix(in srgb, var(--accent-color, #262a33) 32%, transparent) !important;
   padding: 28px 0 36px 0;
   margin-top: 40px;
 }
