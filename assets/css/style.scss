@@ -603,12 +603,25 @@ body {
   z-index: 1000;
   background-color: rgba(250, 249, 250, 0.97);
   backdrop-filter: blur(6px);
-  border-top: 1px solid #d5d0d8;
+  border-top: none;
   padding: 14px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Тонкая верхняя полоска закрепленной плашки в бледном цвете текущей страницы */
+.fixed-bottom-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--accent-color, #262a33);
+  opacity: 0.35;
+  pointer-events: none;
 }
 
 .nav-side {
@@ -688,8 +701,7 @@ body {
   color: #ffffff;
 }
 
-/* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) --- */
-/* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) --- */
+/* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) — с такой же бледной верхней полоской --- */
 .site-footer {
   position: relative;
   background-color: #f4f4f6;
@@ -698,7 +710,6 @@ body {
   margin-top: 40px;
 }
 
-/* Только верхняя полоска в бледном оттенке текущей страницы */
 .site-footer::before {
   content: "";
   position: absolute;
@@ -785,3 +796,4 @@ body {
     margin-left: 0;
   }
 }
+
