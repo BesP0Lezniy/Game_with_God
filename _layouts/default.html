@@ -53,7 +53,7 @@
     <!-- Полоска прогресса чтения у самого верхнего края экрана -->
   <div id="reading-progress-bar" class="reading-progress"></div>
 
-       <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
+         <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
   <header id="main-banner" class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#181b21' }}; border-bottom-color: {{ page.banner_border | default: '#0d0f12' }};">
     <svg class="banner-pattern" width="100%" height="100%" xmlns="http://w3.org">
       <defs>
@@ -86,24 +86,24 @@
 
         <!-- Выпадающее меню оглавления для большого баннера -->
         <div id="big-toc-dropdown" class="mini-toc-dropdown">
-          <div class="dropdown-section-label">Разделы главы:</div>
+          <div class="dropdown-section-label">РАЗДЕЛЫ ГЛАВЫ:</div>
           <ul id="big-page-headings" class="dropdown-list"></ul>
           
           <div class="dropdown-divider"></div>
-          <div class="dropdown-section-label">Переход по страницам:</div>
-                              <ul class="dropdown-list">
-            <li><a href="{{ '/' | relative_url }}" style="--item-color: #2c313c;">Главная</a></li>
-            <li><a href="{{ '/01-Theory-of-Structure.html' | relative_url }}" style="--item-color: #4a1442;">Глава 1. Теория Структуры</a></li>
-            <li><a href="{{ '/02-Theory-of-Formalism.html' | relative_url }}" style="--item-color: #0f4538;">Глава 2. Теория Формализма</a></li>
-            <li><a href="{{ '/03-Theory-of-X.html' | relative_url }}" style="--item-color: #162f5c;">Глава 3. Теория X</a></li>
+          <div class="dropdown-section-label">ПЕРЕХОД ПО СТРАНИЦАМ</div>
+          <ul class="dropdown-list">
+            <li><a href="{{ '/' | relative_url }}" style="--item-color: #262a33;">Главная</a></li>
+            <li><a href="{{ '/01-Theory-of-Structure.html' | relative_url }}" style="--item-color: #741b47;">Глава 1. Теория Структуры</a></li>
+            <li><a href="{{ '/02-Theory-of-Formalism.html' | relative_url }}" style="--item-color: #186a56;">Глава 2. Теория Формализма</a></li>
+            <li><a href="{{ '/03-Theory-of-X.html' | relative_url }}" style="--item-color: #234b8c;">Глава 3. Теория X</a></li>
           </ul>
         </div>
       </div>
 
-      <!-- Крупное название строго по центру -->
-      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
+      <!-- Статичное крупное название строго по центру (без ссылки) -->
+      <div class="site-title">
         {{ page.banner_title | default: "To be or Not to be...<br>a Contradiction?" }}
-      </a>
+      </div>
 
       <!-- Ссылка на Главную справа -->
       <nav class="site-nav">
@@ -114,7 +114,7 @@
     </div>
   </header>
 
-          <!-- БЛОК 3: Тонкая полоска, которая выезжает сверху при прокрутке страницы вниз -->
+           <!-- БЛОК 3: Тонкая полоска, которая выезжает сверху при прокрутке страницы вниз -->
   <div id="sticky-top-bar" class="sticky-mini-banner" style="background-color: {{ page.banner_color | default: '#181b21' }}; border-bottom-color: {{ page.banner_border | default: '#0d0f12' }};">
     <svg class="banner-pattern" width="100%" height="100%" xmlns="http://w3.org">
       <rect width="100%" height="100%" fill="url(#geo-pattern)" />
@@ -128,16 +128,16 @@
 
         <!-- Выпадающее меню оглавления -->
         <div id="mini-toc-dropdown" class="mini-toc-dropdown">
-          <div class="dropdown-section-label">Разделы главы:</div>
+          <div class="dropdown-section-label">РАЗДЕЛЫ ГЛАВЫ:</div>
           <ul id="current-page-headings" class="dropdown-list"></ul>
           
           <div class="dropdown-divider"></div>
-          <div class="dropdown-section-label">Переход по страницам:</div>
-                              <ul class="dropdown-list">
-            <li><a href="{{ '/' | relative_url }}" style="--item-color: #2c313c;">Главная</a></li>
-            <li><a href="{{ '/01-Theory-of-Structure.html' | relative_url }}" style="--item-color: #4a1442;">Глава 1. Теория Структуры</a></li>
-            <li><a href="{{ '/02-Theory-of-Formalism.html' | relative_url }}" style="--item-color: #0f4538;">Глава 2. Теория Формализма</a></li>
-            <li><a href="{{ '/03-Theory-of-X.html' | relative_url }}" style="--item-color: #162f5c;">Глава 3. Теория X</a></li>
+          <div class="dropdown-section-label">ПЕРЕХОД ПО СТРАНИЦАМ</div>
+          <ul class="dropdown-list">
+            <li><a href="{{ '/' | relative_url }}" style="--item-color: #262a33;">Главная</a></li>
+            <li><a href="{{ '/01-Theory-of-Structure.html' | relative_url }}" style="--item-color: #741b47;">Глава 1. Теория Структуры</a></li>
+            <li><a href="{{ '/02-Theory-of-Formalism.html' | relative_url }}" style="--item-color: #186a56;">Глава 2. Теория Формализма</a></li>
+            <li><a href="{{ '/03-Theory-of-X.html' | relative_url }}" style="--item-color: #234b8c;">Глава 3. Теория X</a></li>
           </ul>
         </div>
       </div>
