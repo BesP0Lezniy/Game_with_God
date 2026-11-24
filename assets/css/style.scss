@@ -691,7 +691,7 @@ body {
 /* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) --- */
 .site-footer {
   background-color: #f4f4f6;
-  border-top: 1px solid #dcdfe4;
+  border-top: 2px solid color-mix(in srgb, var(--accent-color, #262a33) 26%, transparent);
   padding: 28px 0 36px 0;
   margin-top: 40px;
 }
@@ -704,7 +704,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Убираем скрытый элемент темы minima, который мешал тегам дойти до правого края */
 .footer-flex::before,
 .footer-flex::after {
   display: none !important;
@@ -717,7 +716,6 @@ body {
   gap: 18px;
 }
 
-/* Обрезка в квадрат + растворение светло-серой клеточки фона через multiply */
 .footer-logo {
   width: 68px;
   height: 68px;
@@ -726,10 +724,6 @@ body {
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1.4) brightness(1.05) opacity(0.92);
   transition: filter 0.25s ease;
-}
-
-.footer-logo:hover {
-  filter: grayscale(0%) contrast(1.2) brightness(1.05) opacity(1);
 }
 
 .footer-title {
@@ -747,7 +741,6 @@ body {
   line-height: 1.4;
 }
 
-/* Прижимаем теги строго к правому краю ширины текста */
 .footer-tags {
   display: flex;
   align-items: center;
