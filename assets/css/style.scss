@@ -734,14 +734,25 @@ body {
   gap: 18px;
 }
 
-.footer-logo {
+/* Уроборос как цветная типографская печать в тон текущей страницы */
+.footer-logo-colored {
   width: 68px;
   height: 68px;
-  object-fit: cover;
-  object-position: center;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1.4) brightness(1.05) opacity(0.92);
-  transition: filter 0.25s ease;
+  background-color: var(--nav-color, #2c313c);
+  -webkit-mask-image: url('/logo.png');
+  mask-image: url('/logo.png');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  opacity: 0.9;
+  transition: background-color 0.25s ease, opacity 0.25s ease;
+}
+
+.footer-logo-colored:hover {
+  opacity: 1;
 }
 
 .footer-title {
