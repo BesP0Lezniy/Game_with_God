@@ -16,7 +16,7 @@ next_color: "#4a1442"
 
 ---
 
-# **Оглавление**
+## *Оглавление*
 {: .accent}
 
 <div class="toc" markdown="1">
