@@ -689,24 +689,26 @@ body {
 }
 
 /* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) --- */
+/* --- НИЖНИЙ ПОДВАЛ (ФУТЕР) --- */
 .site-footer {
   position: relative;
   background-color: #f4f4f6;
   border-top: none !important;
-  padding: 30px 0 36px 0;
+  padding: 28px 0 36px 0;
   margin-top: 40px;
 }
 
-/* Тонкая верхняя линия футера в бледном цвете текущей страницы */
+/* Только верхняя полоска в бледном оттенке текущей страницы */
 .site-footer::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 3px;
   background-color: var(--accent-color, #262a33);
-  opacity: 0.28;
+  opacity: 0.35;
+  pointer-events: none;
 }
 
 .footer-flex {
