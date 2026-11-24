@@ -50,6 +50,8 @@
   --prev-color: {{ page.prev_color | default: '#2c313c' }};
   --next-color: {{ page.next_color | default: '#4a1442' }};
 ">
+    <!-- Полоска прогресса чтения у самого верхнего края экрана -->
+  <div id="reading-progress-bar" class="reading-progress"></div>
 
        <!-- БЛОК 2: Большой парадный баннер в самом верху каждой страницы -->
   <header id="main-banner" class="site-header custom-banner" role="banner" style="background-color: {{ page.banner_color | default: '#181b21' }}; border-bottom-color: {{ page.banner_border | default: '#0d0f12' }};">
@@ -203,7 +205,7 @@
     </div>
   </footer>
 
-       <!-- БЛОК 7: Скрипты (подсветка якорей, выезжающая полоска и оба выпадающих оглавления) -->
+       <!-- БЛОК 7: Скрипты (якоря, верхняя полоска, оглавление, прогресс чтения и копирование формул) -->
   <script>
     /* 1. Подсветка строки/блока при переходе по якорю и сброс при клике мимо */
     function highlightAnchor() {
@@ -219,12 +221,13 @@
     window.addEventListener('DOMContentLoaded', highlightAnchor);
     window.addEventListener('hashchange', highlightAnchor);
 
-    /* 2. Показ тонкой верхней полоски при прокрутке и закрытие меню большого баннера */
+    /* 2. Показ верхней полоски и обновление шкалы прогресса чтения при прокрутке */
     window.addEventListener('scroll', function() {
       var mainBanner = document.getElementById('main-banner');
       var stickyBar = document.getElementById('sticky-top-bar');
       var miniDrop = document.getElementById('mini-toc-dropdown');
       var bigDrop = document.getElementById('big-toc-dropdown');
+      
       if (mainBanner && stickyBar) {
         if (window.scrollY > mainBanner.offsetHeight - 20) {
           stickyBar.classList.add('visible');
@@ -234,9 +237,17 @@
           if (miniDrop) miniDrop.classList.remove('open');
         }
       }
+
+      var progressBar = document.getElementById('reading-progress-bar');
+      if (progressBar) {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progressBar.style.width = percent + '%';
+      }
     });
 
-    /* 3. Сборка параграфов третьего уровня (###) сразу в оба меню */
+    /* 3. Сборка параграфов (###) в оба выпадающих меню */
     window.addEventListener('DOMContentLoaded', function() {
       var lists = [
         document.getElementById('current-page-headings'),
@@ -261,7 +272,6 @@
         }
       });
 
-      /* Переключение меню в выезжающей полоске */
       var miniBtn = document.getElementById('mini-toc-toggle');
       var miniDrop = document.getElementById('mini-toc-dropdown');
       if (miniBtn && miniDrop) {
@@ -271,7 +281,6 @@
         });
       }
 
-      /* Переключение меню в большом баннере */
       var bigBtn = document.getElementById('big-toc-toggle');
       var bigDrop = document.getElementById('big-toc-dropdown');
       if (bigBtn && bigDrop) {
@@ -282,7 +291,7 @@
       }
     });
 
-    /* 4. Единый обработчик кликов по странице */
+    /* 4. Единый обработчик кликов (меню и сброс подсветки якорей) */
     document.addEventListener('click', function(e) {
       if (!e.target.closest('.mini-toc-wrapper')) {
         document.querySelectorAll('.mini-toc-dropdown').forEach(function(d) {
@@ -305,6 +314,83 @@
         }
       }
     });
+
+    /* 5. Копирование LaTeX-кода (строчные — двойной клик, выносные — кнопка слева и двойной клик) */
+    function copyKatexFormula(katexEl, btnEl) {
+      var annotation = katexEl.querySelector('annotation[encoding="application/x-tex"]');
+      if (!annotation || !annotation.textContent) return;
+
+      var texCode = annotation.textContent.trim();
+      var displayParent = katexEl.closest('.katex-display');
+      var isDisplay = displayParent !== null;
+      var formatted = isDisplay ? '$$\n' + texCode + '\n$$' : '$$' + texCode + '$$';
+
+      if (!btnEl && displayParent) {
+        btnEl = displayParent.querySelector('.formula-copy-btn');
+      }
+
+      navigator.clipboard.writeText(formatted).then(function() {
+        showCopyToast('LaTeX-код формулы скопирован');
+        
+        katexEl.classList.add('tex-copied-flash');
+        setTimeout(function() { katexEl.classList.remove('tex-copied-flash'); }, 500);
+
+        if (btnEl) {
+          btnEl.classList.add('copied');
+          setTimeout(function() { btnEl.classList.remove('copied'); }, 1500);
+        }
+      });
+    }
+
+    document.addEventListener('dblclick', function(e) {
+      var katexEl = e.target.closest('.katex');
+      if (katexEl) copyKatexFormula(katexEl, null);
+    });
+
+    var formulaObserver = new MutationObserver(function() {
+      document.querySelectorAll('.page-content .katex').forEach(function(el) {
+        if (!el.closest('.katex-display') && !el.title) {
+          el.title = 'Двойной клик — скопировать LaTeX';
+        }
+      });
+
+      document.querySelectorAll('.katex-display').forEach(function(disp) {
+        if (disp.querySelector('.formula-copy-btn')) return;
+        var katexEl = disp.querySelector('.katex');
+        if (!katexEl) return;
+
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'formula-copy-btn';
+        btn.title = 'Скопировать LaTeX-код формулы';
+        btn.innerHTML = '<svg class="icon-copy" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="icon-check">✓</span>';
+
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          copyKatexFormula(katexEl, btn);
+        });
+
+        disp.appendChild(btn);
+      });
+    });
+    formulaObserver.observe(document.body, { childList: true, subtree: true });
+
+    function showCopyToast(text) {
+      var oldToast = document.getElementById('tex-copy-toast');
+      if (oldToast) oldToast.remove();
+
+      var toast = document.createElement('div');
+      toast.id = 'tex-copy-toast';
+      toast.className = 'tex-toast';
+      toast.textContent = text;
+      document.body.appendChild(toast);
+
+      setTimeout(function() { toast.classList.add('show'); }, 10);
+      setTimeout(function() {
+        toast.classList.remove('show');
+        setTimeout(function() { toast.remove(); }, 300);
+      }, 2000);
+    }
   </script>
 
 </body>
