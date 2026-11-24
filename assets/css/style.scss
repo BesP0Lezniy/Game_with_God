@@ -191,7 +191,7 @@ body {
   font-size: 20px;
 }
 
-/* Выпадающее окно оглавления (в глубоких цветах баннеров) */
+/* Выпадающее окно оглавления (в средне-глубоких тонах --nav-color) */
 .mini-toc-dropdown {
   display: none;
   position: absolute;
@@ -203,7 +203,7 @@ body {
   overflow-y: auto;
   background-color: #ffffff;
   border: 1px solid #d5d0d8;
-  border-top: 4px solid var(--banner-color, #1e0722);
+  border-top: 4px solid var(--nav-color, #2c313c);
   border-radius: 6px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
   padding: 16px 20px;
@@ -237,7 +237,7 @@ body {
   display: block;
   padding: 5px 8px;
   border-radius: 4px;
-  color: var(--item-color, var(--banner-color, #181b21)) !important;
+  color: var(--item-color, var(--nav-color, #2c313c)) !important;
   font-size: 17px;
   font-weight: 700;
   text-decoration: none;
@@ -470,7 +470,7 @@ body {
 }
 
 /* ==========================================================================
-   РАЗДЕЛ 9. ЗАКРЕПЛЕННАЯ НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ (В ЦВЕТАХ БАННЕРОВ) И ПОДВАЛ
+   РАЗДЕЛ 9. ЗАКРЕПЛЕННАЯ НИЖНЯЯ ПАНЕЛЬ НАВИГАЦИИ (--nav-color) И ПОДВАЛ
    ========================================================================== */
 .fixed-bottom-bar {
   position: fixed;
@@ -501,10 +501,10 @@ body {
   gap: 22px;
 }
 
-/* Индивидуальные глубокие цвета для каждой кнопки перехода */
-.nav-home { --btn-color: var(--home-color, #181b21); }
-.nav-prev { --btn-color: var(--prev-color, #181b21); }
-.nav-next { --btn-color: var(--next-color, #1e0722); }
+/* Индивидуальные средне-глубокие цвета для кнопок перехода */
+.nav-home { --btn-color: var(--home-color, #2c313c); }
+.nav-prev { --btn-color: var(--prev-color, #2c313c); }
+.nav-next { --btn-color: var(--next-color, #4a1442); }
 
 /* Кнопки в рамке (Пред. глава, Главная, След. глава) */
 .nav-btn {
@@ -527,7 +527,7 @@ body {
   color: #ffffff !important;
 }
 
-/* Кнопки прокрутки (берут глубокий цвет баннера текущей страницы) */
+/* Кнопки прокрутки (берут средне-глубокий цвет --nav-color текущей страницы) */
 .scroll-action-btn {
   display: inline-flex;
   align-items: center;
@@ -535,7 +535,7 @@ body {
   background: none;
   border: none;
   padding: 4px 6px;
-  color: var(--banner-color, #181b21);
+  color: var(--nav-color, #2c313c);
   font-family: inherit;
   font-size: 17px;
   font-weight: 700;
@@ -553,18 +553,18 @@ body {
   justify-content: center;
   width: 34px;
   height: 34px;
-  border: 2px solid var(--banner-color, #181b21);
+  border: 2px solid var(--nav-color, #2c313c);
   border-radius: 50%;
   font-size: 19px;
   font-weight: 700;
   line-height: 1;
   background-color: #ffffff;
-  color: var(--banner-color, #181b21);
+  color: var(--nav-color, #2c313c);
   transition: all 0.2s ease;
 }
 
 .scroll-action-btn:hover .circle-arrow {
-  background-color: var(--banner-color, #181b21);
+  background-color: var(--nav-color, #2c313c);
   color: #ffffff;
 }
 
@@ -580,3 +580,4 @@ body {
   text-indent: 0 !important;
   margin-bottom: 4px;
 }
+
