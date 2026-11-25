@@ -881,7 +881,7 @@ $\Phi\_{core}$ и $\Phi\_{brunn}$ — гомеоморфизмы [\[Лемма V
 (1) Для $\partial\mathbb{H}\_{brunn}$: в области коллапса $K\_{coll}$ при переходе от слоя $m+k$ к слою $m+k+1$ каждая из $3^{m}$ нулевых компонент на ветви $(r, \ldots, r, s\_{1}, \ldots, s\_{m})$ допускает независимое ветвление (для любой координаты $0$ её $r$-я координата в прообразе $(u\_{1}, u\_{2}, u\_{3})$ с $u\_{1}u\_{2}u\_{3} = 0$ может принимать оба значения $0$ и $1$). Поэтому число непустых элементов измельчения $\bigvee\_{k=0}^{n-1} \sigma\_{r}^{-k}(\mathcal{U}\_{m})$ не меньше $(2^{3^{m}})^{n} = 2^{n \cdot 3^{m}}$, откуда
 
 $$
-h\{top}(\sigma\{r}\vert\{\partial\mathbb{H}\{brunn}}, \mathcal{U}\{m}) = \lim\{n \to \infty} \frac{1}{n} \log N\left(\bigvee\{k=0}^{n-1} \sigma\{r}^{-k}(\mathcal{U}\{m})\right) \geq 3^{m} \log 2.
+h_{top}(\sigma_{r}\vert_{\partial\mathbb{H}_{brunn}}, \mathcal{U}_{m}) = \lim_{n \to \infty} \frac{1}{n} \log N\left(\bigvee_{k=0}^{n-1} \sigma_{r}^{-k}(\mathcal{U}_{m})\right) \geq 3^{m} \log 2
 $$
 
 (2) Для $\partial\mathbb{H}\_{core}$: каждый узел имеет не менее $16$ прообразов (и не менее $2$ независимых вариантов на $r$-й координате в каждом из $3^{m}$ блоков) [\[Лемма IV.2\]](#lem-IV-2), откуда аналогично $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}, \mathcal{U}\_{m}) \geq 3^{m} \log 2$.
@@ -889,13 +889,15 @@ $$
 (3) Переходя к супремуму по всем конечным открытым разбиениям $\mathcal{U}\_{m}$ при $m \to \infty$, получаем:
 
 $$
-h_{top}(\sigma_{r}\vert\_{\partial\mathbb{H}_{core}}) \geq \sup_{m \geq 0} (3^{m} \log 2) = +\infty, \qquad h_{top}(\sigma_{r}\vert\_{\partial\mathbb{H}_{brunn}}) \geq \sup_{m \geq 0} (3^{m} \log 2) = +\infty. \quad \square
+h_{top}(\sigma_{r}\vert_{\partial\mathbb{H}_{core}}) \geq \sup_{m \geq 0} (3^{m} \log 2) = +\infty, \qquad h_{top}(\sigma_{r}\vert_{\partial\mathbb{H}_{brunn}}) \geq \sup_{m \geq 0} (3^{m} \log 2) = +\infty \quad \square
 $$
 
 #### <span class="accent">— [Теорема VI.2]</span>
 {: .courier #thm-VI-2}
 
-В ультраметрике $d = 2^{-k}$: $\dim\_{H}(\partial\mathbb{H}\_{core}, d) = \dim\_{H}(K\_{coll}, d) = +\infty$. В $d\_{norm}$: $\dim\_{H}(\partial\mathbb{H}\_{core}, d\_{norm}) = \dim\_{H}(K\_{coll}, d\_{norm}) = 1$.
+В ультраметрике $d = 2^{-k}$: $\dim\_{H}(\partial\mathbb{H}\_{core}, d) = \dim\_{H}(K\_{coll}, d) = +\infty$.
+
+В $d\_{norm}$: $\dim\_{H}(\partial\mathbb{H}\_{core}, d\_{norm}) = \dim\_{H}(K\_{coll}, d\_{norm}) = 1$.
 
 ***<span class="accent">Доказательство</span>***.
 
@@ -903,7 +905,13 @@ $$
 
 (2) При $d\_{norm}$: цилиндры уровня $k$ имеют диаметр ровно $\vert\mathrm{Spec}(\mathcal{L}\_{k})\vert^{-1}$; их число $N\_{k} = \vert\mathrm{Spec}(\mathcal{L}\_{k})\vert$, откуда $\underline{\dim}\_{B} = \lim\_{k} \frac{\log N\_{k}}{\log N\_{k}} = 1$. Верхняя оценка $\dim\_{H} \leq \dim\_{B} = 1$. Нижняя оценка ($\dim\_{H} \geq 1$): зададим вероятностную меру $\mu$ на цилиндрах уровня $k$ равенством $\mu(C\_{k}(u)) := 1/N\_{k}$ (равномерное распределение).
 
-(3) Для любого шара $B$ уровня $k$ (clopen-цилиндр): $\mu(B) = 1/N\_{k} = \mathrm{diam}\_{norm}(B)^{1}$, то есть $\mu(B) \leq \mathrm{diam}(B)^{1}$. По лемме Фростмана (mass distribution principle) $\mathcal{H}^{1}(X) \geq 1 > 0$, значит $\dim\_{H}(X) \geq 1$. Для $K\_{coll}$: $\mu(C\_{k}(u)) := 1/(2^{3^{k}} - 1)$ (равномерно на $K\_{coll}$); для шара $B$ уровня $k$ имеем $\mu(B) \leq 2 \cdot (2^{3^{k}})^{-1} = 2\cdot \mathrm{diam}(B)$, откуда $\mathcal{H}^{1}(K\_{coll}) \geq 1/2 > 0$, значит $\dim\_{H}(K\_{coll}) \geq 1$. В итоге $\dim\_{H}(\cdot, d\_{norm}) = 1$. Мера $\mu$ счётно-аддитивна в ZF: цилиндры clopen, компактность даёт конечное подпокрытие для любого счётного открытого покрытия. $\square$
+(3) Для любого шара $B$ уровня $k$ (clopen-цилиндр): $\mu(B) = 1/N\_{k} = \mathrm{diam}\_{norm}(B)^{1}$, то есть $\mu(B) \leq \mathrm{diam}(B)^{1}$. По лемме Фростмана (mass distribution principle) $\mathcal{H}^{1}(X) \geq 1 > 0$, значит $\dim\_{H}(X) \geq 1$.
+
+Для $K\_{coll}$: $\mu(C\_{k}(u)) := 1/(2^{3^{k}} - 1)$ (равномерно на $K\_{coll}$).
+
+Для шара $B$ уровня $k$ имеем $\mu(B) \leq 2 \cdot (2^{3^{k}})^{-1} = 2\cdot \mathrm{diam}(B)$, откуда $\mathcal{H}^{1}(K\_{coll}) \geq 1/2 > 0$, значит $\dim\_{H}(K\_{coll}) \geq 1$.
+
+В итоге $\dim\_{H}(\cdot, d\_{norm}) = 1$. Мера $\mu$ счётно-аддитивна в ZF: цилиндры clopen, компактность даёт конечное подпокрытие для любого счётного открытого покрытия. $\square$
 
 #### <span class="accent">— [Замечание VI.2]</span>
 {: .courier #rem-VI-2}
@@ -925,7 +933,9 @@ $$
 
 (2) Если $\pi \in V\_{+}$, то $T(\pi\_{1}^{(0)}, \pi\_{2}^{(0)}, \pi\_{3}^{(0)}) = \pi^{(0)} \neq \mathbf{0}$, откуда $\pi\_{r}^{(0)} \neq \mathbf{0}$ для всех $r$, т.е. $\sigma\_{r}(\pi) \in V\_{+}$. Для $r=1$ множество $\{j\_{i}\} = \{1,2,4,5\}$ не содержит $6$; если $\eta \in V\_{+}$ с $\eta^{(0)} = e\_{6}$, то $T(e\_{6}, v^{2}, v^{3}) = \mathbf{0}$ для любых $v^{2}, v^{3}$ (так как $(e\_{6})\_{j\_{i}} = 0$), значит $\sigma\_{1}^{-1}(\eta) \subseteq V\_{0}$, т.е. $\eta \notin \sigma\_{1}(V\_{+})$ — строгое включение.
 
-(3) Для $r=2$: $\{k\_{i}\} = \{2,3,5,6\}$ не содержит $1$; если $\eta^{(0)} = e\_{1}$, то $T(v^{1}, e\_{1}, v^{3}) = \mathbf{0}$, значит $\eta \notin \sigma\_{2}(V\_{+})$ — строгое включение. Для $r=3$: $i \mapsto l\_{i}$ — биекция $\{4,5,6,1,2,3\}$; для любого $\eta \in V\_{+}$ точка $\pi := \Phi\_{core}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \eta)$ (где $\mathbf{1}\_{\infty} \in \partial\mathbb{H}\_{core}$ — [\[Определение VI.2\]](#def-VI-2) имеет $\pi^{(0)}\_{i} = T(\mathbf{1}, \mathbf{1}, \eta^{(0)})\_{i} = 1 \cdot 1 \cdot \eta^{(0)}\_{l\_{i}} = \eta^{(0)}\_{l\_{i}}$; так как $l$ — биекция и $\eta^{(0)} \neq \mathbf{0}$, $\pi^{(0)} \neq \mathbf{0}$, т.е. $\pi \in V\_{+}$, и $\sigma\_{3}(\pi) = \eta$ — равенство. Для $V\_{0}$: при $\pi = \Phi\_{core}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ имеем $\sigma\_{1}(\pi) = \eta$ (аналогично для $r=2,3$).
+(3) Для $r=2$: $\{k\_{i}\} = \{2,3,5,6\}$ не содержит $1$; если $\eta^{(0)} = e\_{1}$, то $T(v^{1}, e\_{1}, v^{3}) = \mathbf{0}$, значит $\eta \notin \sigma\_{2}(V\_{+})$ — строгое включение. Для $r=3$: $i \mapsto l\_{i}$ — биекция $\{4,5,6,1,2,3\}$; для любого $\eta \in V\_{+}$ точка $\pi := \Phi\_{core}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \eta)$ (где $\mathbf{1}\_{\infty} \in \partial\mathbb{H}\_{core}$ — [\[Определение VI.2\]](#def-VI-2) имеет $\pi^{(0)}\_{i} = T(\mathbf{1}, \mathbf{1}, \eta^{(0)})\_{i} = 1 \cdot 1 \cdot \eta^{(0)}\_{l\_{i}} = \eta^{(0)}\_{l\_{i}}$; так как $l$ — биекция и $\eta^{(0)} \neq \mathbf{0}$, $\pi^{(0)} \neq \mathbf{0}$, т.е. $\pi \in V\_{+}$, и $\sigma\_{3}(\pi) = \eta$ — равенство.
+
+Для $V\_{0}$: при $\pi = \Phi\_{core}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ имеем $\sigma\_{1}(\pi) = \eta$ (аналогично для $r=2,3$).
 
 (4) В силу $\sigma\_{r}^{n}(V\_{+}) \subseteq V\_{+}$ и $V\_{0} \cap V\_{+} = \varnothing$ имеем $V\_{+} \cap \sigma\_{r}^{-n}(V\_{0}) = \varnothing$ для всех $n \geq 0$; для $\partial\mathbb{H}\_{brunn}$ — $\{\mathbf{1}\_{\infty}\} \cap \sigma\_{r}^{-n}(K\_{coll}) = \varnothing$ [\[Теорема V.2\]](#thm-V-2). $\square$
 
@@ -943,9 +953,13 @@ $$
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Любое непустое базовое clopen $U \subseteq \partial\mathbb{H}\_{brunn}$ задаётся фиксацией $u^{(k)} \in \{0,1\}^{3^{k}}$ на уровне $k$. В силу идемпотентности $a \cdot a \cdot a = a^{3} = a$ в $\mathbb{F}\_{2}$, тройка $(u^{(k)}, u^{(k)}, u^{(k)})$ проектируется в $u^{(k)}$ при $(\alpha\_{k}')^{*}$. Рекурсивно для всех $m \geq k$ получаем $\pi \in U$, для которой $\Phi\_{brunn}^{-1}(\pi) = (\pi, \pi, \pi)$, откуда $\sigma\_{r}(\pi) = p\_{r}(\Phi^{-1}(\pi)) = p\_{r}(\pi,\pi,\pi) = \pi$ для всех $r$.
+(1) Любое непустое базовое clopen $U \subseteq \partial\mathbb{H}\_{brunn}$ задаётся фиксацией $u^{(k)} \in \{0,1\}^{3^{k}}$ на уровне $k$. В силу идемпотентности $a \cdot a \cdot a = a^{3} = a$ в $\mathbb{F}\_{2}$, тройка $(u^{(k)}, u^{(k)}, u^{(k)})$ проектируется в $u^{(k)}$ при $(\alpha\_{k}')^{*}$.
 
-(2) Для $\mathbf{0}\_{\infty}, \mathbf{1}\_{\infty}$ неподвижность следует из $T(\mathbf{0}, \mathbf{0}, \mathbf{0}) = \mathbf{0}$, $T(\mathbf{1}, \mathbf{1}, \mathbf{1}) = \mathbf{1}$. Clopen $\{\pi \in \partial\mathbb{H}\_{core} : \pi^{(0)} = e\_{1}\}$ не содержит неподвижных точек $\sigma\_{1}$: если $\sigma\_{1}(\pi) = \pi$ и $\pi^{(0)} = e\_{1}$, то $\pi\_{1}^{(0)} = e\_{1}$ (так как $\sigma\_{1}(\pi)^{(0)} = p\_{1}(\Phi^{-1}(\pi))^{(0)} = \pi\_{1}^{(0)}$), и $T(e\_{1}, \pi\_{2}^{(0)}, \pi\_{3}^{(0)}) = \pi^{(0)} = e\_{1}$; но $T(e\_{1}, v^{2}, v^{3})\_{1} = (e\_{1})\_{j\_{1}} \cdot (v^{2})\_{k\_{1}} \cdot (v^{3})\_{l\_{1}} = (e\_{1})\_{2} \cdot \ldots = 0 \neq 1 = (e\_{1})\_{1}$ — противоречие. Значит $\pi\_{1}^{(0)} \neq e\_{1}$, т.е. $\sigma\_{1}(\pi)^{(0)} \neq \pi^{(0)}$ — не неподвижна. $\square$
+Рекурсивно для всех $m \geq k$ получаем $\pi \in U$, для которой $\Phi\_{brunn}^{-1}(\pi) = (\pi, \pi, \pi)$, откуда $\sigma\_{r}(\pi) = p\_{r}(\Phi^{-1}(\pi)) = p\_{r}(\pi,\pi,\pi) = \pi$ для всех $r$.
+
+(2) Для $\mathbf{0}\_{\infty}, \mathbf{1}\_{\infty}$ неподвижность следует из $T(\mathbf{0}, \mathbf{0}, \mathbf{0}) = \mathbf{0}$, $T(\mathbf{1}, \mathbf{1}, \mathbf{1}) = \mathbf{1}$. Clopen $\{\pi \in \partial\mathbb{H}\_{core} : \pi^{(0)} = e\_{1}\}$ не содержит неподвижных точек $\sigma\_{1}$: если $\sigma\_{1}(\pi) = \pi$ и $\pi^{(0)} = e\_{1}$, то $\pi\_{1}^{(0)} = e\_{1}$ (так как $\sigma\_{1}(\pi)^{(0)} = p\_{1}(\Phi^{-1}(\pi))^{(0)} = \pi\_{1}^{(0)}$), и $T(e\_{1}, \pi\_{2}^{(0)}, \pi\_{3}^{(0)}) = \pi^{(0)} = e\_{1}$; но $T(e\_{1}, v^{2}, v^{3})\_{1} = (e\_{1})\_{j\_{1}} \cdot (v^{2})\_{k\_{1}} \cdot (v^{3})\_{l\_{1}} = (e\_{1})\_{2} \cdot \ldots = 0 \neq 1 = (e\_{1})\_{1}$ — противоречие.
+
+Значит $\pi\_{1}^{(0)} \neq e\_{1}$, т.е. $\sigma\_{1}(\pi)^{(0)} \neq \pi^{(0)}$ — не неподвижна. $\square$
 
 #### <span class="accent">— [Замечание VI.4]</span>
 {: .courier #rem-VI-4}
@@ -1065,7 +1079,9 @@ $$
 
 ***<span class="accent">Доказательство</span>***.
 
-Каждый функтор зигзага не отражает изоморфизмы [\[Теорема VII.1\]](#thm-VII-1), значит не является эквивалентностью. Каждая рамка $\mathcal{R}\_{1}$–$\mathcal{R}\_{6}$ теряет при переходе к соседней хотя бы один инвариант. Композиция функторов зигзага не определена (направления стрелок несовместимы); цепь I–VI существует как путь по зигзагу, а не как один функтор. $\square$
+Каждый функтор зигзага не отражает изоморфизмы [\[Теорема VII.1\]](#thm-VII-1), значит не является эквивалентностью. Каждая рамка $\mathcal{R}\_{1}$–$\mathcal{R}\_{6}$ теряет при переходе к соседней хотя бы один инвариант.
+
+Композиция функторов зигзага не определена (направления стрелок несовместимы); цепь I–VI существует как путь по зигзагу, а не как один функтор. $\square$
 
 #### <span class="accent">— [Следствие VII.1]</span>
 {: .courier #cor-VII-1}
@@ -1143,10 +1159,10 @@ $$
 Конечная подкоалгебра $(C, \omega\_{C}) \hookrightarrow (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ называется копредельно-порождающей $\mathbb{H}\_{core}(\mathcal{G})$, если
 
 $$
-\mathbb{H}_{core}(\mathcal{G}) = \bigcup_{k \geq 0} \left(\omega_{core}^{(k)}\right)^{-1}\left(C^{\otimes 3^{k}}\right),
+\mathbb{H}_{core}(\mathcal{G}) = \bigcup_{k \geq 0} \left(\omega_{core}^{(k)}\right)^{-1}\left(C^{\otimes 3^{k}}\right)
 $$
 
-то есть индуктивный предел цепи $C \to C^{\otimes 3} \to C^{\otimes 9} \to \cdots$ (с морфизмами $\omega\_{C}, \omega\_{C}^{\otimes 3}, \ldots$) канонически изоморфен $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
+То есть индуктивный предел цепи $C \to C^{\otimes 3} \to C^{\otimes 9} \to \cdots$ (с морфизмами $\omega\_{C}, \omega\_{C}^{\otimes 3}, \ldots$) канонически изоморфен $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
 
 #### <span class="accent">— [Теорема VIII.1]</span>
 {: .courier #thm-VIII-1}
@@ -1172,7 +1188,7 @@ $$
 
 Для любой $\mathcal{G} \in \mathfrak{P}\_{6}$:
 
-(а) в $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная конечная копредельно-порождающая подкоалгебра минимальной размерности ($\dim\_{\mathbb{F}\_{2}} = 64$);
+(а) В $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная конечная копредельно-порождающая подкоалгебра минимальной размерности ($\dim\_{\mathbb{F}\_{2}} = 64$).
 
 (б) $\mathrm{Aut}(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G})) \cong \mathrm{Aut}(B\_{6}, \alpha\_{0}) \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$.
 
@@ -1180,11 +1196,15 @@ $$
 
 (1) Сама $\iota\_{0}(B\_{6})$ является конечной подкоалгеброй размерности 64: по [Следствию III.3](#cor-III-3) $\omega\_{core}(\iota\_{0}(x)) = \iota\_{1}(\alpha\_{0}(x)) \in \iota\_{1}(B\_{6}^{\otimes 3}) = \iota\_{0}(B\_{6})^{\otimes 3}$, и по определению $\mathbb{H}\_{core} = \varinjlim \mathcal{L}\_{k}$ она копредельно-порождает всю $\mathbb{H}\_{core}$.
 
-(2) Пусть $C \subset \mathbb{H}\_{core}$ — произвольная конечная копредельно-порождающая подкоалгебра. В силу конечности $C \subseteq \iota\_{m}(\mathcal{L}\_{m})$ при некотором минимальном $m \geq 0$, и как булева подалгебра в $\mathcal{L}\_{m}$ она двойственно задаётся конгруэнцией $\approx$ на $\mathrm{Spec}(\mathcal{L}\_{m}) = (\mathbb{F}\_{2}^{6})^{3^{m}}$ (точки $p, q$ склеены $\iff$ $\forall c \in C,\; c(p) = c(q)$). Если конгруэнция $\approx$ нетривиальна (склеивает две различные точки $p \neq q$ слоя $m$), то в силу согласованности с $\omega\_{core}$ для любого $k \geq 0$ и любых прообразов $\tilde{p}, \tilde{q} \in \mathrm{Spec}(\mathcal{L}\_{m+k})$ точек $p, q$ при проекции $(\alpha\_{m, m+k})^{\ast}$ все элементы из $(\omega\_{core}^{(k)})^{-1}(C^{\otimes 3^{k}})$ принимают на $\tilde{p}$ и $\tilde{q}$ одинаковые значения, то есть не разделяют слой $\mathcal{L}\_{m}$. Это противоречит условию копредельного порождения $\mathbb{H}\_{core} = \bigcup\_{k \geq 0} (\omega\_{core}^{(k)})^{-1}(C^{\otimes 3^{k}})$.
+(2) Пусть $C \subset \mathbb{H}\_{core}$ — произвольная конечная копредельно-порождающая подкоалгебра. В силу конечности $C \subseteq \iota\_{m}(\mathcal{L}\_{m})$ при некотором минимальном $m \geq 0$, и как булева подалгебра в $\mathcal{L}\_{m}$ она двойственно задаётся конгруэнцией $\approx$ на $\mathrm{Spec}(\mathcal{L}\_{m}) = (\mathbb{F}\_{2}^{6})^{3^{m}}$ (точки $p, q$ склеены $\iff$ $\forall c \in C,\; c(p) = c(q)$).
+
+Если конгруэнция $\approx$ нетривиальна (склеивает две различные точки $p \neq q$ слоя $m$), то в силу согласованности с $\omega\_{core}$ для любого $k \geq 0$ и любых прообразов $\tilde{p}, \tilde{q} \in \mathrm{Spec}(\mathcal{L}\_{m+k})$ точек $p, q$ при проекции $(\alpha\_{m, m+k})^{\ast}$ все элементы из $(\omega\_{core}^{(k)})^{-1}(C^{\otimes 3^{k}})$ принимают на $\tilde{p}$ и $\tilde{q}$ одинаковые значения, то есть не разделяют слой $\mathcal{L}\_{m}$. Это противоречит условию копредельного порождения $\mathbb{H}\_{core} = \bigcup\_{k \geq 0} (\omega\_{core}^{(k)})^{-1}(C^{\otimes 3^{k}})$.
 
 (3) Следовательно, конгруэнция $\approx$ тривиальна, откуда $C = \iota\_{m}(\mathcal{L}\_{m})$. При $m \geq 1$ имеем $\dim\_{\mathbb{F}\_{2}}(C) = 64^{3^{m}} > 64$. Минимум размерности (64) достигается единственно при $m = 0$, то есть для $C = \iota\_{0}(B\_{6})$.
 
-(4) Свойства конечности, копредельного порождения и размерности инвариантны относительно любого изоморфизма $F$-коалгебр; в силу единственности $\iota\_{0}(B\_{6})$ по пункту (а), доказанному через (1)-(3), любой автоморфизм $\Psi$ пары $(\mathbb{H}\_{core}, \omega\_{core})$ сохраняет $\iota\_{0}(B\_{6})$ и однозначно определяется ограничением $\varphi$ на $\mathrm{Spec}(B\_{6}) = \mathbb{F}\_{2}^{6}$. Далее:
+(4) Свойства конечности, копредельного порождения и размерности инвариантны относительно любого изоморфизма $F$-коалгебр; в силу единственности $\iota\_{0}(B\_{6})$ по пункту (а), доказанному через (1)—(3), любой автоморфизм $\Psi$ пары $(\mathbb{H}\_{core}, \omega\_{core})$ сохраняет $\iota\_{0}(B\_{6})$ и однозначно определяется ограничением $\varphi$ на $\mathrm{Spec}(B\_{6}) = \mathbb{F}\_{2}^{6}$.
+
+Далее:
 
 Шаг 1: $\varphi(\mathbf{0}) = \mathbf{0}$, $\varphi(\mathbf{1}) = \mathbf{1}$. Из $V(I) = \{\mathbf{0}, \mathbf{1}\}$ и $T(\varphi(\mathbf{0}), \varphi(\mathbf{0}), \varphi(\mathbf{0})) = \varphi(\mathbf{0})$: $\varphi(\mathbf{0}) \in V(I)$. Если $\varphi(\mathbf{0}) = \mathbf{1}$, то для $v^{2}$ с $\varphi(v^{2}) = \mathbf{0}$ (сюръективность) $\mathbf{1} = \varphi(\mathbf{0}) = \varphi(T(\mathbf{0}, v^{2}, \mathbf{1})) = T(\mathbf{1}, \mathbf{0}, \varphi(\mathbf{1})) = \mathbf{0}$ — противоречие.
 
