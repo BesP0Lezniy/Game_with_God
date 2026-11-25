@@ -517,7 +517,9 @@ $\partial\mathbb{H}\_{core}$ не имеет изолированных точе
 
 ***<span class="accent">Доказательство</span>***.
 
-Изолированная точка $\partial\mathbb{H}\_{core}$ соответствует атому $\mathbb{H}\_{core}$ [\[Замечание IV.1\]](#rem-IV-1) для счётной алгебры в ZF. Атомов нет [\[Лемма IV.2\]](#lem-IV-2). $\square$
+Изолированная точка $\partial\mathbb{H}\_{core}$ соответствует атому $\mathbb{H}\_{core}$ [\[Замечание IV.1\]](#rem-IV-1) для счётной алгебры в ZF.
+
+Атомов нет [\[Лемма IV.2\]](#lem-IV-2). $\square$
 
 #### <span class="accent">— [Лемма IV.3]</span>
 {: .courier #lem-IV-3}
@@ -718,7 +720,9 @@ $K\_{coll} := \partial\mathbb{H}\_{brunn} \setminus \{\mathbf{1}\_{\infty}\} = \
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) По биективности $\Phi$: $\sigma\_{r}(\pi) = \mathbf{1}\_{\infty} \iff p\_{r}(\Phi^{-1}(\pi)) = \mathbf{1}\_{\infty} \iff$ $r$-я координата $\Phi^{-1}(\pi)$ равна $\mathbf{1}\_{\infty}$. Мощность: $(\partial\mathbb{H})^{2}$ — произведение двух компактов мощности $2^{\aleph\_{0}}$ [\[Теорема IV.3\]](#thm-IV-3)), значит $(2^{\aleph\_{0}})^{2} = 2^{\aleph\_{0}}$. Пересечение с $K\_{coll}$: точка $\Phi\_{brunn}(\mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ при $r = 1$ лежит в прообразе (первая координата $\mathbf{1}\_{\infty}$) и в $K\_{coll}$ (на слое 0: $1 \cdot 0 \cdot 0 = 0$).
+(1) По биективности $\Phi$: $\sigma\_{r}(\pi) = \mathbf{1}\_{\infty} \iff p\_{r}(\Phi^{-1}(\pi)) = \mathbf{1}\_{\infty} \iff$ $r$-я координата $\Phi^{-1}(\pi)$ равна $\mathbf{1}\_{\infty}$. Мощность: $(\partial\mathbb{H})^{2}$ — произведение двух компактов мощности $2^{\aleph\_{0}}$ [\[Теорема IV.3\]](#thm-IV-3)), значит $(2^{\aleph\_{0}})^{2} = 2^{\aleph\_{0}}$.
+
+Пересечение с $K\_{coll}$: точка $\Phi\_{brunn}(\mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ при $r = 1$ лежит в прообразе (первая координата $\mathbf{1}\_{\infty}$) и в $K\_{coll}$ (на слое 0: $1 \cdot 0 \cdot 0 = 0$).
 
 (2) Для $\eta \in \partial\mathbb{H}\_{brunn}$ положим $\pi := \Phi\_{brunn}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$. На слое 0: $\pi^{(0)} = \eta^{(0)} \cdot 0 \cdot 0 = 0$, значит $\pi \in K\_{coll}$; $\sigma\_{1}(\pi) = \eta$. Значит $\sigma\_{1}(K\_{coll}) = \partial\mathbb{H}\_{brunn}$; аналогично для $r = 2,3$. $\square$
 
@@ -757,7 +761,9 @@ $K\_{coll}$ не имеет изолированных точек.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Пусть $\pi \in K\_{coll}$ изолирована в $K\_{coll}$. Тогда существует $V \subseteq \partial\mathbb{H}\_{brunn}$ открытое с $V \cap K\_{coll} = \{\pi\}$, значит $V \subseteq \{\pi, \mathbf{1}\_{\infty}\}$ (поскольку $\partial\mathbb{H}\_{brunn} = K\_{coll} \sqcup \{\mathbf{1}\_{\infty}\}$). Если $V = \{\pi\}$, то $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие: [\[Следствие IV.2\]](#cor-IV-2).
+(1) Пусть $\pi \in K\_{coll}$ изолирована в $K\_{coll}$. Тогда существует $V \subseteq \partial\mathbb{H}\_{brunn}$ открытое с $V \cap K\_{coll} = \{\pi\}$, значит $V \subseteq \{\pi, \mathbf{1}\_{\infty}\}$ (поскольку $\partial\mathbb{H}\_{brunn} = K\_{coll} \sqcup \{\mathbf{1}\_{\infty}\}$).
+
+Если $V = \{\pi\}$, то $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие: [\[Следствие IV.2\]](#cor-IV-2).
 
 (2) Если $V = \{\pi, \mathbf{1}\_{\infty}\}$, то $\{\mathbf{1}\_{\infty}\}$ открыто [\[Следствие IV.2\]](#cor-IV-2)), следовательно $\{\pi\} = V \setminus \{\mathbf{1}\_{\infty}\}$ открыто как разность открытых, значит $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие: [\[Следствие IV.2\]](#cor-IV-2). $\square$
 
@@ -875,7 +881,7 @@ $\Phi\_{core}$ и $\Phi\_{brunn}$ — гомеоморфизмы [\[Лемма V
 (1) Для $\partial\mathbb{H}\_{brunn}$: в области коллапса $K\_{coll}$ при переходе от слоя $m+k$ к слою $m+k+1$ каждая из $3^{m}$ нулевых компонент на ветви $(r, \ldots, r, s\_{1}, \ldots, s\_{m})$ допускает независимое ветвление (для любой координаты $0$ её $r$-я координата в прообразе $(u\_{1}, u\_{2}, u\_{3})$ с $u\_{1}u\_{2}u\_{3} = 0$ может принимать оба значения $0$ и $1$). Поэтому число непустых элементов измельчения $\bigvee\_{k=0}^{n-1} \sigma\_{r}^{-k}(\mathcal{U}\_{m})$ не меньше $(2^{3^{m}})^{n} = 2^{n \cdot 3^{m}}$, откуда
 
 $$
-h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{brunn}}, \mathcal{U}\_{m}) = \lim\_{n \to \infty} \frac{1}{n} \log N\left(\bigvee\_{k=0}^{n-1} \sigma\_{r}^{-k}(\mathcal{U}\_{m})\right) \geq 3^{m} \log 2.
+h\{top}(\sigma\{r}\vert\{\partial\mathbb{H}\{brunn}}, \mathcal{U}\{m}) = \lim\{n \to \infty} \frac{1}{n} \log N\left(\bigvee\{k=0}^{n-1} \sigma\{r}^{-k}(\mathcal{U}\{m})\right) \geq 3^{m} \log 2.
 $$
 
 (2) Для $\partial\mathbb{H}\_{core}$: каждый узел имеет не менее $16$ прообразов (и не менее $2$ независимых вариантов на $r$-й координате в каждом из $3^{m}$ блоков) [\[Лемма IV.2\]](#lem-IV-2), откуда аналогично $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}, \mathcal{U}\_{m}) \geq 3^{m} \log 2$.
@@ -883,7 +889,7 @@ $$
 (3) Переходя к супремуму по всем конечным открытым разбиениям $\mathcal{U}\_{m}$ при $m \to \infty$, получаем:
 
 $$
-h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}) \geq \sup\_{m \geq 0} (3^{m} \log 2) = +\infty, \qquad h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{brunn}}) \geq \sup\_{m \geq 0} (3^{m} \log 2) = +\infty. \quad \square
+h_{top}(\sigma_{r}\vert\_{\partial\mathbb{H}_{core}}) \geq \sup_{m \geq 0} (3^{m} \log 2) = +\infty, \qquad h_{top}(\sigma_{r}\vert\_{\partial\mathbb{H}_{brunn}}) \geq \sup_{m \geq 0} (3^{m} \log 2) = +\infty. \quad \square
 $$
 
 #### <span class="accent">— [Теорема VI.2]</span>
