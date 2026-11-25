@@ -110,7 +110,7 @@ $\mathbf{C}$ инициальный в категории $\mathcal{G}$-разм
 
 (а) Определён конечными данными $(\Sigma,\mathcal{F})$.
 
-(б) Инициалиен в категории $\mathcal{G}$-размеченных PROP.
+(б) Инициальный в категории $\mathcal{G}$-размеченных PROP.
 
 (в) Не содержит семантики.
 
@@ -217,7 +217,7 @@ $$
 
 (1) Сильная связность [\[Теорема II.1\]](#thm-II-1).
 
-(2) Конъюнктивная форма — по построению [\[Определение II.2\]](#def-II-2). (3) $\mathrm{Fix}(T) = \{\mathbf{0}, \mathbf{1}\}$ — [\[Теорема II.1\]](#thm-II-1). $\square$
+(2) Конъюнктивная форма — по построению [\[Определение II.3\]](#def-II-3). (3) $\mathrm{Fix}(T) = \{\mathbf{0}, \mathbf{1}\}$ — [\[Теорема II.1\]](#thm-II-1). $\square$
 
 #### <span class="accent">— [Следствие II.2]</span>
 {: .courier #cor-II-2}
@@ -780,7 +780,7 @@ $K\_{coll}$ не имеет изолированных точек.
 
 (2) Пусть $a, b, c \in K\_{coll}$; $a^{(0)} = b^{(0)} = c^{(0)} = \mathbf{0}$  [\[Определение V.3\]](#def-V-3), значит $\Phi\_{brunn}(a,b,c)^{(0)} = 0 \cdot 0 \cdot 0 = 0$, т.е. $\Phi\_{brunn}(a,b,c) \in K\_{coll}$ — включение.
 
-Корректность: $\Phi\_{brunn}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \in K\_{coll}$ (на слое 0: $1 \cdot 1 \cdot 0 = 0$), но $(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \notin K\_{coll}^{3}$. $\square$
+Строгость включения: $\Phi\_{brunn}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \in K\_{coll}$ (на слое 0: $1 \cdot 1 \cdot 0 = 0$), но $(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \mathbf{0}\_{\infty}) \notin K\_{coll}^{3}$. $\square$
 
 ---
 
@@ -878,7 +878,7 @@ $$
 h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{brunn}}, \mathcal{U}\_{m}) = \lim\_{n \to \infty} \frac{1}{n} \log N\left(\bigvee\_{k=0}^{n-1} \sigma\_{r}^{-k}(\mathcal{U}\_{m})\right) \geq 3^{m} \log 2.
 $$
 
-(2) Для $\partial\mathbb{H}\_{core}$: каждый узел имеет не менее $16$ прообразов (и не менее $2$ независимых вариантов на $r$-й координате в каждом из $3^{m}$ блоков) [\[Лемма IV.2\]](#lem-IV-2)], откуда аналогично $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}, \mathcal{U}\_{m}) \geq 3^{m} \log 2$.
+(2) Для $\partial\mathbb{H}\_{core}$: каждый узел имеет не менее $16$ прообразов (и не менее $2$ независимых вариантов на $r$-й координате в каждом из $3^{m}$ блоков) [\[Лемма IV.2\]](#lem-IV-2), откуда аналогично $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}, \mathcal{U}\_{m}) \geq 3^{m} \log 2$.
 
 (3) Переходя к супремуму по всем конечным открытым разбиениям $\mathcal{U}\_{m}$ при $m \to \infty$, получаем:
 
@@ -919,7 +919,7 @@ $$
 
 (2) Если $\pi \in V\_{+}$, то $T(\pi\_{1}^{(0)}, \pi\_{2}^{(0)}, \pi\_{3}^{(0)}) = \pi^{(0)} \neq \mathbf{0}$, откуда $\pi\_{r}^{(0)} \neq \mathbf{0}$ для всех $r$, т.е. $\sigma\_{r}(\pi) \in V\_{+}$. Для $r=1$ множество $\{j\_{i}\} = \{1,2,4,5\}$ не содержит $6$; если $\eta \in V\_{+}$ с $\eta^{(0)} = e\_{6}$, то $T(e\_{6}, v^{2}, v^{3}) = \mathbf{0}$ для любых $v^{2}, v^{3}$ (так как $(e\_{6})\_{j\_{i}} = 0$), значит $\sigma\_{1}^{-1}(\eta) \subseteq V\_{0}$, т.е. $\eta \notin \sigma\_{1}(V\_{+})$ — строгое включение.
 
-(3) Для $r=2$: $\{k\_{i}\} = \{2,3,5,6\}$ не содержит $1$; если $\eta^{(0)} = e\_{1}$, то $T(v^{1}, e\_{1}, v^{3}) = \mathbf{0}$, значит $\eta \notin \sigma\_{2}(V\_{+})$ — строгое включение. Для $r=3$: $i \mapsto l\_{i}$ — биекция $\{4,5,6,1,2,3\}$; для любого $\eta \in V\_{+}$ точка $\pi := \Phi\_{core}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \eta)$ (где $\mathbf{1}\_{\infty} \in \partial\mathbb{H}\_{core}$ — [\[Определение VI.2\]](#def-VI-2)) имеет $\pi^{(0)}\_{i} = T(\mathbf{1}, \mathbf{1}, \eta^{(0)})\_{i} = 1 \cdot 1 \cdot \eta^{(0)}\_{l\_{i}} = \eta^{(0)}\_{l\_{i}}$; так как $l$ — биекция и $\eta^{(0)} \neq \mathbf{0}$, $\pi^{(0)} \neq \mathbf{0}$, т.е. $\pi \in V\_{+}$, и $\sigma\_{3}(\pi) = \eta$ — равенство. Для $V\_{0}$: при $\pi = \Phi\_{core}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ имеем $\sigma\_{1}(\pi) = \eta$ (аналогично для $r=2,3$).
+(3) Для $r=2$: $\{k\_{i}\} = \{2,3,5,6\}$ не содержит $1$; если $\eta^{(0)} = e\_{1}$, то $T(v^{1}, e\_{1}, v^{3}) = \mathbf{0}$, значит $\eta \notin \sigma\_{2}(V\_{+})$ — строгое включение. Для $r=3$: $i \mapsto l\_{i}$ — биекция $\{4,5,6,1,2,3\}$; для любого $\eta \in V\_{+}$ точка $\pi := \Phi\_{core}(\mathbf{1}\_{\infty}, \mathbf{1}\_{\infty}, \eta)$ (где $\mathbf{1}\_{\infty} \in \partial\mathbb{H}\_{core}$ — [\[Определение VI.2\]](#def-VI-2) имеет $\pi^{(0)}\_{i} = T(\mathbf{1}, \mathbf{1}, \eta^{(0)})\_{i} = 1 \cdot 1 \cdot \eta^{(0)}\_{l\_{i}} = \eta^{(0)}\_{l\_{i}}$; так как $l$ — биекция и $\eta^{(0)} \neq \mathbf{0}$, $\pi^{(0)} \neq \mathbf{0}$, т.е. $\pi \in V\_{+}$, и $\sigma\_{3}(\pi) = \eta$ — равенство. Для $V\_{0}$: при $\pi = \Phi\_{core}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ имеем $\sigma\_{1}(\pi) = \eta$ (аналогично для $r=2,3$).
 
 (4) В силу $\sigma\_{r}^{n}(V\_{+}) \subseteq V\_{+}$ и $V\_{0} \cap V\_{+} = \varnothing$ имеем $V\_{+} \cap \sigma\_{r}^{-n}(V\_{0}) = \varnothing$ для всех $n \geq 0$; для $\partial\mathbb{H}\_{brunn}$ — $\{\mathbf{1}\_{\infty}\} \cap \sigma\_{r}^{-n}(K\_{coll}) = \varnothing$ [\[Теорема V.2\]](#thm-V-2). $\square$
 
@@ -1041,7 +1041,7 @@ $h\_{top}(\sigma\_{r}) = +\infty$ на обоих пространствах; $\
 
 (5) $U\_{5}$: $(\partial\mathbb{H}\_{core}, \sigma\_{r}, d)$ и $(\partial\mathbb{H}\_{core}, \sigma\_{r}, d\_{norm})$ [\[Теорема VI.2\]](#thm-VI-2) имеют разные $\dim\_{H}$ ($+\infty$ vs $1$), значит неизоморфны в $\mathbf{UMetDyn}$; но $U\_{5}$ стирает $d$, давая один и тот же $(\partial\mathbb{H}\_{core}, \sigma\_{r})$. $\square$
 
-#### <span class="accent">— [Теорема VII.1]</span>
+#### <span class="accent">— [Замечание VII.1]</span>
 {: .courier #rem-VII-1}
 
 $h\_{top}$ — инвариант рамки $\mathcal{R}\_{5}$ (топологическая динамика), не $\mathcal{R}\_{6}$: в $\mathbf{Dyn}(\mathbf{Stone})$ уже $h\_{top}(\sigma\_{r}) = +\infty$ ([\[Теорема VI.1\]](#thm-VI-1) не использует метрику). Метрика $d$ в $\mathcal{R}\_{6}$ добавляет только $\dim\_{H}$ (метрический инвариант), зависящий от выбора $d$: $+\infty$ при $d = 2^{-k}$, $1$ при $d\_{norm}$.
