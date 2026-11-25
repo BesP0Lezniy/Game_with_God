@@ -870,9 +870,21 @@ $\Phi\_{core}$ и $\Phi\_{brunn}$ — гомеоморфизмы [\[Лемма V
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Пусть $\mathcal{U}\_{0}$ — конечное clopen-разбиение уровня 0. Измельчение $\mathcal{U}\_{0} \vee \sigma\_{r}^{-1}\mathcal{U}\_{0} \vee \cdots \vee \sigma\_{r}^{-(n-1)}\mathcal{U}\_{0}$ разделяет все компоненты слоя $\mathcal{L}\_{n-1}$ [\[Лемма VI.1\]](#lem-VI-1).
+Для произвольного $m \geq 0$ пусть $\mathcal{U}\_{m}$ — конечное clopen-разбиение уровня $m$, различающее все $3^{m}$ координатных компонент слоя $\mathcal{L}\_{m}$ (элементы $\mathcal{U}\_{m}$ — цилиндры $C\_{m}(u)$ по всем $u \in \mathrm{Spec}(\mathcal{L}\_{m})$). По [Лемме VI.1](#lem-VI-1) прообраз $\sigma\_{r}^{-k}(\mathcal{U}\_{m})$ фиксирует значения на $3^{m}$ компонентах слоя $\mathcal{L}\_{m+k}$, занумерованных мультииндексами $(r, \ldots, r, s\_{1}, \ldots, s\_{m}) \in \{1,2,3\}^{k+m}$ ($k$ первых символов равны $r$). Для различных $k \in \{0, \ldots, n-1\}$ эти наборы мультииндексов попарно не пересекаются.
 
-(2) Для $\partial\mathbb{H}\_{core}$ число непустых элементов измельчения $\geq \vert\mathrm{Spec}(\mathcal{L}\_{n-1})\vert = 2^{6 \cdot 3^{n-1}}$, откуда $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}) \geq \lim\_{n \to \infty} \frac{1}{n}\log(2^{6\cdot 3^{n-1}}) = +\infty$. Аналогично для $\partial\mathbb{H}\_{brunn}$: $\vert\mathrm{Spec}(\mathcal{L}\_{n-1}^{brunn})\vert = 2^{3^{n-1}}$, и $\lim\_{n \to \infty} \frac{3^{n-1}\log 2}{n} = +\infty$. $\square$
+(1) Для $\partial\mathbb{H}\_{brunn}$: в области коллапса $K\_{coll}$ при переходе от слоя $m+k$ к слою $m+k+1$ каждая из $3^{m}$ нулевых компонент на ветви $(r, \ldots, r, s\_{1}, \ldots, s\_{m})$ допускает независимое ветвление (для любой координаты $0$ её $r$-я координата в прообразе $(u\_{1}, u\_{2}, u\_{3})$ с $u\_{1}u\_{2}u\_{3} = 0$ может принимать оба значения $0$ и $1$). Поэтому число непустых элементов измельчения $\bigvee\_{k=0}^{n-1} \sigma\_{r}^{-k}(\mathcal{U}\_{m})$ не меньше $(2^{3^{m}})^{n} = 2^{n \cdot 3^{m}}$, откуда
+
+$$
+h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{brunn}}, \mathcal{U}\_{m}) = \lim\_{n \to \infty} \frac{1}{n} \log N\left(\bigvee\_{k=0}^{n-1} \sigma\_{r}^{-k}(\mathcal{U}\_{m})\right) \geq 3^{m} \log 2.
+$$
+
+(2) Для $\partial\mathbb{H}\_{core}$: каждый узел имеет не менее $16$ прообразов (и не менее $2$ независимых вариантов на $r$-й координате в каждом из $3^{m}$ блоков) [\[Лемма IV.2\]](#lem-IV-2)], откуда аналогично $h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}, \mathcal{U}\_{m}) \geq 3^{m} \log 2$.
+
+(3) Переходя к супремуму по всем конечным открытым разбиениям $\mathcal{U}\_{m}$ при $m \to \infty$, получаем:
+
+$$
+h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{core}}) \geq \sup\_{m \geq 0} (3^{m} \log 2) = +\infty, \qquad h\_{top}(\sigma\_{r}\vert\_{\partial\mathbb{H}\_{brunn}}) \geq \sup\_{m \geq 0} (3^{m} \log 2) = +\infty. \quad \square
+$$
 
 #### <span class="accent">— [Теорема VI.2]</span>
 {: .courier #thm-VI-2}
@@ -1011,7 +1023,7 @@ $h\_{top}(\sigma\_{r}) = +\infty$ на обоих пространствах; $\
 |---|---|---|---|---|
 | 1 | $\mathcal{R}\_{1} \to \mathcal{R}\_{2}$ (I → II) | $\mathrm{Sem}: \mathbf{PROP}\_{\Sigma} \to \mathbf{BoolAlg}$ (ковариантный) | $\mathcal{G}\_{1}$ с $\alpha^{(1)}\_{1}: 1 \to 2\otimes 2\otimes 4$ и $\mathcal{G}\_{2}$ с $\alpha^{(2)}\_{1}: 1 \to 2\otimes 4\otimes 4$: в $B\_{6}$ оба дают $x\_{2}x\_{4}$ (по идемпотентности $x^{2} = x$), но мультимножества $\{2,2,4\} \neq \{2,4,4\}$ не эквивалентны никакой симметрией, значит $\mathbf{C}(\mathcal{G}\_{1}) \not\cong \mathbf{C}(\mathcal{G}\_{2})$ в $\mathbf{PROP}\_{\Sigma}$ | Булева структура (аксиома $x\_{i}^{2} = x\_{i}$); свойства объекта: $V(I) = \{\mathbf{0}, \mathbf{1}\}$, $I + \langle x\_{i}\rangle = \mathfrak{m}$ |
 | 2 | $\mathcal{R}\_{2} \to \mathcal{R}\_{3}$ (II → III) | $U\_{2}: \mathbf{Coalg}\_{F}(\mathbf{BoolAlg}) \to \mathbf{BoolAlg}$, $(H, \omega) \mapsto H$ (забывающий) | $(B\_{6}, \alpha)$ с $\alpha$ [\[Определение III.2\]](#def-III-2) (инъективно, [\[Лемма III.1\]](#lem-III-1)) и $(B\_{6}, \alpha\_{\mathrm{triv}})$ с $\alpha\_{\mathrm{triv}}(x\_{i}) = x\_{1} \otimes x\_{1} \otimes x\_{1}$ (не инъективно: $\alpha\_{\mathrm{triv}}(x\_{1} + x\_{2}) = 0$); инъективность $\omega$ — инвариант изоморфизма коалгебр, значит $(B\_{6}, \alpha) \not\cong (B\_{6}, \alpha\_{\mathrm{triv}})$ | Копредел $\mathbb{H}\_{core}$, изоморфизм $\mathbb{H} \cong \mathbb{H}^{\otimes 3}$ |
-| 3 | $\mathcal{R}\_{3} \to \mathcal{R}\_{4}$ (III → IV) | $\mathrm{Spec}: \mathbf{Coalg}\_{F}(\mathbf{BoolAlg}) \to \mathbf{Stone}$ (ковариантный на объектах, контравариантный на морфизмах) | $(H, \omega\_{\mathrm{core}})$ и $(H, \omega\_{\mathrm{deg}})$ на $H \cong \mathrm{FreeBool}(\aleph\_{0})$, где $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1 \otimes 1 \otimes 1)$ для $\varepsilon \in \mathrm{Spec}(H)$; $\omega\_{\mathrm{deg}}$ не инъективно ($\ker\varepsilon \neq \{0\}$), значит $(H, \omega\_{\mathrm{core}}) \not\cong (H, \omega\_{\mathrm{deg}})$ | Глобальные оценки, $\partial\mathbb{H}\_{core}$; единственный атом $e\_{\mathbf{1}}$ в $\mathbb{H}\_{brunn}$ и соответствующая изолированная точка $\mathbf{1}\_{\infty}$ в $\partial\mathbb{H}\_{brunn}$ |
+| 3 | $\mathcal{R}\_{3} \to \mathcal{R}\_{4}$ (III → IV) | $\mathrm{Spec}: \mathbf{Coalg}\_{F}(\mathbf{BoolAlg}) \to \mathbf{Stone}$, $(H, \omega) \mapsto \mathrm{Spec}(H)$ (забывание $\omega$ + двойственность Стоуна) | $(H, \omega\_{\mathrm{core}})$ и $(H, \omega\_{\mathrm{deg}})$ на $H \cong \mathrm{FreeBool}(\aleph\_{0})$, где $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1 \otimes 1 \otimes 1)$ для $\varepsilon \in \mathrm{Spec}(H)$; $\omega\_{\mathrm{deg}}$ не инъективно ($\ker\varepsilon \neq \{0\}$), значит $(H, \omega\_{\mathrm{core}}) \not\cong (H, \omega\_{\mathrm{deg}})$ | Глобальные оценки, $\partial\mathbb{H}\_{\mathrm{core}}$; единственный атом $e\_{\mathbf{1}}$ в $\mathbb{H}\_{\mathrm{brunn}}$ и соответствующая изолированная точка $\mathbf{1}\_{\infty}$ в $\partial\mathbb{H}\_{\mathrm{brunn}}$ |
 | 4 | $\mathcal{R}\_{4} \to \mathcal{R}\_{5}$ (IV → V) | $U\_{4}: \mathbf{Dyn}(\mathbf{Stone}) \to \mathbf{Stone}$, $(X, \sigma\_{r}) \mapsto X$ (забывающий) | $(2^{\omega}, \mathrm{id})$ и $(2^{\omega}, \sigma\_{r})$: $U\_{4}$ одинаково, но $h\_{top}(\mathrm{id}) = 0 \neq +\infty = h\_{top}(\sigma\_{r})$, значит динамики неизоморфны | Необратимые сюръекции $\sigma\_{r}$, достижимость $\mathbf{1}\_{\infty}$; топологическая энтропия $h\_{top}(\sigma\_{r}) = +\infty$ |
 | 5 | $\mathcal{R}\_{5} \to \mathcal{R}\_{6}$ (V → VI) | $U\_{5}: \mathbf{UMetDyn} \to \mathbf{Dyn}(\mathbf{Stone})$, $(X, \sigma\_{r}, d) \mapsto (X, \sigma\_{r})$ (забывающий) | $(\partial\mathbb{H}\_{core}, \sigma\_{r}, d)$ и $(\partial\mathbb{H}\_{core}, \sigma\_{r}, d\_{norm})$: $U\_{5}$ одинаково, $\dim\_{H} = +\infty$ vs $1$ | $\dim\_{H} = +\infty$ (при $d = 2^{-k}$), $\dim\_{H} = 1$ (при $d\_{norm}$) |
 
@@ -1023,7 +1035,7 @@ $h\_{top}(\sigma\_{r}) = +\infty$ на обоих пространствах; $\
 
 (2) $U\_{2}$: $(B\_{6}, \alpha) \not\cong (B\_{6}, \alpha\_{\mathrm{triv}})$, так как $\alpha$ инъективно [\[Лемма III.1\]](#lem-III-1)), а $\alpha\_{\mathrm{triv}}$ — нет; инъективность структурного морфизма сохраняется при изоморфизме коалгебр. При этом $U\_{2}(B\_{6}, \alpha) = B\_{6} = U\_{2}(B\_{6}, \alpha\_{\mathrm{triv}})$.
 
-(3) $\mathrm{Spec}$: для счётной $H \cong \mathrm{FreeBool}(\aleph\_{0})$ все коалгебры дают $\mathrm{Spec}(H) \cong 2^{\omega}$ [\[Замечание IV.1\]](#rem-IV-1); $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1\otimes 1\otimes 1)$ — гомоморфизм булевых алгебр с $\ker\varepsilon \neq \{0\}$, не инъективен; $\omega\_{\mathrm{core}}$ инъективен [\[Теорема III.1\]](#thm-III-1)); значит $(H, \omega\_{\mathrm{core}}) \not\cong (H, \omega\_{\mathrm{deg}})$, но $\mathrm{Spec}(H)$ в обоих случаях гомеоморфен $2^{\omega}$.
+(3) $\mathrm{Spec}$ (действующий на объекты как композиция забывающего функтора $\mathbf{Coalg}\_{F}(\mathbf{BoolAlg}) \to \mathbf{BoolAlg}$ и двойственности Стоуна $(H, \omega) \mapsto \mathrm{Spec}(H)$): для счётной $H \cong \mathrm{FreeBool}(\aleph\_{0})$ все коалгебры дают $\mathrm{Spec}(H) \cong 2^{\omega}$ [\[Замечание IV.1\]](#rem-IV-1); $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1\otimes 1\otimes 1)$ — гомоморфизм булевых алгебр с $\ker\varepsilon \neq \{0\}$, не инъективен; $\omega\_{\mathrm{core}}$ инъективен [\[Теорема III.1\]](#thm-III-1)); значит $(H, \omega\_{\mathrm{core}}) \not\cong (H, \omega\_{\mathrm{deg}})$, но их образы в $\mathbf{Stone}$ гомеоморфны $2^{\omega}$.
 
 (4) $U\_{4}$: $\mathrm{id}$ на $2^{\omega}$ имеет $h\_{top} = 0$; сдвиги $\sigma\_{r}$ — $h\_{top} = +\infty$ ([\[Теорема VI.1\]](#thm-VI-1), топологический инвариант, метрика не используется); значит $(2^{\omega}, \mathrm{id}) \not\cong (2^{\omega}, \sigma\_{r})$, но $U\_{4}$ стирает сдвиги, давая один и тот же объект $2^{\omega}$ в $\mathbf{Stone}$.
 
@@ -1101,8 +1113,6 @@ $$
 ### **Раздел VIII. Естественная артикуляция**
 {: .accent #prt-VIII}
 
-Всё дальнейшее ведётся в ZF без AC.
-
 #### <span class="accent">— [Определение VIII.1]</span>
 {: .courier #def-VIII-1}
 
@@ -1121,6 +1131,17 @@ $$
 
 Параметры $(6, 3)$ — число сортов и арность — зафиксированы в определении $\mathfrak{P}\_{6}$ как выбор, а не выведены из более общих принципов. Вопрос о минимальности пары $(6, 3)$ (существуют ли сильно связные конъюнктивные сети с меньшим числом сортов или арности 2, допускающие одновременно свидетелей инъективности и нетривиальную динамическую асимметрию) в настоящем разделе не ставится и не решается. Внутри фиксированного класса $\mathfrak{P}\_{6}$ устанавливается единственность $\mathcal{F}$ с точностью до $\mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ [\[Теорема VIII.2\]](#thm-VIII-2).
 
+#### <span class="accent">— [Определение VIII.2]</span>
+{: .courier #def-VIII-2}
+
+Конечная подкоалгебра $(C, \omega\_{C}) \hookrightarrow (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ называется копредельно-порождающей $\mathbb{H}\_{core}(\mathcal{G})$, если
+
+$$
+\mathbb{H}_{core}(\mathcal{G}) = \bigcup_{k \geq 0} \left(\omega_{core}^{(k)}\right)^{-1}\left(C^{\otimes 3^{k}}\right),
+$$
+
+то есть индуктивный предел цепи $C \to C^{\otimes 3} \to C^{\otimes 9} \to \cdots$ (с морфизмами $\omega\_{C}, \omega\_{C}^{\otimes 3}, \ldots$) канонически изоморфен $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
+
 #### <span class="accent">— [Теорема VIII.1]</span>
 {: .courier #thm-VIII-1}
 
@@ -1136,7 +1157,7 @@ $$
 
 (1) [\[Теорема III.2\]](#thm-III-2), [\[Лемма IV.2\]](#lem-IV-2) + теорема Кантора: все счётные безатомные булевы алгебры изоморфны $\mathrm{FreeBool}(\aleph\_{0})$.
 
-(2) Зафиксируем $\varepsilon \in \mathrm{Spec}(H)$ для $H = \mathrm{FreeBool}(\aleph\_{0})$; определим $\omega\_{\mathrm{deg}}: H \to H^{\otimes 3}$ правилом $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1 \otimes 1 \otimes 1)$. Гомоморфизм булевых алгебр: $\omega\_{\mathrm{deg}}(a \wedge b) = \varepsilon(a \wedge b)(1\otimes 1\otimes 1) = \varepsilon(a)\varepsilon(b)(1\otimes 1\otimes 1) = \omega\_{\mathrm{deg}}(a)\omega\_{\mathrm{deg}}(b)$; $\omega\_{\mathrm{deg}}(1) = 1$; $\omega\_{\mathrm{deg}}(a \vee b) = \omega\_{\mathrm{deg}}(a) + \omega\_{\mathrm{deg}}(b) + \omega\_{\mathrm{deg}}(a \wedge b)$. Не инъективен: $\ker\varepsilon \neq \{0\}$ (ядро характера в безатомной алгебре бесконечно), $\omega\_{\mathrm{deg}}(\ker\varepsilon) = 0$. При этом $\omega\_{core}(\mathcal{G})$ инъективен [\[Лемма III.1\]](#lem-III-1)); инъективность — инвариант изоморфизма коалгебр. Значит $(H, \omega\_{\mathrm{deg}}) \not\cong (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
+(2) Зафиксируем $\varepsilon \in \mathrm{Spec}(H)$ для $H = \mathrm{FreeBool}(\aleph\_{0})$; определим $\omega\_{\mathrm{deg}}: H \to H^{\otimes 3}$ правилом $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1 \otimes 1 \otimes 1)$. Гомоморфизм булевых алгебр: $\omega\_{\mathrm{deg}}(a \wedge b) = \varepsilon(a \wedge b)(1\otimes 1\otimes 1) = \varepsilon(a)\varepsilon(b)(1\otimes 1\otimes 1) = \omega\_{\mathrm{deg}}(a)\omega\_{\mathrm{deg}}(b)$; $\omega\_{\mathrm{deg}}(1) = 1$; $\omega\_{\mathrm{deg}}(a \vee b) = \omega\_{\mathrm{deg}}(a) + \omega\_{\mathrm{deg}}(b) + \omega\_{\mathrm{deg}}(a \wedge b)$. Не инъективен: $\ker\varepsilon \neq \{0\}$ (ядро характера в безатомной алгебре бесконечно), $\omega\_{\mathrm{deg}}(\ker\varepsilon) = 0$. При этом $\omega\_{core}(\mathcal{G})$ инъективен ([\[Лемма III.1\]](#lem-III-1)); инъективность — инвариант изоморфизма коалгебр. Значит $(H, \omega\_{\mathrm{deg}}) \not\cong (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
 
 (3) Из (1) и (2): $\mathrm{FreeBool}(\aleph\_{0})$ не выделяет $\omega\_{core}(\mathcal{G})$ без $\mathcal{G} \in \mathfrak{P}\_{6}$. $\square$
 
@@ -1145,17 +1166,19 @@ $$
 
 Для любой $\mathcal{G} \in \mathfrak{P}\_{6}$:
 
-(а) В $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная минимальная нетривиальная конечная подкоалгебра;
+(а) в $(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$ подкоалгебра $\iota\_{0}(B\_{6})$ — единственная конечная копредельно-порождающая подкоалгебра минимальной размерности ($\dim\_{\mathbb{F}\_{2}} = 64$);
 
 (б) $\mathrm{Aut}(\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G})) \cong \mathrm{Aut}(B\_{6}, \alpha\_{0}) \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$.
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Пусть $C \subset \mathbb{H}\_{core}$ — конечная подкоалгебра, $C \neq \mathbb{F}\_{2}$. Тогда $C \subseteq \iota\_{m}(\mathcal{L}\_{m})$ при некотором $m \geq 0$, и двойственно $C$ задаётся конгруэнцией $\approx$ на $(\mathbb{F}\_{2}^{6})^{3^{m}}$, согласованной с $T^{\times 3^{m}}$. Изоляция произвольной различающейся координаты $t\_{0} \in \{1, \ldots, 3^{m}\}$ нулевыми масками на $t \neq t\_{0}$ (в силу $T(x, \mathbf{0}, \mathbf{0}) = \mathbf{0}$) и сильная связность в $t\_{0}$-м блоке влекут распад $\approx$ в прямое произведение $\approx\_{1} \times \cdots \times \approx\_{3^{m}}$, где каждая $\approx\_{t}$ либо тривиальна, либо полна (отсутствие собственных нетривиальных конгруэнций на $\mathbb{F}\_{2}^{6}$). Инвариантность относительно $\alpha\_{m}$ даёт $C = \mathcal{L}\_{m}$.
+(1) Сама $\iota\_{0}(B\_{6})$ является конечной подкоалгеброй размерности 64: по [Следствию III.3](#cor-III-3) $\omega\_{core}(\iota\_{0}(x)) = \iota\_{1}(\alpha\_{0}(x)) \in \iota\_{1}(B\_{6}^{\otimes 3}) = \iota\_{0}(B\_{6})^{\otimes 3}$, и по определению $\mathbb{H}\_{core} = \varinjlim \mathcal{L}\_{k}$ она копредельно-порождает всю $\mathbb{H}\_{core}$.
 
-(2) Проверим, что $\iota\_{0}(B\_{6})$ — подкоалгебра: $\omega\_{core}(\iota\_{0}(x)) = \iota\_{1}(\alpha\_{0}(x))$ [\[Следствие III.3\]](#cor-III-3), $\alpha\_{0}(x) \in \mathcal{L}\_{1} = B\_{6}^{\otimes 3}$, значит $\iota\_{1}(\alpha\_{0}(x)) \in \iota\_{1}(\mathcal{L}\_{1}) = \iota\_{0}(B\_{6})^{\otimes 3}$ (в $\mathbb{H}\_{core}$). При $m \geq 1$: $\iota\_{0}(B\_{6}) = \iota\_{m}(\alpha\_{m-1} \circ \cdots \circ \alpha\_{0}(B\_{6})) \subsetneq \iota\_{m}(\mathcal{L}\_{m})$ (размерности $64 < 2^{6\cdot 3^{m}}$). Значит $C = \mathcal{L}\_{m}$ при $m \geq 1$ не минимальна (содержит строго меньшую $\iota\_{0}(B\_{6})$). Следовательно $m = 0$ и $C = \iota\_{0}(B\_{6})$.
+(2) Пусть $C \subset \mathbb{H}\_{core}$ — произвольная конечная копредельно-порождающая подкоалгебра. В силу конечности $C \subseteq \iota\_{m}(\mathcal{L}\_{m})$ при некотором минимальном $m \geq 0$, и как булева подалгебра в $\mathcal{L}\_{m}$ она двойственно задаётся конгруэнцией $\approx$ на $\mathrm{Spec}(\mathcal{L}\_{m}) = (\mathbb{F}\_{2}^{6})^{3^{m}}$ (точки $p, q$ склеены $\iff$ $\forall c \in C,\; c(p) = c(q)$). Если конгруэнция $\approx$ нетривиальна (склеивает две различные точки $p \neq q$ слоя $m$), то в силу согласованности с $\omega\_{core}$ для любого $k \geq 0$ и любых прообразов $\tilde{p}, \tilde{q} \in \mathrm{Spec}(\mathcal{L}\_{m+k})$ точек $p, q$ при проекции $(\alpha\_{m, m+k})^{\ast}$ все элементы из $(\omega\_{core}^{(k)})^{-1}(C^{\otimes 3^{k}})$ принимают на $\tilde{p}$ и $\tilde{q}$ одинаковые значения, то есть не разделяют слой $\mathcal{L}\_{m}$. Это противоречит условию копредельного порождения $\mathbb{H}\_{core} = \bigcup\_{k \geq 0} (\omega\_{core}^{(k)})^{-1}(C^{\otimes 3^{k}})$.
 
-(3) В силу единственности $\iota\_{0}(B\_{6})$ любой автоморфизм $\Psi$ пары сохраняет $\iota\_{0}(B\_{6})$, значит однозначно определяется ограничением $\varphi$ на $\mathrm{Spec}(B\_{6}) = \mathbb{F}\_{2}^{6}$.
+(3) Следовательно, конгруэнция $\approx$ тривиальна, откуда $C = \iota\_{m}(\mathcal{L}\_{m})$. При $m \geq 1$ имеем $\dim\_{\mathbb{F}\_{2}}(C) = 64^{3^{m}} > 64$. Минимум размерности (64) достигается единственно при $m = 0$, то есть для $C = \iota\_{0}(B\_{6})$.
+
+(4) Свойства конечности, копредельного порождения и размерности инвариантны относительно любого изоморфизма $F$-коалгебр; в силу единственности $\iota\_{0}(B\_{6})$ по пункту (а), доказанному через (1)-(3), любой автоморфизм $\Psi$ пары $(\mathbb{H}\_{core}, \omega\_{core})$ сохраняет $\iota\_{0}(B\_{6})$ и однозначно определяется ограничением $\varphi$ на $\mathrm{Spec}(B\_{6}) = \mathbb{F}\_{2}^{6}$. Далее:
 
 Шаг 1: $\varphi(\mathbf{0}) = \mathbf{0}$, $\varphi(\mathbf{1}) = \mathbf{1}$. Из $V(I) = \{\mathbf{0}, \mathbf{1}\}$ и $T(\varphi(\mathbf{0}), \varphi(\mathbf{0}), \varphi(\mathbf{0})) = \varphi(\mathbf{0})$: $\varphi(\mathbf{0}) \in V(I)$. Если $\varphi(\mathbf{0}) = \mathbf{1}$, то для $v^{2}$ с $\varphi(v^{2}) = \mathbf{0}$ (сюръективность) $\mathbf{1} = \varphi(\mathbf{0}) = \varphi(T(\mathbf{0}, v^{2}, \mathbf{1})) = T(\mathbf{1}, \mathbf{0}, \varphi(\mathbf{1})) = \mathbf{0}$ — противоречие.
 
@@ -1167,6 +1190,11 @@ $$
 
 Шаг 5: сплетение $\varphi(T(v^{1}, v^{2}, v^{3})) = T(\varphi v^{1}, \varphi v^{2}, \varphi v^{3})$ влечёт $\pi(j\_{i}) = j\_{\pi(i)}$, $\pi(k\_{i}) = k\_{\pi(i)}$, $\pi(l\_{i}) = l\_{\pi(i)}$, т.е. $\pi \in \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$. $\square$
 
+#### <span class="accent">— [Замечание VIII.2]</span>
+{: .courier #rem-VIII-2}
+
+Без условия копредельного порождения в $\mathbb{H}\_{core}$ есть меньшая подкоалгебра $\mathbb{F}\_{2} = \{0, 1\}$ (размерности 1): она является подкоалгеброй, поскольку $\alpha\_{0}(1) = 1 \otimes 1 \otimes 1$ и $\alpha\_{0}(0) = 0$, но её копредел равен $\mathbb{F}\_{2}$, а не $\mathbb{H}\_{core}$. В $\mathbb{H}\_{brunn}$ меньшими копредельно-порождающими подкоалгебрами являются $\mathbb{F}\_{2}$ (не порождает $\mathbb{H}\_{brunn}$) и $B\_{6}/I$ ($\dim\_{\mathbb{F}\_{2}} = 2$, копредел $\mathrm{colim}\_{k} F^{k}(B\_{6}/I) = \mathbb{H}\_{brunn}$). Только в $\mathbb{H}\_{core}$ 64-мерная $\iota\_{0}(B\_{6})$ — минимальная копредельно-порождающая.
+
 #### <span class="accent">— [Теорема VIII.2]</span>
 {: .courier #thm-VIII-2}
 
@@ -1176,7 +1204,7 @@ $$
 
 ***<span class="accent">Доказательство</span>***.
 
-(1) Изоморфизм коалгебр переводит единственную минимальную подкоалгебру $\iota\_{0}(B\_{6})$ в $\iota\_{0}'(B\_{6}')$ [\[Лемма VIII.1\]](#lem-VIII-1), откуда $\mathcal{F}' = \pi(\mathcal{F})$ для $\pi \in \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ [\[Лемма VIII.1\]](#lem-VIII-1).
+(1) Изоморфизм коалгебр переводит единственную копредельно-порождающую минимальной размерности подкоалгебру $\iota\_{0}(B\_{6})$ в $\iota\_{0}'(B\_{6}')$ [\[Лемма VIII.1\]](#lem-VIII-1), откуда $\mathcal{F}' = \pi(\mathcal{F})$ для $\pi \in \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ [\[Лемма VIII.1\]](#lem-VIII-1).
 
 (2) Для $\mathcal{F}$ перебор по инвариантным парам $P\_{3}$ и уникальным свидетелям $j\_{1} = 2$, $j\_{4} = 5$, $k\_{3} = 2$, $k\_{6} = 5$ оставляет $\{\mathrm{id}, P\_{3}\}$.
 
@@ -1241,19 +1269,9 @@ $$
 
 **2. <span class="accent">Какие шаги выполнили</span>?**
 
-(а) Определили класс $\mathfrak{P}\_{6}$ [\[Определение VIII.1\]](#def-VIII-1);
+(а) Определили класс $\mathfrak{P}\_{6}$ [\[Определение VIII.1\]](#def-VIII-1); зафиксировали $(6,3)$ как выбор [\[Замечание VIII.1\]](#rem-VIII-1).
 
-зафиксировали $(6,3)$ как выбор [\[Замечание VIII.1\]](#rem-VIII-1).
-
-(б) Доказали: невозможность беспрезентационного старта через $\omega\_{\mathrm{deg}} = \varepsilon\cdot(1\otimes 1\otimes 1)$ [\[Теорема VIII.1\]](#thm-VIII-1);
-
-единственность минимальной подкоалгебры (с проверкой $\iota\_{0}(B\_{6})$ — подкоалгебра) и $\mathrm{Aut} \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ через сохранение порядка (для любой $\mathcal{G} \in \mathfrak{P}\_{6}$) [\[Лемма VIII.1\]](#lem-VIII-1);
-
-вариативность $\mathbb{Z}\_{2}$ vs $\{\mathrm{id}\}$, проверка $M'^{3} > 0$ для $\mathcal{F}'$ [\[Теорема VIII.2\]](#thm-VIII-2);
-
-trade-off с профилем $(\mathbb{Z}\_{2}, \{\mathrm{id}\}, \{\mathrm{id}\})$, коидеал $J\_{\mathrm{sym}}$, явная $\alpha\_{\mathrm{sym}}$ [\[Теорема VIII.3\]](#thm-VIII-3);
-
-структурное обоснование [\[Следствие VIII.1\]](#cor-VIII-1).
+(б) Доказали: невозможность беспрезентационного старта через $\omega\_{\mathrm{deg}} = \varepsilon\cdot(1\otimes 1\otimes 1)$ [\[Теорема VIII.1\]](#thm-VIII-1); единственность минимальной подкоалгебры (с проверкой $\iota\_{0}(B\_{6})$ — подкоалгебра) и $\mathrm{Aut} \cong \mathrm{Sym}\_{\mathrm{ord}}(\mathcal{F})$ через сохранение порядка (для любой $\mathcal{G} \in \mathfrak{P}\_{6}$) [\[Лемма VIII.1\]](#lem-VIII-1); вариативность $\mathbb{Z}\_{2}$ vs $\{\mathrm{id}\}$, проверка $M'^{3} > 0$ для $\mathcal{F}'$ [\[Теорема VIII.2\]](#thm-VIII-2); trade-off с профилем $(\mathbb{Z}\_{2}, \{\mathrm{id}\}, \{\mathrm{id}\})$, коидеал $J\_{\mathrm{sym}}$, явная $\alpha\_{\mathrm{sym}}$ [\[Теорема VIII.3\]](#thm-VIII-3); структурное обоснование [\[Следствие VIII.1\]](#cor-VIII-1).
 
 **3. <span class="accent">К чему пришли</span>?**
 
