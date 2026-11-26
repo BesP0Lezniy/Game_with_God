@@ -217,7 +217,9 @@ $$
 
 (1) Сильная связность [\[Теорема II.1\]](#thm-II-1).
 
-(2) Конъюнктивная форма — по построению [\[Определение II.3\]](#def-II-3). (3) $\mathrm{Fix}(T) = \{\mathbf{0}, \mathbf{1}\}$ — [\[Теорема II.1\]](#thm-II-1). $\square$
+(2) Конъюнктивная форма — по построению [\[Определение II.3\]](#def-II-3).
+
+(3) $\mathrm{Fix}(T) = \{\mathbf{0}, \mathbf{1}\}$ — [\[Теорема II.1\]](#thm-II-1). $\square$
 
 #### <span class="accent">— [Следствие II.2]</span>
 {: .courier #cor-II-2}
@@ -671,7 +673,9 @@ $\omega\_{core}$, $\omega\_{brunn}$ индуцированы $\alpha\_{k}: \math
 #### <span class="accent">— [Лемма V.1]</span>
 {: .courier #lem-V-1}
 
-$\omega\_{core}: \mathbb{H}\_{core} \to F(\mathbb{H}\_{core})$ и $\omega\_{brunn}: \mathbb{H}\_{brunn} \to F(\mathbb{H}\_{brunn})$ — изоморфизмы в $\mathbf{BoolAlg}$. Следовательно, $\Phi\_{core}$ и $\Phi\_{brunn}$ — гомеоморфизмы.
+$\omega\_{core}: \mathbb{H}\_{core} \to F(\mathbb{H}\_{core})$ и $\omega\_{brunn}: \mathbb{H}\_{brunn} \to F(\mathbb{H}\_{brunn})$ — изоморфизмы в $\mathbf{BoolAlg}$.
+
+Следовательно, $\Phi\_{core}$ и $\Phi\_{brunn}$ — гомеоморфизмы.
 
 ***<span class="accent">Доказательство</span>***.
 
@@ -743,6 +747,19 @@ $\{\mathbf{1}\_{\infty}\}$ инвариантно вперёд, но не наз
 
 Непосредственно [\[Лемма V.3\]](#lem-V-3) и [\[Лемма V.4\]](#lem-V-4). $\square$
 
+#### <span class="accent">— [Лемма V.5]</span>
+{: .courier #lem-V-5}
+
+$K\_{coll}$ не имеет изолированных точек.
+
+***<span class="accent">Доказательство</span>***.
+
+(1) Пусть $\pi \in K\_{coll}$ изолирована в $K\_{coll}$. Тогда существует $V \subseteq \partial\mathbb{H}\_{brunn}$ открытое с $V \cap K\_{coll} = \{\pi\}$, значит $V \subseteq \{\pi, \mathbf{1}\_{\infty}\}$ (поскольку $\partial\mathbb{H}\_{brunn} = K\_{coll} \sqcup \{\mathbf{1}\_{\infty}\}$).
+
+Если $V = \{\pi\}$, то $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие: [\[Следствие IV.2\]](#cor-IV-2).
+
+(2) Если $V = \{\pi, \mathbf{1}\_{\infty}\}$, то $\{\mathbf{1}\_{\infty}\}$ открыто [\[Следствие IV.2\]](#cor-IV-2)), следовательно $\{\pi\} = V \setminus \{\mathbf{1}\_{\infty}\}$ открыто как разность открытых, значит $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие: [\[Следствие IV.2\]](#cor-IV-2). $\square$
+
 #### <span class="accent">— [Теорема V.1]</span>
 {: .courier #thm-V-1}
 
@@ -756,24 +773,11 @@ $\{\mathbf{1}\_{\infty}\}$ инвариантно вперёд, но не наз
 
 (3) Нульмерность: база $\{U\_{a}\}$ состоит из clopen; $U\_{a}^{c} = \{h : h(a) = 0\} = \{h : h(1+a) = 1\} = U\_{1+a}$.
 
-(4) Совершенность: $\partial\mathbb{H}\_{core}$ — [\[Следствие IV.1\]](#cor-IV-1); $K\_{coll}$ — [\[Лемма V.5\]](#lem-V-5) ниже.
+(4) Совершенность: $\partial\mathbb{H}\_{core}$ — [\[Следствие IV.1\]](#cor-IV-1); $K\_{coll}$ — [\[Лемма V.5\]](#lem-V-5).
 
 (5) Непустота: $\mathbf{0}\_{\infty} \in K\_{coll}$.
 
 (6) Счётная база $\{U\_{a} : a \in \mathbb{H}\}$ явно перенумерована [\[Теорема III.2\]](#thm-III-2), $\vert\mathbb{H}\vert = \aleph\_{0}$. Характеризация Брауэра: гомеоморфизм на $2^{\omega}$ строится индуктивно; на каждом шаге выбирается в перенумерованной базе наименьшее по номеру clopen-подмножество, измельчающее текущее разбиение. Выбор детерминирован перенумерацией — AC не используется. $\square$
-
-#### <span class="accent">— [Лемма V.5]</span>
-{: .courier #lem-V-5}
-
-$K\_{coll}$ не имеет изолированных точек.
-
-***<span class="accent">Доказательство</span>***.
-
-(1) Пусть $\pi \in K\_{coll}$ изолирована в $K\_{coll}$. Тогда существует $V \subseteq \partial\mathbb{H}\_{brunn}$ открытое с $V \cap K\_{coll} = \{\pi\}$, значит $V \subseteq \{\pi, \mathbf{1}\_{\infty}\}$ (поскольку $\partial\mathbb{H}\_{brunn} = K\_{coll} \sqcup \{\mathbf{1}\_{\infty}\}$).
-
-Если $V = \{\pi\}$, то $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие: [\[Следствие IV.2\]](#cor-IV-2).
-
-(2) Если $V = \{\pi, \mathbf{1}\_{\infty}\}$, то $\{\mathbf{1}\_{\infty}\}$ открыто [\[Следствие IV.2\]](#cor-IV-2)), следовательно $\{\pi\} = V \setminus \{\mathbf{1}\_{\infty}\}$ открыто как разность открытых, значит $\pi$ изолирована в $\partial\mathbb{H}\_{brunn}$ — противоречие: [\[Следствие IV.2\]](#cor-IV-2). $\square$
 
 #### <span class="accent">— [Теорема V.2]</span>
 {: .courier #thm-V-2}
@@ -945,9 +949,9 @@ $$
 
 Для $V\_{0}$: при $\pi = \Phi\_{core}(\eta, \mathbf{0}\_{\infty}, \mathbf{0}\_{\infty})$ имеем $\sigma\_{1}(\pi) = \eta$ (аналогично для $r=2,3$).
 
-(4) В силу $\sigma\_{r}^{n}(V\_{+}) \subseteq V\_{+}$ и $V\_{0} \cap V\_{+} = \varnothing$ имеем $V\_{+} \cap \sigma\_{r}^{-n}(V\_{0}) = \varnothing$ для всех $n \geq 0$;
+(4) В силу $\sigma\_{r}^{n}(V\_{+}) \subseteq V\_{+}$ и $V\_{0} \cap V\_{+} = \varnothing$ имеем $V\_{+} \cap \sigma\_{r}^{-n}(V\_{0}) = \varnothing$ для всех $n \geq 0$.
 
-для $\partial\mathbb{H}\_{brunn}$ — $\{\mathbf{1}\_{\infty}\} \cap \sigma\_{r}^{-n}(K\_{coll}) = \varnothing$ [\[Теорема V.2\]](#thm-V-2). $\square$
+Для $\partial\mathbb{H}\_{brunn}$ — $\{\mathbf{1}\_{\infty}\} \cap \sigma\_{r}^{-n}(K\_{coll}) = \varnothing$ [\[Теорема V.2\]](#thm-V-2). $\square$
 
 #### <span class="accent">— [Замечание VI.3]</span>
 {: .courier #rem-VI-3}
@@ -1189,7 +1193,7 @@ $$
 
 (1) [\[Теорема III.2\]](#thm-III-2), [\[Лемма IV.2\]](#lem-IV-2) + теорема Кантора: все счётные безатомные булевы алгебры изоморфны $\mathrm{FreeBool}(\aleph\_{0})$.
 
-(2) Зафиксируем $\varepsilon \in \mathrm{Spec}(H)$ для $H = \mathrm{FreeBool}(\aleph\_{0})$; определим $\omega\_{\mathrm{deg}}: H \to H^{\otimes 3}$ правилом $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1 \otimes 1 \otimes 1)$. Гомоморфизм булевых алгебр: $\omega\_{\mathrm{deg}}(a \wedge b) = \varepsilon(a \wedge b)(1\otimes 1\otimes 1) = \varepsilon(a)\varepsilon(b)(1\otimes 1\otimes 1) = \omega\_{\mathrm{deg}}(a)\omega\_{\mathrm{deg}}(b)$; $\omega\_{\mathrm{deg}}(1) = 1$; $\omega\_{\mathrm{deg}}(a \vee b) = \omega\_{\mathrm{deg}}(a) + \omega\_{\mathrm{deg}}(b) + \omega\_{\mathrm{deg}}(a \wedge b)$. Не инъективен: $\ker\varepsilon \neq \{0\}$ (ядро характера в безатомной алгебре бесконечно), $\omega\_{\mathrm{deg}}(\ker\varepsilon) = 0$. При этом $\omega\_{core}(\mathcal{G})$ инъективен ([\[Лемма III.1\]](#lem-III-1)); инъективность — инвариант изоморфизма коалгебр. Значит $(H, \omega\_{\mathrm{deg}}) \not\cong (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
+(2) Зафиксируем $\varepsilon \in \mathrm{Spec}(H)$ для $H = \mathrm{FreeBool}(\aleph\_{0})$; определим $\omega\_{\mathrm{deg}}: H \to H^{\otimes 3}$ правилом $\omega\_{\mathrm{deg}}(a) = \varepsilon(a) \cdot (1 \otimes 1 \otimes 1)$. Гомоморфизм булевых алгебр: $\omega\_{\mathrm{deg}}(a \wedge b) = \varepsilon(a \wedge b)(1\otimes 1\otimes 1) = \varepsilon(a)\varepsilon(b)(1\otimes 1\otimes 1) = \omega\_{\mathrm{deg}}(a)\omega\_{\mathrm{deg}}(b)$; $\omega\_{\mathrm{deg}}(1) = 1$; $\omega\_{\mathrm{deg}}(a \vee b) = \omega\_{\mathrm{deg}}(a) + \omega\_{\mathrm{deg}}(b) + \omega\_{\mathrm{deg}}(a \wedge b)$. Не инъективен: $\ker\varepsilon \neq \{0\}$ (ядро характера в безатомной алгебре бесконечно), $\omega\_{\mathrm{deg}}(\ker\varepsilon) = 0$. При этом $\omega\_{core}(\mathcal{G})$ инъективен [\[Лемма III.1\]](#lem-III-1); инъективность — инвариант изоморфизма коалгебр. Значит $(H, \omega\_{\mathrm{deg}}) \not\cong (\mathbb{H}\_{core}(\mathcal{G}), \omega\_{core}(\mathcal{G}))$.
 
 (3) Из (1) и (2): $\mathrm{FreeBool}(\aleph\_{0})$ не выделяет $\omega\_{core}(\mathcal{G})$ без $\mathcal{G} \in \mathfrak{P}\_{6}$. $\square$
 
